@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roborsi"
+version = "0.1.0"
+description = "Coarse robot plans to smooth 200 Hz execution, with traceable Piper experiments"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "PyYAML>=6"]
+
+[project.scripts]
+roborsi-compile = "roborsi.compiler:main"
+roborsi-execute = "roborsi.runtime:main"
+roborsi-report = "roborsi.reporting:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

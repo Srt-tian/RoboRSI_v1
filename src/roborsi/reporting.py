@@ -1,0 +1,27 @@
+"""Generate a local, dependency-free timeline viewer from recorded feedback."""
+
+import argparse, json
+from pathlib import Path
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("feedback", type=Path)
+    p.add_argument("--output", type=Path, required=True)
+    a = p.parse_args()
+    rows = [json.loads(x) for x in a.feedback.read_text().splitlines() if x.strip()]
+    if not rows:
+        raise ValueError("no feedback rows")
+    a.output.mkdir(parents=True, exist_ok=True)
+    (a.output / "feedback.json").write_text(json.dumps(rows))
+    (a.output / "index.html").write_text(
+        """<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RoboRSI · Measured feedback</title><style>body{background:#0c1421;color:#dce8f3;font:16px system-ui;max-width:1100px;margin:40px auto;padding:20px}h1{font-size:36px}canvas{width:100%;height:260px;background:#142233}button,input{padding:10px;background:#203448;color:white;border:1px solid #486279}input{width:55%}pre{white-space:pre-wrap}p{color:#9bb0c5}</style><h1>RoboRSI / measured feedback</h1><p>Feedback samples (~50 Hz), not interpolated 200 Hz measurements. Command completion alone is not evidence of task success.</p><canvas width="1100" height="260"></canvas><button id="play">Play / pause</button><button id="step">Step</button><input id="seek" type="range" min="0" value="0"><pre id="state"></pre><script>fetch('feedback.json').then(x=>x.json()).then(r=>{let s=document.querySelector('#seek'),g=document.querySelector('canvas').getContext('2d'),playing=false;s.max=r.length-1;function draw(){let i=+s.value,v=r[i];g.fillStyle='#142233';g.fillRect(0,0,1100,260);g.strokeStyle='#44d5bd';g.beginPath();r.forEach((v,j)=>{let x=j/(r.length-1||1)*1100,y=250-v.tracking_rad/.1*220;j?g.lineTo(x,y):g.moveTo(x,y)});g.stroke();g.strokeStyle='#ffb267';let x=i/(r.length-1||1)*1100;g.beginPath();g.moveTo(x,0);g.lineTo(x,260);g.stroke();document.querySelector('#state').textContent=JSON.stringify({elapsed_s:v.time-r[0].time,tracking_rad:v.tracking_rad,tcp_xyz:v.tcp_xyz,gripper_m:v.q14[6],queue:v.queue_size},null,2)}s.oninput=draw;document.querySelector('#play').onclick=()=>playing=!playing;document.querySelector('#step').onclick=()=>{s.value=Math.min(r.length-1,+s.value+1);draw()};setInterval(()=>{if(playing){s.value=Math.min(r.length-1,+s.value+5);draw();if(+s.value===r.length-1)playing=false}},100);draw();document.body.dataset.loaded='true'})</script></html>"""
+    )
+    print(
+        "Serve locally: python -m http.server 8786 --bind 127.0.0.1 --directory "
+        + str(a.output)
+    )
+
+
+if __name__ == "__main__":
+    main()

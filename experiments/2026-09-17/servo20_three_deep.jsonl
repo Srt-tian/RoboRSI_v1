@@ -1,0 +1,30 @@
+{"event": "stream_started", "time": 1789654631.564044, "sha256": "a1ebf19d33567377403cc4adf6fdfa849c4e74e828e221a4b9b883c10d7aadd5", "targets": 17046, "expected_s": 85.23, "camera_calls": 0, "vlm_calls": 0, "q14": [-0.015044738152191121, 0.3454006589696778, -0.3577575900737977, 0.01848303677861995, 0.38934804953489505, 0.045483280306972226, 0.0698, 0.003193952531149623, 0.32356659002722876, -0.361963833571104, 0.0, 0.27241098965127497, 0.0079412480965742, 0.0671], "tcp_xyz": [0.21841173626073845, -0.001647995696956163, 0.2349565870639659], "tcp_rotation": [[-0.2845784165850174, 0.026181311039583655, 0.9582951861332771], [0.06682816853020468, 0.9977369581578881, -0.0074133809252271065], [-0.9563206160618215, 0.061931423995355867, -0.28568405278741854]], "side": "left"}
+{"event": "phase", "time": 1789654631.5845356, "phase": "pepper_approach+pepper_descend", "index": 4}
+{"event": "progress", "time": 1789654641.5796294, "index": 2003, "total": 17046, "phase": "pepper_approach+pepper_descend", "tracking_rad": 0.03709614227431968}
+{"event": "phase", "time": 1789654642.5282223, "phase": "close_gripper", "index": 2192}
+{"event": "gripper_checked", "time": 1789654643.3167675, "phase": "close_gripper", "width_m": 0.0393, "index": 2350}
+{"event": "phase", "time": 1789654643.3168604, "phase": "pepper_lift+pepper_transfer+pepper_lower", "index": 2350}
+{"event": "phase", "time": 1789654650.3569772, "phase": "release", "index": 3758}
+{"event": "gripper_checked", "time": 1789654651.144678, "phase": "release", "width_m": 0.0698, "index": 3916}
+{"event": "phase", "time": 1789654651.144717, "phase": "pepper_withdraw+carrot_approach+carrot_descend", "index": 3916}
+{"event": "progress", "time": 1789654651.5882578, "index": 4004, "total": 17046, "phase": "pepper_withdraw+carrot_approach+carrot_descend", "tracking_rad": 0.03444477527866585}
+{"event": "progress", "time": 1789654661.591044, "index": 6005, "total": 17046, "phase": "pepper_withdraw+carrot_approach+carrot_descend", "tracking_rad": 0.019186886678387083}
+{"event": "phase", "time": 1789654667.8482656, "phase": "close_gripper", "index": 7256}
+{"event": "gripper_checked", "time": 1789654668.6349258, "phase": "close_gripper", "width_m": 0.0416, "index": 7414}
+{"event": "phase", "time": 1789654668.6551394, "phase": "carrot_lift+carrot_transfer+carrot_lower", "index": 7418}
+{"event": "progress", "time": 1789654671.6012325, "index": 8007, "total": 17046, "phase": "carrot_lift+carrot_transfer+carrot_lower", "tracking_rad": 0.026457960883258913}
+{"event": "phase", "time": 1789654678.4174047, "phase": "release", "index": 9370}
+{"event": "gripper_checked", "time": 1789654679.2034125, "phase": "release", "width_m": 0.0698, "index": 9527}
+{"event": "phase", "time": 1789654679.2235992, "phase": "carrot_withdraw+eggplant_approach+eggplant_approach+eggplant_descend", "index": 9531}
+{"event": "progress", "time": 1789654681.6116505, "index": 10009, "total": 17046, "phase": "carrot_withdraw+eggplant_approach+eggplant_approach+eggplant_descend", "tracking_rad": 0.02300735610631577}
+{"event": "phase", "time": 1789654689.4333055, "phase": "close_gripper", "index": 11573}
+{"event": "gripper_checked", "time": 1789654690.2197378, "phase": "close_gripper", "width_m": 0.0389, "index": 11731}
+{"event": "phase", "time": 1789654690.2399416, "phase": "eggplant_lift+eggplant_transfer+eggplant_lower", "index": 11735}
+{"event": "progress", "time": 1789654691.6120112, "index": 12009, "total": 17046, "phase": "eggplant_lift+eggplant_transfer+eggplant_lower", "tracking_rad": 0.02668122478314139}
+{"event": "progress", "time": 1789654701.6170356, "index": 14010, "total": 17046, "phase": "eggplant_lift+eggplant_transfer+eggplant_lower", "tracking_rad": 0.022792917397965295}
+{"event": "phase", "time": 1789654701.8591714, "phase": "release", "index": 14058}
+{"event": "gripper_checked", "time": 1789654702.6456985, "phase": "release", "width_m": 0.0698, "index": 14216}
+{"event": "phase", "time": 1789654702.6659372, "phase": "eggplant_withdraw+return_initial", "index": 14220}
+{"event": "progress", "time": 1789654711.6307402, "index": 16013, "total": 17046, "phase": "eggplant_withdraw+return_initial", "tracking_rad": 0.023490248702056404}
+{"event": "stream_complete", "time": 1789654716.9798095, "elapsed_s": 85.41580241697375, "q14": [-0.02076941809873252, 0.3483677186980682, -0.3587698810399544, 0.01630137521362704, 0.41114721189230424, 0.03789109806079689, 0.0698, 0.003193952531149623, 0.32356659002722876, -0.361963833571104, 0.0, 0.27241098965127497, 0.0079412480965742, 0.0671], "tcp_xyz": [0.21723056426967785, -0.0029911851291341447, 0.2299240208530277], "tcp_rotation": [[-0.3071162053223699, 0.03084366045222111, 0.9511720691012197], [0.05919806754795047, 0.998158273437525, -0.013253300223218535], [-0.9498290505280279, 0.05223724512382487, -0.3083764663441378]], "side": "left"}
+{"event": "frozen_measured_hold", "time": 1789654716.9840357, "state": [-0.02075836, 0.34818224000000003, -0.358578864, 0.016292696000000002, 0.410928308, 0.037870924, 0.0698, 0.003192252, 0.323394316, -0.361771116, 0.0, 0.27226595200000003, 0.007937020000000001, 0.0671]}
