@@ -1,66 +1,86 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net">
   <diagram id="roborsi-architecture" name="architecture">
-    <mxGraphModel page="1" pageWidth="1480" pageHeight="870" background="#FFFFFF">
+    <mxGraphModel page="1" pageWidth="1440" pageHeight="1290" background="#FFFFFF">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="&lt;b&gt;RoboRSI v1 · 从粗计划到连续操作&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=30;">
-          <mxGeometry as="geometry" x="40" y="20" width="1370" height="65" />
+        <mxCell id="title" value="&lt;b&gt;RoboRSI v1 · RSI 驱动的四层框架&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=30;">
+          <mxGeometry as="geometry" x="60" y="20" width="1300" height="65" />
         </mxCell>
-        <mxCell id="subtitle" value="本轮：固定计划执行　｜　跨轮：人工审核经验修订　｜　任务结果独立确认" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=18;">
-          <mxGeometry as="geometry" x="40" y="90" width="1370" height="55" />
+        <mxCell id="rsi_layer" value="L1  RSI 跨轮改进层 · 执行之后 / 人工审核" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;container=1;pointerEvents=0;verticalAlign=top;align=left;spacingTop=16;spacingLeft=22;fontStyle=1;fontSize=19;">
+          <mxGeometry as="geometry" x="60" y="150" width="1320" height="230" />
         </mxCell>
-        <mxCell id="scene" value="&lt;b&gt;01 · 场景与任务&lt;/b&gt;&lt;br&gt;&lt;br&gt;启动前图像 / 物体与篮筐&lt;br&gt;当前关节状态 / 桌面参考&lt;br&gt;已审核的历史经验" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
-          <mxGeometry as="geometry" x="40" y="185" width="290" height="160" />
+        <mxCell id="planning_layer" value="L2  任务规划层 · 新一轮开始之前" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;container=1;pointerEvents=0;verticalAlign=top;align=left;spacingTop=16;spacingLeft=22;fontStyle=1;fontSize=19;">
+          <mxGeometry as="geometry" x="60" y="450" width="1320" height="190" />
         </mxCell>
-        <mxCell id="planner" value="&lt;b&gt;02 · 粗粒度规划&lt;/b&gt;&lt;br&gt;&lt;br&gt;交互式 GPT 决定顺序与姿态&lt;br&gt;调用运动学工具辅助选点&lt;br&gt;人工审核粗关节路径" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
-          <mxGeometry as="geometry" x="400" y="185" width="290" height="160" />
+        <mxCell id="compilation_layer" value="L3  轨迹编译层 · 确定性计算" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;container=1;pointerEvents=0;verticalAlign=top;align=left;spacingTop=16;spacingLeft=22;fontStyle=1;fontSize=19;">
+          <mxGeometry as="geometry" x="60" y="710" width="1320" height="190" />
         </mxCell>
-        <mxCell id="compiler" value="&lt;b&gt;03 · 确定性轨迹编译&lt;/b&gt;&lt;br&gt;&lt;br&gt;C1 插值 / 速度与加速度限值&lt;br&gt;独立夹爪事件 / 可选 URDF 检查&lt;br&gt;输出固定 200 Hz 目标流" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
-          <mxGeometry as="geometry" x="760" y="185" width="290" height="160" />
+        <mxCell id="execution_layer" value="L4  执行与反馈层 · 本轮固定计划" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;container=1;pointerEvents=0;verticalAlign=top;align=left;spacingTop=16;spacingLeft=22;fontStyle=1;fontSize=19;">
+          <mxGeometry as="geometry" x="60" y="970" width="1320" height="190" />
         </mxCell>
-        <mxCell id="runtime" value="&lt;b&gt;04 · 连续执行与监督&lt;/b&gt;&lt;br&gt;&lt;br&gt;512 点队列 / 唯一写线程&lt;br&gt;200 Hz 下发 + 约 50 Hz 监督&lt;br&gt;异常或结束后实测保持" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
-          <mxGeometry as="geometry" x="1120" y="185" width="290" height="160" />
+        <mxCell id="evidence" value="&lt;b&gt;收集实验证据&lt;/b&gt;&lt;br&gt;命令 / 实测反馈 / 故障&lt;br&gt;结果图像 + 现场任务确认" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="30" y="75" width="360" height="110" />
         </mxCell>
-        <mxCell id="review" value="&lt;b&gt;RSI · 人工审核修订&lt;/b&gt;&lt;br&gt;&lt;br&gt;诊断定位 / 抓取 / 执行问题&lt;br&gt;修订抓取深度、方向与关键点&lt;br&gt;&lt;b&gt;仅用于下一轮重新规划&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
-          <mxGeometry as="geometry" x="400" y="545" width="290" height="150" />
+        <mxCell id="review" value="&lt;b&gt;诊断与修订建议&lt;/b&gt;&lt;br&gt;定位 / 姿态 / 抓取 / 执行&lt;br&gt;区分观测事实与原因假设" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="470" y="75" width="360" height="110" />
         </mxCell>
-        <mxCell id="evidence" value="&lt;b&gt;执行后 · 记录与结果确认&lt;/b&gt;&lt;br&gt;&lt;br&gt;实测反馈 → 本机 Web&lt;br&gt;命令归档 / 结果图像 / 现场确认&lt;br&gt;程序完成 ≠ 物体已入筐" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
-          <mxGeometry as="geometry" x="760" y="545" width="290" height="150" />
+        <mxCell id="experience" value="&lt;b&gt;人工审核经验&lt;/b&gt;&lt;br&gt;适用条件 / 修改项 / 验证结果&lt;br&gt;供下一轮规划选择使用" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="910" y="75" width="360" height="110" />
         </mxCell>
-        <mxCell id="robot" value="&lt;b&gt;Piper · 设备与关节反馈&lt;/b&gt;&lt;br&gt;&lt;br&gt;左臂执行 / 右臂保持&lt;br&gt;关节位置 / TCP / 夹爪宽度&lt;br&gt;无执行中视觉模型调用" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
-          <mxGeometry as="geometry" x="1120" y="545" width="290" height="150" />
+        <mxCell id="scene" value="&lt;b&gt;本轮上下文&lt;/b&gt;&lt;br&gt;新鲜场景 + 初始状态 + 任务&lt;br&gt;人工选用已审核经验" parent="planning_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="30" y="65" width="520" height="100" />
         </mxCell>
-        <mxCell id="roles" value="&lt;b&gt;职责边界&lt;/b&gt;&lt;br&gt;GPT：决定去哪里、怎么夹&lt;br&gt;编译器：生成细粒度目标&lt;br&gt;控制线程：按固定周期下发" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=17;">
-          <mxGeometry as="geometry" x="40" y="545" width="310" height="150" />
+        <mxCell id="planner" value="&lt;b&gt;GPT 粗规划 + IK 工具&lt;/b&gt;&lt;br&gt;物体顺序 / 抓取姿态 / 关节关键点&lt;br&gt;交互会话产出审核后的粗计划" parent="planning_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="750" y="65" width="540" height="100" />
         </mxCell>
-        <mxCell id="scene-plan" source="scene" target="planner" value="任务上下文" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+        <mxCell id="constraints" value="&lt;b&gt;约束与事件&lt;/b&gt;&lt;br&gt;URDF / 几何 / 速度与加速度&lt;br&gt;夹爪开合与驻留独立定义" parent="compilation_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="30" y="65" width="520" height="100" />
+        </mxCell>
+        <mxCell id="compiler" value="&lt;b&gt;确定性轨迹编译器&lt;/b&gt;&lt;br&gt;C1 插值 + 重定时 + 检查&lt;br&gt;生成固定 200 Hz 目标流" parent="compilation_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="750" y="65" width="540" height="100" />
+        </mxCell>
+        <mxCell id="monitor" value="&lt;b&gt;实测反馈与保护&lt;/b&gt;&lt;br&gt;约 50 Hz 监督 / 异常保持&lt;br&gt;执行后日志与本机 Web" parent="execution_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="30" y="65" width="520" height="100" />
+        </mxCell>
+        <mxCell id="runtime" value="&lt;b&gt;高频执行器 + Piper&lt;/b&gt;&lt;br&gt;512 点队列 / 唯一 200 Hz 写线程&lt;br&gt;左臂执行，右臂保持" parent="execution_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+          <mxGeometry as="geometry" x="750" y="65" width="540" height="100" />
+        </mxCell>
+        <mxCell id="evidence-review" source="evidence" target="review" value="复盘" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;dashed=1;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="plan-compile" source="planner" target="compiler" value="粗计划 JSON" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+        <mxCell id="review-experience" source="review" target="experience" value="审核" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;dashed=1;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="compile-run" source="compiler" target="runtime" value="目标流 JSON" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+        <mxCell id="experience-plan" source="experience" target="planning_layer" value="下一轮采用 / 重新验证" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.82;entryY=0;dashed=1;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="commands" source="runtime" target="robot" value="200 Hz 目标" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.3;exitY=1;entryX=.3;entryY=0;">
+        <mxCell id="scene-planner" source="scene" target="planner" value="规划上下文" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="feedback" source="robot" target="runtime" value="反馈与监督" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.75;exitY=0;entryX=.75;entryY=1;">
+        <mxCell id="constraints-compiler" source="constraints" target="compiler" value="约束输入" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="robot-evidence" source="robot" target="evidence" value="执行证据" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;">
+        <mxCell id="plan-compile" source="planning_layer" target="compilation_layer" value="粗计划 JSON" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.82;exitY=1;entryX=.82;entryY=0;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="evidence-review" source="evidence" target="review" value="复盘" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;dashed=1;">
+        <mxCell id="compile-execute" source="compilation_layer" target="execution_layer" value="固定目标流 JSON" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.82;exitY=1;entryX=.82;entryY=0;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="next-trial" source="review" target="planner" value="下一轮 · 非在线自动学习" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=0;entryX=.5;entryY=1;dashed=1;">
+        <mxCell id="runtime-monitor" source="runtime" target="monitor" value="命令与反馈" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="footer" value="规划通过交互会话完成；仓库不包含独立 GPT API 服务。编译器读取已审核关节路径，不自动生成抓取策略。&lt;br&gt;实线：本轮数据与执行　　虚线：跨轮人机监督的 RSI 修订" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=16;">
-          <mxGeometry as="geometry" x="40" y="755" width="1370" height="80" />
+        <mxCell id="trial-evidence" source="execution_layer" target="evidence" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="20" y="1065" />
+              <mxPoint x="20" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="footer" value="外侧回路：本轮证据进入 RSI 复盘；虚线：人工监督的跨轮修订。&lt;br&gt;当前无自动训练或经验检索服务；本轮执行不调用视觉模型。经验需结合新场景重新审核。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=16;">
+          <mxGeometry as="geometry" x="60" y="1200" width="1320" height="75" />
         </mxCell>
       </root>
     </mxGraphModel>

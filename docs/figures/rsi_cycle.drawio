@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="roborsi-rsi_cycle" name="rsi_cycle">
+    <mxGraphModel page="1" pageWidth="1360" pageHeight="830" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;RSI 改进闭环 · 改什么、怎么验证&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=30;">
+          <mxGeometry as="geometry" x="40" y="20" width="1270" height="65" />
+        </mxCell>
+        <mxCell id="subtitle" value="当前为人机监督的跨轮迭代；经验是带证据与适用条件的修订，不是自动更新的模型权重。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=18;">
+          <mxGeometry as="geometry" x="40" y="90" width="1270" height="55" />
+        </mxCell>
+        <mxCell id="trial" value="&lt;b&gt;本轮执行证据 Dₖ&lt;/b&gt;&lt;br&gt;命令 / 反馈 / 任务结果&lt;br&gt;记录失败与人工干预" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="40" y="195" width="280" height="130" />
+        </mxCell>
+        <mxCell id="diagnose" value="&lt;b&gt;问题诊断&lt;/b&gt;&lt;br&gt;观测事实 + 原因假设&lt;br&gt;选择需要修订的层" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="370" y="195" width="280" height="130" />
+        </mxCell>
+        <mxCell id="candidate" value="&lt;b&gt;候选修订 Δₖ&lt;/b&gt;&lt;br&gt;修改值 / 适用场景 / 风险&lt;br&gt;列出下一轮验证标准" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="700" y="195" width="280" height="130" />
+        </mxCell>
+        <mxCell id="approve" value="&lt;b&gt;人工审核&lt;/b&gt;&lt;br&gt;采用 / 驳回 / 继续观察&lt;br&gt;未审核修订不进入新计划" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="1030" y="195" width="280" height="130" />
+        </mxCell>
+        <mxCell id="compare" value="&lt;b&gt;比较与保留证据&lt;/b&gt;&lt;br&gt;成功、失败都归档&lt;br&gt;多项同时修改不作单因归因" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="40" y="475" width="350" height="140" />
+        </mxCell>
+        <mxCell id="next" value="&lt;b&gt;下一轮重新验证&lt;/b&gt;&lt;br&gt;新鲜场景 + 状态 → 新计划&lt;br&gt;重新编译 / 检查 / 执行" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="500" y="475" width="350" height="140" />
+        </mxCell>
+        <mxCell id="experience" value="&lt;b&gt;审核后的经验 Eₖ₊₁&lt;/b&gt;&lt;br&gt;适用条件与证据链接&lt;br&gt;人工选择后注入规划上下文" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="960" y="475" width="350" height="140" />
+        </mxCell>
+        <mxCell id="evidence-diagnosis" source="trial" target="diagnose" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="diagnosis-change" source="diagnose" target="candidate" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="change-review" source="candidate" target="approve" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="approved" source="approve" target="experience" value="采用" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="apply" source="experience" target="next" value="新一轮采用" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="evaluate" source="next" target="compare" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="new-evidence" source="compare" target="trial" value="新证据 Dₖ₊₁" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.35;exitY=0;entryX=.5;entryY=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="case" value="&lt;b&gt;记录实例：&lt;/b&gt;首轮青椒空夹 → 调整抓取深度与方向 → 下一轮三物体入筐。&lt;br&gt;这说明发生了可追溯修订；单轮成功不能证明单一改动的收益，也不能推导长期成功率。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=17;">
+          <mxGeometry as="geometry" x="40" y="680" width="1270" height="95" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

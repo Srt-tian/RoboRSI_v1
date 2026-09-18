@@ -1,4 +1,4 @@
-"""Regenerate the architecture and execution flow with editable native draw.io cells."""
+"""Generate editable draw.io diagrams for architecture, RSI, and execution."""
 
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -31,14 +31,14 @@ class Diagram:
         ET.SubElement(self.root, "mxCell", id="0")
         ET.SubElement(self.root, "mxCell", id="1", parent="0")
 
-    def box(self, key, label, x, y, w=290, h=130, color="blue", extra=""):
+    def box(self, key, label, x, y, w=290, h=130, color="blue", extra="", parent="1"):
         fill, stroke = PALETTE[color]
         cell = ET.SubElement(
             self.root,
             "mxCell",
             id=key,
             value=label,
-            parent="1",
+            parent=parent,
             vertex="1",
             style="rounded=1;whiteSpace=wrap;html=1;"
             f"fillColor={fill};strokeColor={stroke};strokeWidth=1.5;"
@@ -108,129 +108,266 @@ class Diagram:
 
 
 def architecture():
-    d = Diagram("architecture", 1480, 870)
-    d.text("title", "<b>RoboRSI v1 · 从粗计划到连续操作</b>", 40, 20, 1370, 65, 30)
-    d.text(
-        "subtitle",
-        "本轮：固定计划执行　｜　跨轮：人工审核经验修订　｜　任务结果独立确认",
-        40,
-        90,
-        1370,
+    d = Diagram("architecture", 1440, 1290)
+    d.text("title", "<b>RoboRSI v1 · RSI 驱动的四层框架</b>", 60, 20, 1300, 65, 30)
+    lane = "container=1;pointerEvents=0;verticalAlign=top;align=left;spacingTop=16;spacingLeft=22;fontStyle=1;fontSize=19;"
+    for key, title, y, height, color in [
+        ("rsi_layer", "L1  RSI 跨轮改进层 · 执行之后 / 人工审核", 150, 230, "purple"),
+        ("planning_layer", "L2  任务规划层 · 新一轮开始之前", 450, 190, "blue"),
+        ("compilation_layer", "L3  轨迹编译层 · 确定性计算", 710, 190, "amber"),
+        ("execution_layer", "L4  执行与反馈层 · 本轮固定计划", 970, 190, "teal"),
+    ]:
+        d.box(key, title, 60, y, 1320, height, color=color, extra=lane)
+    child = "fillColor=#FFFFFF;"
+    d.box(
+        "evidence",
+        "<b>收集实验证据</b><br>命令 / 实测反馈 / 故障<br>结果图像 + 现场任务确认",
+        30,
+        75,
+        360,
+        110,
+        color="purple",
+        extra=child,
+        parent="rsi_layer",
+    )
+    d.box(
+        "review",
+        "<b>诊断与修订建议</b><br>定位 / 姿态 / 抓取 / 执行<br>区分观测事实与原因假设",
+        470,
+        75,
+        360,
+        110,
+        color="purple",
+        extra=child,
+        parent="rsi_layer",
+    )
+    d.box(
+        "experience",
+        "<b>人工审核经验</b><br>适用条件 / 修改项 / 验证结果<br>供下一轮规划选择使用",
+        910,
+        75,
+        360,
+        110,
+        color="purple",
+        extra=child,
+        parent="rsi_layer",
     )
     d.box(
         "scene",
-        "<b>01 · 场景与任务</b><br><br>启动前图像 / 物体与篮筐<br>当前关节状态 / 桌面参考<br>已审核的历史经验",
-        40,
-        185,
-        h=160,
-        color="gray",
+        "<b>本轮上下文</b><br>新鲜场景 + 初始状态 + 任务<br>人工选用已审核经验",
+        30,
+        65,
+        520,
+        100,
+        extra=child,
+        parent="planning_layer",
     )
     d.box(
         "planner",
-        "<b>02 · 粗粒度规划</b><br><br>交互式 GPT 决定顺序与姿态<br>调用运动学工具辅助选点<br>人工审核粗关节路径",
-        400,
-        185,
-        h=160,
-        color="blue",
+        "<b>GPT 粗规划 + IK 工具</b><br>物体顺序 / 抓取姿态 / 关节关键点<br>交互会话产出审核后的粗计划",
+        750,
+        65,
+        540,
+        100,
+        extra=child,
+        parent="planning_layer",
+    )
+    d.box(
+        "constraints",
+        "<b>约束与事件</b><br>URDF / 几何 / 速度与加速度<br>夹爪开合与驻留独立定义",
+        30,
+        65,
+        520,
+        100,
+        color="amber",
+        extra=child,
+        parent="compilation_layer",
     )
     d.box(
         "compiler",
-        "<b>03 · 确定性轨迹编译</b><br><br>C1 插值 / 速度与加速度限值<br>独立夹爪事件 / 可选 URDF 检查<br>输出固定 200 Hz 目标流",
-        760,
-        185,
-        h=160,
-        color="purple",
+        "<b>确定性轨迹编译器</b><br>C1 插值 + 重定时 + 检查<br>生成固定 200 Hz 目标流",
+        750,
+        65,
+        540,
+        100,
+        color="amber",
+        extra=child,
+        parent="compilation_layer",
+    )
+    d.box(
+        "monitor",
+        "<b>实测反馈与保护</b><br>约 50 Hz 监督 / 异常保持<br>执行后日志与本机 Web",
+        30,
+        65,
+        520,
+        100,
+        color="teal",
+        extra=child,
+        parent="execution_layer",
     )
     d.box(
         "runtime",
-        "<b>04 · 连续执行与监督</b><br><br>512 点队列 / 唯一写线程<br>200 Hz 下发 + 约 50 Hz 监督<br>异常或结束后实测保持",
-        1120,
-        185,
-        h=160,
+        "<b>高频执行器 + Piper</b><br>512 点队列 / 唯一 200 Hz 写线程<br>左臂执行，右臂保持",
+        750,
+        65,
+        540,
+        100,
         color="teal",
-    )
-    d.box(
-        "review",
-        "<b>RSI · 人工审核修订</b><br><br>诊断定位 / 抓取 / 执行问题<br>修订抓取深度、方向与关键点<br><b>仅用于下一轮重新规划</b>",
-        400,
-        545,
-        h=150,
-        color="purple",
-    )
-    d.box(
-        "evidence",
-        "<b>执行后 · 记录与结果确认</b><br><br>实测反馈 → 本机 Web<br>命令归档 / 结果图像 / 现场确认<br>程序完成 ≠ 物体已入筐",
-        760,
-        545,
-        h=150,
-        color="amber",
-    )
-    d.box(
-        "robot",
-        "<b>Piper · 设备与关节反馈</b><br><br>左臂执行 / 右臂保持<br>关节位置 / TCP / 夹爪宽度<br>无执行中视觉模型调用",
-        1120,
-        545,
-        h=150,
-        color="teal",
-    )
-    d.text(
-        "roles",
-        "<b>职责边界</b><br>GPT：决定去哪里、怎么夹<br>编译器：生成细粒度目标<br>控制线程：按固定周期下发",
-        40,
-        545,
-        310,
-        150,
-        17,
+        extra=child,
+        parent="execution_layer",
     )
     lr = "exitX=1;exitY=.5;entryX=0;entryY=.5;"
-    d.edge("scene-plan", "scene", "planner", "任务上下文", lr)
-    d.edge("plan-compile", "planner", "compiler", "粗计划 JSON", lr)
-    d.edge("compile-run", "compiler", "runtime", "目标流 JSON", lr)
+    d.edge("evidence-review", "evidence", "review", "复盘", lr, dashed=True)
+    d.edge("review-experience", "review", "experience", "审核", lr, dashed=True)
     d.edge(
-        "commands",
-        "runtime",
-        "robot",
-        "200 Hz 目标",
-        "exitX=.3;exitY=1;entryX=.3;entryY=0;",
+        "experience-plan",
+        "experience",
+        "planning_layer",
+        "下一轮采用 / 重新验证",
+        "exitX=.5;exitY=1;entryX=.82;entryY=0;",
+        dashed=True,
+    )
+    d.edge("scene-planner", "scene", "planner", "规划上下文", lr)
+    d.edge("constraints-compiler", "constraints", "compiler", "约束输入", lr)
+    down = "exitX=.82;exitY=1;entryX=.82;entryY=0;"
+    d.edge("plan-compile", "planning_layer", "compilation_layer", "粗计划 JSON", down)
+    d.edge(
+        "compile-execute",
+        "compilation_layer",
+        "execution_layer",
+        "固定目标流 JSON",
+        down,
     )
     d.edge(
-        "feedback",
-        "robot",
+        "runtime-monitor",
         "runtime",
-        "反馈与监督",
-        "exitX=.75;exitY=0;entryX=.75;entryY=1;",
-    )
-    d.edge(
-        "robot-evidence",
-        "robot",
-        "evidence",
-        "执行证据",
+        "monitor",
+        "命令与反馈",
         "exitX=0;exitY=.5;entryX=1;entryY=.5;",
     )
     d.edge(
-        "evidence-review",
+        "trial-evidence",
+        "execution_layer",
         "evidence",
-        "review",
-        "复盘",
-        "exitX=0;exitY=.5;entryX=1;entryY=.5;",
-        dashed=True,
-    )
-    d.edge(
-        "next-trial",
-        "review",
-        "planner",
-        "下一轮 · 非在线自动学习",
-        "exitX=.5;exitY=0;entryX=.5;entryY=1;",
-        dashed=True,
+        "",
+        "exitX=0;exitY=.5;entryX=0;entryY=.5;",
+        points=((20, 1065), (20, 280)),
     )
     d.text(
         "footer",
-        "规划通过交互会话完成；仓库不包含独立 GPT API 服务。编译器读取已审核关节路径，不自动生成抓取策略。<br>实线：本轮数据与执行　　虚线：跨轮人机监督的 RSI 修订",
-        40,
-        755,
-        1370,
-        80,
+        "外侧回路：本轮证据进入 RSI 复盘；虚线：人工监督的跨轮修订。<br>当前无自动训练或经验检索服务；本轮执行不调用视觉模型。经验需结合新场景重新审核。",
+        60,
+        1200,
+        1320,
+        75,
         16,
+    )
+    d.save()
+
+
+def rsi_cycle():
+    d = Diagram("rsi_cycle", 1360, 830)
+    d.text("title", "<b>RSI 改进闭环 · 改什么、怎么验证</b>", 40, 20, 1270, 65, 30)
+    d.text(
+        "subtitle",
+        "当前为人机监督的跨轮迭代；经验是带证据与适用条件的修订，不是自动更新的模型权重。",
+        40,
+        90,
+        1270,
+    )
+    d.box(
+        "trial",
+        "<b>本轮执行证据 Dₖ</b><br>命令 / 反馈 / 任务结果<br>记录失败与人工干预",
+        40,
+        195,
+        280,
+        130,
+        color="teal",
+    )
+    d.box(
+        "diagnose",
+        "<b>问题诊断</b><br>观测事实 + 原因假设<br>选择需要修订的层",
+        370,
+        195,
+        280,
+        130,
+        color="purple",
+    )
+    d.box(
+        "candidate",
+        "<b>候选修订 Δₖ</b><br>修改值 / 适用场景 / 风险<br>列出下一轮验证标准",
+        700,
+        195,
+        280,
+        130,
+        color="purple",
+    )
+    d.box(
+        "approve",
+        "<b>人工审核</b><br>采用 / 驳回 / 继续观察<br>未审核修订不进入新计划",
+        1030,
+        195,
+        280,
+        130,
+        color="amber",
+    )
+    d.box(
+        "compare",
+        "<b>比较与保留证据</b><br>成功、失败都归档<br>多项同时修改不作单因归因",
+        40,
+        475,
+        350,
+        140,
+        color="teal",
+    )
+    d.box(
+        "next",
+        "<b>下一轮重新验证</b><br>新鲜场景 + 状态 → 新计划<br>重新编译 / 检查 / 执行",
+        500,
+        475,
+        350,
+        140,
+        color="blue",
+    )
+    d.box(
+        "experience",
+        "<b>审核后的经验 Eₖ₊₁</b><br>适用条件与证据链接<br>人工选择后注入规划上下文",
+        960,
+        475,
+        350,
+        140,
+        color="purple",
+    )
+    lr = "exitX=1;exitY=.5;entryX=0;entryY=.5;"
+    rl = "exitX=0;exitY=.5;entryX=1;entryY=.5;"
+    d.edge("evidence-diagnosis", "trial", "diagnose", ports=lr)
+    d.edge("diagnosis-change", "diagnose", "candidate", ports=lr)
+    d.edge("change-review", "candidate", "approve", ports=lr)
+    d.edge(
+        "approved",
+        "approve",
+        "experience",
+        "采用",
+        "exitX=.5;exitY=1;entryX=.5;entryY=0;",
+        dashed=True,
+    )
+    d.edge("apply", "experience", "next", "新一轮采用", rl, dashed=True)
+    d.edge("evaluate", "next", "compare", ports=rl)
+    d.edge(
+        "new-evidence",
+        "compare",
+        "trial",
+        "新证据 Dₖ₊₁",
+        "exitX=.35;exitY=0;entryX=.5;entryY=1;",
+    )
+    d.text(
+        "case",
+        "<b>记录实例：</b>首轮青椒空夹 → 调整抓取深度与方向 → 下一轮三物体入筐。<br>这说明发生了可追溯修订；单轮成功不能证明单一改动的收益，也不能推导长期成功率。",
+        40,
+        680,
+        1270,
+        95,
+        17,
     )
     d.save()
 
@@ -398,4 +535,5 @@ def execution_flow():
 
 if __name__ == "__main__":
     architecture()
+    rsi_cycle()
     execution_flow()

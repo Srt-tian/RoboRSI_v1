@@ -14,19 +14,21 @@ python scripts/verify_evidence.py
 
 ## 修改架构与流程图
 
-源文件生成器为 `scripts/draw_architecture.py`，输出两份可编辑原生 draw.io XML：
+源文件生成器为 `scripts/draw_architecture.py`，输出三份可编辑原生 draw.io XML：
 
 ```bash
 python scripts/draw_architecture.py
 # 安装 drawio-skill 时可用其 scripts/validate.py 验证 XML。
 drawio -x -f png --width 1800 -o docs/figures/architecture.png docs/figures/architecture.drawio
 drawio -x -f png --width 1800 -o docs/figures/execution_flow.png docs/figures/execution_flow.drawio
+drawio -x -f png --width 1800 -o docs/figures/rsi_cycle.png docs/figures/rsi_cycle.drawio
 # 检查 PNG 的文字、连线和分支后导出 SVG。
 drawio -x -f svg -e --embed-svg-images -o docs/figures/architecture.svg docs/figures/architecture.drawio
 drawio -x -f svg -e --embed-svg-images -o docs/figures/execution_flow.svg docs/figures/execution_flow.drawio
+drawio -x -f svg -e --embed-svg-images -o docs/figures/rsi_cycle.svg docs/figures/rsi_cycle.drawio
 ```
 
-Linux 图形环境的启动参数按本机配置补充。两张图共用字体和色板；架构图侧重职责，执行图侧重条件和顺序。人工修订与下一轮反馈使用虚线，不画成已经实现的在线自动学习模块。修改机制时同步检查 README、架构说明和执行流程，防止图比代码“多实现”功能。
+Linux 图形环境的启动参数按本机配置补充。三张图共用字体和色板；架构图侧重四层职责，RSI 图侧重跨轮改进，执行图侧重本轮条件和顺序。人工修订与下一轮反馈使用虚线，不画成已经实现的在线自动学习模块。修改机制时同步检查 README、架构说明和执行流程，防止图比代码“多实现”功能。
 
 ## 变更边界
 
