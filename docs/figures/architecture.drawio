@@ -1,89 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net">
-  <diagram id="roborsi-system" name="RoboRSI execution pipeline">
-    <mxGraphModel dx="1200" dy="780" grid="1" page="1" pageWidth="1220" pageHeight="850" background="#ffffff">
+  <diagram id="roborsi-architecture" name="architecture">
+    <mxGraphModel page="1" pageWidth="1480" pageHeight="870" background="#FFFFFF">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="RoboRSI  /  coarse plans → continuous robot execution" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;fontSize=26;fontStyle=1;align=left;">
-          <mxGeometry as="geometry" x="50" y="20" width="1120" height="55" />
+        <mxCell id="title" value="&lt;b&gt;RoboRSI v1 · 从粗计划到连续操作&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=30;">
+          <mxGeometry as="geometry" x="40" y="20" width="1370" height="65" />
         </mxCell>
-        <mxCell id="planning_label" value="01  SCENE-GROUNDED PLANNING · before execution" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;align=left;fontStyle=1;fontColor=#587287;fontSize=14;">
-          <mxGeometry as="geometry" x="50" y="86" width="1120" height="36" />
+        <mxCell id="subtitle" value="本轮：固定计划执行　｜　跨轮：人工审核经验修订　｜　任务结果独立确认" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=18;">
+          <mxGeometry as="geometry" x="40" y="90" width="1370" height="55" />
         </mxCell>
-        <mxCell id="scene" value="RGB scene + task&#10;URDF / table reference&#10;Prior trial experience" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="50" y="140" width="230" height="106" />
+        <mxCell id="scene" value="&lt;b&gt;01 · 场景与任务&lt;/b&gt;&lt;br&gt;&lt;br&gt;启动前图像 / 物体与篮筐&lt;br&gt;当前关节状态 / 桌面参考&lt;br&gt;已审核的历史经验" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="40" y="185" width="290" height="160" />
         </mxCell>
-        <mxCell id="gpt" value="GPT planner&#10;Object order · grasp pose&#10;Sparse task waypoints" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="340" y="140" width="230" height="106" />
+        <mxCell id="planner" value="&lt;b&gt;02 · 粗粒度规划&lt;/b&gt;&lt;br&gt;&lt;br&gt;交互式 GPT 决定顺序与姿态&lt;br&gt;调用运动学工具辅助选点&lt;br&gt;人工审核粗关节路径" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="400" y="185" width="290" height="160" />
         </mxCell>
-        <mxCell id="ik" value="URDF IK + validation&#10;Joint limits · pose bounds&#10;Sampled geometry checks" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="630" y="140" width="230" height="106" />
+        <mxCell id="compiler" value="&lt;b&gt;03 · 确定性轨迹编译&lt;/b&gt;&lt;br&gt;&lt;br&gt;C1 插值 / 速度与加速度限值&lt;br&gt;独立夹爪事件 / 可选 URDF 检查&lt;br&gt;输出固定 200 Hz 目标流" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="760" y="185" width="290" height="160" />
         </mxCell>
-        <mxCell id="smooth" value="Deterministic smoothing&#10;C1 interpolation + retiming&#10;Velocity / acceleration bounds" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="920" y="140" width="250" height="106" />
+        <mxCell id="runtime" value="&lt;b&gt;04 · 连续执行与监督&lt;/b&gt;&lt;br&gt;&lt;br&gt;512 点队列 / 唯一写线程&lt;br&gt;200 Hz 下发 + 约 50 Hz 监督&lt;br&gt;异常或结束后实测保持" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="1120" y="185" width="290" height="160" />
         </mxCell>
-        <mxCell id="scene_gpt" value="" edge="1" parent="1" source="scene" target="gpt" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="review" value="&lt;b&gt;RSI · 人工审核修订&lt;/b&gt;&lt;br&gt;&lt;br&gt;诊断定位 / 抓取 / 执行问题&lt;br&gt;修订抓取深度、方向与关键点&lt;br&gt;&lt;b&gt;仅用于下一轮重新规划&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="400" y="545" width="290" height="150" />
+        </mxCell>
+        <mxCell id="evidence" value="&lt;b&gt;执行后 · 记录与结果确认&lt;/b&gt;&lt;br&gt;&lt;br&gt;实测反馈 → 本机 Web&lt;br&gt;命令归档 / 结果图像 / 现场确认&lt;br&gt;程序完成 ≠ 物体已入筐" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="760" y="545" width="290" height="150" />
+        </mxCell>
+        <mxCell id="robot" value="&lt;b&gt;Piper · 设备与关节反馈&lt;/b&gt;&lt;br&gt;&lt;br&gt;左臂执行 / 右臂保持&lt;br&gt;关节位置 / TCP / 夹爪宽度&lt;br&gt;无执行中视觉模型调用" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="1120" y="545" width="290" height="150" />
+        </mxCell>
+        <mxCell id="roles" value="&lt;b&gt;职责边界&lt;/b&gt;&lt;br&gt;GPT：决定去哪里、怎么夹&lt;br&gt;编译器：生成细粒度目标&lt;br&gt;控制线程：按固定周期下发" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=17;">
+          <mxGeometry as="geometry" x="40" y="545" width="310" height="150" />
+        </mxCell>
+        <mxCell id="scene-plan" source="scene" target="planner" value="任务上下文" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="gpt_ik" value="" edge="1" parent="1" source="gpt" target="ik" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="plan-compile" source="planner" target="compiler" value="粗计划 JSON" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="ik_smooth" value="" edge="1" parent="1" source="ik" target="smooth" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="compile-run" source="compiler" target="runtime" value="目标流 JSON" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="runtime_label" value="02  CONTINUOUS EXECUTION · no new vision / VLM calls in the final trials" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;align=left;fontStyle=1;fontColor=#587287;fontSize=14;">
-          <mxGeometry as="geometry" x="50" y="288" width="1120" height="36" />
-        </mxCell>
-        <mxCell id="queue" value="Target stream / queue&#10;512-point buffer + refill&#10;Explicit gripper events" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="920" y="360" width="250" height="106" />
-        </mxCell>
-        <mxCell id="worker" value="Inference control worker&#10;200 Hz target updates&#10;One writer · every 5 ms" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="630" y="360" width="230" height="106" />
-        </mxCell>
-        <mxCell id="robot" value="Piper robot&#10;Left arm executes&#10;Right arm holds" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="340" y="360" width="230" height="106" />
-        </mxCell>
-        <mxCell id="monitor" value="Feedback supervisor&#10;~50 Hz state checks&#10;Tracking · height · grip" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="50" y="360" width="230" height="106" />
-        </mxCell>
-        <mxCell id="smooth_queue" value="" edge="1" parent="1" source="smooth" target="queue" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="commands" source="runtime" target="robot" value="200 Hz 目标" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.3;exitY=1;entryX=.3;entryY=0;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="queue_worker" value="" edge="1" parent="1" source="queue" target="worker" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="feedback" source="robot" target="runtime" value="反馈与监督" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.75;exitY=0;entryX=.75;entryY=1;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="worker_robot" value="" edge="1" parent="1" source="worker" target="robot" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="robot-evidence" source="robot" target="evidence" value="执行证据" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="robot_monitor" value="" edge="1" parent="1" source="robot" target="monitor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="evidence-review" source="evidence" target="review" value="复盘" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;dashed=1;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="hold" value="On fault: measured hold&#10;Cancel writer · clear queue&#10;Retain torque and grip" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="50" y="560" width="230" height="106" />
-        </mxCell>
-        <mxCell id="logs" value="Recorded evidence&#10;Commands + measured state&#10;Task outcome separately" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="340" y="560" width="230" height="106" />
-        </mxCell>
-        <mxCell id="web" value="Local experiment viewer&#10;Timing · errors · before / after&#10;Summarize after execution" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;">
-          <mxGeometry as="geometry" x="630" y="560" width="230" height="106" />
-        </mxCell>
-        <mxCell id="rsi" value="Next-trial refinement&#10;Human-reviewed corrections&#10;No learned online RSI yet" vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;dashed=1;">
-          <mxGeometry as="geometry" x="920" y="560" width="250" height="106" />
-        </mxCell>
-        <mxCell id="monitor_hold" value="fault" edge="1" parent="1" source="monitor" target="hold" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
+        <mxCell id="next-trial" source="review" target="planner" value="下一轮 · 非在线自动学习" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=0;entryX=.5;entryY=1;dashed=1;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
-        <mxCell id="robot_logs" value="record" edge="1" parent="1" source="robot" target="logs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
-          <mxGeometry as="geometry" relative="1" />
-        </mxCell>
-        <mxCell id="logs_web" value="" edge="1" parent="1" source="logs" target="web" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;">
-          <mxGeometry as="geometry" relative="1" />
-        </mxCell>
-        <mxCell id="web_rsi" value="review" edge="1" parent="1" source="web" target="rsi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=0;endArrow=block;strokeWidth=1.5;strokeColor=#526c80;fontColor=#334d60;fontSize=13;labelBackgroundColor=#ffffff;dashed=1;">
-          <mxGeometry as="geometry" relative="1" />
-        </mxCell>
-        <mxCell id="footnote" value="Validated: 3 objects / 85.42 s / measured 200 Hz.  Small VLM disabled.&#10;IK is not full scene collision checking; a nonzero gripper width is not proof of task success." vertex="1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f5f5f5;strokeColor=#d0d9e2;strokeWidth=1.5;fontColor=#172a3a;fontFamily=Helvetica;fontSize=16;spacing=10;fontSize=14;align=left;">
-          <mxGeometry as="geometry" x="50" y="718" width="1120" height="68" />
+        <mxCell id="footer" value="规划通过交互会话完成；仓库不包含独立 GPT API 服务。编译器读取已审核关节路径，不自动生成抓取策略。&lt;br&gt;实线：本轮数据与执行　　虚线：跨轮人机监督的 RSI 修订" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=16;">
+          <mxGeometry as="geometry" x="40" y="755" width="1370" height="80" />
         </mxCell>
       </root>
     </mxGraphModel>

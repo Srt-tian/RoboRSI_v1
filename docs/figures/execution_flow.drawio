@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="roborsi-execution_flow" name="execution_flow">
+    <mxGraphModel page="1" pageWidth="1280" pageHeight="1720" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;RoboRSI v1 · 一轮任务如何执行&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=30;">
+          <mxGeometry as="geometry" x="40" y="20" width="1190" height="65" />
+        </mxCell>
+        <mxCell id="subtitle" value="默认离线；真机显式开启。执行保护不会调用 GPT 重规划，也不会自动续跑。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=18;">
+          <mxGeometry as="geometry" x="40" y="95" width="1190" height="55" />
+        </mxCell>
+        <mxCell id="program" value="&lt;b&gt;审核粗计划&lt;/b&gt;&lt;br&gt;关节关键点 + 夹爪事件 + 初始状态" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="430" y="180" width="350" height="85" />
+        </mxCell>
+        <mxCell id="compile" value="&lt;b&gt;离线编译 roborsi-compile&lt;/b&gt;&lt;br&gt;插值 / 重定时 / 检查 / 固定目标流" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="430" y="325" width="350" height="95" />
+        </mxCell>
+        <mxCell id="execute" value="显式 --execute？" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;rhombus;rounded=0;">
+          <mxGeometry as="geometry" x="490" y="480" width="230" height="110" />
+        </mxCell>
+        <mxCell id="offline" value="&lt;b&gt;离线完成&lt;/b&gt;&lt;br&gt;编译 / dry 检查&lt;br&gt;可查看历史反馈，零硬件写入" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="40" y="485" width="290" height="110" />
+        </mxCell>
+        <mxCell id="preflight" value="执行前检查通过？" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;rhombus;rounded=0;">
+          <mxGeometry as="geometry" x="490" y="655" width="230" height="110" />
+        </mxCell>
+        <mxCell id="reject" value="&lt;b&gt;拒绝启动&lt;/b&gt;&lt;br&gt;修订场景 / 配置 / 计划&lt;br&gt;不启动目标流" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E7;strokeColor=#BD726C;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="920" y="655" width="290" height="110" />
+        </mxCell>
+        <mxCell id="stream" value="&lt;b&gt;连续执行固定目标流&lt;/b&gt;&lt;br&gt;200 Hz 写线程 + 约 50 Hz 监督&lt;br&gt;按事件检查夹爪；低水位补队列" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="430" y="825" width="350" height="115" />
+        </mxCell>
+        <mxCell id="fault" value="保护触发 / 用户停止？" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;rhombus;rounded=0;">
+          <mxGeometry as="geometry" x="475" y="1000" width="260" height="110" />
+        </mxCell>
+        <mxCell id="done" value="目标流完成且收敛？" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;rhombus;rounded=0;">
+          <mxGeometry as="geometry" x="475" y="1170" width="260" height="110" />
+        </mxCell>
+        <mxCell id="hold" value="&lt;b&gt;停止并尝试实测保持&lt;/b&gt;&lt;br&gt;停写线程 → 清队列 → 新鲜状态&lt;br&gt;保留扭矩与夹爪，不自动续跑" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E7;strokeColor=#BD726C;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="920" y="1170" width="290" height="130" />
+        </mxCell>
+        <mxCell id="save" value="&lt;b&gt;执行后保存与可视化&lt;/b&gt;&lt;br&gt;命令 / 反馈 / 完成或异常状态&lt;br&gt;本机 Web 播放实测反馈" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="430" y="1380" width="350" height="110" />
+        </mxCell>
+        <mxCell id="outcome" value="&lt;b&gt;独立确认任务结果&lt;/b&gt;&lt;br&gt;结果图像 + 现场确认 → 人工复盘&lt;br&gt;审核后的经验用于下一轮" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="430" y="1550" width="350" height="100" />
+        </mxCell>
+        <mxCell id="program-compile" source="program" target="compile" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="compile-execute" source="compile" target="execute" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="dry" source="execute" target="offline" value="否" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="live" source="execute" target="preflight" value="是" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="reject-run" source="preflight" target="reject" value="否" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#BD726C;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="start-run" source="preflight" target="stream" value="是" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="watch" source="stream" target="fault" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="stop" source="fault" target="hold" value="是 · 异常/停止" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#BD726C;fontColor=#425C72;exitX=1;exitY=.5;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1065" y="1055" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="healthy" source="fault" target="done" value="否" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="continue" source="done" target="stream" value="否 · 继续监督" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="370" y="1225" />
+              <mxPoint x="370" y="882" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="complete" source="done" target="hold" value="是 · 正常完成" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="hold-save" source="hold" target="save" value="保留完成 / 异常原因" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=1;entryY=.5;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1065" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="save-outcome" source="save" target="outcome" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
