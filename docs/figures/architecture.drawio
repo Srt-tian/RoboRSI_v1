@@ -20,16 +20,16 @@
         <mxCell id="execution_layer" value="L4  执行与反馈层 · 本轮固定计划" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;container=1;pointerEvents=0;verticalAlign=top;align=left;spacingTop=16;spacingLeft=22;fontStyle=1;fontSize=19;">
           <mxGeometry as="geometry" x="60" y="970" width="1320" height="190" />
         </mxCell>
-        <mxCell id="evidence" value="&lt;b&gt;收集实验证据&lt;/b&gt;&lt;br&gt;命令 / 实测反馈 / 故障&lt;br&gt;结果图像 + 现场任务确认" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+        <mxCell id="evidence" value="&lt;b&gt;证据整理 · analyze&lt;/b&gt;&lt;br&gt;指标 / 故障 / 结果文字 / 指纹&lt;br&gt;规则分型；原因仍待验证" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
           <mxGeometry as="geometry" x="30" y="75" width="360" height="110" />
         </mxCell>
-        <mxCell id="review" value="&lt;b&gt;诊断与修订建议&lt;/b&gt;&lt;br&gt;定位 / 姿态 / 抓取 / 执行&lt;br&gt;区分观测事实与原因假设" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+        <mxCell id="review" value="&lt;b&gt;候选验证 · evaluate / sweep&lt;/b&gt;&lt;br&gt;有界关节修订 / 时间配置枚举&lt;br&gt;数值重编译 + 可选 URDF 检查" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
           <mxGeometry as="geometry" x="470" y="75" width="360" height="110" />
         </mxCell>
-        <mxCell id="experience" value="&lt;b&gt;人工审核经验&lt;/b&gt;&lt;br&gt;适用条件 / 修改项 / 验证结果&lt;br&gt;供下一轮规划选择使用" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+        <mxCell id="experience" value="&lt;b&gt;审核与经验 · review / context&lt;/b&gt;&lt;br&gt;明确人工采用 / 来源与适用范围&lt;br&gt;精确匹配后作为规划参考" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
           <mxGeometry as="geometry" x="910" y="75" width="360" height="110" />
         </mxCell>
-        <mxCell id="scene" value="&lt;b&gt;本轮上下文&lt;/b&gt;&lt;br&gt;新鲜场景 + 初始状态 + 任务&lt;br&gt;人工选用已审核经验" parent="planning_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+        <mxCell id="scene" value="&lt;b&gt;本轮上下文&lt;/b&gt;&lt;br&gt;新鲜场景 + 初始状态 + 任务&lt;br&gt;范围匹配的已审核经验" parent="planning_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
           <mxGeometry as="geometry" x="30" y="65" width="520" height="100" />
         </mxCell>
         <mxCell id="planner" value="&lt;b&gt;GPT 粗规划 + IK 工具&lt;/b&gt;&lt;br&gt;物体顺序 / 抓取姿态 / 关节关键点&lt;br&gt;交互会话产出审核后的粗计划" parent="planning_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
@@ -47,7 +47,7 @@
         <mxCell id="runtime" value="&lt;b&gt;高频执行器 + Piper&lt;/b&gt;&lt;br&gt;512 点队列 / 唯一 200 Hz 写线程&lt;br&gt;左臂执行，右臂保持" parent="execution_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
           <mxGeometry as="geometry" x="750" y="65" width="540" height="100" />
         </mxCell>
-        <mxCell id="evidence-review" source="evidence" target="review" value="复盘" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;dashed=1;">
+        <mxCell id="evidence-review" source="evidence" target="review" value="候选" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;dashed=1;">
           <mxGeometry as="geometry" relative="1" />
         </mxCell>
         <mxCell id="review-experience" source="review" target="experience" value="审核" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;dashed=1;">
@@ -79,7 +79,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="footer" value="外侧回路：本轮证据进入 RSI 复盘；虚线：人工监督的跨轮修订。&lt;br&gt;当前无自动训练或经验检索服务；本轮执行不调用视觉模型。经验需结合新场景重新审核。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=16;">
+        <mxCell id="footer" value="L1 离线工具已实现；虚线包含人工提案 / 审核，本轮执行不调用视觉模型。&lt;br&gt;数值检查 ≠ 几何验证 ≠ 物理成功；当前无自动模型训练或自主真机迭代。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=16;">
           <mxGeometry as="geometry" x="60" y="1200" width="1320" height="75" />
         </mxCell>
       </root>

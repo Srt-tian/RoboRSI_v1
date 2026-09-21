@@ -121,7 +121,7 @@ def architecture():
     child = "fillColor=#FFFFFF;"
     d.box(
         "evidence",
-        "<b>收集实验证据</b><br>命令 / 实测反馈 / 故障<br>结果图像 + 现场任务确认",
+        "<b>证据整理 · analyze</b><br>指标 / 故障 / 结果文字 / 指纹<br>规则分型；原因仍待验证",
         30,
         75,
         360,
@@ -132,7 +132,7 @@ def architecture():
     )
     d.box(
         "review",
-        "<b>诊断与修订建议</b><br>定位 / 姿态 / 抓取 / 执行<br>区分观测事实与原因假设",
+        "<b>候选验证 · evaluate / sweep</b><br>有界关节修订 / 时间配置枚举<br>数值重编译 + 可选 URDF 检查",
         470,
         75,
         360,
@@ -143,7 +143,7 @@ def architecture():
     )
     d.box(
         "experience",
-        "<b>人工审核经验</b><br>适用条件 / 修改项 / 验证结果<br>供下一轮规划选择使用",
+        "<b>审核与经验 · review / context</b><br>明确人工采用 / 来源与适用范围<br>精确匹配后作为规划参考",
         910,
         75,
         360,
@@ -154,7 +154,7 @@ def architecture():
     )
     d.box(
         "scene",
-        "<b>本轮上下文</b><br>新鲜场景 + 初始状态 + 任务<br>人工选用已审核经验",
+        "<b>本轮上下文</b><br>新鲜场景 + 初始状态 + 任务<br>范围匹配的已审核经验",
         30,
         65,
         520,
@@ -217,7 +217,7 @@ def architecture():
         parent="execution_layer",
     )
     lr = "exitX=1;exitY=.5;entryX=0;entryY=.5;"
-    d.edge("evidence-review", "evidence", "review", "复盘", lr, dashed=True)
+    d.edge("evidence-review", "evidence", "review", "候选", lr, dashed=True)
     d.edge("review-experience", "review", "experience", "审核", lr, dashed=True)
     d.edge(
         "experience-plan",
@@ -255,7 +255,7 @@ def architecture():
     )
     d.text(
         "footer",
-        "外侧回路：本轮证据进入 RSI 复盘；虚线：人工监督的跨轮修订。<br>当前无自动训练或经验检索服务；本轮执行不调用视觉模型。经验需结合新场景重新审核。",
+        "L1 离线工具已实现；虚线包含人工提案 / 审核，本轮执行不调用视觉模型。<br>数值检查 ≠ 几何验证 ≠ 物理成功；当前无自动模型训练或自主真机迭代。",
         60,
         1200,
         1320,
@@ -270,14 +270,14 @@ def rsi_cycle():
     d.text("title", "<b>RSI 改进闭环 · 改什么、怎么验证</b>", 40, 20, 1270, 65, 30)
     d.text(
         "subtitle",
-        "当前为人机监督的跨轮迭代；经验是带证据与适用条件的修订，不是自动更新的模型权重。",
+        "离线工具自动整理证据与检查候选；人工审核采用。经验有来源与适用范围，不自动执行。",
         40,
         90,
         1270,
     )
     d.box(
         "trial",
-        "<b>本轮执行证据 Dₖ</b><br>命令 / 反馈 / 任务结果<br>记录失败与人工干预",
+        "<b>执行证据 Dₖ · analyze</b><br>已有指标 / 故障 / 指纹<br>任务结果缺失时保留 unknown",
         40,
         195,
         280,
@@ -286,7 +286,7 @@ def rsi_cycle():
     )
     d.box(
         "diagnose",
-        "<b>问题诊断</b><br>观测事实 + 原因假设<br>选择需要修订的层",
+        "<b>规则分型与假设</b><br>夹爪 / TCP 下限 / 执行时序<br>不从错误文本推断唯一原因",
         370,
         195,
         280,
@@ -295,7 +295,7 @@ def rsi_cycle():
     )
     d.box(
         "candidate",
-        "<b>候选修订 Δₖ</b><br>修改值 / 适用场景 / 风险<br>列出下一轮验证标准",
+        "<b>候选验证 Vₖ</b><br>evaluate：有界修订重编译<br>sweep：1× / 2× 档位枚举",
         700,
         195,
         280,
@@ -304,7 +304,7 @@ def rsi_cycle():
     )
     d.box(
         "approve",
-        "<b>人工审核</b><br>采用 / 驳回 / 继续观察<br>未审核修订不进入新计划",
+        "<b>人工审核 · review</b><br>明确采用或拒绝 / 适用范围<br>保留完整比较报告与来源",
         1030,
         195,
         280,
@@ -331,7 +331,7 @@ def rsi_cycle():
     )
     d.box(
         "experience",
-        "<b>审核后的经验 Eₖ₊₁</b><br>适用条件与证据链接<br>人工选择后注入规划上下文",
+        "<b>经验 Eₖ₊₁ · context</b><br>robot / setup / task 精确匹配<br>仅选已采用记录，输出规划参考",
         960,
         475,
         350,
@@ -362,7 +362,7 @@ def rsi_cycle():
     )
     d.text(
         "case",
-        "<b>记录实例：</b>首轮青椒空夹 → 调整抓取深度与方向 → 下一轮三物体入筐。<br>这说明发生了可追溯修订；单轮成功不能证明单一改动的收益，也不能推导长期成功率。",
+        "<b>当前边界：</b>自动部分为指标整理、规则分型、候选检查、时间枚举和经验范围匹配。<br>提案与采用仍需人工；新一轮物理验证单独进行，离线通过不代表抓取成功。",
         40,
         680,
         1270,

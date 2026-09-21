@@ -15,3 +15,5 @@
 The planning role in the session was referred to as GPT6. The logs do not independently establish an exact model API identifier, token count or precisely one API request. Report a fixed scene-grounded program with no new vision/model calls during the recorded stream, not a measured one-call autonomous benchmark.
 
 RSI here means supervised cross-trial refinement; no automatic learned online RSI update or validated small-VLM residual improvement was demonstrated. The final trial is one 3/3 result, not a population success rate.
+
+Version 0.2 adds offline evidence triage, bounded candidate comparisons, timing-profile enumeration, explicit review records and exact-scope context selection. These tools are newly implemented and tested offline; they do not retroactively automate the historical trials. Fingerprints track content, not reviewer identity. Numerical checks are not physical success labels. The [dated research note](RESEARCH_2026_09.md) distinguishes external ideas from implemented features and future hypotheses.

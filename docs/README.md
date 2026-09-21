@@ -3,7 +3,8 @@
 | 我想了解 | 阅读入口 |
 | --- | --- |
 | 项目能做什么、怎样离线运行 | [项目首页](../README.md) |
-| RSI 如何利用证据改进下一轮 | [RSI 机制与状态](RSI.md) |
+| 怎样运行离线 RSI、本机工作台与经验选择 | [RSI 命令与接口](RSI.md) |
+| 与近期工作的重叠、下一步研究方向 | [2026-09 论文对照](RESEARCH_2026_09.md) |
 | 一份真实的修订记录如何写 | [复盘案例](../experiments/2026-09-17/rsi_review.md) / [模板](templates/RSI_REVIEW.md) |
 | GPT、IK、平滑和控制分别负责什么 | [系统架构](ARCHITECTURE.md) |
 | 一轮任务怎么启动、监督、停止和确认结果 | [执行流程](EXECUTION_FLOW.md) |
