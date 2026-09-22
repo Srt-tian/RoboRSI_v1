@@ -2,17 +2,19 @@
 
 # RoboRSI v1
 
-**用执行证据改进下一轮规划，让粗轨迹成为连贯的机器人操作。**
+**完整粗规划 · 受约束修订 · 连续执行 · 跨轮 RSI**
 
-Plan → Execute → Evaluate → Refine · Offline RSI workbench
+Plan → Check → Judge → Review → Improve · v0.3
 
-[四层架构](#系统架构) · [RSI 闭环](#rsi-跨轮闭环) · [快速开始](#快速开始) · [近期研究](docs/RESEARCH_2026_09.md) · [实验结果](#已记录的实验结果) · [文档导航](docs/README.md)
+[四层架构](#系统架构) · [研究方案](docs/RESEARCH_PROPOSAL.md) · [本机论文档案](#本机论文实验档案) · [快速开始](#快速开始) · [Jev 调研](docs/JEV_RESEARCH_2026_09.md) · [文档导航](docs/README.md)
 
 </div>
 
 RoboRSI 是以“规划—执行—评估—修订”为主线的 Piper 操作研究框架。**本轮**由 GPT 粗规划、确定性轨迹编译和 200 Hz 控制完成操作；**跨轮**由 RSI 层汇集证据、诊断问题、审核修订，再将适用经验用于下一轮规划。
 
-**当前实现：固定计划执行 + 离线 RSI 工具链 + 人工审核。** v0.2 新增自动指标整理、候选重编译比较、1× / 2× 时间配置搜索、按范围选择经验和本机 Web 工作台。规划仍通过交互式 GPT 会话完成；已记录的最终实验中，小 VLM 关闭，执行期间没有新的视觉模型调用。
+**当前实现：固定计划执行 + 结构化判断的离线 RSI + 人工审核。** v0.3 新增阶段预期检查、可替换判断器、拒判与过时回复检查、分组留出评测，并将判断记录接入经验与本机 Web。默认全部离线；Jev 是可选服务接口，合成 demo 不调用真实模型。
+
+研究方向是**意图约束的稀疏轨迹修订**：GPT 给出完整计划与阶段预期，只有偏差值得处理时才比较修订；RSI 积累修订有效的条件。在线感知、剩余轨迹替换与自主恢复尚待实现。已记录的成功实验仍是交互式 GPT 粗规划、小 VLM 关闭的固定计划版本。
 
 ## 系统架构
 
@@ -22,7 +24,7 @@ RoboRSI 是以“规划—执行—评估—修订”为主线的 Piper 操作�
 
 | 层次 | 负责什么 | 跨层产物 | 当前实现 |
 | --- | --- | --- | --- |
-| **L1 · RSI 跨轮改进** | 证据分型、候选验证、修订审核、经验选择 | 有指纹、适用范围和验证结果的记录 | `roborsi-rsi` 离线工具 + 人工审核 |
+| **L1 · RSI 跨轮改进** | 证据/契约、候选验证、结构化判断、审核与经验选择 | 带概率、拒判原因、指纹和适用范围的记录 | `roborsi-rsi` 离线工具 + 可选 provider + 人工审核 |
 | **L2 · 任务规划** | 选用经验，确定物体顺序、姿态、粗关节关键点 | 审核后的粗计划 JSON | 交互式 GPT + IK 工具 |
 | **L3 · 轨迹编译** | 插值、重定时、动态/几何检查、夹爪事件 | 固定 200 Hz 目标流 JSON | 确定性编译代码 |
 | **L4 · 执行与反馈** | 下发目标、读反馈、保护保持、保存证据 | 命令、实测状态、执行结果 | 控制适配与本机 Web |
@@ -48,6 +50,16 @@ RSI 的输入是本轮证据，输出是**经过审核、带适用条件的下�
 该例展示可追溯的跨轮改进。深度与方向同时改变，不能据此证明某一个改动的独立收益；单次成功也不是长期成功率。
 
 [RSI 命令与接口](docs/RSI.md) · [近期论文与研究路线](docs/RESEARCH_2026_09.md) · [真实修订案例](experiments/2026-09-17/rsi_review.md) · [可编辑闭环图](docs/figures/rsi_cycle.drawio)
+
+## v0.3：判断何时值得修订
+
+![候选验证、结构化判断、版本复查与 RSI 评测；在线扩展另行标注](docs/figures/typed_judgment.svg)
+
+判断器可以输出**优先审核某个候选、补充证据、请求新候选或拒判**。模型建议必须属于已验证菜单，并通过概率、证据和时效检查。关联阶段契约时，推理前后还会核对计划、阶段与语义观测版本；过时回复不会成为有效审核建议。
+
+RSI 的研究目标是逐步学会“哪种条件下哪种修订有效”。当前提供可追溯记录与评测工具，尚未训练机器人判断模型；独立留出集的表现才是改进证据。Jev 官方接口、本地开放模型及规则都可以参与同条件比较。
+
+[完整方案与消融](docs/RESEARCH_PROPOSAL.md) · [11 项 Jev 生态与论文调研](docs/JEV_RESEARCH_2026_09.md) · [命令、provider 和数据格式](docs/TYPED_JUDGMENT.md) · [可编辑图](docs/figures/typed_judgment.drawio)
 
 ## 一轮任务怎么走
 
@@ -107,7 +119,16 @@ python -m http.server 8787 --bind 127.0.0.1 --directory runs/rsi_demo
 
 打开 **http://127.0.0.1:8787/**，查看历史失败、诊断假设、候选预计耗时与证据指纹；也可直接打开生成的 `index.html`。所有计算都在本机离线完成。该示例复算历史配置，未提供 URDF，不验证新场景的几何或抓取结果。
 
-**4. 验证代码与实验归档。**
+**4. 查看结构化判断与拒判示例。**
+
+```bash
+python scripts/demo_judgment.py --output runs/judgment_demo
+python -m http.server 8788 --bind 127.0.0.1 --directory runs/judgment_demo
+```
+
+打开 **http://127.0.0.1:8788/**。该示例使用真实历史指标做复盘，判断回复与独立契约/概率样例明确标为合成数据，真实模型调用为 **0**。它展示接口与报告，不证明新模型的抓取能力。使用现有环境可加 `PYTHONPATH=src` 运行。
+
+**5. 验证代码与实验归档。**
 
 ```bash
 python -m unittest discover -s tests -v
@@ -115,6 +136,18 @@ python scripts/verify_evidence.py
 ```
 
 使用已有环境时，也可通过 `PYTHONPATH=src python -m roborsi.compiler ...` 和 `PYTHONPATH=src python -m roborsi.reporting ...` 运行。硬件接口另见[硬件接入指南](docs/HARDWARE.md)。
+
+## 本机论文实验档案
+
+```bash
+python -m http.server 8790 --bind 127.0.0.1
+```
+
+在仓库根目录启动后，打开 **http://127.0.0.1:8790/paper/**。已保存 **576 个仿真 episode、269,616 条逐步状态、6 段 MP4 对照视频**，以及 CSV、可编辑 SVG 结果表、配置、源码/文件指纹。可选择全部种子、5 ms 单步查看过程，并下载单个 episode。
+
+当前仿真验证阶段检查、移位、遮挡、滑落、延迟和版本复查逻辑，使用运动学抓取代理与共同规则提案器，**没有调用 Jev/GPT，也不模拟 Piper 动力学**。等待期间二次移位的场景中，版本复查阻止了 24 次过时采纳，但即时规则仍是更快的基线；这些结果不能称为学习模型收益。
+
+[仿真假设与完整结果](docs/SIMULATION.md) · [封存运行](experiments/simulation/2026-09-22/run_001/) · [四方法对照视频](experiments/simulation/2026-09-22/run_001/videos/shift_during_wait.mp4) · [过程浏览页](paper/process.html)
 
 ## 已记录的实验结果
 
@@ -141,7 +174,7 @@ python scripts/verify_evidence.py
 
 ```text
 src/roborsi/
-├── rsi/            # L1：证据、候选验证、审核经验、范围选择与本机 Web
+├── rsi/            # L1：契约、候选、判断/拒判、留出评分、审核经验与本机 Web
 ├── ik.py           # FK / Jacobian / 有界 IK，供规划阶段使用
 ├── geometry.py     # 当前装配的几何检查
 ├── smoothing.py    # C1 插值与速度、加速度受限重定时
@@ -152,13 +185,14 @@ src/roborsi/
 └── reporting.py    # 执行后本机反馈查看器
 examples/           # 不可直接真机重放的历史计划
 experiments/        # 命令、反馈、图片、指标与原始归档
+paper/              # 本机论文档案、全量过程浏览、历史反馈与判断示例
 docs/               # 架构、流程、接入与实验说明
-scripts/            # 三张图的生成器、实验归档校验
+scripts/            # 图生成器、判断 demo、仿真视频与论文归档工具
 tests/              # 离线测试
 ```
 
 编译器接收已审核的 **Nx6 左臂关节路径**，不会自动把图像转换为抓取轨迹。右臂在本版本保持，几何检查依赖当前双臂装配，并非通用碰撞规划器。机械臂适配、数据字段与源码映射见[架构详解](docs/ARCHITECTURE.md)。
 
-近期 Zetta、CHIME、RSIAgent 等工作与跨轮改进有明显交集；本仓库的研究方向及尚待验证的差异见[2026-09 论文对照](docs/RESEARCH_2026_09.md)。
+近期 Zetta、ROBUST TAMP、Jev-Mem 等工作与这条路线有明显交集。论文贡献需要通过相同候选库、调用预算和复位协议下的对照实验建立，见[研究方案](docs/RESEARCH_PROPOSAL.md)。
 
 [开发与文档维护](CONTRIBUTING.md) · [完整文档导航](docs/README.md) · [依赖与证据边界](docs/PROVENANCE.md)

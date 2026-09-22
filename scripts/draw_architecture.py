@@ -132,7 +132,7 @@ def architecture():
     )
     d.box(
         "review",
-        "<b>候选验证 · evaluate / sweep</b><br>有界关节修订 / 时间配置枚举<br>数值重编译 + 可选 URDF 检查",
+        "<b>验证与判断 · evaluate / judge</b><br>重编译筛选 → 结构化审核建议<br>概率 / 拒判 / 时效与版本复查",
         470,
         75,
         360,
@@ -533,7 +533,215 @@ def execution_flow():
     d.save()
 
 
+def typed_judgment():
+    d = Diagram("typed_judgment", 1440, 1110)
+    d.text(
+        "title",
+        "<b>RoboRSI v0.3 · 有条件的修订，可验证的改进</b>",
+        50,
+        15,
+        1340,
+        60,
+        29,
+    )
+    d.text(
+        "scope",
+        "实线：本版离线原型　｜　下方虚线框：后续在线研究　｜　所有判断均不授权运动",
+        50,
+        78,
+        1340,
+        50,
+        18,
+    )
+    d.box("offline", "", 30, 140, 1380, 590, color="gray", extra="fillColor=#FAFBFD;")
+    d.box(
+        "evidence",
+        "<b>1 · 计划、证据与阶段契约</b><br>历史观测 / 任务预期 / 缺失量<br>范围、计划版本与语义 revision",
+        70,
+        180,
+        360,
+        125,
+        "blue",
+    )
+    d.box(
+        "validation",
+        "<b>2 · 确定性候选筛选</b><br>同基线 / 有界改动 / 重编译<br>默认几何检查；数值影子模式另标",
+        530,
+        180,
+        360,
+        125,
+        "amber",
+    )
+    d.box(
+        "provider",
+        "<b>3 · 可替换结构化判断</b><br>优先审核 / 补证据 / 新提案 / 拒判<br>禁用、合成、回放、可选 Jev API",
+        990,
+        180,
+        360,
+        125,
+        "purple",
+    )
+    d.box(
+        "gate",
+        "<b>4 · 组合答案与复查上下文</b><br>完整分布 / 概率间隔 / 证据充分性<br>超时、版本变化或不确定 → 拒判",
+        990,
+        420,
+        360,
+        125,
+        "red",
+    )
+    d.box(
+        "review",
+        "<b>5 · 显式审核与经验记录</b><br>绑定 evidence / trial / candidate<br>人工采用；物理收益仍待验证",
+        530,
+        420,
+        360,
+        125,
+        "purple",
+    )
+    d.box(
+        "rsi",
+        "<b>6 · RSI 选择与独立评测</b><br>范围匹配经验 → 下一轮规划<br>验证集选阈值 / 留出集测错误率",
+        70,
+        420,
+        360,
+        125,
+        "teal",
+    )
+    right = "exitX=1;exitY=.5;entryX=0;entryY=.5;"
+    left = "exitX=0;exitY=.5;entryX=1;entryY=.5;"
+    d.edge("e-v", "evidence", "validation", "候选文件", right)
+    d.edge("v-p", "validation", "provider", "合法菜单", right)
+    d.edge(
+        "p-g",
+        "provider",
+        "gate",
+        "分布与数值判断",
+        "exitX=.5;exitY=1;entryX=.5;entryY=0;",
+    )
+    d.edge("g-r", "gate", "review", "有效建议", left)
+    d.edge("r-rsi", "review", "rsi", "来源与范围", left)
+    d.edge(
+        "rsi-e",
+        "rsi",
+        "evidence",
+        "下一轮参考",
+        "exitX=.5;exitY=0;entryX=.5;entryY=1;",
+        dashed=True,
+    )
+    d.text(
+        "artifact",
+        "<b>本机 Web 与 JSON 产物</b>：候选、判断、拒判原因、指纹与审核记录；执行后整理，不占控制周期",
+        75,
+        600,
+        1260,
+        55,
+        18,
+    )
+    d.text(
+        "evidence-limit",
+        "概率评测需要独立标签；合成 fixture 仅验证接口。没有训练新模型，没有自动获得真机收益。",
+        75,
+        655,
+        1260,
+        45,
+        17,
+    )
+    d.box(
+        "future",
+        "",
+        30,
+        775,
+        1380,
+        280,
+        color="gray",
+        extra="dashed=1;fillColor=#FFFFFF;",
+    )
+    d.text(
+        "future-title",
+        "<b>研究目标 · 在线恢复尚待实现与验收</b>",
+        65,
+        790,
+        1260,
+        48,
+        20,
+    )
+    d.box(
+        "plan-family",
+        "<b>GPT：完整计划 + 修订族</b><br>TCP 参数 / 阶段预期 / 修订预算",
+        70,
+        870,
+        360,
+        110,
+        "blue",
+        extra="dashed=1;",
+    )
+    d.box(
+        "online",
+        "<b>稀疏事件 → 最小必要修订</b><br>真实观测 / 补观测 / 剩余段重编译",
+        530,
+        870,
+        360,
+        110,
+        "purple",
+        extra="dashed=1;",
+    )
+    d.box(
+        "control",
+        "<b>连续执行与独立结果标签</b><br>200 Hz 链路已有；在线替换待实现",
+        990,
+        870,
+        360,
+        110,
+        "teal",
+        extra="dashed=1;",
+    )
+    d.edge("f-p-o", "plan-family", "online", ports=right, dashed=True)
+    d.edge("f-o-c", "online", "control", ports=right, dashed=True)
+    d.text(
+        "hypothesis",
+        "核心假设：跨轮经验学习“修订何时有效”，在相同调用预算下减少错误修订并提升留出场景成功率。",
+        70,
+        995,
+        1280,
+        45,
+        17,
+    )
+    # True nested containers keep exported geometry and semantic validation in sync.
+    for parent, y_origin, keys in (
+        (
+            "offline",
+            140,
+            {
+                "evidence",
+                "validation",
+                "provider",
+                "gate",
+                "review",
+                "rsi",
+                "artifact",
+                "evidence-limit",
+            },
+        ),
+        (
+            "future",
+            775,
+            {"future-title", "plan-family", "online", "control", "hypothesis"},
+        ),
+    ):
+        for cell in d.root.findall("mxCell"):
+            if cell.get("id") == parent:
+                cell.set("style", cell.get("style") + "container=1;pointerEvents=0;")
+            if cell.get("id") in keys:
+                cell.set("parent", parent)
+                geometry = cell.find("mxGeometry")
+                geometry.set("x", str(float(geometry.get("x")) - 30))
+                geometry.set("y", str(float(geometry.get("y")) - y_origin))
+    d.save()
+
+
 if __name__ == "__main__":
     architecture()
     rsi_cycle()
     execution_flow()
+    typed_judgment()

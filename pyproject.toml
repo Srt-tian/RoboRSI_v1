@@ -4,16 +4,20 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "roborsi"
-version = "0.2.0"
-description = "Coarse robot plans, 200 Hz execution, and evidence-linked offline RSI"
+version = "0.3.0"
+description = "Coarse robot plans, typed repair judgments, and evidence-linked RSI"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24", "scipy>=1.10", "PyYAML>=6"]
+
+[project.optional-dependencies]
+media = ["Pillow>=9"]
 
 [project.scripts]
 roborsi-compile = "roborsi.compiler:main"
 roborsi-execute = "roborsi.runtime:main"
 roborsi-report = "roborsi.reporting:main"
 roborsi-rsi = "roborsi.rsi.cli:main"
+roborsi-sim = "roborsi.simulation:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

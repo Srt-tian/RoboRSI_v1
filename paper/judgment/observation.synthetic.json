@@ -1,0 +1,10 @@
+{
+  "program_sha256": "a3492789aace4e876cb8c5041ebf3551249d0b6f6412d1826ed34263bac9412c",
+  "phase": "synthetic_close_fixture",
+  "revision": 1,
+  "observed_at_s": 1790091173.8924217,
+  "metrics": {
+    "grip_width_m": 0.001,
+    "tracking_rad": 0.01
+  }
+}

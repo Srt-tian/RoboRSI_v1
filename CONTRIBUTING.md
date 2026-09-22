@@ -16,7 +16,7 @@ RSI 测试还验证未知任务结果、证据指纹、候选改动范围、不�
 
 ## 修改架构与流程图
 
-源文件生成器为 `scripts/draw_architecture.py`，输出三份可编辑原生 draw.io XML：
+源文件生成器为 `scripts/draw_architecture.py`，输出四份可编辑原生 draw.io XML：
 
 ```bash
 python scripts/draw_architecture.py
@@ -24,13 +24,23 @@ python scripts/draw_architecture.py
 drawio -x -f png --width 1800 -o docs/figures/architecture.png docs/figures/architecture.drawio
 drawio -x -f png --width 1800 -o docs/figures/execution_flow.png docs/figures/execution_flow.drawio
 drawio -x -f png --width 1800 -o docs/figures/rsi_cycle.png docs/figures/rsi_cycle.drawio
+drawio -x -f png --width 1800 -o docs/figures/typed_judgment.png docs/figures/typed_judgment.drawio
 # 检查 PNG 的文字、连线和分支后导出 SVG。
 drawio -x -f svg -e --embed-svg-images -o docs/figures/architecture.svg docs/figures/architecture.drawio
 drawio -x -f svg -e --embed-svg-images -o docs/figures/execution_flow.svg docs/figures/execution_flow.drawio
 drawio -x -f svg -e --embed-svg-images -o docs/figures/rsi_cycle.svg docs/figures/rsi_cycle.drawio
+drawio -x -f svg -e --embed-svg-images -o docs/figures/typed_judgment.svg docs/figures/typed_judgment.drawio
 ```
 
-Linux 图形环境的启动参数按本机配置补充。三张图共用字体和色板；架构图侧重四层职责，RSI 图侧重跨轮改进，执行图侧重本轮条件和顺序。人工修订与下一轮反馈使用虚线，不画成已经实现的在线自动学习模块。修改机制时同步检查 README、架构说明和执行流程，防止图比代码“多实现”功能。
+Linux 图形环境的启动参数按本机配置补充。四张图共用字体和色板；新增判断图区分离线原型和在线研究目标。人工修订与下一轮反馈使用虚线，不画成已经实现的在线自动学习模块。修改机制时同步检查 README、架构说明和执行流程，防止图比代码“多实现”功能。
+
+## 判断与仿真迭代
+
+provider 测试必须 mock 网络，不在测试中读取真实密钥或加载权重。新增 provider 通过同一分布、时效、上下文检查，不能绕过比较报告。阶段 revision 的语义由观测层负责；哈希并非真实性证明。
+
+仿真逻辑测试检查共同保护、可见性、过时建议、滑落恢复、确定性种子和逐步记录完整性。使用新目录记录每轮实验，媒体导出后运行 `scripts/verify_paper_run.py`，再更新 `scripts/build_paper_index.py`。封存目录不可原位改结果，网页索引可重新生成；仿真源代码变化后保留旧记录并创建新运行。
+
+详细命令见 [SIMULATION.md](docs/SIMULATION.md)。当前 HTML 支持本地浏览器解压 gzip，需要支持 `DecompressionStream` 的现代浏览器；文件必须通过本机 HTTP 服务访问。媒体导出额外依赖 Pillow 与 ffmpeg，核心判断/仿真无需这些依赖。
 
 ## 变更边界
 

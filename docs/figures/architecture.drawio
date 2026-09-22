@@ -23,7 +23,7 @@
         <mxCell id="evidence" value="&lt;b&gt;证据整理 · analyze&lt;/b&gt;&lt;br&gt;指标 / 故障 / 结果文字 / 指纹&lt;br&gt;规则分型；原因仍待验证" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
           <mxGeometry as="geometry" x="30" y="75" width="360" height="110" />
         </mxCell>
-        <mxCell id="review" value="&lt;b&gt;候选验证 · evaluate / sweep&lt;/b&gt;&lt;br&gt;有界关节修订 / 时间配置枚举&lt;br&gt;数值重编译 + 可选 URDF 检查" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
+        <mxCell id="review" value="&lt;b&gt;验证与判断 · evaluate / judge&lt;/b&gt;&lt;br&gt;重编译筛选 → 结构化审核建议&lt;br&gt;概率 / 拒判 / 时效与版本复查" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">
           <mxGeometry as="geometry" x="470" y="75" width="360" height="110" />
         </mxCell>
         <mxCell id="experience" value="&lt;b&gt;审核与经验 · review / context&lt;/b&gt;&lt;br&gt;明确人工采用 / 来源与适用范围&lt;br&gt;精确匹配后作为规划参考" parent="rsi_layer" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FFFFFF;">

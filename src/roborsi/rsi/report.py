@@ -2,11 +2,24 @@
 
 import json
 
+from .artifacts import verify
 
-def render(evidence, sweep):
+
+def render(evidence, sweep, judgment=None):
+    if judgment is not None:
+        verify(judgment, "roborsi-judgment-v1")
+        if judgment["evidence_sha256"] != evidence["artifact_sha256"]:
+            raise ValueError("judgment belongs to different evidence")
+        selected = judgment["selected_comparison_sha256"]
+        if selected is not None and selected not in {
+            c["artifact_sha256"] for c in sweep["candidates"]
+        }:
+            raise ValueError("judgment comparison missing from report")
     data = (
         json.dumps(
-            {"evidence": evidence, "sweep": sweep}, ensure_ascii=False, allow_nan=False
+            {"evidence": evidence, "sweep": sweep, "judgment": judgment},
+            ensure_ascii=False,
+            allow_nan=False,
         )
         .replace("<", "\\u003c")
         .replace("&", "\\u0026")
@@ -35,6 +48,9 @@ button:hover,button:focus-visible{border-color:#59d7c4}.tag{color:#ffbc7b}pre{wh
 <h2>候选离线评估</h2><p>固定同一粗计划，比较已有 1× / 2× 档位。预计耗时来自重编译，不是新真机测量。</p>
 <section class="scroll"><table><thead><tr><th>候选</th><th>验证</th><th>目标点</th><th>预计耗时</th><th>几何检查</th><th>物理成功</th></tr></thead><tbody id="candidates"></tbody></table><pre id="errors"></pre></section>
 <p class="note">数值通过、几何通过、任务成功是不同证据。规则分类不构成因果诊断；候选排序不自动写入经验，也不授权真机执行。</p>
+<div id="judgment-panel" hidden><h2>结构化判断 · 独立于控制循环</h2><p id="judgment-summary"></p>
+<section><pre id="judgment-detail"></pre></section>
+<p class="note">Demo 是合成接口示例。分布概率与供应商 confidence 分别保存，均未在机器人数据上校准。拒判与补充证据也是有效输出。</p></div>
 <details><summary>复现信息与证据指纹</summary><pre id="provenance"></pre></details></main>
 <script type="application/json" id="data">__REPORT_DATA__</script><script>
 const d=JSON.parse(document.querySelector('#data').textContent),e=d.evidence,s=d.sweep;
@@ -45,6 +61,7 @@ function draw(){const b=document.querySelector('#trials');b.replaceChildren();co
 document.querySelector('#filter').onchange=draw;draw();details(e.trials[0]);
 for(const r of s.candidates){const row=node('tr','');for(const v of [r.policy.candidate_speed+'×',r.status,r.candidate?.target_count??'—',r.candidate?r.candidate.duration_s.toFixed(3)+' s':'—',r.geometry_status,r.physical_success])row.append(node('td',v));document.querySelector('#candidates').append(row)}
 document.querySelector('#errors').textContent=s.candidates.flatMap(r=>r.errors).join('\\n');
+if(d.judgment){const j=d.judgment;document.querySelector('#judgment-panel').hidden=false;document.querySelector('#judgment-summary').textContent=`${j.provider} / ${j.model??'未调用'} → ${j.decision} · ${j.reason} · ${j.latency_s.toFixed(4)} s`;document.querySelector('#judgment-detail').textContent=JSON.stringify(j,null,2)}
 document.querySelector('#provenance').textContent=JSON.stringify({source:e.source,evidence_sha256:e.artifact_sha256,sweep_sha256:s.artifact_sha256,selected_comparison_sha256:s.selected_comparison_sha256,selection_scope:s.selection_scope,limitations:e.limitations},null,2);
 document.body.dataset.loaded='true';
 </script></html>"""

@@ -1,0 +1,97 @@
+{
+  "schema": "roborsi-comparison-v1",
+  "execution_authorized": false,
+  "baseline_program_sha256": "a3492789aace4e876cb8c5041ebf3551249d0b6f6412d1826ed34263bac9412c",
+  "candidate_program_sha256": "a3492789aace4e876cb8c5041ebf3551249d0b6f6412d1826ed34263bac9412c",
+  "policy": {
+    "baseline_speed": 1,
+    "candidate_speed": 1,
+    "tcp_floor_m": 0,
+    "max_joint_delta_rad": 0.12,
+    "urdf": null
+  },
+  "implementation": [
+    {
+      "name": "compiler.py",
+      "sha256": "2e22a6822764ef0abe87728f47e792cfcf41babc54a2c4eab4c7e61838ff26e6"
+    },
+    {
+      "name": "smoothing.py",
+      "sha256": "a4ec5b7c02bf1e8061c7642cba9dd9d427f01e3226d720c1de7d36308e5e859b"
+    },
+    {
+      "name": "validation.py",
+      "sha256": "1bfc171a05bb7e01ff2af4dbd373815d24df381605c2934d358afe293f7426b8"
+    },
+    {
+      "name": "geometry.py",
+      "sha256": "e5210b6d0d39a4f1012ff1fb2a2a11e4dc098af3a178d9f2d053e308170c3201"
+    },
+    {
+      "name": "ik.py",
+      "sha256": "c1a666c350ea7696201df70e2c25dad7b34f348b1ff9ed7c88b9eb0de9d2f8e6"
+    },
+    {
+      "name": "evaluation.py",
+      "sha256": "f961443ec0a01b39bb0e8d74d9c3dbb44e94f66707ee84e7dced4f7c4275096c"
+    }
+  ],
+  "status": "offline_validated",
+  "baseline": {
+    "speed_profile": 1,
+    "target_count": 33129,
+    "duration_s": 165.645,
+    "max_velocity_rad_s": 0.12069103822193172,
+    "max_acceleration_rad_s2": 0.9417728389493618,
+    "geometry_verified": false,
+    "terminal_q14": [
+      -0.015044738152191121,
+      0.3454006589696778,
+      -0.35775759007379765,
+      0.01848303677861995,
+      0.38934804953489505,
+      0.045483280306972226,
+      0.07,
+      0.003193952531149623,
+      0.3235665900272287,
+      -0.36196383357110395,
+      0.0,
+      0.2724109896512749,
+      0.0079412480965742,
+      0.06709999999999999
+    ],
+    "stream_sha256": "7674b81b82f029db5132b4d72c13355b0b15318413b443fba9a1531ca340ba8c"
+  },
+  "candidate": {
+    "speed_profile": 1,
+    "target_count": 33129,
+    "duration_s": 165.645,
+    "max_velocity_rad_s": 0.12069103822193172,
+    "max_acceleration_rad_s2": 0.9417728389493618,
+    "geometry_verified": false,
+    "terminal_q14": [
+      -0.015044738152191121,
+      0.3454006589696778,
+      -0.35775759007379765,
+      0.01848303677861995,
+      0.38934804953489505,
+      0.045483280306972226,
+      0.07,
+      0.003193952531149623,
+      0.3235665900272287,
+      -0.36196383357110395,
+      0.0,
+      0.2724109896512749,
+      0.0079412480965742,
+      0.06709999999999999
+    ],
+    "stream_sha256": "7674b81b82f029db5132b4d72c13355b0b15318413b443fba9a1531ca340ba8c"
+  },
+  "changes": [],
+  "errors": [],
+  "duration_delta_s": 0.0,
+  "geometry_status": "not_checked",
+  "physical_success": "not_evaluated",
+  "validation_scope": "numerical_recompilation",
+  "artifact_sha256": "88b5f0c83de81ade4b7622290148bbe7c677dcac037fcfe0d3bc691a1347f604"
+}

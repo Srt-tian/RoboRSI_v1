@@ -20,6 +20,10 @@ def digest(value):
 
 
 def load_json(path):
+    return parse_json(Path(path).read_text(encoding="utf-8"))
+
+
+def parse_json(text):
     def invalid(token):
         raise ValueError(f"nonfinite JSON value: {token}")
 
@@ -32,7 +36,7 @@ def load_json(path):
         return result
 
     return json.loads(
-        Path(path).read_text(encoding="utf-8"),
+        text,
         parse_constant=invalid,
         object_pairs_hook=unique,
     )

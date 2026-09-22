@@ -1,0 +1,15 @@
+{
+  "schema": "roborsi-decision-dataset-v1",
+  "source_kind": "synthetic",
+  "model": "synthetic-fixture-not-a-model",
+  "question_family": "route",
+  "label_provenance": "Manually constructed arithmetic fixture; no model inference or physical observations.",
+  "records": [
+    {"case_id": "v1", "group_id": "validation_episode_1", "split": "validation", "probabilities": {"repair": 0.95, "inspect": 0.05}, "label": "repair"},
+    {"case_id": "v2", "group_id": "validation_episode_2", "split": "validation", "probabilities": {"repair": 0.1, "inspect": 0.9}, "label": "inspect"},
+    {"case_id": "v3", "group_id": "validation_episode_3", "split": "validation", "probabilities": {"repair": 0.7, "inspect": 0.3}, "label": "inspect"},
+    {"case_id": "t1", "group_id": "test_episode_1", "split": "test", "probabilities": {"repair": 0.92, "inspect": 0.08}, "label": "repair"},
+    {"case_id": "t2", "group_id": "test_episode_2", "split": "test", "probabilities": {"repair": 0.05, "inspect": 0.95}, "label": "repair"},
+    {"case_id": "t3", "group_id": "test_episode_3", "split": "test", "probabilities": {"repair": 0.55, "inspect": 0.45}, "label": "inspect"}
+  ]
+}

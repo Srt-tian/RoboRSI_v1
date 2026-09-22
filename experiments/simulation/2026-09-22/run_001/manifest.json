@@ -1,0 +1,91 @@
+{
+  "schema": "roborsi-paper-run-v1",
+  "execution_authorized": false,
+  "git_base_commit": "2f21f5652dfa1f2f8ba043f9057596f3fb867a01",
+  "source_state": "working-tree implementation identified by content hashes",
+  "benchmark_sha256": "e1b475824b34acaa3b74698a412de1dfe21873484ef396edc4140c018936f3f9",
+  "simulation_sources": [
+    {
+      "name": "simulation.py",
+      "sha256": "fde7072a59684adf23d986816367de778323bdcb02c5715b8cf4391609a034f7"
+    },
+    {
+      "name": "contracts.py",
+      "sha256": "cce072915851550124274d43e820d4254a06c26adc8fd4650430c0adc0ed78c3"
+    }
+  ],
+  "export_sources": [
+    {
+      "name": "export_simulation_media.py",
+      "sha256": "5a4c414c2786fff1f62b8321a7fa004edb39d723ccde90883a510d6cfd4eaf05"
+    },
+    {
+      "name": "simulation_report.py",
+      "sha256": "9b0389a9857df6986a4c58e8544a7405bf5027d9e3f7157fc02122185ec9f3a8"
+    }
+  ],
+  "python": "3.10.12",
+  "ffmpeg": "ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2312,
+      "sha256": "20cd85809ee19184e9ef08b632337a4b12c24f134eb9f9bfd83e6ec9c3e25254"
+    },
+    {
+      "path": "benchmark.json",
+      "bytes": 1609739,
+      "sha256": "95613256254ea4fff9024f9dc8a10ed32d49ad0eff78f3bba5d30a1874757cd6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 930291,
+      "sha256": "5ea1ef91e63d010ea50d65019be41faa6fa8c77d824cbc86b8ef4e17770b6663"
+    },
+    {
+      "path": "process.jsonl.gz",
+      "bytes": 5577426,
+      "sha256": "6be591778d25ad7e78e906d3cbbb10038ea9fb2df34f0517f6ce651862927fe1"
+    },
+    {
+      "path": "summary.csv",
+      "bytes": 1402,
+      "sha256": "1b92c4d8aa7892bc1ee9a23e51ed9ce274c52c1ee71f1c6ec0fe63d1a748a787"
+    },
+    {
+      "path": "summary.svg",
+      "bytes": 10307,
+      "sha256": "f234378dfe39ce1d745a798d6fd923f010e5b98f8184210a768097f2cd0a2818"
+    },
+    {
+      "path": "videos/nominal.mp4",
+      "bytes": 76724,
+      "sha256": "3bfb83faf9f349163911503812600f21a0e61679d79d8988a456b14dca18863f"
+    },
+    {
+      "path": "videos/occluded_shift.mp4",
+      "bytes": 95299,
+      "sha256": "bf6c1699f6cd51422d7a8c57a9798ce68fbc0b81e088a80174813345d7dfea50"
+    },
+    {
+      "path": "videos/shift.mp4",
+      "bytes": 90342,
+      "sha256": "da057bed6029d95701633cd763f10c5a5beae95a5a7a0d1a95c652aeb89e5feb"
+    },
+    {
+      "path": "videos/shift_during_wait.mp4",
+      "bytes": 101538,
+      "sha256": "44ef697f6420935723b07e2e5a0d61d28e5e8ec92f6ec7ad6d25a2b7aef7a0da"
+    },
+    {
+      "path": "videos/slip.mp4",
+      "bytes": 95110,
+      "sha256": "c79dd9ae3c84982e839517211f2e98ab2aaa98269f09be7216749740a88254d8"
+    },
+    {
+      "path": "videos/tracking_fault.mp4",
+      "bytes": 50202,
+      "sha256": "4c4786555124c6fe384dd56415b56a4cbf26746b9f2c356e74db719f65f387c5"
+    }
+  ]
+}

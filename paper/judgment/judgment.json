@@ -1,0 +1,50 @@
+{
+  "schema": "roborsi-judgment-v1",
+  "execution_authorized": false,
+  "request_sha256": "5f2e3eaed471ee60fc0db0e54707bac175693292210c90937aa6387cf036dca4",
+  "evidence_sha256": "a52749ca8c762e25e9019d87f45b1b8f758b4b1d0f9ae7ecf5f50d3caf67e880",
+  "trial_id": "servo10_continuous",
+  "scope": {
+    "robot": "historical-piper",
+    "setup": "offline-review-example",
+    "task": "three-objects"
+  },
+  "mode": "numerical_shadow",
+  "provider": "synthetic_demo",
+  "model": "synthetic-fixture-not-a-model",
+  "provider_calls": 1,
+  "latency_s": 5.424197297543287e-05,
+  "decision": "collect_evidence",
+  "reason": "typed_route",
+  "selected_comparison_sha256": null,
+  "answers": {
+    "route": {
+      "type": "choice",
+      "choice": "collect_evidence",
+      "probabilities": {
+        "review_candidate": 0.0,
+        "collect_evidence": 1.0,
+        "ask_planner": 0.0,
+        "abstain": 0.0
+      },
+      "confidence": 0.5
+    },
+    "candidate": {
+      "type": "choice",
+      "choice": "abstain",
+      "probabilities": {
+        "candidate_88b5f0c83de81ade4b7622290148bbe7c677dcac037fcfe0d3bc691a1347f604": 0.0,
+        "candidate_998935b4ac1796f54dbb99d647917f3a5999eee7e5e6019171451b14e17dcc7b": 0.0,
+        "abstain": 1.0
+      },
+      "confidence": 0.5
+    },
+    "evidence_sufficient": {
+      "type": "noul",
+      "noul": 0.0
+    }
+  },
+  "calibration": "not_established_on_robot_data",
+  "checkpoint_sha256": null,
+  "artifact_sha256": "abf8295488ffdcb1d6f75861d19de5c6a653da1520f4509e20c44c9ba22ad208"
+}

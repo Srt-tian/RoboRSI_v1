@@ -1,0 +1,36 @@
+{
+  "schema": "roborsi-checkpoint-v1",
+  "execution_authorized": false,
+  "scope": {
+    "robot": "historical-piper",
+    "setup": "offline-review-example",
+    "task": "three-objects"
+  },
+  "program_sha256": "a3492789aace4e876cb8c5041ebf3551249d0b6f6412d1826ed34263bac9412c",
+  "phase": "synthetic_close_fixture",
+  "contract_sha256": "e21d9e2d7b888b1b5652e7de47bad736b1964010319734dac48482785ab03b19",
+  "observation_sha256": "09d2ee445a66844d5a41ff26a778042ae90aeebc13f7306f4c139c52ecc68a35",
+  "revision": 1,
+  "observed_at_s": 1790091173.8924217,
+  "valid_until_s": 1790091174.8924217,
+  "route": "request_judgment",
+  "missing": [],
+  "deviations": {
+    "expected": [
+      "grip_width_m"
+    ],
+    "hard_limits": []
+  },
+  "expected": {
+    "grip_width_m": [
+      0.012,
+      0.06
+    ]
+  },
+  "metrics": {
+    "grip_width_m": 0.001,
+    "tracking_rad": 0.01
+  },
+  "use": "Offline routing proposal; no runtime observer or motor operation.",
+  "artifact_sha256": "899fd05954b20eb87681c6fde5c57310f2428b4fe85251137756a5e0fb493d26"
+}

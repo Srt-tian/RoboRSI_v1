@@ -16,7 +16,9 @@ def validate_scope(scope):
             raise ValueError("wildcard scopes are unsupported")
 
 
-def review(evidence, comparison, *, trial_id, scope, lesson, reviewer, decision):
+def review(
+    evidence, comparison, *, trial_id, scope, lesson, reviewer, decision, judgment=None
+):
     verify(evidence, EVIDENCE_SCHEMA)
     verify(comparison, COMPARISON_SCHEMA)
     validate_scope(scope)
@@ -32,6 +34,19 @@ def review(evidence, comparison, *, trial_id, scope, lesson, reviewer, decision)
         and comparison["status"] != "offline_validated"
     ):
         raise ValueError("rejected comparison cannot enter planning memory")
+    if judgment is not None:
+        verify(judgment, "roborsi-judgment-v1")
+        if (
+            judgment["evidence_sha256"] != evidence["artifact_sha256"]
+            or judgment["scope"] != scope
+            or judgment["trial_id"] != trial_id
+        ):
+            raise ValueError("judgment evidence, scope or trial mismatch")
+        if (
+            judgment["decision"] != "review_candidate"
+            or judgment["selected_comparison_sha256"] != comparison["artifact_sha256"]
+        ):
+            raise ValueError("judgment does not select this comparison")
     return seal(
         {
             "schema": SCHEMA,
@@ -43,6 +58,7 @@ def review(evidence, comparison, *, trial_id, scope, lesson, reviewer, decision)
             "evidence_sha256": evidence["artifact_sha256"],
             "trial": trials[0],
             "comparison": comparison,
+            "judgment": judgment,
             "association": "reviewer-declared; not a causal or matched-trial validation",
             "evidence_level": "offline_only; physical effectiveness unverified",
         }
@@ -79,6 +95,9 @@ def select_context(records, scope):
                 "comparison_sha256": record["comparison"]["artifact_sha256"],
                 "geometry_status": record["comparison"]["geometry_status"],
                 "evidence_level": record["evidence_level"],
+                "judgment_sha256": (record.get("judgment") or {}).get(
+                    "artifact_sha256"
+                ),
             }
         )
     return seal(

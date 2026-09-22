@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="roborsi-typed_judgment" name="typed_judgment">
+    <mxGraphModel page="1" pageWidth="1440" pageHeight="1110" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;RoboRSI v0.3 · 有条件的修订，可验证的改进&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=29;">
+          <mxGeometry as="geometry" x="50" y="15" width="1340" height="60" />
+        </mxCell>
+        <mxCell id="scope" value="实线：本版离线原型　｜　下方虚线框：后续在线研究　｜　所有判断均不授权运动" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=18;">
+          <mxGeometry as="geometry" x="50" y="78" width="1340" height="50" />
+        </mxCell>
+        <mxCell id="offline" value="" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=#FAFBFD;container=1;pointerEvents=0;">
+          <mxGeometry as="geometry" x="30" y="140" width="1380" height="590" />
+        </mxCell>
+        <mxCell id="evidence" value="&lt;b&gt;1 · 计划、证据与阶段契约&lt;/b&gt;&lt;br&gt;历史观测 / 任务预期 / 缺失量&lt;br&gt;范围、计划版本与语义 revision" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="40.0" y="40.0" width="360" height="125" />
+        </mxCell>
+        <mxCell id="validation" value="&lt;b&gt;2 · 确定性候选筛选&lt;/b&gt;&lt;br&gt;同基线 / 有界改动 / 重编译&lt;br&gt;默认几何检查；数值影子模式另标" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3D9;strokeColor=#BA994D;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="500.0" y="40.0" width="360" height="125" />
+        </mxCell>
+        <mxCell id="provider" value="&lt;b&gt;3 · 可替换结构化判断&lt;/b&gt;&lt;br&gt;优先审核 / 补证据 / 新提案 / 拒判&lt;br&gt;禁用、合成、回放、可选 Jev API" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="960.0" y="40.0" width="360" height="125" />
+        </mxCell>
+        <mxCell id="gate" value="&lt;b&gt;4 · 组合答案与复查上下文&lt;/b&gt;&lt;br&gt;完整分布 / 概率间隔 / 证据充分性&lt;br&gt;超时、版本变化或不确定 → 拒判" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E7;strokeColor=#BD726C;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="960.0" y="280.0" width="360" height="125" />
+        </mxCell>
+        <mxCell id="review" value="&lt;b&gt;5 · 显式审核与经验记录&lt;/b&gt;&lt;br&gt;绑定 evidence / trial / candidate&lt;br&gt;人工采用；物理收益仍待验证" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="500.0" y="280.0" width="360" height="125" />
+        </mxCell>
+        <mxCell id="rsi" value="&lt;b&gt;6 · RSI 选择与独立评测&lt;/b&gt;&lt;br&gt;范围匹配经验 → 下一轮规划&lt;br&gt;验证集选阈值 / 留出集测错误率" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="40.0" y="280.0" width="360" height="125" />
+        </mxCell>
+        <mxCell id="e-v" source="evidence" target="validation" value="候选文件" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="v-p" source="validation" target="provider" value="合法菜单" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="p-g" source="provider" target="gate" value="分布与数值判断" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="g-r" source="gate" target="review" value="有效建议" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="r-rsi" source="review" target="rsi" value="来源与范围" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=0;exitY=.5;entryX=1;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="rsi-e" source="rsi" target="evidence" value="下一轮参考" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=0;entryX=.5;entryY=1;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="artifact" value="&lt;b&gt;本机 Web 与 JSON 产物&lt;/b&gt;：候选、判断、拒判原因、指纹与审核记录；执行后整理，不占控制周期" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=18;">
+          <mxGeometry as="geometry" x="45.0" y="460.0" width="1260" height="55" />
+        </mxCell>
+        <mxCell id="evidence-limit" value="概率评测需要独立标签；合成 fixture 仅验证接口。没有训练新模型，没有自动获得真机收益。" parent="offline" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=17;">
+          <mxGeometry as="geometry" x="45.0" y="515.0" width="1260" height="45" />
+        </mxCell>
+        <mxCell id="future" value="" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;dashed=1;fillColor=#FFFFFF;container=1;pointerEvents=0;">
+          <mxGeometry as="geometry" x="30" y="775" width="1380" height="280" />
+        </mxCell>
+        <mxCell id="future-title" value="&lt;b&gt;研究目标 · 在线恢复尚待实现与验收&lt;/b&gt;" parent="future" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=20;">
+          <mxGeometry as="geometry" x="35.0" y="15.0" width="1260" height="48" />
+        </mxCell>
+        <mxCell id="plan-family" value="&lt;b&gt;GPT：完整计划 + 修订族&lt;/b&gt;&lt;br&gt;TCP 参数 / 阶段预期 / 修订预算" parent="future" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;dashed=1;">
+          <mxGeometry as="geometry" x="40.0" y="95.0" width="360" height="110" />
+        </mxCell>
+        <mxCell id="online" value="&lt;b&gt;稀疏事件 → 最小必要修订&lt;/b&gt;&lt;br&gt;真实观测 / 补观测 / 剩余段重编译" parent="future" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0EAF8;strokeColor=#9B7AB8;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;dashed=1;">
+          <mxGeometry as="geometry" x="500.0" y="95.0" width="360" height="110" />
+        </mxCell>
+        <mxCell id="control" value="&lt;b&gt;连续执行与独立结果标签&lt;/b&gt;&lt;br&gt;200 Hz 链路已有；在线替换待实现" parent="future" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;dashed=1;">
+          <mxGeometry as="geometry" x="960.0" y="95.0" width="360" height="110" />
+        </mxCell>
+        <mxCell id="f-p-o" source="plan-family" target="online" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="f-o-c" source="online" target="control" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;dashed=1;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="hypothesis" value="核心假设：跨轮经验学习“修订何时有效”，在相同调用预算下减少错误修订并提升留出场景成功率。" parent="future" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=17;">
+          <mxGeometry as="geometry" x="40.0" y="220.0" width="1280" height="45" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,235 @@
+{
+  "schema": "roborsi-calibration-v1",
+  "execution_authorized": false,
+  "dataset_sha256": "f6f4baa2148170aee09780a719c4664c89d7e9a4c207efd433593f5ac8f86e61",
+  "model": "synthetic-fixture-not-a-model",
+  "question_family": "route",
+  "source_kind": "synthetic",
+  "label_provenance": "Manually constructed arithmetic fixture; no model inference or physical observations.",
+  "policy": {
+    "max_validation_error": 0.1,
+    "min_accepted": 2,
+    "min_margin": 0.15
+  },
+  "selected_threshold": 0.8,
+  "operating_points": [
+    {
+      "threshold": 0.5,
+      "accepted": 3,
+      "empirical_error": 0.3333333333333333,
+      "eligible": false
+    },
+    {
+      "threshold": 0.6,
+      "accepted": 3,
+      "empirical_error": 0.3333333333333333,
+      "eligible": false
+    },
+    {
+      "threshold": 0.7,
+      "accepted": 3,
+      "empirical_error": 0.3333333333333333,
+      "eligible": false
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 2,
+      "empirical_error": 0.0,
+      "eligible": true
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 2,
+      "empirical_error": 0.0,
+      "eligible": true
+    },
+    {
+      "threshold": 0.95,
+      "accepted": 1,
+      "empirical_error": 0.0,
+      "eligible": false
+    },
+    {
+      "threshold": 0.99,
+      "accepted": 0,
+      "empirical_error": null,
+      "eligible": false
+    },
+    {
+      "threshold": 1.0,
+      "accepted": 0,
+      "empirical_error": null,
+      "eligible": false
+    }
+  ],
+  "validation": {
+    "count": 3,
+    "groups": 3,
+    "accuracy": 0.6666666666666666,
+    "brier": 0.33499999999999996,
+    "nll_clipped_1e_15": 0.45354220479043766,
+    "ece_10_bins": 0.28333333333333327,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 1,
+        "mean_probability": 0.7,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 2,
+        "mean_probability": 0.925,
+        "accuracy": 1.0
+      }
+    ],
+    "accepted": 2,
+    "coverage": 0.6666666666666666,
+    "accepted_errors": 0,
+    "selective_error": 0.0
+  },
+  "test": {
+    "count": 3,
+    "groups": 3,
+    "accuracy": 0.3333333333333333,
+    "brier": 0.8076,
+    "nll_clipped_1e_15": 1.2925405262369378,
+    "ece_10_bins": 0.4733333333333334,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 1,
+        "mean_probability": 0.55,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 0,
+        "mean_probability": null,
+        "accuracy": null
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 2,
+        "mean_probability": 0.935,
+        "accuracy": 0.5
+      }
+    ],
+    "accepted": 2,
+    "coverage": 0.6666666666666666,
+    "accepted_errors": 1,
+    "selective_error": 0.5
+  },
+  "claim": "Empirical held-out decision evaluation; no robot-success calibration or statistical risk guarantee. No threshold is installed automatically.",
+  "artifact_sha256": "0a89f4aaefd5cc5b1fc3aefd52cb94787978059bf56c1710d28899596d15f777"
+}

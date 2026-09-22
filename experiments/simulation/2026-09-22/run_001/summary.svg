@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1096" viewBox="0 0 1220 1096">
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="DejaVu Sans,sans-serif" fill="#20374c">
+<text x="30" y="42" font-size="24">RoboRSI: kinematic decision-timing benchmark</text>
+<text x="30" y="72" font-size="15">Analytic rules, simulated delay; no model inference or physical robot validation</text>
+<text x="30" y="116" font-size="16">Scenario</text>
+<text x="245" y="116" font-size="16">Method</text>
+<text x="610" y="116" font-size="16">Success / N</text>
+<text x="775" y="116" font-size="16">Mean sim s</text>
+<text x="950" y="116" font-size="16">Stale accept</text>
+<text x="1090" y="116" font-size="16">Discard</text>
+<rect x="20" y="127" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="149" font-size="15">nominal</text>
+<text x="245" y="149" font-size="15">Fixed plan</text>
+<text x="610" y="149" font-size="15">24 / 24</text>
+<text x="775" y="149" font-size="15">2.150</text>
+<text x="950" y="149" font-size="15">0</text>
+<text x="1090" y="149" font-size="15">0</text>
+<text x="30" y="181" font-size="15">nominal</text>
+<text x="245" y="181" font-size="15">Instant rules</text>
+<text x="610" y="181" font-size="15">24 / 24</text>
+<text x="775" y="181" font-size="15">2.150</text>
+<text x="950" y="181" font-size="15">0</text>
+<text x="1090" y="181" font-size="15">0</text>
+<rect x="20" y="191" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="213" font-size="15">nominal</text>
+<text x="245" y="213" font-size="15">Delayed / unchecked</text>
+<text x="610" y="213" font-size="15">24 / 24</text>
+<text x="775" y="213" font-size="15">2.150</text>
+<text x="950" y="213" font-size="15">0</text>
+<text x="1090" y="213" font-size="15">0</text>
+<text x="30" y="245" font-size="15">nominal</text>
+<text x="245" y="245" font-size="15">Delayed / version checked</text>
+<text x="610" y="245" font-size="15">24 / 24</text>
+<text x="775" y="245" font-size="15">2.150</text>
+<text x="950" y="245" font-size="15">0</text>
+<text x="1090" y="245" font-size="15">0</text>
+<rect x="20" y="255" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="277" font-size="15">shift</text>
+<text x="245" y="277" font-size="15">Fixed plan</text>
+<text x="610" y="277" font-size="15">0 / 24</text>
+<text x="775" y="277" font-size="15">2.150</text>
+<text x="950" y="277" font-size="15">0</text>
+<text x="1090" y="277" font-size="15">0</text>
+<text x="30" y="309" font-size="15">shift</text>
+<text x="245" y="309" font-size="15">Instant rules</text>
+<text x="610" y="309" font-size="15">24 / 24</text>
+<text x="775" y="309" font-size="15">2.400</text>
+<text x="950" y="309" font-size="15">0</text>
+<text x="1090" y="309" font-size="15">0</text>
+<rect x="20" y="319" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="341" font-size="15">shift</text>
+<text x="245" y="341" font-size="15">Delayed / unchecked</text>
+<text x="610" y="341" font-size="15">24 / 24</text>
+<text x="775" y="341" font-size="15">2.700</text>
+<text x="950" y="341" font-size="15">0</text>
+<text x="1090" y="341" font-size="15">0</text>
+<text x="30" y="373" font-size="15">shift</text>
+<text x="245" y="373" font-size="15">Delayed / version checked</text>
+<text x="610" y="373" font-size="15">24 / 24</text>
+<text x="775" y="373" font-size="15">2.750</text>
+<text x="950" y="373" font-size="15">0</text>
+<text x="1090" y="373" font-size="15">0</text>
+<rect x="20" y="383" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="405" font-size="15">shift_during_wait</text>
+<text x="245" y="405" font-size="15">Fixed plan</text>
+<text x="610" y="405" font-size="15">0 / 24</text>
+<text x="775" y="405" font-size="15">2.150</text>
+<text x="950" y="405" font-size="15">0</text>
+<text x="1090" y="405" font-size="15">0</text>
+<text x="30" y="437" font-size="15">shift_during_wait</text>
+<text x="245" y="437" font-size="15">Instant rules</text>
+<text x="610" y="437" font-size="15">24 / 24</text>
+<text x="775" y="437" font-size="15">2.650</text>
+<text x="950" y="437" font-size="15">0</text>
+<text x="1090" y="437" font-size="15">0</text>
+<rect x="20" y="447" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="469" font-size="15">shift_during_wait</text>
+<text x="245" y="469" font-size="15">Delayed / unchecked</text>
+<text x="610" y="469" font-size="15">24 / 24</text>
+<text x="775" y="469" font-size="15">3.950</text>
+<text x="950" y="469" font-size="15">24</text>
+<text x="1090" y="469" font-size="15">0</text>
+<text x="30" y="501" font-size="15">shift_during_wait</text>
+<text x="245" y="501" font-size="15">Delayed / version checked</text>
+<text x="610" y="501" font-size="15">24 / 24</text>
+<text x="775" y="501" font-size="15">3.150</text>
+<text x="950" y="501" font-size="15">0</text>
+<text x="1090" y="501" font-size="15">24</text>
+<rect x="20" y="511" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="533" font-size="15">occluded_shift</text>
+<text x="245" y="533" font-size="15">Fixed plan</text>
+<text x="610" y="533" font-size="15">0 / 24</text>
+<text x="775" y="533" font-size="15">2.150</text>
+<text x="950" y="533" font-size="15">0</text>
+<text x="1090" y="533" font-size="15">0</text>
+<text x="30" y="565" font-size="15">occluded_shift</text>
+<text x="245" y="565" font-size="15">Instant rules</text>
+<text x="610" y="565" font-size="15">24 / 24</text>
+<text x="775" y="565" font-size="15">2.800</text>
+<text x="950" y="565" font-size="15">0</text>
+<text x="1090" y="565" font-size="15">0</text>
+<rect x="20" y="575" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="597" font-size="15">occluded_shift</text>
+<text x="245" y="597" font-size="15">Delayed / unchecked</text>
+<text x="610" y="597" font-size="15">24 / 24</text>
+<text x="775" y="597" font-size="15">3.100</text>
+<text x="950" y="597" font-size="15">0</text>
+<text x="1090" y="597" font-size="15">0</text>
+<text x="30" y="629" font-size="15">occluded_shift</text>
+<text x="245" y="629" font-size="15">Delayed / version checked</text>
+<text x="610" y="629" font-size="15">24 / 24</text>
+<text x="775" y="629" font-size="15">3.150</text>
+<text x="950" y="629" font-size="15">0</text>
+<text x="1090" y="629" font-size="15">0</text>
+<rect x="20" y="639" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="661" font-size="15">slip</text>
+<text x="245" y="661" font-size="15">Fixed plan</text>
+<text x="610" y="661" font-size="15">0 / 24</text>
+<text x="775" y="661" font-size="15">2.150</text>
+<text x="950" y="661" font-size="15">0</text>
+<text x="1090" y="661" font-size="15">0</text>
+<text x="30" y="693" font-size="15">slip</text>
+<text x="245" y="693" font-size="15">Instant rules</text>
+<text x="610" y="693" font-size="15">24 / 24</text>
+<text x="775" y="693" font-size="15">3.400</text>
+<text x="950" y="693" font-size="15">0</text>
+<text x="1090" y="693" font-size="15">0</text>
+<rect x="20" y="703" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="725" font-size="15">slip</text>
+<text x="245" y="725" font-size="15">Delayed / unchecked</text>
+<text x="610" y="725" font-size="15">24 / 24</text>
+<text x="775" y="725" font-size="15">3.400</text>
+<text x="950" y="725" font-size="15">0</text>
+<text x="1090" y="725" font-size="15">0</text>
+<text x="30" y="757" font-size="15">slip</text>
+<text x="245" y="757" font-size="15">Delayed / version checked</text>
+<text x="610" y="757" font-size="15">24 / 24</text>
+<text x="775" y="757" font-size="15">3.400</text>
+<text x="950" y="757" font-size="15">0</text>
+<text x="1090" y="757" font-size="15">0</text>
+<rect x="20" y="767" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="789" font-size="15">tracking_fault</text>
+<text x="245" y="789" font-size="15">Fixed plan</text>
+<text x="610" y="789" font-size="15">0 / 24</text>
+<text x="775" y="789" font-size="15">0.500</text>
+<text x="950" y="789" font-size="15">0</text>
+<text x="1090" y="789" font-size="15">0</text>
+<text x="30" y="821" font-size="15">tracking_fault</text>
+<text x="245" y="821" font-size="15">Instant rules</text>
+<text x="610" y="821" font-size="15">0 / 24</text>
+<text x="775" y="821" font-size="15">0.500</text>
+<text x="950" y="821" font-size="15">0</text>
+<text x="1090" y="821" font-size="15">0</text>
+<rect x="20" y="831" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="853" font-size="15">tracking_fault</text>
+<text x="245" y="853" font-size="15">Delayed / unchecked</text>
+<text x="610" y="853" font-size="15">0 / 24</text>
+<text x="775" y="853" font-size="15">0.500</text>
+<text x="950" y="853" font-size="15">0</text>
+<text x="1090" y="853" font-size="15">0</text>
+<text x="30" y="885" font-size="15">tracking_fault</text>
+<text x="245" y="885" font-size="15">Delayed / version checked</text>
+<text x="610" y="885" font-size="15">0 / 24</text>
+<text x="775" y="885" font-size="15">0.500</text>
+<text x="950" y="885" font-size="15">0</text>
+<text x="1090" y="885" font-size="15">0</text>
+<rect x="20" y="895" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="917" font-size="15">all</text>
+<text x="245" y="917" font-size="15">Fixed plan</text>
+<text x="610" y="917" font-size="15">24 / 144</text>
+<text x="775" y="917" font-size="15">1.875</text>
+<text x="950" y="917" font-size="15">0</text>
+<text x="1090" y="917" font-size="15">0</text>
+<text x="30" y="949" font-size="15">all</text>
+<text x="245" y="949" font-size="15">Instant rules</text>
+<text x="610" y="949" font-size="15">120 / 144</text>
+<text x="775" y="949" font-size="15">2.317</text>
+<text x="950" y="949" font-size="15">0</text>
+<text x="1090" y="949" font-size="15">0</text>
+<rect x="20" y="959" width="1180" height="31" fill="#f0f4f8"/>
+<text x="30" y="981" font-size="15">all</text>
+<text x="245" y="981" font-size="15">Delayed / unchecked</text>
+<text x="610" y="981" font-size="15">120 / 144</text>
+<text x="775" y="981" font-size="15">2.633</text>
+<text x="950" y="981" font-size="15">24</text>
+<text x="1090" y="981" font-size="15">0</text>
+<text x="30" y="1013" font-size="15">all</text>
+<text x="245" y="1013" font-size="15">Delayed / version checked</text>
+<text x="610" y="1013" font-size="15">120 / 144</text>
+<text x="775" y="1013" font-size="15">2.517</text>
+<text x="950" y="1013" font-size="15">0</text>
+<text x="1090" y="1013" font-size="15">24</text>
+</g></svg>

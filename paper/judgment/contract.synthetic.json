@@ -1,0 +1,24 @@
+{
+  "schema": "roborsi-phase-contract-v1",
+  "execution_authorized": false,
+  "scope": {
+    "robot": "historical-piper",
+    "setup": "offline-review-example",
+    "task": "three-objects"
+  },
+  "program_sha256": "a3492789aace4e876cb8c5041ebf3551249d0b6f6412d1826ed34263bac9412c",
+  "phase": "synthetic_close_fixture",
+  "max_observation_age_s": 1.0,
+  "expected": {
+    "grip_width_m": [
+      0.012,
+      0.06
+    ]
+  },
+  "hard_limits": {
+    "tracking_rad": [
+      0,
+      0.15
+    ]
+  }
+}

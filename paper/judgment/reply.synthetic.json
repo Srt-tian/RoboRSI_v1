@@ -1,0 +1,33 @@
+{
+  "request_sha256": "5f2e3eaed471ee60fc0db0e54707bac175693292210c90937aa6387cf036dca4",
+  "response": {
+    "model": "synthetic-fixture-not-a-model",
+    "answers": {
+      "route": {
+        "type": "choice",
+        "choice": "collect_evidence",
+        "confidence": 0.5,
+        "probabilities": {
+          "review_candidate": 0.0,
+          "collect_evidence": 1.0,
+          "ask_planner": 0.0,
+          "abstain": 0.0
+        }
+      },
+      "candidate": {
+        "type": "choice",
+        "choice": "abstain",
+        "confidence": 0.5,
+        "probabilities": {
+          "candidate_88b5f0c83de81ade4b7622290148bbe7c677dcac037fcfe0d3bc691a1347f604": 0.0,
+          "candidate_998935b4ac1796f54dbb99d647917f3a5999eee7e5e6019171451b14e17dcc7b": 0.0,
+          "abstain": 1.0
+        }
+      },
+      "evidence_sufficient": {
+        "type": "noul",
+        "noul": 0.0
+      }
+    }
+  }
+}

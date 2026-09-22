@@ -1,0 +1,5 @@
+{
+  "robot": "historical-piper",
+  "setup": "offline-review-example",
+  "task": "three-objects"
+}
