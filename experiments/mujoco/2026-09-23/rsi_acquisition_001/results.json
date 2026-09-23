@@ -1,0 +1,2027 @@
+{
+  "scope": "One offline RSI acquisition round with equal-budget controls and fresh tests.\n\nSimulation collection can run on a CPU-only host. Selection/update require torch.\nThe candidate is conventional failure-directed acquisition, not claimed novel.\n",
+  "summaries": [
+    {
+      "split": "test",
+      "methods": {
+        "replay_only_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9366666674613953,
+            "mean_cost": 0.31567996740341187,
+            "duration_s": 2.854933261871338,
+            "oracle_regret": 0.07646042853593826,
+            "choices": [
+              31,
+              62,
+              207
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8866666555404663,
+            "mean_cost": 0.3957881033420563,
+            "duration_s": 3.1784000396728516,
+            "oracle_regret": 0.1275743693113327,
+            "choices": [
+              1,
+              46,
+              103
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23557181656360626,
+            "duration_s": 2.5314667224884033,
+            "oracle_regret": 0.02534649334847927,
+            "choices": [
+              30,
+              16,
+              104
+            ]
+          }
+        },
+        "replay_only_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9300000071525574,
+            "mean_cost": 0.3182210922241211,
+            "duration_s": 2.8385331630706787,
+            "oracle_regret": 0.0790015310049057,
+            "choices": [
+              53,
+              31,
+              216
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8733333349227905,
+            "mean_cost": 0.4025169909000397,
+            "duration_s": 3.171999931335449,
+            "oracle_regret": 0.1343032419681549,
+            "choices": [
+              8,
+              20,
+              122
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23392514884471893,
+            "duration_s": 2.5050666332244873,
+            "oracle_regret": 0.0236998088657856,
+            "choices": [
+              45,
+              11,
+              94
+            ]
+          }
+        },
+        "replay_only_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9266666769981384,
+            "mean_cost": 0.31925374269485474,
+            "duration_s": 2.793466806411743,
+            "oracle_regret": 0.08003418147563934,
+            "choices": [
+              132,
+              42,
+              126
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8666666746139526,
+            "mean_cost": 0.40278303623199463,
+            "duration_s": 3.0682666301727295,
+            "oracle_regret": 0.13456931710243225,
+            "choices": [
+              44,
+              27,
+              79
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23572435975074768,
+            "duration_s": 2.5186665058135986,
+            "oracle_regret": 0.02549903094768524,
+            "choices": [
+              88,
+              15,
+              47
+            ]
+          }
+        },
+        "random_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9366666674613953,
+            "mean_cost": 0.3142220973968506,
+            "duration_s": 2.8441333770751953,
+            "oracle_regret": 0.07500258833169937,
+            "choices": [
+              62,
+              40,
+              198
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8866666555404663,
+            "mean_cost": 0.39147138595581055,
+            "duration_s": 3.1525330543518066,
+            "oracle_regret": 0.12325763702392578,
+            "choices": [
+              7,
+              22,
+              121
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.2369728833436966,
+            "duration_s": 2.535733222961426,
+            "oracle_regret": 0.02674754150211811,
+            "choices": [
+              55,
+              18,
+              77
+            ]
+          }
+        },
+        "random_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9266666769981384,
+            "mean_cost": 0.3202698826789856,
+            "duration_s": 2.8234665393829346,
+            "oracle_regret": 0.0810503363609314,
+            "choices": [
+              102,
+              29,
+              169
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8733333349227905,
+            "mean_cost": 0.3959396481513977,
+            "duration_s": 3.1026666164398193,
+            "oracle_regret": 0.12772586941719055,
+            "choices": [
+              28,
+              18,
+              104
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.24460016191005707,
+            "duration_s": 2.54426646232605,
+            "oracle_regret": 0.03437481075525284,
+            "choices": [
+              74,
+              11,
+              65
+            ]
+          }
+        },
+        "random_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9366666674613953,
+            "mean_cost": 0.31046590209007263,
+            "duration_s": 2.782266616821289,
+            "oracle_regret": 0.07124634087085724,
+            "choices": [
+              137,
+              47,
+              116
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8933333158493042,
+            "mean_cost": 0.37923890352249146,
+            "duration_s": 3.0522663593292236,
+            "oracle_regret": 0.1110251396894455,
+            "choices": [
+              47,
+              35,
+              68
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.24169288575649261,
+            "duration_s": 2.5122663974761963,
+            "oracle_regret": 0.03146755322813988,
+            "choices": [
+              90,
+              12,
+              48
+            ]
+          }
+        },
+        "disagreement_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9366666674613953,
+            "mean_cost": 0.3148610293865204,
+            "duration_s": 2.851466417312622,
+            "oracle_regret": 0.07564149051904678,
+            "choices": [
+              42,
+              72,
+              186
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8866666555404663,
+            "mean_cost": 0.39283326268196106,
+            "duration_s": 3.1546666622161865,
+            "oracle_regret": 0.1246195062994957,
+            "choices": [
+              1,
+              49,
+              100
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.2368888109922409,
+            "duration_s": 2.548266649246216,
+            "oracle_regret": 0.026663480326533318,
+            "choices": [
+              41,
+              23,
+              86
+            ]
+          }
+        },
+        "disagreement_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9233333468437195,
+            "mean_cost": 0.32514306902885437,
+            "duration_s": 2.8341333866119385,
+            "oracle_regret": 0.08592354506254196,
+            "choices": [
+              90,
+              54,
+              156
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8600000143051147,
+            "mean_cost": 0.41555771231651306,
+            "duration_s": 3.1578667163848877,
+            "oracle_regret": 0.1473439484834671,
+            "choices": [
+              31,
+              41,
+              78
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23472844064235687,
+            "duration_s": 2.5104000568389893,
+            "oracle_regret": 0.024503124877810478,
+            "choices": [
+              59,
+              13,
+              78
+            ]
+          }
+        },
+        "disagreement_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9266666769981384,
+            "mean_cost": 0.32227230072021484,
+            "duration_s": 2.822000026702881,
+            "oracle_regret": 0.08305277675390244,
+            "choices": [
+              123,
+              49,
+              128
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8666666746139526,
+            "mean_cost": 0.408612459897995,
+            "duration_s": 3.1234664916992188,
+            "oracle_regret": 0.1403987556695938,
+            "choices": [
+              40,
+              34,
+              76
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.2359321564435959,
+            "duration_s": 2.520533561706543,
+            "oracle_regret": 0.025706810876727104,
+            "choices": [
+              83,
+              15,
+              52
+            ]
+          }
+        },
+        "counterexample_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9399999976158142,
+            "mean_cost": 0.30612099170684814,
+            "duration_s": 2.8005332946777344,
+            "oracle_regret": 0.06690146028995514,
+            "choices": [
+              114,
+              67,
+              119
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8933333158493042,
+            "mean_cost": 0.3747673034667969,
+            "duration_s": 3.0562665462493896,
+            "oracle_regret": 0.1065535768866539,
+            "choices": [
+              33,
+              43,
+              74
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23747466504573822,
+            "duration_s": 2.544800043106079,
+            "oracle_regret": 0.027249349281191826,
+            "choices": [
+              81,
+              24,
+              45
+            ]
+          }
+        },
+        "counterexample_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9333333373069763,
+            "mean_cost": 0.3123420476913452,
+            "duration_s": 2.813199758529663,
+            "oracle_regret": 0.07312249392271042,
+            "choices": [
+              105,
+              49,
+              146
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8799999952316284,
+            "mean_cost": 0.38954976201057434,
+            "duration_s": 3.103466510772705,
+            "oracle_regret": 0.12133600562810898,
+            "choices": [
+              22,
+              31,
+              97
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.2351343035697937,
+            "duration_s": 2.5229332447052,
+            "oracle_regret": 0.024908971041440964,
+            "choices": [
+              83,
+              18,
+              49
+            ]
+          }
+        },
+        "counterexample_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9366666674613953,
+            "mean_cost": 0.3116726577281952,
+            "duration_s": 2.7971999645233154,
+            "oracle_regret": 0.07245313376188278,
+            "choices": [
+              149,
+              45,
+              106
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8866666555404663,
+            "mean_cost": 0.3879828453063965,
+            "duration_s": 3.073066473007202,
+            "oracle_regret": 0.11976911872625351,
+            "choices": [
+              47,
+              31,
+              72
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.2353624701499939,
+            "duration_s": 2.5213332176208496,
+            "oracle_regret": 0.02513713203370571,
+            "choices": [
+              102,
+              14,
+              34
+            ]
+          }
+        },
+        "frozen_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9399999976158142,
+            "mean_cost": 0.309976190328598,
+            "duration_s": 2.826399803161621,
+            "oracle_regret": 0.07075665891170502,
+            "choices": [
+              30,
+              43,
+              227
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8933333158493042,
+            "mean_cost": 0.38476797938346863,
+            "duration_s": 3.123999834060669,
+            "oracle_regret": 0.11655420809984207,
+            "choices": [
+              0,
+              28,
+              122
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.235184445977211,
+            "duration_s": 2.5287997722625732,
+            "oracle_regret": 0.02495911531150341,
+            "choices": [
+              30,
+              15,
+              105
+            ]
+          }
+        },
+        "frozen_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9366666674613953,
+            "mean_cost": 0.3123580813407898,
+            "duration_s": 2.8189332485198975,
+            "oracle_regret": 0.073138527572155,
+            "choices": [
+              36,
+              45,
+              219
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8866666555404663,
+            "mean_cost": 0.38982245326042175,
+            "duration_s": 3.118666648864746,
+            "oracle_regret": 0.12160871177911758,
+            "choices": [
+              0,
+              29,
+              121
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23489366471767426,
+            "duration_s": 2.519199848175049,
+            "oracle_regret": 0.024668343365192413,
+            "choices": [
+              36,
+              16,
+              98
+            ]
+          }
+        },
+        "frozen_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9200000166893005,
+            "mean_cost": 0.327851265668869,
+            "duration_s": 2.8078665733337402,
+            "oracle_regret": 0.08863172680139542,
+            "choices": [
+              133,
+              49,
+              118
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8533333539962769,
+            "mean_cost": 0.41997814178466797,
+            "duration_s": 3.0970664024353027,
+            "oracle_regret": 0.1517644226551056,
+            "choices": [
+              46,
+              34,
+              70
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23572435975074768,
+            "duration_s": 2.5186665058135986,
+            "oracle_regret": 0.02549903094768524,
+            "choices": [
+              87,
+              15,
+              48
+            ]
+          }
+        },
+        "continue": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.7666666507720947,
+            "mean_cost": 0.521498441696167,
+            "duration_s": 3.2595999240875244,
+            "oracle_regret": 0.2822788655757904,
+            "choices": [
+              300,
+              0,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.6333333253860474,
+            "mean_cost": 0.7049130201339722,
+            "duration_s": 3.829866647720337,
+            "oracle_regret": 0.4366993308067322,
+            "choices": [
+              150,
+              0,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.8999999761581421,
+            "mean_cost": 0.33808383345603943,
+            "duration_s": 2.689333200454712,
+            "oracle_regret": 0.1278584897518158,
+            "choices": [
+              150,
+              0,
+              0
+            ]
+          }
+        },
+        "stop_refresh": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9333333373069763,
+            "mean_cost": 0.33122143149375916,
+            "duration_s": 3.0101335048675537,
+            "oracle_regret": 0.09200189262628555,
+            "choices": [
+              0,
+              300,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8666666746139526,
+            "mean_cost": 0.4156915247440338,
+            "duration_s": 3.1850666999816895,
+            "oracle_regret": 0.14747780561447144,
+            "choices": [
+              0,
+              150,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 1.0,
+            "mean_cost": 0.2467513233423233,
+            "duration_s": 2.835200309753418,
+            "oracle_regret": 0.03652600571513176,
+            "choices": [
+              0,
+              150,
+              0
+            ]
+          }
+        },
+        "async_refresh": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9399999976158142,
+            "mean_cost": 0.30952325463294983,
+            "duration_s": 2.8261332511901855,
+            "oracle_regret": 0.07030371576547623,
+            "choices": [
+              0,
+              0,
+              300
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8933333158493042,
+            "mean_cost": 0.3869107961654663,
+            "duration_s": 3.1685335636138916,
+            "oracle_regret": 0.11869707703590393,
+            "choices": [
+              0,
+              0,
+              150
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9866666793823242,
+            "mean_cost": 0.23213566839694977,
+            "duration_s": 2.4837334156036377,
+            "oracle_regret": 0.02191033773124218,
+            "choices": [
+              0,
+              0,
+              150
+            ]
+          }
+        },
+        "task_phase_lookup": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9466666579246521,
+            "mean_cost": 0.30406707525253296,
+            "duration_s": 2.8478665351867676,
+            "oracle_regret": 0.06484755128622055,
+            "choices": [
+              90,
+              30,
+              180
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8933333158493042,
+            "mean_cost": 0.3869107961654663,
+            "duration_s": 3.1685335636138916,
+            "oracle_regret": 0.11869707703590393,
+            "choices": [
+              0,
+              0,
+              150
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 1.0,
+            "mean_cost": 0.2212233543395996,
+            "duration_s": 2.5271999835968018,
+            "oracle_regret": 0.010998021811246872,
+            "choices": [
+              90,
+              30,
+              30
+            ]
+          }
+        },
+        "oracle_infeasible": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.239219531416893,
+            "duration_s": 2.5057332515716553,
+            "oracle_regret": 0.0,
+            "choices": [
+              179,
+              44,
+              77
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.9599999785423279,
+            "mean_cost": 0.26821374893188477,
+            "duration_s": 2.595733165740967,
+            "oracle_regret": 0.0,
+            "choices": [
+              57,
+              40,
+              53
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 1.0,
+            "mean_cost": 0.21022534370422363,
+            "duration_s": 2.4157333374023438,
+            "oracle_regret": 0.0,
+            "choices": [
+              122,
+              4,
+              24
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "delay",
+      "methods": {
+        "replay_only_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.846666693687439,
+            "mean_cost": 0.42726439237594604,
+            "duration_s": 3.2736003398895264,
+            "oracle_regret": 0.09742188453674316,
+            "choices": [
+              25,
+              98,
+              177
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.699999988079071,
+            "mean_cost": 0.6114668250083923,
+            "duration_s": 3.7930665016174316,
+            "oracle_regret": 0.17027857899665833,
+            "choices": [
+              0,
+              62,
+              88
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9933333396911621,
+            "mean_cost": 0.2430620640516281,
+            "duration_s": 2.7541332244873047,
+            "oracle_regret": 0.024565206840634346,
+            "choices": [
+              25,
+              36,
+              89
+            ]
+          }
+        },
+        "replay_only_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.846666693687439,
+            "mean_cost": 0.4223136007785797,
+            "duration_s": 3.195199966430664,
+            "oracle_regret": 0.09247105568647385,
+            "choices": [
+              37,
+              41,
+              222
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7266666889190674,
+            "mean_cost": 0.5763509273529053,
+            "duration_s": 3.6815998554229736,
+            "oracle_regret": 0.13516269624233246,
+            "choices": [
+              10,
+              22,
+              118
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.26827630400657654,
+            "duration_s": 2.7088000774383545,
+            "oracle_regret": 0.049779437482357025,
+            "choices": [
+              27,
+              19,
+              104
+            ]
+          }
+        },
+        "replay_only_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8533333539962769,
+            "mean_cost": 0.40963417291641235,
+            "duration_s": 3.135866641998291,
+            "oracle_regret": 0.07979165762662888,
+            "choices": [
+              139,
+              52,
+              109
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7266666889190674,
+            "mean_cost": 0.5627794861793518,
+            "duration_s": 3.5360002517700195,
+            "oracle_regret": 0.12159126251935959,
+            "choices": [
+              79,
+              24,
+              47
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.2564888894557953,
+            "duration_s": 2.7357335090637207,
+            "oracle_regret": 0.03799203783273697,
+            "choices": [
+              60,
+              28,
+              62
+            ]
+          }
+        },
+        "random_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8533333539962769,
+            "mean_cost": 0.4156017005443573,
+            "duration_s": 3.186800241470337,
+            "oracle_regret": 0.08575914800167084,
+            "choices": [
+              44,
+              51,
+              205
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7266666889190674,
+            "mean_cost": 0.5735157132148743,
+            "duration_s": 3.626666784286499,
+            "oracle_regret": 0.13232749700546265,
+            "choices": [
+              14,
+              21,
+              115
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.25768762826919556,
+            "duration_s": 2.7469332218170166,
+            "oracle_regret": 0.03919079154729843,
+            "choices": [
+              30,
+              30,
+              90
+            ]
+          }
+        },
+        "random_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8500000238418579,
+            "mean_cost": 0.41216546297073364,
+            "duration_s": 3.1026668548583984,
+            "oracle_regret": 0.08232294768095016,
+            "choices": [
+              101,
+              36,
+              163
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7333333492279053,
+            "mean_cost": 0.5593499541282654,
+            "duration_s": 3.538400173187256,
+            "oracle_regret": 0.11816170066595078,
+            "choices": [
+              45,
+              21,
+              84
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.2649810314178467,
+            "duration_s": 2.666933298110962,
+            "oracle_regret": 0.046484190970659256,
+            "choices": [
+              56,
+              15,
+              79
+            ]
+          }
+        },
+        "random_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8633333444595337,
+            "mean_cost": 0.39256227016448975,
+            "duration_s": 3.055600166320801,
+            "oracle_regret": 0.06271973997354507,
+            "choices": [
+              184,
+              40,
+              76
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.753333330154419,
+            "mean_cost": 0.5264403223991394,
+            "duration_s": 3.424799919128418,
+            "oracle_regret": 0.08525209873914719,
+            "choices": [
+              87,
+              21,
+              42
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9733333587646484,
+            "mean_cost": 0.2586842477321625,
+            "duration_s": 2.6863999366760254,
+            "oracle_regret": 0.04018737003207207,
+            "choices": [
+              97,
+              19,
+              34
+            ]
+          }
+        },
+        "disagreement_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.846666693687439,
+            "mean_cost": 0.42826175689697266,
+            "duration_s": 3.2893335819244385,
+            "oracle_regret": 0.09841923415660858,
+            "choices": [
+              30,
+              104,
+              166
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.699999988079071,
+            "mean_cost": 0.6110931634902954,
+            "duration_s": 3.7933332920074463,
+            "oracle_regret": 0.16990485787391663,
+            "choices": [
+              0,
+              63,
+              87
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9933333396911621,
+            "mean_cost": 0.24543045461177826,
+            "duration_s": 2.7853331565856934,
+            "oracle_regret": 0.02693359926342964,
+            "choices": [
+              30,
+              41,
+              79
+            ]
+          }
+        },
+        "disagreement_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8566666841506958,
+            "mean_cost": 0.4064110219478607,
+            "duration_s": 3.124799966812134,
+            "oracle_regret": 0.07656849920749664,
+            "choices": [
+              79,
+              50,
+              171
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.746666669845581,
+            "mean_cost": 0.545120120048523,
+            "duration_s": 3.5301334857940674,
+            "oracle_regret": 0.10393194109201431,
+            "choices": [
+              41,
+              29,
+              80
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.2677019238471985,
+            "duration_s": 2.7194664478302,
+            "oracle_regret": 0.04920506849884987,
+            "choices": [
+              38,
+              21,
+              91
+            ]
+          }
+        },
+        "disagreement_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8666666746139526,
+            "mean_cost": 0.3905234932899475,
+            "duration_s": 3.0840003490448,
+            "oracle_regret": 0.06068096309900284,
+            "choices": [
+              150,
+              45,
+              105
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.753333330154419,
+            "mean_cost": 0.5285165309906006,
+            "duration_s": 3.4765331745147705,
+            "oracle_regret": 0.08732832223176956,
+            "choices": [
+              75,
+              23,
+              52
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.25253045558929443,
+            "duration_s": 2.691466808319092,
+            "oracle_regret": 0.03403358906507492,
+            "choices": [
+              75,
+              22,
+              53
+            ]
+          }
+        },
+        "counterexample_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8533333539962769,
+            "mean_cost": 0.4061788022518158,
+            "duration_s": 3.09440016746521,
+            "oracle_regret": 0.07633622735738754,
+            "choices": [
+              177,
+              38,
+              85
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7266666889190674,
+            "mean_cost": 0.5571095943450928,
+            "duration_s": 3.449866533279419,
+            "oracle_regret": 0.11592137813568115,
+            "choices": [
+              87,
+              10,
+              53
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.25524792075157166,
+            "duration_s": 2.7389333248138428,
+            "oracle_regret": 0.03675108402967453,
+            "choices": [
+              90,
+              28,
+              32
+            ]
+          }
+        },
+        "counterexample_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8600000143051147,
+            "mean_cost": 0.4035665690898895,
+            "duration_s": 3.118800163269043,
+            "oracle_regret": 0.07372402399778366,
+            "choices": [
+              109,
+              43,
+              148
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.753333330154419,
+            "mean_cost": 0.5421591997146606,
+            "duration_s": 3.551999807357788,
+            "oracle_regret": 0.10097102075815201,
+            "choices": [
+              32,
+              26,
+              92
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.26497384905815125,
+            "duration_s": 2.6856000423431396,
+            "oracle_regret": 0.04647703841328621,
+            "choices": [
+              77,
+              17,
+              56
+            ]
+          }
+        },
+        "counterexample_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8600000143051147,
+            "mean_cost": 0.39767396450042725,
+            "duration_s": 3.0694668292999268,
+            "oracle_regret": 0.06783140450716019,
+            "choices": [
+              194,
+              29,
+              77
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.753333330154419,
+            "mean_cost": 0.533217191696167,
+            "duration_s": 3.479466438293457,
+            "oracle_regret": 0.09202890843153,
+            "choices": [
+              90,
+              15,
+              45
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.2621307373046875,
+            "duration_s": 2.6594667434692383,
+            "oracle_regret": 0.04363389313220978,
+            "choices": [
+              104,
+              14,
+              32
+            ]
+          }
+        },
+        "frozen_11": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8500000238418579,
+            "mean_cost": 0.42341089248657227,
+            "duration_s": 3.2518668174743652,
+            "oracle_regret": 0.0935683324933052,
+            "choices": [
+              24,
+              64,
+              212
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7266666889190674,
+            "mean_cost": 0.5818753242492676,
+            "duration_s": 3.7423999309539795,
+            "oracle_regret": 0.14068707823753357,
+            "choices": [
+              0,
+              36,
+              114
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9733333587646484,
+            "mean_cost": 0.26494643092155457,
+            "duration_s": 2.761333465576172,
+            "oracle_regret": 0.046449579298496246,
+            "choices": [
+              24,
+              28,
+              98
+            ]
+          }
+        },
+        "frozen_22": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8399999737739563,
+            "mean_cost": 0.43381601572036743,
+            "duration_s": 3.2648003101348877,
+            "oracle_regret": 0.10397345572710037,
+            "choices": [
+              28,
+              67,
+              205
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7133333086967468,
+            "mean_cost": 0.5971999168395996,
+            "duration_s": 3.783733367919922,
+            "oracle_regret": 0.15601173043251038,
+            "choices": [
+              2,
+              43,
+              105
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.2704320251941681,
+            "duration_s": 2.7458667755126953,
+            "oracle_regret": 0.05193516984581947,
+            "choices": [
+              26,
+              24,
+              100
+            ]
+          }
+        },
+        "frozen_33": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8600000143051147,
+            "mean_cost": 0.40388917922973633,
+            "duration_s": 3.1350667476654053,
+            "oracle_regret": 0.07404664158821106,
+            "choices": [
+              137,
+              61,
+              102
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7400000095367432,
+            "mean_cost": 0.5489253401756287,
+            "duration_s": 3.5037333965301514,
+            "oracle_regret": 0.10773712396621704,
+            "choices": [
+              76,
+              29,
+              45
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.2588529884815216,
+            "duration_s": 2.766400098800659,
+            "oracle_regret": 0.040356166660785675,
+            "choices": [
+              61,
+              32,
+              57
+            ]
+          }
+        },
+        "continue": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.79666668176651,
+            "mean_cost": 0.4674166738986969,
+            "duration_s": 3.10640025138855,
+            "oracle_regret": 0.13757415115833282,
+            "choices": [
+              300,
+              0,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.6600000262260437,
+            "mean_cost": 0.6373329162597656,
+            "duration_s": 3.556000232696533,
+            "oracle_regret": 0.196144700050354,
+            "choices": [
+              150,
+              0,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9333333373069763,
+            "mean_cost": 0.29750046133995056,
+            "duration_s": 2.6568000316619873,
+            "oracle_regret": 0.07900361716747284,
+            "choices": [
+              150,
+              0,
+              0
+            ]
+          }
+        },
+        "stop_refresh": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8199999928474426,
+            "mean_cost": 0.5053518414497375,
+            "duration_s": 3.89786696434021,
+            "oracle_regret": 0.1755092889070511,
+            "choices": [
+              0,
+              300,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.6399999856948853,
+            "mean_cost": 0.7093615531921387,
+            "duration_s": 4.262933254241943,
+            "oracle_regret": 0.26817336678504944,
+            "choices": [
+              0,
+              150,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 1.0,
+            "mean_cost": 0.30134204030036926,
+            "duration_s": 3.5328001976013184,
+            "oracle_regret": 0.08284518122673035,
+            "choices": [
+              0,
+              150,
+              0
+            ]
+          }
+        },
+        "async_refresh": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.8366666436195374,
+            "mean_cost": 0.43032461404800415,
+            "duration_s": 3.1632003784179688,
+            "oracle_regret": 0.1004820466041565,
+            "choices": [
+              0,
+              0,
+              300
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7266666889190674,
+            "mean_cost": 0.578220784664154,
+            "duration_s": 3.691999912261963,
+            "oracle_regret": 0.13703253865242004,
+            "choices": [
+              0,
+              0,
+              150
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9466666579246521,
+            "mean_cost": 0.28242844343185425,
+            "duration_s": 2.6344001293182373,
+            "oracle_regret": 0.06393156945705414,
+            "choices": [
+              0,
+              0,
+              150
+            ]
+          }
+        },
+        "task_phase_lookup": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.846666693687439,
+            "mean_cost": 0.4265514016151428,
+            "duration_s": 3.2306668758392334,
+            "oracle_regret": 0.09670886397361755,
+            "choices": [
+              90,
+              30,
+              180
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.7266666889190674,
+            "mean_cost": 0.578220784664154,
+            "duration_s": 3.691999912261963,
+            "oracle_regret": 0.13703253865242004,
+            "choices": [
+              0,
+              0,
+              150
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.274882048368454,
+            "duration_s": 2.7693333625793457,
+            "oracle_regret": 0.05638519302010536,
+            "choices": [
+              90,
+              30,
+              30
+            ]
+          }
+        },
+        "oracle_infeasible": {
+          "all": {
+            "contexts": 300,
+            "success_rate": 0.9100000262260437,
+            "mean_cost": 0.32984253764152527,
+            "duration_s": 2.844399929046631,
+            "oracle_regret": 0.0,
+            "choices": [
+              250,
+              29,
+              21
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 150,
+            "success_rate": 0.8199999928474426,
+            "mean_cost": 0.4411882162094116,
+            "duration_s": 3.154399871826172,
+            "oracle_regret": 0.0,
+            "choices": [
+              120,
+              20,
+              10
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 150,
+            "success_rate": 1.0,
+            "mean_cost": 0.21849685907363892,
+            "duration_s": 2.5343997478485107,
+            "oracle_regret": 0.0,
+            "choices": [
+              130,
+              9,
+              11
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "split": "all",
+      "task": "all",
+      "reference": "random",
+      "mean": -0.00462206045165658,
+      "ci95": [
+        -0.01409110013799121,
+        0.004393765356857334
+      ],
+      "contexts": 600,
+      "primary": true,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "all",
+      "reference": "disagreement",
+      "mean": -0.008319629676019152,
+      "ci95": [
+        -0.018387620396989705,
+        0.0014392464762398372
+      ],
+      "contexts": 600,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "all",
+      "reference": "replay_only",
+      "mean": -0.012468668945754567,
+      "ci95": [
+        -0.02364783377914379,
+        -0.001359351790975777
+      ],
+      "contexts": 600,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "all",
+      "reference": "frozen",
+      "mean": -0.012291101279358068,
+      "ci95": [
+        -0.024488173297140745,
+        -0.00017977535398676754
+      ],
+      "contexts": 600,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPush-v4",
+      "reference": "random",
+      "mean": -0.006861654942234357,
+      "ci95": [
+        -0.021756979273321726,
+        0.00799467461866637
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPush-v4",
+      "reference": "disagreement",
+      "mean": -0.019491225127130748,
+      "ci95": [
+        -0.03784662419045344,
+        -0.0016748043781456819
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPush-v4",
+      "reference": "replay_only",
+      "mean": -0.02781657887622714,
+      "ci95": [
+        -0.048776202909648424,
+        -0.007296624892856922
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPush-v4",
+      "reference": "frozen",
+      "mean": -0.022963878388206165,
+      "ci95": [
+        -0.04646886287505428,
+        0.00021484568435699064
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "random",
+      "mean": -0.0023824659610788028,
+      "ci95": [
+        -0.012582680763987204,
+        0.007932388339502125
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "disagreement",
+      "mean": 0.0028519657750924426,
+      "ci95": [
+        -0.0037293896830330286,
+        0.011142027175674838
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "replay_only",
+      "mean": 0.002879240984718005,
+      "ci95": [
+        -0.004697058621173104,
+        0.01183858227853974
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "all",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "frozen",
+      "mean": -0.0016183241705099742,
+      "ci95": [
+        -0.007383576688667138,
+        0.004719030591348809
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "all",
+      "reference": "random",
+      "mean": -0.004940730494757494,
+      "ci95": [
+        -0.01706128328666091,
+        0.0075184288018693545
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "all",
+      "reference": "disagreement",
+      "mean": -0.01071358093370994,
+      "ci95": [
+        -0.02301769185469796,
+        0.0018694137592489535
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "all",
+      "reference": "replay_only",
+      "mean": -0.007673019257684549,
+      "ci95": [
+        -0.022153649984238046,
+        0.006247115040818851
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "all",
+      "reference": "frozen",
+      "mean": -0.006683278456330299,
+      "ci95": [
+        -0.023213064073274534,
+        0.00965129009913653
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPush-v4",
+      "reference": "random",
+      "mean": -0.00478330984711647,
+      "ci95": [
+        -0.027180321088681618,
+        0.018546261607358852
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPush-v4",
+      "reference": "disagreement",
+      "mean": -0.021567840004960696,
+      "ci95": [
+        -0.04539892388756076,
+        0.0020194091635445765
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPush-v4",
+      "reference": "replay_only",
+      "mean": -0.01626274419327577,
+      "ci95": [
+        -0.043652194932724035,
+        0.010785849712168182
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPush-v4",
+      "reference": "frozen",
+      "mean": -0.014089543571074803,
+      "ci95": [
+        -0.04623864554986357,
+        0.01843592999999722
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "random",
+      "mean": -0.005098151142398516,
+      "ci95": [
+        -0.017036250752707323,
+        0.005572822906076914
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "disagreement",
+      "mean": 0.00014067813754081726,
+      "ci95": [
+        -0.00821314329529802,
+        0.008633248457064232
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "replay_only",
+      "mean": 0.0009167056779066722,
+      "ci95": [
+        -0.007401055857539177,
+        0.009449787800510725
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "test",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "frozen",
+      "mean": 0.0007229866584142049,
+      "ci95": [
+        -0.007666196354975303,
+        0.009278638766457637
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "all",
+      "reference": "random",
+      "mean": -0.0043033904085556665,
+      "ci95": [
+        -0.01804415144585073,
+        0.009024250541813673
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "all",
+      "reference": "disagreement",
+      "mean": -0.005925678418328364,
+      "ci95": [
+        -0.02169382377869139,
+        0.009300217534415425
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "all",
+      "reference": "replay_only",
+      "mean": -0.017264318633824587,
+      "ci95": [
+        -0.034962350367878876,
+        0.0002796432459726931
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "all",
+      "reference": "frozen",
+      "mean": -0.01789892410238584,
+      "ci95": [
+        -0.035770241678071524,
+        -0.0010081841371332603
+      ],
+      "contexts": 300,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPush-v4",
+      "reference": "random",
+      "mean": -0.008940000037352245,
+      "ci95": [
+        -0.02991844324270884,
+        0.011415962352727852
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPush-v4",
+      "reference": "disagreement",
+      "mean": -0.0174146102493008,
+      "ci95": [
+        -0.04566840774814288,
+        0.010052125525971258
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPush-v4",
+      "reference": "replay_only",
+      "mean": -0.03937041355917851,
+      "ci95": [
+        -0.0705792561986794,
+        -0.009815444435613852
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPush-v4",
+      "reference": "frozen",
+      "mean": -0.03183821320533752,
+      "ci95": [
+        -0.0659561927864949,
+        -1.805361919104982e-05
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "random",
+      "mean": 0.00033321922024091085,
+      "ci95": [
+        -0.016789909043659765,
+        0.017771365081270547
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "disagreement",
+      "mean": 0.005563253412644068,
+      "ci95": [
+        -0.005074656599511703,
+        0.019594476478795215
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "replay_only",
+      "mean": 0.004841776291529338,
+      "ci95": [
+        -0.008485256043573221,
+        0.020896194743613403
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    },
+    {
+      "split": "delay",
+      "task": "FetchPickAndPlace-v4",
+      "reference": "frozen",
+      "mean": -0.0039596349994341536,
+      "ci95": [
+        -0.01301239618162314,
+        0.005207375824451449
+      ],
+      "contexts": 150,
+      "primary": false,
+      "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+    }
+  ],
+  "primary": {
+    "split": "all",
+    "task": "all",
+    "reference": "random",
+    "mean": -0.00462206045165658,
+    "ci95": [
+      -0.01409110013799121,
+      0.004393765356857334
+    ],
+    "contexts": 600,
+    "primary": true,
+    "interval_scope": "Context-resampled, fixed trained seeds and one acquisition draw; secondary intervals unadjusted"
+  },
+  "label_budget_per_method": 540,
+  "unique_acquired_contexts": 393,
+  "training_trials": {
+    "crossfit": 9,
+    "update": 12
+  },
+  "shared_prefix_contexts": 1200,
+  "common_validation_contexts": 180,
+  "evaluation_contexts": 600
+}

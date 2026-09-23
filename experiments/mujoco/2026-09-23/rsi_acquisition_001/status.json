@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "message": "已完成：9 个交叉拟合模型、12 个更新模型、600 个新测试场景；3,555 条分支审计通过，30 段归档状态回放。反例采样的额外样本效率未获证实。IDC CPU 判断中位 0.054 ms，P99 0.065 ms（仅判断头）。",
+  "videos": [
+    "replay/delay_0_continue.mp4",
+    "replay/delay_0_stop_refresh.mp4",
+    "replay/delay_0_async_refresh.mp4",
+    "replay/delay_1_continue.mp4",
+    "replay/delay_1_stop_refresh.mp4",
+    "replay/delay_1_async_refresh.mp4"
+  ]
+}

@@ -1,6 +1,6 @@
 # Standalone System One experiment
 
-Status: three analytic studies completed and sealed; followed by two MuJoCo learning studies. Created 2026-09-22; updated 2026-09-23.
+Status: three analytic studies completed and sealed; followed by two MuJoCo learning studies and one offline RSI acquisition study. Created 2026-09-22; updated 2026-09-23.
 
 ## Question and novelty gate
 
@@ -59,5 +59,6 @@ the already opened test. Hardware/photorealistic validation remains separate.
 - MuJoCo study 1: 920 contexts, 2,760 branches, 3 trained seeds.
 - MuJoCo study 2: 1,500 checkpoints, 4,500 branches, 12 models, 30 exact replay videos.
 - Local light single-page Web and six-page Chinese CoRL-template research draft.
-- Next: train-side cross-fitted counterexample acquisition versus equal-budget random acquisition; fresh test ranges; add a distinct contact task and visual input.
+- Completed: cross-fitted acquisition versus equal-budget random/disagreement controls; 600 fresh test contexts; primary interval crosses zero. See `../RSI_ACQUISITION_STUDY.md`.
+- Next: intervene on committed action queues at matched observations; then distinct contact tasks, visual input, and independent acquisition draws.
 - IDC CPU resources authorized for collection/confirmation; CLOUD 24 GB GPU available for visual models. This does not authorize EIP training submissions without their required resolved-configuration confirmation.

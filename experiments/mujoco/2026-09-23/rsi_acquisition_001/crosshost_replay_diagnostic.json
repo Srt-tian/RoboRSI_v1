@@ -1,0 +1,18 @@
+{
+  "case": "delay_0_async_refresh",
+  "mode": "cross-host rerun without rendering",
+  "exact_record_match": false,
+  "same_success": true,
+  "same_duration": true,
+  "same_cost": true,
+  "snapshot_same": true,
+  "first_different_step": 68,
+  "max_errors": {
+    "qpos": 1.4432899320127035e-14,
+    "qvel": 1.3222756223285614e-13,
+    "action": 7.993605777301127e-15,
+    "grip": 1.7763568394002505e-15,
+    "object": 1.9984014443252818e-15
+  },
+  "scope": "One diagnostic case; does not establish cross-host equivalence for the full dataset."
+}

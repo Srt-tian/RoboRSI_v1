@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "complete_physical_branches_checked": 3555,
+  "context_counts": {
+    "pilot": 12,
+    "validation": 180,
+    "acquired": 393,
+    "test": 300,
+    "delay": 300
+  },
+  "unique_acquired": 393,
+  "acquisition_budget_per_method": 180,
+  "task_delay_balance": "passed",
+  "candidate_pool_identity": "passed",
+  "split_seed_isolation": "passed",
+  "scope": "All IDC physical traces; model checkpoint hashes independently checked by evaluation on training host"
+}

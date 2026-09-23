@@ -1,0 +1,60 @@
+{
+  "execution_commit": "a12cc5d8b1adf43c18bb70f098d26445f383cecb",
+  "created_at": 1790149501.6066988,
+  "test_not_generated_yet": true,
+  "checkpoints": {
+    "replay_only_11.pt": "f5a7b877d0366c9f6a6f911e367aec158608e8710f7f472ad1cf072d7b58632a",
+    "replay_only_22.pt": "b1d4948f7910e849aed2cede4f23e88fa8ebb3e829b280af43b61314cda99a47",
+    "replay_only_33.pt": "95b1f75b3514008143ba391a48fabb9589e0c034255af78243586de4a18395fb",
+    "random_11.pt": "2ce6f86c2303bb214304acfb421ffb2269db5eedc00d0c678c1e6d0ffd90c73a",
+    "random_22.pt": "47af8b529576c8ce2f29bf99bc21b1e2db9bd639a5039db6efc9ff2ae103c762",
+    "random_33.pt": "88740705ca067385c6b86e696bafc29e8fc51bca45cd4a9e30462bed244cbd30",
+    "disagreement_11.pt": "c47b70dcfecb4d0fd317e7a87665b47561befde217ac60e64f08136cc6a15240",
+    "disagreement_22.pt": "60c43aed2cfb64e3e00c9fca52d90d25bec63f4e1e61bccbe53ea25c8aaad276",
+    "disagreement_33.pt": "37bc6355aeb0c840047c0fb45bfbab2b0c8139596c4f49e4ba411ac8a7d5e0f7",
+    "counterexample_11.pt": "7457024d3a4bf3bf65fa16914ef9888fe38406406607c0877d04616aa0dfb951",
+    "counterexample_22.pt": "30e2b6c3b4fb9ded626988123f7fbc6f34760c620fb5e641b2680d964d5d6429",
+    "counterexample_33.pt": "29964d4982ba6d2e3183a79093b67a7aa72c023ad8248e8a7d40fe3fdc0f40c2"
+  },
+  "original_checkpoints": {
+    "full_11.pt": "181f40ba1691876e80dbcd19749974e333ebeba5b6f3c8445f290cc7aa6d1e13",
+    "full_22.pt": "6996408d522b441e2b8fee41be2fecafea74d1200f2ddeb25d4729ed9c6bc631",
+    "full_33.pt": "6ae0b65ab045a7f647f98d0f297ca7ea3b4f0cfea903070bc4f98ede4a087190"
+  },
+  "rules": {
+    "fixed": 2,
+    "task_phase_lookup": {
+      "FetchPush-v4:0": 2,
+      "FetchPush-v4:1": 2,
+      "FetchPush-v4:2": 2,
+      "FetchPush-v4:3": 2,
+      "FetchPush-v4:4": 2,
+      "FetchPickAndPlace-v4:0": 2,
+      "FetchPickAndPlace-v4:1": 1,
+      "FetchPickAndPlace-v4:2": 0,
+      "FetchPickAndPlace-v4:3": 0,
+      "FetchPickAndPlace-v4:4": 0
+    },
+    "age_noise_rule": {
+      "age": 0,
+      "noise": 0.005,
+      "refresh_choice": 2
+    }
+  },
+  "selection_sha256": "0e61fc305173e09b83d8e021680237a4cd29261f3a3b13b56da34cf4216e2c0e",
+  "acquired_sha256": "c4af4bdac96568e190276cfdaedbfe4c58c483d41d24b6799c367b68f3070385",
+  "validation_sha256": "3526d5c494580cb6a1dee4b89b56af4b107c1ddca50a5a43514491fd18918036",
+  "test_counts": {
+    "test": 300,
+    "delay": 300
+  },
+  "test_seed_bases": {
+    "pilot": 1010000,
+    "pool": 1110000,
+    "validation": 1210000,
+    "test": 1310000,
+    "delay": 1410000
+  },
+  "primary": "Mean cost difference, counterexample minus random, 600 independent contexts, 3 fixed seeds averaged",
+  "limits": "One acquisition draw; no conclusion about acquisition-seed population or visual control"
+}

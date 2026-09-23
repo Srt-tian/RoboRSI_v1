@@ -1,0 +1,228 @@
+{
+  "schema": "roborsi.rsi.remote-archive.v1",
+  "role": "state_replay",
+  "execution_commit": "b9accca4bc556e22171d19402db6d4fe98aed87f",
+  "audit_commit": "91f5f34c90ac238f3ff62a0e0ee1846e0954bf9a",
+  "created_at": 1790151375.1576104,
+  "source_commits": {
+    "physics_state_video.py": "b9accca4bc556e22171d19402db6d4fe98aed87f"
+  },
+  "files": [
+    {
+      "path": "archive_environment.json",
+      "bytes": 234,
+      "sha256": "aa3b147c1583e98019b2dfd8389822c88b86662fce3ea740e65d6a06076a11c1"
+    },
+    {
+      "path": "delay_0.json.gz",
+      "bytes": 209433,
+      "sha256": "2382cce1a7bc346cdf1e14bac3c0801291f5992135beb2453faf6b7b253aad39"
+    },
+    {
+      "path": "delay_0_async_refresh.mp4",
+      "bytes": 65289,
+      "sha256": "8e9af517060db98f9d5fb15b37d7c26631cb5df1e9a2f520f471c79aeaa19e4f"
+    },
+    {
+      "path": "delay_0_continue.mp4",
+      "bytes": 72339,
+      "sha256": "209a7711e28aff2a0217684df6d59da43d15d58012773f56c79c9742826b8cd0"
+    },
+    {
+      "path": "delay_0_stop_refresh.mp4",
+      "bytes": 66661,
+      "sha256": "297c496297e3aa40dcc5a2cd3609c81b48ef91f18b0058bc38d366ef2e06fd50"
+    },
+    {
+      "path": "delay_1.json.gz",
+      "bytes": 133316,
+      "sha256": "f9a8d94f4ac53b313e92670ae18931c080a14bac6c3bf4d810a5849294bb594e"
+    },
+    {
+      "path": "delay_1_async_refresh.mp4",
+      "bytes": 40282,
+      "sha256": "cb548b2c79257b48bdab2969710294ff498b09c7bfdaa8ab3b6dbd26069256fd"
+    },
+    {
+      "path": "delay_1_continue.mp4",
+      "bytes": 40780,
+      "sha256": "e16865b1f9da32777949dc8596b6127e36c8b4b89c4d0196ba33bf38418d88cb"
+    },
+    {
+      "path": "delay_1_stop_refresh.mp4",
+      "bytes": 48205,
+      "sha256": "c1953f3cb932c43b7f30115dd76b7263e7de7bb5888f768c77a0bb23dc4dc4ec"
+    },
+    {
+      "path": "delay_4.json.gz",
+      "bytes": 120032,
+      "sha256": "6fae59cf086a9de606664ad0c4fe310aec51619c4242dfea0bd0ecfe57be0ff8"
+    },
+    {
+      "path": "delay_4_async_refresh.mp4",
+      "bytes": 40117,
+      "sha256": "d40732dbf5620171994b15de8859bdbce82c0388ec9d88e23f1e5da98ccf1b08"
+    },
+    {
+      "path": "delay_4_continue.mp4",
+      "bytes": 27032,
+      "sha256": "ccecbcc76f119cfe259442cdb221e2ff4a83eb6c5a8bce19afbf55772aaa99f2"
+    },
+    {
+      "path": "delay_4_stop_refresh.mp4",
+      "bytes": 57297,
+      "sha256": "ce79bdda1eb8fcf67aa74df3722fa1eb85b3bb2d01629772ff786e142cffa7e4"
+    },
+    {
+      "path": "delay_5.json.gz",
+      "bytes": 145639,
+      "sha256": "66a8128f29c7c2362afeb75518a9d757008b27370ae55a133ccff796f37d8e26"
+    },
+    {
+      "path": "delay_5_async_refresh.mp4",
+      "bytes": 40181,
+      "sha256": "a18d6d64ad92cfa112e9d526c43e2441d9b96b3a0e389db86e2c64ab5c35899e"
+    },
+    {
+      "path": "delay_5_continue.mp4",
+      "bytes": 40181,
+      "sha256": "a18d6d64ad92cfa112e9d526c43e2441d9b96b3a0e389db86e2c64ab5c35899e"
+    },
+    {
+      "path": "delay_5_stop_refresh.mp4",
+      "bytes": 45578,
+      "sha256": "225f50e43e44f8cb0fce662ff8992047106a327081cb6410803afac86a034957"
+    },
+    {
+      "path": "delay_9.json.gz",
+      "bytes": 67494,
+      "sha256": "0c4447c9f0352997c9252d5e1138e2d37bb9073d86b046d01c02476d7b2a2a1d"
+    },
+    {
+      "path": "delay_9_async_refresh.mp4",
+      "bytes": 21434,
+      "sha256": "10c209e522d6d4b0f94da93f22f483f5aa2b5e965425cf4f639257e48c6e209d"
+    },
+    {
+      "path": "delay_9_continue.mp4",
+      "bytes": 21434,
+      "sha256": "10c209e522d6d4b0f94da93f22f483f5aa2b5e965425cf4f639257e48c6e209d"
+    },
+    {
+      "path": "delay_9_stop_refresh.mp4",
+      "bytes": 27235,
+      "sha256": "4d50da87be4854638a5e473eceeb5eac92fb6dffdb5518109440aa64aa1eac61"
+    },
+    {
+      "path": "replays.json",
+      "bytes": 10671,
+      "sha256": "1f2722d83caccd4694a173b909cdc548c29245151a99f38a8301b6a6097d37f4"
+    },
+    {
+      "path": "source/physics_state_video.py",
+      "bytes": 4580,
+      "sha256": "ccf1eca97087eb71509bf216fc53038d2880e6cdc9b25223b82a9b5fc776295b"
+    },
+    {
+      "path": "test_0.json.gz",
+      "bytes": 157516,
+      "sha256": "628f0d0d335e774263bb06f981acdeaa78860030b0aaf257d1f7385c94034c13"
+    },
+    {
+      "path": "test_0_async_refresh.mp4",
+      "bytes": 57511,
+      "sha256": "684543a1862e744ba18b36fd00774f63ebd735a16af3553d7317432448780cc9"
+    },
+    {
+      "path": "test_0_continue.mp4",
+      "bytes": 57829,
+      "sha256": "15703570d36761203cf14fb9179f127127e27abc1f7757d8d41c323f09faf1c1"
+    },
+    {
+      "path": "test_0_stop_refresh.mp4",
+      "bytes": 37334,
+      "sha256": "120d74bb682b679de05ce510326cfb192cb24f39945317261930bb9047caf7be"
+    },
+    {
+      "path": "test_1.json.gz",
+      "bytes": 149927,
+      "sha256": "4338b6e5837d75a213f18eda3b8c2bc0ef80dff072c561a99a7b12253d67ba96"
+    },
+    {
+      "path": "test_1_async_refresh.mp4",
+      "bytes": 46522,
+      "sha256": "93df917a0a24b362ae3a402c7db9b3a94747724c690f98f7b7edec361bc5890a"
+    },
+    {
+      "path": "test_1_continue.mp4",
+      "bytes": 50288,
+      "sha256": "d5a5089b28562380a042a4f1b6138a8d427af0eb4eb393fd7e1629258c9cc72e"
+    },
+    {
+      "path": "test_1_stop_refresh.mp4",
+      "bytes": 50192,
+      "sha256": "b946577792f4c42eb4a09c3ee29de44de3e9b19dd4792b1908a88de403d1f89a"
+    },
+    {
+      "path": "test_4.json.gz",
+      "bytes": 129125,
+      "sha256": "811ed9c58b65c2c19409e79156b6c38b3cffc6da6e37ba0abc262b6a2fdb3650"
+    },
+    {
+      "path": "test_4_async_refresh.mp4",
+      "bytes": 40356,
+      "sha256": "1e298884e9863ef227914ae8078edc82c34a98d0b15fede21fe1eeaf50933f33"
+    },
+    {
+      "path": "test_4_continue.mp4",
+      "bytes": 68714,
+      "sha256": "740f6a89ecd7cc3fada9e0fa713e71d13e86e06ce3409ef4cf788adb5b9c4e95"
+    },
+    {
+      "path": "test_4_stop_refresh.mp4",
+      "bytes": 18784,
+      "sha256": "25950aac639612b3bd4e6fca557bda5eaeaa3b6a7dda3400cb89a1ee459ecd69"
+    },
+    {
+      "path": "test_5.json.gz",
+      "bytes": 136167,
+      "sha256": "3ff0b49f0aa917febb009386c4381ad0a529199acf3893f43a26c609a5788079"
+    },
+    {
+      "path": "test_5_async_refresh.mp4",
+      "bytes": 41933,
+      "sha256": "94cb4ed5a9c5d7983d4a0a1969180aaf09546337efdf5c428c81a35c2a094d32"
+    },
+    {
+      "path": "test_5_continue.mp4",
+      "bytes": 45923,
+      "sha256": "41ed6056a37f0cd6e14e1da8a7595afbdd59e35c05ba8d422348cd9236abc40c"
+    },
+    {
+      "path": "test_5_stop_refresh.mp4",
+      "bytes": 41958,
+      "sha256": "c952f67efcc2635ee8c0844949d0aa04c2381ac69a6dfc0bbac3fb3dd0e94694"
+    },
+    {
+      "path": "test_9.json.gz",
+      "bytes": 55658,
+      "sha256": "4c4d93c946b80e1d787f4853d829408eea721acc3a1d9f8d0149d589c7785bac"
+    },
+    {
+      "path": "test_9_async_refresh.mp4",
+      "bytes": 18843,
+      "sha256": "c2816bb2f69e8934fae8ea3d3bae51264f3e0f3a06a98e38f2a465f880f676e4"
+    },
+    {
+      "path": "test_9_continue.mp4",
+      "bytes": 18843,
+      "sha256": "c2816bb2f69e8934fae8ea3d3bae51264f3e0f3a06a98e38f2a465f880f676e4"
+    },
+    {
+      "path": "test_9_stop_refresh.mp4",
+      "bytes": 24094,
+      "sha256": "3e3aac8bcadb09989e039810a4302b013254aeca2159326ca690230ff5100d72"
+    }
+  ],
+  "coverage": "30 videos rendered from archived qpos/qvel; 10 original records. Not rerun simulations. Native API cache timing is explicitly validated."
+}

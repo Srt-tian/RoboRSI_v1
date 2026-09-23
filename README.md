@@ -2,33 +2,35 @@
 
 # RoboRSI v1
 
-**完整粗规划 · 受约束修订 · 连续执行 · 跨轮 RSI**
+**粗规划与连续控制 · 结构化判断 · 可审计的 RSI**
 
 Plan → Check → Judge → Review → Improve · v0.3
 
-[四层架构](#系统架构) · [研究方案](docs/RESEARCH_PROPOSAL.md) · [本机论文档案](#本机论文实验档案) · [快速开始](#快速开始) · [Jev 调研](docs/JEV_RESEARCH_2026_09.md) · [文档导航](docs/README.md)
+[独立判断与 RSI](#独立非生成式判断研究) · [Piper 四层架构](#系统架构) · [本机论文档案](#本机论文实验档案) · [快速开始](#快速开始) · [Jev 调研](docs/JEV_RESEARCH_2026_09.md) · [文档导航](docs/README.md)
 
 </div>
 
-RoboRSI 是以“规划—执行—评估—修订”为主线的 Piper 操作研究框架。**本轮**由 GPT 粗规划、确定性轨迹编译和 200 Hz 控制完成操作；**跨轮**由 RSI 层汇集证据、诊断问题、审核修订，再将适用经验用于下一轮规划。
+RoboRSI 包含两条研究路径：Piper 上的粗规划与连续执行，以及不依赖 GPT 的 MuJoCo 判断器与离线 RSI。前者已记录 GPT 粗规划、确定性编译和 200 Hz 控制的抓取实验；后者用可恢复的物理分叉训练小模型，并通过新场景和等预算对照检验更新是否有效。
 
-**当前实现：固定计划执行 + 结构化判断的离线 RSI + 人工审核。** v0.3 新增阶段预期检查、可替换判断器、拒判与过时回复检查、分组留出评测，并将判断记录接入经验与本机 Web。默认全部离线；Jev 是可选服务接口，合成 demo 不调用真实模型。
+**Piper 路径实现：固定计划执行 + 结构化判断接口 + 人工审核。** v0.3 提供阶段预期检查、可替换判断器、拒判与过时回复检查、分组留出评测，并将判断记录接入经验与本机 Web。默认全部离线；Jev 是可选服务接口，合成 demo 不调用真实模型。
 
 研究方向是**意图约束的稀疏轨迹修订**：GPT 给出完整计划与阶段预期，只有偏差值得处理时才比较修订；RSI 积累修订有效的条件。在线感知、剩余轨迹替换与自主恢复尚待实现。已记录的成功实验仍是交互式 GPT 粗规划、小 VLM 关闭的固定计划版本。
 
 ## 独立非生成式判断研究
 
-研究分支 `research/mujoco-jev-physics` 新增两轮 MuJoCo 学习实验及三轮解析实验。最新一轮从执行中的同一物理检查点分叉，训练 6,402 参数判断器选择继续、同步刷新或异步刷新：1,500 检查点、4,500 分支、12 个模型与 30 段逐步一致录像。
+研究分支 `research/mujoco-jev-rsi` 包含三轮解析实验、两轮 MuJoCo 判断研究和一轮离线 RSI 更新。基础判断实验从同一物理检查点分叉，训练 6,402 参数模型选择继续、同步刷新或异步刷新：1,500 检查点、4,500 分支、12 个模型与 30 段逐步一致录像。随后完成 600 个新测试场景的等预算更新检验，另保存 30 段归档状态回放。
 
-当前结果是局部收益与明确负结果：长延迟抓取有改善，同分布阶段查表更强；动作历史独立价值未证实。自动 RSI 数据更新、图像输入和全任务持续判断仍待验证。它不调用官方 Jev，也不替代下方已验证的 Piper 固定计划链路。
+当前结果是局部收益与明确负结果：长延迟抓取有改善，同分布阶段查表更强；动作历史独立价值未证实。已完成一轮离线 RSI 等预算更新，但反例采样优于随机补数据的证据不足；图像输入和全任务持续判断仍待验证。它不调用官方 Jev，也不替代下方已验证的 Piper 固定计划链路。
 
-[实际 pipeline 与全部实验](docs/STANDALONE_SYSTEM_ONE.md) · [MuJoCo 协议与结果](docs/MUJOCO_JEV_STUDY.md) · [中文研究稿 PDF](docs/manuscript/draft_cn.pdf) · [近期会议与模板](docs/manuscript/README.md)
+[RSI 更新检验与 CPU 开销](docs/RSI_ACQUISITION_STUDY.md) · [实际 pipeline 与全部实验](docs/STANDALONE_SYSTEM_ONE.md) · [MuJoCo 协议与结果](docs/MUJOCO_JEV_STUDY.md) · [中文研究稿 PDF](docs/manuscript/draft_cn.pdf) · [近期会议与模板](docs/manuscript/README.md)
 
 ![检查点分叉训练与有限候选判断](docs/manuscript/phase_pipeline.png)
 
-[可编辑框架图](docs/manuscript/phase_pipeline.drawio)。本机启动 `python -m http.server 8790 --bind 127.0.0.1`，打开 `http://127.0.0.1:8790/paper/#phase`；浅色单页包含指标、消融、曲线、三个候选同步视频和观测年龄/接触过程。
+[可编辑框架图](docs/manuscript/phase_pipeline.drawio)。本机启动 `python -m http.server 8790 --bind 127.0.0.1`，打开 `http://127.0.0.1:8790/paper/#rsi`；浅色单页包含指标、消融、曲线、三个候选同步视频和观测年龄/接触过程。
 
 ## 系统架构
+
+下图描述 Piper 固定计划路径；独立 MuJoCo 学习路径见上方框架图与实验文档。
 
 ![RoboRSI 四层架构：RSI 跨轮改进、任务规划、轨迹编译、执行与反馈](docs/figures/architecture.svg)
 

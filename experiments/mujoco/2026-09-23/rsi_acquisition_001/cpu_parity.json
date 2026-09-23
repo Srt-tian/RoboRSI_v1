@@ -1,0 +1,13 @@
+{
+  "contexts": 600,
+  "max_abs_score_error_default_gpu": 0.0035521984100341797,
+  "max_abs_score_error_fp32_gpu": 1.0728836059570312e-06,
+  "same_stored_choices": 600,
+  "changed_context_indices": [],
+  "default_gpu_precision": "high",
+  "default_gpu_tf32": true,
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "checkpoint": "counterexample_11.pt",
+  "selection": "fixed method/seed, not selected on test performance"
+}

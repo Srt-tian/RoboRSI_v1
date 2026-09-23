@@ -1,6 +1,6 @@
 # A bounded offline RSI acquisition experiment
 
-Status: protocol frozen before collection. This is a hypothesis test of data selection,
+Status: completed 2026-09-23; the following protocol was frozen before collection. This is a hypothesis test of data selection,
 not a claim that conventional active learning or nearest-neighbor regression is new.
 
 ## Question
@@ -61,3 +61,7 @@ Report selection failure and null/negative results. A mean improvement alone doe
 establish better sample efficiency; compare the equal-budget random and disagreement
 arms, not just the frozen model. A positive single-round result would motivate independent
 acquisition seeds and harder tasks, not a claim of conference-ready innovation.
+
+## Recorded outcome
+
+Primary counterexample-minus-random cost difference: −0.00462, 95% interval [−0.01409, +0.00439]. Extra acquisition efficiency is unproven. Full results: `../RSI_ACQUISITION_STUDY.md`.

@@ -64,10 +64,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="rsilabel" value="C · RSI：反例采样 → 重训 → 新测试（下一轮）" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=23;">
+        <mxCell id="rsilabel" value="C · 离线 RSI：反例采样 → 等预算重训 → 新测试" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=23;">
           <mxGeometry as="geometry" x="30" y="585" width="1400" height="55" />
         </mxCell>
-        <mxCell id="rsi" value="训练侧找反例 → 等预算重训 → 新留出集；测试数据不回流（尚未验证）。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;dashed=1;">
+        <mxCell id="rsi" value="600 个新测试场景；反例与随机之差区间跨零，尚无额外采样效率证据。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;dashed=1;">
           <mxGeometry as="geometry" x="30" y="670" width="1400" height="90" />
         </mxCell>
         <mxCell id="legend" value="灰：状态与记录　｜　蓝：输入与动作　｜　绿：学习与决策" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;align=left;fontFamily=Noto Sans CJK SC;fontSize=22;fontColor=#536779;">

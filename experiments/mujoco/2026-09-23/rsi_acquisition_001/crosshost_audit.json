@@ -1,0 +1,7 @@
+{
+  "contexts": 12,
+  "candidate_outcomes": 36,
+  "all_rows_exact": true,
+  "snapshot_sha_matches": 12,
+  "scope": "Context, input features, checkpoint integration-state hash, success, duration, cost; not full post-fork traces"
+}

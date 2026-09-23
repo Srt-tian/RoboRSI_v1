@@ -1,0 +1,14 @@
+{
+  "unit": "ms",
+  "context_batch": 1,
+  "candidates": 3,
+  "samples": 2000,
+  "warmup": 100,
+  "median": 0.054375,
+  "p95": 0.0569225,
+  "p99": 0.065327,
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "architecture": "x86_64",
+  "scope": "One resident NumPy decision head including normalization/scoring; no image sensing, IK, network, servo or safety logic"
+}

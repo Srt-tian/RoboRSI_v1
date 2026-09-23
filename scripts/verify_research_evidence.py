@@ -39,6 +39,21 @@ def main():
                     continue
                 if remote_files.get(entry["path"]) != entry:
                     raise ValueError(f"Cache differs from archive: {root / entry['path']}")
+        elif record["schema"] == "roborsi.rsi.local-cache.v1":
+            partial += 1
+            originals = set()
+            archive_names = set()
+            for archive in record["remote_archives"]:
+                archive_names.add(archive["manifest"])
+                remote = json.loads((root / archive["manifest"]).read_text())
+                for entry in remote["files"]:
+                    originals.add((archive["prefix"] + entry["path"], entry["bytes"], entry["sha256"]))
+            derived = set(record.get("derived_files", []))
+            for entry in entries:
+                if entry["path"] in archive_names | derived:
+                    continue
+                if (entry["path"], entry["bytes"], entry["sha256"]) not in originals:
+                    raise ValueError(f"RSI cache differs from archives: {root / entry['path']}")
     print(json.dumps({"manifests": len(manifests), "files_verified": files,
                       "partial_caches": partial, "status": "passed",
                       "scope": "Exported bytes only; absent remote traces are not locally verified."}))
