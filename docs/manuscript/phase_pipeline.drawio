@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="roborsi-phase_pipeline" name="phase_pipeline">
+    <mxGraphModel page="1" pageWidth="1480" pageHeight="820" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;同一物理状态分叉 → 学习候选后果 → 一次结构化决策&lt;/b&gt;" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=28;">
+          <mxGeometry as="geometry" x="30" y="10" width="1410" height="65" />
+        </mxCell>
+        <mxCell id="trainlabel" value="A · 离线训练与审计" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=23;">
+          <mxGeometry as="geometry" x="30" y="95" width="280" height="50" />
+        </mxCell>
+        <mxCell id="state" value="&lt;b&gt;保存检查点&lt;/b&gt;&lt;br&gt;物理状态＋控制记忆&lt;br&gt;同源分叉" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="30" y="165" width="320" height="120" />
+        </mxCell>
+        <mxCell id="fork" value="&lt;b&gt;三种候选延续&lt;/b&gt;&lt;br&gt;继续／停住刷新&lt;br&gt;边动边刷新" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="390" y="165" width="320" height="120" />
+        </mxCell>
+        <mxCell id="label" value="&lt;b&gt;实际动力学后果&lt;/b&gt;&lt;br&gt;成功、用时、接触&lt;br&gt;逐步轨迹" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="750" y="165" width="320" height="120" />
+        </mxCell>
+        <mxCell id="train" value="&lt;b&gt;训练与冻结&lt;/b&gt;&lt;br&gt;BCE ＋ MSE&lt;br&gt;仅验证集选模" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="1110" y="165" width="320" height="120" />
+        </mxCell>
+        <mxCell id="state-fork" source="state" target="fork" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fork-label" source="fork" target="label" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="label-train" source="label" target="train" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="inferlabel" value="B · 推理时：无 GPT / 无文字生成" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=23;">
+          <mxGeometry as="geometry" x="30" y="330" width="760" height="50" />
+        </mxCell>
+        <mxCell id="input" value="&lt;b&gt;29 维上下文&lt;/b&gt;&lt;br&gt;旧观测／目标／阶段&lt;br&gt;时效与动作历史" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="30" y="410" width="320" height="120" />
+        </mxCell>
+        <mxCell id="head" value="&lt;b&gt;候选共享 MLP&lt;/b&gt;&lt;br&gt;32 → 64 → 64 → 2&lt;br&gt;6,402 参数" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="390" y="410" width="320" height="120" />
+        </mxCell>
+        <mxCell id="choose" value="&lt;b&gt;预测后果并选择&lt;/b&gt;&lt;br&gt;成功率 p，用时 T&lt;br&gt;min [1 − p + λT]" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F4EF;strokeColor=#5D9C87;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="750" y="410" width="320" height="120" />
+        </mxCell>
+        <mxCell id="execute" value="&lt;b&gt;固定技能执行&lt;/b&gt;&lt;br&gt;25 Hz 控制&lt;br&gt;2 ms 物理步长" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;">
+          <mxGeometry as="geometry" x="1110" y="410" width="320" height="120" />
+        </mxCell>
+        <mxCell id="input-head" source="input" target="head" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="head-choose" source="head" target="choose" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="choose-execute" source="choose" target="execute" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=1;exitY=.5;entryX=0;entryY=.5;">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="freeze-to-head" source="train" target="head" value="" parent="1" edge="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeWidth=1.6;fontFamily=Noto Sans CJK SC;fontSize=14;labelBackgroundColor=#FFFFFF;strokeColor=#638097;fontColor=#425C72;exitX=.5;exitY=1;entryX=.5;entryY=0;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1270" y="390" />
+              <mxPoint x="550" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsilabel" value="C · RSI：反例采样 → 重训 → 新测试（下一轮）" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2FC;strokeColor=#6186B1;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=17;fontColor=#20374C;spacing=12;arcSize=12;fillColor=none;strokeColor=none;align=left;fontSize=23;">
+          <mxGeometry as="geometry" x="30" y="585" width="1400" height="55" />
+        </mxCell>
+        <mxCell id="rsi" value="训练侧找反例 → 等预算重训 → 新留出集；测试数据不回流（尚未验证）。" parent="1" vertex="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F5F8;strokeColor=#A0ADBB;strokeWidth=1.5;fontFamily=Noto Sans CJK SC;fontSize=26;fontColor=#20374C;spacing=12;arcSize=12;dashed=1;">
+          <mxGeometry as="geometry" x="30" y="670" width="1400" height="90" />
+        </mxCell>
+        <mxCell id="legend" value="灰：状态与记录　｜　蓝：输入与动作　｜　绿：学习与决策" parent="1" vertex="1" style="text;html=1;whiteSpace=wrap;align=left;fontFamily=Noto Sans CJK SC;fontSize=22;fontColor=#536779;">
+          <mxGeometry as="geometry" x="30" y="780" width="1400" height="35" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

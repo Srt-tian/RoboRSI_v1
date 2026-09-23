@@ -1,0 +1,13 @@
+{
+  "created_at": 1790138007.16688,
+  "test_not_generated_yet": true,
+  "fixed_choice": 2,
+  "rule_threshold": 0.0064482758620689655,
+  "checkpoints": {
+    "11": "7c27a13020d8800fd8e6f3084ec7ce26d2d67e1c873d6354b622749ff824b063",
+    "22": "bafba66270fad93f9f3fdffd6304f0ecd4fd11c4c7726994225b3620f714c1c6",
+    "33": "d2689dec016ba0a9d3c0686792139b4047ababef4852ca320100fbfce5cbe305"
+  },
+  "metric": "10 consecutive standard-success ticks; cost = failure + time_price * elapsed_s",
+  "device": "cuda"
+}

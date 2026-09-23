@@ -1,0 +1,11 @@
+{
+  "retrieved": "2026-09-23",
+  "source_page": "https://2026.corl.org/contributions/instruction-for-authors",
+  "official_zip": "https://drive.google.com/file/d/1R9irIW0ImqeDHh5g8Ukm2XGy91sWxOsQ/view?usp=drive_link",
+  "zip_bytes": 17423,
+  "files": {
+    "corl_2026.sty": "62f38cd8df7ad718796617595c8230da136fc83ea1d7e1ba80084113409ec957",
+    "corlabbrvnat.bst": "eb5c200b6c5a81cd774155c79c28d3a32ac8a5e25bb246a40dda74deb94dfa71"
+  },
+  "modifications": "style and bibliography style unmodified; Chinese font adaptation in draft_cn.tex; preprint mode, not submitted"
+}

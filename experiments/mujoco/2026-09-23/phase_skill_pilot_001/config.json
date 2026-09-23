@@ -1,0 +1,86 @@
+{
+  "scope": "Paired mid-skill information decisions in MuJoCo, without GPT or official Jev.\n\nClean scripted prefixes form a controlled checkpoint curriculum. After the fork,\nall policies see only noisy/delayed object sensors and exact proprioception.\nOne typed decision per checkpoint; this is not yet a recurrent learned policy.\n",
+  "features": [
+    "pick_task",
+    "noise_std",
+    "age_s",
+    "delay_s",
+    "time_price",
+    "goal_grip_x",
+    "goal_grip_y",
+    "goal_grip_z",
+    "observed_object_grip_x",
+    "observed_object_grip_y",
+    "observed_object_grip_z",
+    "stage_0",
+    "stage_1",
+    "stage_2",
+    "stage_3",
+    "stage_4",
+    "recent_grip_motion_x",
+    "recent_grip_motion_y",
+    "recent_grip_motion_z",
+    "recent_action_x",
+    "recent_action_y",
+    "recent_action_z",
+    "last_gripper_command",
+    "proposed_action_x",
+    "proposed_action_y",
+    "proposed_action_z",
+    "grip_motion_since_sample_x",
+    "grip_motion_since_sample_y",
+    "grip_motion_since_sample_z"
+  ],
+  "candidates": [
+    "continue",
+    "stop_refresh",
+    "async_refresh"
+  ],
+  "counts": {
+    "output": "/pfs/user/roborsi_physics/phase_skill_pilot_001",
+    "mode": "qualification",
+    "train": 600,
+    "validation": 180,
+    "test": 360,
+    "seeds": 30,
+    "start_seed": 2000
+  },
+  "masks": {
+    "full": [],
+    "no_phase": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "no_age": [
+      2
+    ],
+    "no_history": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ]
+  },
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "source_sha256": {
+    "physics_phase.py": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6",
+    "physics_skills.py": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4",
+    "physics_pilot.py": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+  }
+}

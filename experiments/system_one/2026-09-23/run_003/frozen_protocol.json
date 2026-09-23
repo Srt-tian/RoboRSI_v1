@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-09-22T16:21:46.964290+00:00",
+  "test_not_constructed_yet": true,
+  "config_sha256": "ce83fb3a55e2ce2f168b4b4cdccb28a065a080375ae9cadefdc682bdcf1328bf",
+  "fixed_timeout_index": 0,
+  "validation_cost_by_timeout": [
+    0.4362183055530896,
+    0.44940055930930783,
+    0.43971677991916563,
+    0.4507429386506424,
+    0.47249078647894005,
+    0.5010780137157298,
+    0.509086649082941
+  ],
+  "training_or_test_selection": "only fixed timeout tuned; all pretrained selected seeds evaluated"
+}

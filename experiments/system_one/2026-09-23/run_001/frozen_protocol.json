@@ -1,0 +1,46 @@
+{
+  "frozen_utc": "2026-09-22T16:06:08.077021+00:00",
+  "test_not_constructed_yet": true,
+  "config_sha256": "7ece7d91d168e64e1eca3b20f1a290fb86153ae620265fda600d845950b53fb6",
+  "trials_sha256": "69d97377f4cce891861cc2da6a90f6d9a328da8d4948d0c9b0d730efaa12f0ee",
+  "selection": [
+    "outcome64",
+    "paired64",
+    "no_delay64",
+    "unpaired64",
+    "choice128"
+  ],
+  "validation_average_cost": {
+    "outcome64": 0.35383637053078915,
+    "paired64": 0.3538075349876029,
+    "outcome128": 0.35493084964611166,
+    "paired128": 0.3548044920563213,
+    "no_delay64": 0.3629163242599061,
+    "unpaired64": 0.3542254998565646,
+    "choice128": 0.35645708888853705
+  },
+  "rule": {
+    "threshold": 0,
+    "multiplier": 1.5
+  },
+  "test_specification": [
+    {
+      "name": "iid",
+      "seed": 33003,
+      "shift": "iid"
+    },
+    {
+      "name": "delay",
+      "seed": 44004,
+      "shift": "delay"
+    },
+    {
+      "name": "cost",
+      "seed": 55005,
+      "shift": "cost"
+    }
+  ],
+  "evaluation_draws": 512,
+  "planner_draws": 128,
+  "selection_rule": "best epoch per seed; mean validation cost across seeds selects width; all selected seeds reported"
+}

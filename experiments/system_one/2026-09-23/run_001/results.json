@@ -1,0 +1,1516 @@
+{
+  "completed_utc": "2026-09-22T16:06:34.046597+00:00",
+  "protocol_sha256": "ee2c919af65604482b3ad270ae110251bd39c4bf4ec2cbd097ef8f839b8f4492",
+  "scope": "analytical probabilistic macro simulator; no language encoder or official Jev; no robot physics",
+  "summaries": [
+    {
+      "cohort": "iid",
+      "contexts": 1200,
+      "draws_per_context": 512,
+      "methods": {
+        "always_act": {
+          "mean_cost": 0.4348639680547785,
+          "success_rate": 0.617783203125,
+          "sense_rate": 0.0,
+          "mean_duration_s": 0.22,
+          "rescue_rate": 0.0,
+          "spoil_rate": 0.0,
+          "action_counts": {
+            "grasp_now": 1200,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 0
+          },
+          "latency": null
+        },
+        "always_look": {
+          "mean_cost": 0.48869901828981305,
+          "success_rate": 0.6375179036458334,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.5246428992956391,
+          "rescue_rate": 0.16890462239583334,
+          "spoil_rate": 0.149169921875,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 1200,
+            "probe_then_grasp": 0
+          },
+          "latency": null
+        },
+        "always_probe": {
+          "mean_cost": 0.44799401343467576,
+          "success_rate": 0.654541015625,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.42724175650080476,
+          "rescue_rate": 0.22050130208333332,
+          "spoil_rate": 0.18374348958333334,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 1200
+          },
+          "latency": null
+        },
+        "tuned_rule": {
+          "mean_cost": 0.35284783696238026,
+          "success_rate": 0.7220947265625,
+          "sense_rate": 0.5741666666666667,
+          "mean_duration_s": 0.32800078865615573,
+          "rescue_rate": 0.1579638671875,
+          "spoil_rate": 0.05365234375,
+          "action_counts": {
+            "grasp_now": 511,
+            "look_then_grasp": 348,
+            "probe_then_grasp": 341
+          },
+          "latency": null
+        },
+        "known_model_mc": {
+          "mean_cost": 0.349361789148821,
+          "success_rate": 0.727509765625,
+          "sense_rate": 0.5733333333333334,
+          "mean_duration_s": 0.3336639716355282,
+          "rescue_rate": 0.15977213541666666,
+          "spoil_rate": 0.05004557291666667,
+          "action_counts": {
+            "grasp_now": 512,
+            "look_then_grasp": 342,
+            "probe_then_grasp": 346
+          },
+          "latency": {
+            "batched_ms_per_context": 0.23717006920681646
+          },
+          "probability_mse_vs_mc": 0.0017880725860595704,
+          "brier_over_branch_outcomes": 0.18697334289550782
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.3470771787306273,
+          "success_rate": 0.7304069010416666,
+          "sense_rate": 0.5833333333333334,
+          "mean_duration_s": 0.3353654773115747,
+          "rescue_rate": 0.16282389322916666,
+          "spoil_rate": 0.0502001953125,
+          "action_counts": {
+            "grasp_now": 500,
+            "look_then_grasp": 367,
+            "probe_then_grasp": 333
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010129,
+            "single_context_forward_ms_p95": 0.011022750000000001,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0010506944931836296,
+          "brier_over_branch_outcomes": 0.18623596480263185
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.34698056283722983,
+          "success_rate": 0.730068359375,
+          "sense_rate": 0.5825,
+          "mean_duration_s": 0.3341492913199976,
+          "rescue_rate": 0.16301432291666668,
+          "spoil_rate": 0.050729166666666665,
+          "action_counts": {
+            "grasp_now": 501,
+            "look_then_grasp": 355,
+            "probe_then_grasp": 344
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010229,
+            "single_context_forward_ms_p95": 0.0105425,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009278969058222427,
+          "brier_over_branch_outcomes": 0.1861131672152705
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.3472996108322792,
+          "success_rate": 0.7296012369791667,
+          "sense_rate": 0.5791666666666667,
+          "mean_duration_s": 0.3332678029861837,
+          "rescue_rate": 0.1628173828125,
+          "spoil_rate": 0.050999348958333336,
+          "action_counts": {
+            "grasp_now": 505,
+            "look_then_grasp": 343,
+            "probe_then_grasp": 352
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.0102545,
+            "single_context_forward_ms_p95": 0.0105,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009675075021047175,
+          "brier_over_branch_outcomes": 0.18615277781155296
+        },
+        "paired64_seed11": {
+          "mean_cost": 0.3466670799609861,
+          "success_rate": 0.7297542317708333,
+          "sense_rate": 0.565,
+          "mean_duration_s": 0.3304887761645593,
+          "rescue_rate": 0.15919108072916666,
+          "spoil_rate": 0.04722005208333333,
+          "action_counts": {
+            "grasp_now": 522,
+            "look_then_grasp": 357,
+            "probe_then_grasp": 321
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010239,
+            "single_context_forward_ms_p95": 0.01046675,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009257731846851065,
+          "brier_over_branch_outcomes": 0.18611104349413338
+        },
+        "paired64_seed22": {
+          "mean_cost": 0.3470841965545971,
+          "success_rate": 0.7304671223958333,
+          "sense_rate": 0.5933333333333334,
+          "mean_duration_s": 0.33612331394579725,
+          "rescue_rate": 0.1666748046875,
+          "spoil_rate": 0.05399088541666667,
+          "action_counts": {
+            "grasp_now": 488,
+            "look_then_grasp": 335,
+            "probe_then_grasp": 377
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010219,
+            "single_context_forward_ms_p95": 0.01038,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009848109085155965,
+          "brier_over_branch_outcomes": 0.18617008121796383
+        },
+        "paired64_seed33": {
+          "mean_cost": 0.34695228205154727,
+          "success_rate": 0.7295003255208333,
+          "sense_rate": 0.5725,
+          "mean_duration_s": 0.3314810775467709,
+          "rescue_rate": 0.1607666015625,
+          "spoil_rate": 0.04904947916666667,
+          "action_counts": {
+            "grasp_now": 513,
+            "look_then_grasp": 354,
+            "probe_then_grasp": 333
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.0102345,
+            "single_context_forward_ms_p95": 0.0153155,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009331953539272094,
+          "brier_over_branch_outcomes": 0.18611846566337545
+        },
+        "no_delay64_seed11": {
+          "mean_cost": 0.35625938679404917,
+          "success_rate": 0.7207926432291667,
+          "sense_rate": 0.5233333333333333,
+          "mean_duration_s": 0.33834832404862897,
+          "rescue_rate": 0.15183268229166666,
+          "spoil_rate": 0.0488232421875,
+          "action_counts": {
+            "grasp_now": 572,
+            "look_then_grasp": 257,
+            "probe_then_grasp": 371
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010149,
+            "single_context_forward_ms_p95": 0.01059,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.004145653380215732,
+          "brier_over_branch_outcomes": 0.18933092368966398
+        },
+        "no_delay64_seed22": {
+          "mean_cost": 0.3572493920532349,
+          "success_rate": 0.721376953125,
+          "sense_rate": 0.5516666666666666,
+          "mean_duration_s": 0.3449668997403208,
+          "rescue_rate": 0.1589111328125,
+          "spoil_rate": 0.0553173828125,
+          "action_counts": {
+            "grasp_now": 538,
+            "look_then_grasp": 249,
+            "probe_then_grasp": 413
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010269,
+            "single_context_forward_ms_p95": 0.0105975,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.004172014793529751,
+          "brier_over_branch_outcomes": 0.189357285102978
+        },
+        "no_delay64_seed33": {
+          "mean_cost": 0.3565849558938576,
+          "success_rate": 0.7217333984375,
+          "sense_rate": 0.54,
+          "mean_duration_s": 0.343090391655089,
+          "rescue_rate": 0.1552978515625,
+          "spoil_rate": 0.05134765625,
+          "action_counts": {
+            "grasp_now": 552,
+            "look_then_grasp": 262,
+            "probe_then_grasp": 386
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.0101595,
+            "single_context_forward_ms_p95": 0.01042425,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.00415699120089587,
+          "brier_over_branch_outcomes": 0.1893422615103441
+        },
+        "unpaired64_seed11": {
+          "mean_cost": 0.3471363058015547,
+          "success_rate": 0.729931640625,
+          "sense_rate": 0.5733333333333334,
+          "mean_duration_s": 0.33305754760697576,
+          "rescue_rate": 0.1609130859375,
+          "spoil_rate": 0.0487646484375,
+          "action_counts": {
+            "grasp_now": 512,
+            "look_then_grasp": 359,
+            "probe_then_grasp": 329
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010309,
+            "single_context_forward_ms_p95": 0.010461499999999999,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009246083962977897,
+          "brier_over_branch_outcomes": 0.18610987870574605
+        },
+        "unpaired64_seed22": {
+          "mean_cost": 0.3475251441685192,
+          "success_rate": 0.7297135416666667,
+          "sense_rate": 0.5933333333333334,
+          "mean_duration_s": 0.33546373370761606,
+          "rescue_rate": 0.165126953125,
+          "spoil_rate": 0.053196614583333336,
+          "action_counts": {
+            "grasp_now": 488,
+            "look_then_grasp": 359,
+            "probe_then_grasp": 353
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01029,
+            "single_context_forward_ms_p95": 0.011015,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009663274903726789,
+          "brier_over_branch_outcomes": 0.18615159779982093
+        },
+        "unpaired64_seed33": {
+          "mean_cost": 0.3468568220576653,
+          "success_rate": 0.7296175130208333,
+          "sense_rate": 0.5766666666666667,
+          "mean_duration_s": 0.33210996913448393,
+          "rescue_rate": 0.16175130208333333,
+          "spoil_rate": 0.0499169921875,
+          "action_counts": {
+            "grasp_now": 508,
+            "look_then_grasp": 354,
+            "probe_then_grasp": 338
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010259500000000001,
+            "single_context_forward_ms_p95": 0.010535,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009056915953533301,
+          "brier_over_branch_outcomes": 0.18609096190480157
+        },
+        "choice128_seed11": {
+          "mean_cost": 0.3485108264928761,
+          "success_rate": 0.7280810546875,
+          "sense_rate": 0.5716666666666667,
+          "mean_duration_s": 0.33450194765850805,
+          "rescue_rate": 0.15848795572916666,
+          "spoil_rate": 0.048190104166666664,
+          "action_counts": {
+            "grasp_now": 514,
+            "look_then_grasp": 343,
+            "probe_then_grasp": 343
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011732,
+            "single_context_forward_ms_p95": 0.0123855,
+            "samples": 256
+          }
+        },
+        "choice128_seed22": {
+          "mean_cost": 0.34917591284433525,
+          "success_rate": 0.7275748697916666,
+          "sense_rate": 0.5841666666666666,
+          "mean_duration_s": 0.3335433146660741,
+          "rescue_rate": 0.16093912760416668,
+          "spoil_rate": 0.0511474609375,
+          "action_counts": {
+            "grasp_now": 499,
+            "look_then_grasp": 347,
+            "probe_then_grasp": 354
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011231,
+            "single_context_forward_ms_p95": 0.011554499999999999,
+            "samples": 256
+          }
+        },
+        "choice128_seed33": {
+          "mean_cost": 0.34929703000824974,
+          "success_rate": 0.72677734375,
+          "sense_rate": 0.5633333333333334,
+          "mean_duration_s": 0.33106530208427604,
+          "rescue_rate": 0.15771158854166667,
+          "spoil_rate": 0.04871744791666666,
+          "action_counts": {
+            "grasp_now": 524,
+            "look_then_grasp": 332,
+            "probe_then_grasp": 344
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011602,
+            "single_context_forward_ms_p95": 0.012045499999999999,
+            "samples": 256
+          }
+        }
+      },
+      "variant_means": {
+        "outcome64": {
+          "mean_cost": 0.3471191174667121,
+          "success_rate": 0.7300254991319445,
+          "sense_rate": 0.5816666666666667,
+          "mean_duration_s": 0.3342608572059187,
+          "rescue_rate": 0.16288519965277778,
+          "spoil_rate": 0.05064290364583333,
+          "training_seed_costs": [
+            0.3470771787306273,
+            0.34698056283722983,
+            0.3472996108322792
+          ]
+        },
+        "paired64": {
+          "mean_cost": 0.3469011861890435,
+          "success_rate": 0.7299072265625001,
+          "sense_rate": 0.5769444444444444,
+          "mean_duration_s": 0.3326977225523758,
+          "rescue_rate": 0.16221082899305556,
+          "spoil_rate": 0.05008680555555556,
+          "training_seed_costs": [
+            0.3466670799609861,
+            0.3470841965545971,
+            0.34695228205154727
+          ]
+        },
+        "no_delay64": {
+          "mean_cost": 0.35669791158038056,
+          "success_rate": 0.7213009982638888,
+          "sense_rate": 0.5383333333333333,
+          "mean_duration_s": 0.3421352051480129,
+          "rescue_rate": 0.15534722222222222,
+          "spoil_rate": 0.05182942708333333,
+          "training_seed_costs": [
+            0.35625938679404917,
+            0.3572493920532349,
+            0.3565849558938576
+          ]
+        },
+        "unpaired64": {
+          "mean_cost": 0.34717275734257974,
+          "success_rate": 0.7297542317708334,
+          "sense_rate": 0.5811111111111111,
+          "mean_duration_s": 0.3335437501496919,
+          "rescue_rate": 0.16259711371527777,
+          "spoil_rate": 0.050626085069444444,
+          "training_seed_costs": [
+            0.3471363058015547,
+            0.3475251441685192,
+            0.3468568220576653
+          ]
+        },
+        "choice128": {
+          "mean_cost": 0.34899458978182035,
+          "success_rate": 0.7274777560763889,
+          "sense_rate": 0.5730555555555555,
+          "mean_duration_s": 0.33303685480295275,
+          "rescue_rate": 0.15904622395833334,
+          "spoil_rate": 0.04935167100694444,
+          "training_seed_costs": [
+            0.3485108264928761,
+            0.34917591284433525,
+            0.34929703000824974
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "paired_minus_outcome": {
+          "mean": -0.00021793127766863967,
+          "ci95": [
+            -0.0006010870175680285,
+            0.0001369110905302208
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "paired_minus_rule": {
+          "mean": -0.005946650773336768,
+          "ci95": [
+            -0.007593077876227819,
+            -0.004348186844695956
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "paired_minus_known_model": {
+          "mean": -0.0024606029597775193,
+          "ci95": [
+            -0.0034070813818090767,
+            -0.001563414491110819
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "no_delay_minus_paired": {
+          "mean": 0.00979672539133707,
+          "ci95": [
+            0.008187425778358777,
+            0.011417646954747578
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "choice_minus_paired": {
+          "mean": 0.0020934035927769098,
+          "ci95": [
+            0.0014081726714016865,
+            0.0028517928571838774
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    },
+    {
+      "cohort": "delay",
+      "contexts": 1200,
+      "draws_per_context": 512,
+      "methods": {
+        "always_act": {
+          "mean_cost": 0.4464710074406881,
+          "success_rate": 0.6056363932291666,
+          "sense_rate": 0.0,
+          "mean_duration_s": 0.22,
+          "rescue_rate": 0.0,
+          "spoil_rate": 0.0,
+          "action_counts": {
+            "grasp_now": 1200,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 0
+          },
+          "latency": null
+        },
+        "always_look": {
+          "mean_cost": 0.7848481546727294,
+          "success_rate": 0.450166015625,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.9902922735625674,
+          "rescue_rate": 0.12185709635416667,
+          "spoil_rate": 0.27732747395833335,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 1200,
+            "probe_then_grasp": 0
+          },
+          "latency": null
+        },
+        "always_probe": {
+          "mean_cost": 0.4510538981712208,
+          "success_rate": 0.6502262369791667,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.42736649996485143,
+          "rescue_rate": 0.22654622395833332,
+          "spoil_rate": 0.18195638020833332,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 1200
+          },
+          "latency": null
+        },
+        "tuned_rule": {
+          "mean_cost": 0.39275896185471093,
+          "success_rate": 0.6830777994791667,
+          "sense_rate": 0.5225,
+          "mean_duration_s": 0.332417668836353,
+          "rescue_rate": 0.15086100260416666,
+          "spoil_rate": 0.07341959635416667,
+          "action_counts": {
+            "grasp_now": 573,
+            "look_then_grasp": 23,
+            "probe_then_grasp": 604
+          },
+          "latency": null
+        },
+        "known_model_mc": {
+          "mean_cost": 0.3851433773722879,
+          "success_rate": 0.6903271484375,
+          "sense_rate": 0.485,
+          "mean_duration_s": 0.3305206406157532,
+          "rescue_rate": 0.1462841796875,
+          "spoil_rate": 0.061593424479166665,
+          "action_counts": {
+            "grasp_now": 618,
+            "look_then_grasp": 40,
+            "probe_then_grasp": 542
+          },
+          "latency": {
+            "batched_ms_per_context": 0.21112551000745347
+          },
+          "probability_mse_vs_mc": 0.001819477081298828,
+          "brier_over_branch_outcomes": 0.19310706244574652
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.3844497585451717,
+          "success_rate": 0.6921858723958333,
+          "sense_rate": 0.5258333333333334,
+          "mean_duration_s": 0.33796624926086205,
+          "rescue_rate": 0.15465006510416668,
+          "spoil_rate": 0.0681005859375,
+          "action_counts": {
+            "grasp_now": 569,
+            "look_then_grasp": 41,
+            "probe_then_grasp": 590
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010209,
+            "single_context_forward_ms_p95": 0.0104725,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0018005942226043412,
+          "brier_over_branch_outcomes": 0.19308817958705204
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.3846152179654847,
+          "success_rate": 0.6915787760416666,
+          "sense_rate": 0.5158333333333334,
+          "mean_duration_s": 0.335157267737598,
+          "rescue_rate": 0.15337890625,
+          "spoil_rate": 0.0674365234375,
+          "action_counts": {
+            "grasp_now": 581,
+            "look_then_grasp": 37,
+            "probe_then_grasp": 582
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01034,
+            "single_context_forward_ms_p95": 0.0106175,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0016664544776428167,
+          "brier_over_branch_outcomes": 0.1929540398420905
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.3848625085750229,
+          "success_rate": 0.6922395833333334,
+          "sense_rate": 0.5283333333333333,
+          "mean_duration_s": 0.3380888179410056,
+          "rescue_rate": 0.1567333984375,
+          "spoil_rate": 0.07013020833333333,
+          "action_counts": {
+            "grasp_now": 566,
+            "look_then_grasp": 39,
+            "probe_then_grasp": 595
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010364499999999999,
+            "single_context_forward_ms_p95": 0.01054,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0017481202194903436,
+          "brier_over_branch_outcomes": 0.19303570558393804
+        },
+        "paired64_seed11": {
+          "mean_cost": 0.38478767070773157,
+          "success_rate": 0.6885270182291666,
+          "sense_rate": 0.4625,
+          "mean_duration_s": 0.32228901719113057,
+          "rescue_rate": 0.13919759114583333,
+          "spoil_rate": 0.05630696614583333,
+          "action_counts": {
+            "grasp_now": 645,
+            "look_then_grasp": 33,
+            "probe_then_grasp": 522
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.0103745,
+            "single_context_forward_ms_p95": 0.011041,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.00177719764062498,
+          "brier_over_branch_outcomes": 0.1930647830050727
+        },
+        "paired64_seed22": {
+          "mean_cost": 0.38416186767381144,
+          "success_rate": 0.6918896484375,
+          "sense_rate": 0.5216666666666666,
+          "mean_duration_s": 0.3367375025300169,
+          "rescue_rate": 0.15473795572916665,
+          "spoil_rate": 0.06848470052083333,
+          "action_counts": {
+            "grasp_now": 574,
+            "look_then_grasp": 36,
+            "probe_then_grasp": 590
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01031,
+            "single_context_forward_ms_p95": 0.011752,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0014632822881341704,
+          "brier_over_branch_outcomes": 0.1927508676525819
+        },
+        "paired64_seed33": {
+          "mean_cost": 0.3841542680284661,
+          "success_rate": 0.6910270182291667,
+          "sense_rate": 0.4816666666666667,
+          "mean_duration_s": 0.330621428040763,
+          "rescue_rate": 0.14513509114583334,
+          "spoil_rate": 0.059744466145833335,
+          "action_counts": {
+            "grasp_now": 622,
+            "look_then_grasp": 39,
+            "probe_then_grasp": 539
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010239,
+            "single_context_forward_ms_p95": 0.010555,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.001774808145505562,
+          "brier_over_branch_outcomes": 0.19306239350995327
+        },
+        "no_delay64_seed11": {
+          "mean_cost": 0.3916628707528605,
+          "success_rate": 0.6874527994791667,
+          "sense_rate": 0.4866666666666667,
+          "mean_duration_s": 0.36136009068550756,
+          "rescue_rate": 0.14405598958333332,
+          "spoil_rate": 0.062239583333333334,
+          "action_counts": {
+            "grasp_now": 616,
+            "look_then_grasp": 100,
+            "probe_then_grasp": 484
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01017,
+            "single_context_forward_ms_p95": 0.0104275,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.01702320588177179,
+          "brier_over_branch_outcomes": 0.20831079124621948
+        },
+        "no_delay64_seed22": {
+          "mean_cost": 0.3905736305402081,
+          "success_rate": 0.6895865885416667,
+          "sense_rate": 0.5191666666666667,
+          "mean_duration_s": 0.36434551839243745,
+          "rescue_rate": 0.1520703125,
+          "spoil_rate": 0.0681201171875,
+          "action_counts": {
+            "grasp_now": 577,
+            "look_then_grasp": 91,
+            "probe_then_grasp": 532
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01023,
+            "single_context_forward_ms_p95": 0.01041175,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.01677652149404802,
+          "brier_over_branch_outcomes": 0.20806410685849572
+        },
+        "no_delay64_seed33": {
+          "mean_cost": 0.39493525911384497,
+          "success_rate": 0.6878857421875,
+          "sense_rate": 0.5291666666666667,
+          "mean_duration_s": 0.38098261036492914,
+          "rescue_rate": 0.15208658854166668,
+          "spoil_rate": 0.06983723958333334,
+          "action_counts": {
+            "grasp_now": 565,
+            "look_then_grasp": 125,
+            "probe_then_grasp": 510
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010219,
+            "single_context_forward_ms_p95": 0.01039,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.015029778269549737,
+          "brier_over_branch_outcomes": 0.20631736363399744
+        },
+        "unpaired64_seed11": {
+          "mean_cost": 0.38507289063620437,
+          "success_rate": 0.6886686197916667,
+          "sense_rate": 0.4533333333333333,
+          "mean_duration_s": 0.3232747346840226,
+          "rescue_rate": 0.13783854166666668,
+          "spoil_rate": 0.05480631510416667,
+          "action_counts": {
+            "grasp_now": 656,
+            "look_then_grasp": 38,
+            "probe_then_grasp": 506
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01033,
+            "single_context_forward_ms_p95": 0.0109135,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0018632003956474844,
+          "brier_over_branch_outcomes": 0.19315078576009517
+        },
+        "unpaired64_seed22": {
+          "mean_cost": 0.38508698597908453,
+          "success_rate": 0.6895768229166667,
+          "sense_rate": 0.4825,
+          "mean_duration_s": 0.3274780551462659,
+          "rescue_rate": 0.145263671875,
+          "spoil_rate": 0.0613232421875,
+          "action_counts": {
+            "grasp_now": 621,
+            "look_then_grasp": 34,
+            "probe_then_grasp": 545
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01027,
+            "single_context_forward_ms_p95": 0.01044225,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0018013380798805956,
+          "brier_over_branch_outcomes": 0.1930889234443283
+        },
+        "unpaired64_seed33": {
+          "mean_cost": 0.3847984125619265,
+          "success_rate": 0.692431640625,
+          "sense_rate": 0.5225,
+          "mean_duration_s": 0.3367826926202343,
+          "rescue_rate": 0.15482747395833332,
+          "spoil_rate": 0.0680322265625,
+          "action_counts": {
+            "grasp_now": 573,
+            "look_then_grasp": 37,
+            "probe_then_grasp": 590
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010279,
+            "single_context_forward_ms_p95": 0.0104325,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0015631695045503907,
+          "brier_over_branch_outcomes": 0.1928507548689981
+        },
+        "choice128_seed11": {
+          "mean_cost": 0.391880606931468,
+          "success_rate": 0.6814973958333334,
+          "sense_rate": 0.4633333333333333,
+          "mean_duration_s": 0.31653945931029853,
+          "rescue_rate": 0.1367138671875,
+          "spoil_rate": 0.06085286458333333,
+          "action_counts": {
+            "grasp_now": 644,
+            "look_then_grasp": 18,
+            "probe_then_grasp": 538
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011742,
+            "single_context_forward_ms_p95": 0.0124405,
+            "samples": 256
+          }
+        },
+        "choice128_seed22": {
+          "mean_cost": 0.3921312562800405,
+          "success_rate": 0.6870524088541666,
+          "sense_rate": 0.5625,
+          "mean_duration_s": 0.33863366146648993,
+          "rescue_rate": 0.15959309895833335,
+          "spoil_rate": 0.07817708333333333,
+          "action_counts": {
+            "grasp_now": 525,
+            "look_then_grasp": 21,
+            "probe_then_grasp": 654
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011311,
+            "single_context_forward_ms_p95": 0.011664500000000001,
+            "samples": 256
+          }
+        },
+        "choice128_seed33": {
+          "mean_cost": 0.3914141033038505,
+          "success_rate": 0.6851578776041667,
+          "sense_rate": 0.5175,
+          "mean_duration_s": 0.3272706123926697,
+          "rescue_rate": 0.1501171875,
+          "spoil_rate": 0.070595703125,
+          "action_counts": {
+            "grasp_now": 579,
+            "look_then_grasp": 11,
+            "probe_then_grasp": 610
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011702500000000001,
+            "single_context_forward_ms_p95": 0.012118,
+            "samples": 256
+          }
+        }
+      },
+      "variant_means": {
+        "outcome64": {
+          "mean_cost": 0.3846424950285598,
+          "success_rate": 0.6920014105902778,
+          "sense_rate": 0.5233333333333333,
+          "mean_duration_s": 0.33707077831315524,
+          "rescue_rate": 0.15492078993055555,
+          "spoil_rate": 0.06855577256944445,
+          "training_seed_costs": [
+            0.3844497585451717,
+            0.3846152179654847,
+            0.3848625085750229
+          ]
+        },
+        "paired64": {
+          "mean_cost": 0.3843679354700031,
+          "success_rate": 0.6904812282986111,
+          "sense_rate": 0.4886111111111111,
+          "mean_duration_s": 0.32988264925397015,
+          "rescue_rate": 0.14635687934027777,
+          "spoil_rate": 0.06151204427083334,
+          "training_seed_costs": [
+            0.38478767070773157,
+            0.38416186767381144,
+            0.3841542680284661
+          ]
+        },
+        "no_delay64": {
+          "mean_cost": 0.3923905868023045,
+          "success_rate": 0.6883083767361112,
+          "sense_rate": 0.5116666666666667,
+          "mean_duration_s": 0.36889607314762474,
+          "rescue_rate": 0.149404296875,
+          "spoil_rate": 0.06673231336805556,
+          "training_seed_costs": [
+            0.3916628707528605,
+            0.3905736305402081,
+            0.39493525911384497
+          ]
+        },
+        "unpaired64": {
+          "mean_cost": 0.38498609639240505,
+          "success_rate": 0.6902256944444444,
+          "sense_rate": 0.4861111111111111,
+          "mean_duration_s": 0.32917849415017425,
+          "rescue_rate": 0.1459765625,
+          "spoil_rate": 0.061387261284722223,
+          "training_seed_costs": [
+            0.38507289063620437,
+            0.38508698597908453,
+            0.3847984125619265
+          ]
+        },
+        "choice128": {
+          "mean_cost": 0.3918086555051197,
+          "success_rate": 0.6845692274305556,
+          "sense_rate": 0.5144444444444445,
+          "mean_duration_s": 0.3274812443898194,
+          "rescue_rate": 0.14880805121527776,
+          "spoil_rate": 0.0698752170138889,
+          "training_seed_costs": [
+            0.391880606931468,
+            0.3921312562800405,
+            0.3914141033038505
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "paired_minus_outcome": {
+          "mean": -0.00027455955855670844,
+          "ci95": [
+            -0.0008991826487527047,
+            0.0003161164858525349
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "paired_minus_rule": {
+          "mean": -0.008391026384707881,
+          "ci95": [
+            -0.010840323977413871,
+            -0.006295038413550891
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "paired_minus_known_model": {
+          "mean": -0.0007754419022848238,
+          "ci95": [
+            -0.0019114435318642409,
+            0.00025809650383684586
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "no_delay_minus_paired": {
+          "mean": 0.008022651332301477,
+          "ci95": [
+            0.006271184975367703,
+            0.009953659918931662
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "choice_minus_paired": {
+          "mean": 0.007440720035116599,
+          "ci95": [
+            0.006141055353628454,
+            0.008791996863294687
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    },
+    {
+      "cohort": "cost",
+      "contexts": 1200,
+      "draws_per_context": 512,
+      "methods": {
+        "always_act": {
+          "mean_cost": 0.6145257573388189,
+          "success_rate": 0.6057682291666666,
+          "sense_rate": 0.0,
+          "mean_duration_s": 0.22,
+          "rescue_rate": 0.0,
+          "spoil_rate": 0.0,
+          "action_counts": {
+            "grasp_now": 1200,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 0
+          },
+          "latency": null
+        },
+        "always_look": {
+          "mean_cost": 0.9050003246098353,
+          "success_rate": 0.6247330729166667,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.529667714345557,
+          "rescue_rate": 0.17154622395833333,
+          "spoil_rate": 0.15258138020833334,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 1200,
+            "probe_then_grasp": 0
+          },
+          "latency": null
+        },
+        "always_probe": {
+          "mean_cost": 0.7788687011649199,
+          "success_rate": 0.64765625,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.42555837257306794,
+          "rescue_rate": 0.2266064453125,
+          "spoil_rate": 0.18471842447916667,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 1200
+          },
+          "latency": null
+        },
+        "tuned_rule": {
+          "mean_cost": 0.5894356480525399,
+          "success_rate": 0.6597379557291667,
+          "sense_rate": 0.21833333333333332,
+          "mean_duration_s": 0.2519475270678572,
+          "rescue_rate": 0.06945149739583334,
+          "spoil_rate": 0.015481770833333333,
+          "action_counts": {
+            "grasp_now": 938,
+            "look_then_grasp": 133,
+            "probe_then_grasp": 129
+          },
+          "latency": null
+        },
+        "known_model_mc": {
+          "mean_cost": 0.5843060651946911,
+          "success_rate": 0.6801725260416667,
+          "sense_rate": 0.2941666666666667,
+          "mean_duration_s": 0.2670703510874257,
+          "rescue_rate": 0.09590169270833333,
+          "spoil_rate": 0.021497395833333332,
+          "action_counts": {
+            "grasp_now": 847,
+            "look_then_grasp": 169,
+            "probe_then_grasp": 184
+          },
+          "latency": {
+            "batched_ms_per_context": 0.2133280508375416
+          },
+          "probability_mse_vs_mc": 0.0019133970472547744,
+          "brier_over_branch_outcomes": 0.191450441148546
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.5827742941907672,
+          "success_rate": 0.6812272135416667,
+          "sense_rate": 0.2891666666666667,
+          "mean_duration_s": 0.266574564032079,
+          "rescue_rate": 0.09540364583333333,
+          "spoil_rate": 0.019944661458333332,
+          "action_counts": {
+            "grasp_now": 853,
+            "look_then_grasp": 170,
+            "probe_then_grasp": 177
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010219,
+            "single_context_forward_ms_p95": 0.0110685,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0010259268612165542,
+          "brier_over_branch_outcomes": 0.1905629709625078
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.5827602154651651,
+          "success_rate": 0.6819156901041666,
+          "sense_rate": 0.295,
+          "mean_duration_s": 0.2674427744427707,
+          "rescue_rate": 0.09749348958333333,
+          "spoil_rate": 0.021346028645833334,
+          "action_counts": {
+            "grasp_now": 846,
+            "look_then_grasp": 168,
+            "probe_then_grasp": 186
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010289,
+            "single_context_forward_ms_p95": 0.01045,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009503038989896865,
+          "brier_over_branch_outcomes": 0.19048734800028091
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.5825546533024584,
+          "success_rate": 0.681298828125,
+          "sense_rate": 0.2891666666666667,
+          "mean_duration_s": 0.2663819828957682,
+          "rescue_rate": 0.09578938802083334,
+          "spoil_rate": 0.0202587890625,
+          "action_counts": {
+            "grasp_now": 853,
+            "look_then_grasp": 167,
+            "probe_then_grasp": 180
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01042,
+            "single_context_forward_ms_p95": 0.01059,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.001035197192947449,
+          "brier_over_branch_outcomes": 0.1905722412942387
+        },
+        "paired64_seed11": {
+          "mean_cost": 0.5826259186067729,
+          "success_rate": 0.67984375,
+          "sense_rate": 0.2808333333333333,
+          "mean_duration_s": 0.26470877683090815,
+          "rescue_rate": 0.09304524739583334,
+          "spoil_rate": 0.0189697265625,
+          "action_counts": {
+            "grasp_now": 863,
+            "look_then_grasp": 170,
+            "probe_then_grasp": 167
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01034,
+            "single_context_forward_ms_p95": 0.01055,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009872970537562614,
+          "brier_over_branch_outcomes": 0.1905243411550475
+        },
+        "paired64_seed22": {
+          "mean_cost": 0.5826205143081233,
+          "success_rate": 0.6816080729166667,
+          "sense_rate": 0.29,
+          "mean_duration_s": 0.26654570709415487,
+          "rescue_rate": 0.09634765625,
+          "spoil_rate": 0.0205078125,
+          "action_counts": {
+            "grasp_now": 852,
+            "look_then_grasp": 159,
+            "probe_then_grasp": 189
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.0102695,
+            "single_context_forward_ms_p95": 0.01042,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009994684374845363,
+          "brier_over_branch_outcomes": 0.1905365125387758
+        },
+        "paired64_seed33": {
+          "mean_cost": 0.5824230669243492,
+          "success_rate": 0.6798779296875,
+          "sense_rate": 0.28,
+          "mean_duration_s": 0.26467712876920996,
+          "rescue_rate": 0.09293782552083334,
+          "spoil_rate": 0.018828125,
+          "action_counts": {
+            "grasp_now": 864,
+            "look_then_grasp": 168,
+            "probe_then_grasp": 168
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01027,
+            "single_context_forward_ms_p95": 0.01042,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009410368819718747,
+          "brier_over_branch_outcomes": 0.19047808098326313
+        },
+        "no_delay64_seed11": {
+          "mean_cost": 0.5862472343773313,
+          "success_rate": 0.6688411458333333,
+          "sense_rate": 0.21166666666666667,
+          "mean_duration_s": 0.25747707197199665,
+          "rescue_rate": 0.07618326822916667,
+          "spoil_rate": 0.0131103515625,
+          "action_counts": {
+            "grasp_now": 946,
+            "look_then_grasp": 99,
+            "probe_then_grasp": 155
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.01024,
+            "single_context_forward_ms_p95": 0.01047,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.004488860096062249,
+          "brier_over_branch_outcomes": 0.1940259041973535
+        },
+        "no_delay64_seed22": {
+          "mean_cost": 0.5863276703830549,
+          "success_rate": 0.6723828125,
+          "sense_rate": 0.23,
+          "mean_duration_s": 0.26163581451730755,
+          "rescue_rate": 0.08248209635416667,
+          "spoil_rate": 0.015867513020833335,
+          "action_counts": {
+            "grasp_now": 924,
+            "look_then_grasp": 101,
+            "probe_then_grasp": 175
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.0102,
+            "single_context_forward_ms_p95": 0.01036175,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.004365677801368917,
+          "brier_over_branch_outcomes": 0.19390272190266014
+        },
+        "no_delay64_seed33": {
+          "mean_cost": 0.5858787463015291,
+          "success_rate": 0.669921875,
+          "sense_rate": 0.2175,
+          "mean_duration_s": 0.2584895383745529,
+          "rescue_rate": 0.07755696614583334,
+          "spoil_rate": 0.0134033203125,
+          "action_counts": {
+            "grasp_now": 939,
+            "look_then_grasp": 102,
+            "probe_then_grasp": 159
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.0101695,
+            "single_context_forward_ms_p95": 0.010422250000000001,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.004369276001631035,
+          "brier_over_branch_outcomes": 0.19390632010292227
+        },
+        "unpaired64_seed11": {
+          "mean_cost": 0.5822773658922572,
+          "success_rate": 0.678955078125,
+          "sense_rate": 0.27666666666666667,
+          "mean_duration_s": 0.26368493400393833,
+          "rescue_rate": 0.09156575520833334,
+          "spoil_rate": 0.01837890625,
+          "action_counts": {
+            "grasp_now": 868,
+            "look_then_grasp": 170,
+            "probe_then_grasp": 162
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010229,
+            "single_context_forward_ms_p95": 0.0104715,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009897615587280968,
+          "brier_over_branch_outcomes": 0.1905268056600193
+        },
+        "unpaired64_seed22": {
+          "mean_cost": 0.5824577681435851,
+          "success_rate": 0.6807877604166667,
+          "sense_rate": 0.2866666666666667,
+          "mean_duration_s": 0.2661855202035602,
+          "rescue_rate": 0.09526692708333333,
+          "spoil_rate": 0.020247395833333334,
+          "action_counts": {
+            "grasp_now": 856,
+            "look_then_grasp": 161,
+            "probe_then_grasp": 183
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010239,
+            "single_context_forward_ms_p95": 0.01044425,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.001024439450815332,
+          "brier_over_branch_outcomes": 0.19056148355210656
+        },
+        "unpaired64_seed33": {
+          "mean_cost": 0.5824381034233371,
+          "success_rate": 0.6817496744791667,
+          "sense_rate": 0.29,
+          "mean_duration_s": 0.2666384848236487,
+          "rescue_rate": 0.0958251953125,
+          "spoil_rate": 0.01984375,
+          "action_counts": {
+            "grasp_now": 852,
+            "look_then_grasp": 170,
+            "probe_then_grasp": 178
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.010189,
+            "single_context_forward_ms_p95": 0.0103765,
+            "samples": 256
+          },
+          "probability_mse_vs_mc": 0.0009072748208029199,
+          "brier_over_branch_outcomes": 0.19044431892209418
+        },
+        "choice128_seed11": {
+          "mean_cost": 0.5984663038580632,
+          "success_rate": 0.648701171875,
+          "sense_rate": 0.16833333333333333,
+          "mean_duration_s": 0.2510164513626313,
+          "rescue_rate": 0.056165364583333335,
+          "spoil_rate": 0.013232421875,
+          "action_counts": {
+            "grasp_now": 998,
+            "look_then_grasp": 88,
+            "probe_then_grasp": 114
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011662,
+            "single_context_forward_ms_p95": 0.01184975,
+            "samples": 256
+          }
+        },
+        "choice128_seed22": {
+          "mean_cost": 0.596081787204345,
+          "success_rate": 0.6767610677083333,
+          "sense_rate": 0.30916666666666665,
+          "mean_duration_s": 0.27607662714386405,
+          "rescue_rate": 0.095263671875,
+          "spoil_rate": 0.024270833333333332,
+          "action_counts": {
+            "grasp_now": 829,
+            "look_then_grasp": 184,
+            "probe_then_grasp": 187
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011191,
+            "single_context_forward_ms_p95": 0.012268250000000001,
+            "samples": 256
+          }
+        },
+        "choice128_seed33": {
+          "mean_cost": 0.5971612272686834,
+          "success_rate": 0.6741178385416666,
+          "sense_rate": 0.2808333333333333,
+          "mean_duration_s": 0.2727486510901788,
+          "rescue_rate": 0.0938427734375,
+          "spoil_rate": 0.0254931640625,
+          "action_counts": {
+            "grasp_now": 863,
+            "look_then_grasp": 104,
+            "probe_then_grasp": 233
+          },
+          "latency": {
+            "single_context_forward_ms_median": 0.011562,
+            "single_context_forward_ms_p95": 0.01174025,
+            "samples": 256
+          }
+        }
+      },
+      "variant_means": {
+        "outcome64": {
+          "mean_cost": 0.5826963876527969,
+          "success_rate": 0.6814805772569444,
+          "sense_rate": 0.29111111111111115,
+          "mean_duration_s": 0.266799773790206,
+          "rescue_rate": 0.09622884114583334,
+          "spoil_rate": 0.020516493055555557,
+          "training_seed_costs": [
+            0.5827742941907672,
+            0.5827602154651651,
+            0.5825546533024584
+          ]
+        },
+        "paired64": {
+          "mean_cost": 0.5825564999464151,
+          "success_rate": 0.6804432508680556,
+          "sense_rate": 0.2836111111111111,
+          "mean_duration_s": 0.2653105375647577,
+          "rescue_rate": 0.09411024305555556,
+          "spoil_rate": 0.019435221354166667,
+          "training_seed_costs": [
+            0.5826259186067729,
+            0.5826205143081233,
+            0.5824230669243492
+          ]
+        },
+        "no_delay64": {
+          "mean_cost": 0.5861512170206384,
+          "success_rate": 0.6703819444444444,
+          "sense_rate": 0.21972222222222224,
+          "mean_duration_s": 0.2592008082879524,
+          "rescue_rate": 0.07874077690972224,
+          "spoil_rate": 0.014127061631944444,
+          "training_seed_costs": [
+            0.5862472343773313,
+            0.5863276703830549,
+            0.5858787463015291
+          ]
+        },
+        "unpaired64": {
+          "mean_cost": 0.5823910791530599,
+          "success_rate": 0.6804975043402778,
+          "sense_rate": 0.28444444444444444,
+          "mean_duration_s": 0.2655029796770491,
+          "rescue_rate": 0.09421929253472222,
+          "spoil_rate": 0.01949001736111111,
+          "training_seed_costs": [
+            0.5822773658922572,
+            0.5824577681435851,
+            0.5824381034233371
+          ]
+        },
+        "choice128": {
+          "mean_cost": 0.5972364394436972,
+          "success_rate": 0.6665266927083333,
+          "sense_rate": 0.25277777777777777,
+          "mean_duration_s": 0.26661390986555805,
+          "rescue_rate": 0.08175726996527778,
+          "spoil_rate": 0.020998806423611113,
+          "training_seed_costs": [
+            0.5984663038580632,
+            0.596081787204345,
+            0.5971612272686834
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "paired_minus_outcome": {
+          "mean": -0.00013988770638176517,
+          "ci95": [
+            -0.000484837904726256,
+            0.0002176142432076431
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "paired_minus_rule": {
+          "mean": -0.006879148106124618,
+          "ci95": [
+            -0.008623457655716106,
+            -0.0053130474523652
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "paired_minus_known_model": {
+          "mean": -0.001749565248275861,
+          "ci95": [
+            -0.0026689464171266632,
+            -0.0009747732888026625
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "no_delay_minus_paired": {
+          "mean": 0.003594717074223249,
+          "ci95": [
+            0.0026462619549676354,
+            0.004647050155881872
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "choice_minus_paired": {
+          "mean": 0.014679939497282045,
+          "ci95": [
+            0.012892960242407136,
+            0.016600480873638496
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    }
+  ],
+  "coupling_audit": [
+    {
+      "cohort": "iid",
+      "success_marginals_unchanged": true,
+      "shared_noise_spoil": [
+        0.149169921875,
+        0.18374348958333334
+      ],
+      "independence_spoil": [
+        0.19171591758728027,
+        0.1886008358001709
+      ],
+      "warning": "Joint harm is coupling-dependent, not identifiable from success marginals alone."
+    },
+    {
+      "cohort": "delay",
+      "success_marginals_unchanged": true,
+      "shared_noise_spoil": [
+        0.27732747395833335,
+        0.18195638020833332
+      ],
+      "independence_spoil": [
+        0.30328646341959636,
+        0.18671908378601074
+      ],
+      "warning": "Joint harm is coupling-dependent, not identifiable from success marginals alone."
+    },
+    {
+      "cohort": "cost",
+      "success_marginals_unchanged": true,
+      "shared_noise_spoil": [
+        0.15258138020833334,
+        0.18471842447916667
+      ],
+      "independence_spoil": [
+        0.19702090899149577,
+        0.18951511065165202
+      ],
+      "warning": "Joint harm is coupling-dependent, not identifiable from success marginals alone."
+    }
+  ],
+  "bootstrap_note": "CIs resample independent test contexts after averaging three trained seeds. They do not cover all training-distribution uncertainty."
+}

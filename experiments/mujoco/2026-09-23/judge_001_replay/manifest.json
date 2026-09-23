@@ -1,0 +1,150 @@
+{
+  "schema": "roborsi.mujoco.v1",
+  "repository": "https://github.com/Srt-tian/RoboRSI_v1.git",
+  "branch": "research/mujoco-jev-physics",
+  "execution_commit": "7854483213faa54c6a5bb20acfeb960161ee9640",
+  "environment": "CLOUD development machine, MuJoCo 3.6.0, Fetch v4",
+  "files": [
+    {
+      "path": "delay_0_always_accurate.json.gz",
+      "bytes": 18682,
+      "sha256": "c684c3e9d9cb73dcabe0a77e50f011d317e5181980b05940ace3a3d0706794e0"
+    },
+    {
+      "path": "delay_0_always_accurate.mp4",
+      "bytes": 49686,
+      "sha256": "4fbd3d4820bbbac1dda9b379b73bf9f927b8875f5d55f1d72ff1d8f9dfb9389a"
+    },
+    {
+      "path": "delay_0_always_keep.json.gz",
+      "bytes": 33889,
+      "sha256": "f38ce4c3c6b3eb15e148981d51fd771ae2ff05383acbab2ba04ca1ba2581571e"
+    },
+    {
+      "path": "delay_0_always_keep.mp4",
+      "bytes": 73294,
+      "sha256": "76267b9f2a662d304413409cd2cd84c987a679933d35f7a73ece10995ce6e0fb"
+    },
+    {
+      "path": "delay_0_judge_seed11.json.gz",
+      "bytes": 34357,
+      "sha256": "2f2428acd366f5eada0eb6d0d5fb5764750c87d01a200c9711b953276c3087b5"
+    },
+    {
+      "path": "delay_0_judge_seed11.mp4",
+      "bytes": 69246,
+      "sha256": "db205c9a49b87b6304a5c1556e681ef68ccab1414a41a87c6611370c04d57e47"
+    },
+    {
+      "path": "delay_1_always_accurate.json.gz",
+      "bytes": 30984,
+      "sha256": "79c1a605f46e138067f1821500441a78eb4dd7b85598eaef7618fb526e9132a9"
+    },
+    {
+      "path": "delay_1_always_accurate.mp4",
+      "bytes": 65231,
+      "sha256": "15493aa2930f792894d88863e2b5047e547dd7a678c7b91f80233693bd97f340"
+    },
+    {
+      "path": "delay_1_always_keep.json.gz",
+      "bytes": 26247,
+      "sha256": "b625d86701800e7ee7a7ea246ac50c3d13b92da27748af9e61a942d296c65751"
+    },
+    {
+      "path": "delay_1_always_keep.mp4",
+      "bytes": 58352,
+      "sha256": "2735d4acd8372676352cf876899dc0b2ebb82ae109d4644df430ae0145e46e19"
+    },
+    {
+      "path": "delay_1_judge_seed11.json.gz",
+      "bytes": 28433,
+      "sha256": "3c2210ad160a369b48d2ec18851a80c2aca432345025c01360ce19b27bfff42f"
+    },
+    {
+      "path": "delay_1_judge_seed11.mp4",
+      "bytes": 61025,
+      "sha256": "9bb561188dc1e19afb9ff787f084e305d44865fee09e4d5ee43a87f7b17c9cac"
+    },
+    {
+      "path": "source/physics_judge.py",
+      "bytes": 10434,
+      "sha256": "69a57ba7386e2b709c0ae42400d97ddb3d1d099a927ef7ea3f32259631dbccfa"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "source/physics_replay.py",
+      "bytes": 2324,
+      "sha256": "5ba821c0aaeaae92062cce06aadea93102ece2ec92cca353a9172bbf9b96c7b2"
+    },
+    {
+      "path": "test_0_always_accurate.json.gz",
+      "bytes": 15535,
+      "sha256": "b13f9e69523d7f30e2e9d564f953a77031db6f820e50ddc49eb9a08d89995c8f"
+    },
+    {
+      "path": "test_0_always_accurate.mp4",
+      "bytes": 45323,
+      "sha256": "9912decc8cd58586c8ac0b4f405ce8626633c2bf0ffbc8e94abce407e362546f"
+    },
+    {
+      "path": "test_0_always_keep.json.gz",
+      "bytes": 13656,
+      "sha256": "35d46ef2b201c7ce8c9ad8cc2f493941e57429f67c2ae41df2bf7a704ac4b531"
+    },
+    {
+      "path": "test_0_always_keep.mp4",
+      "bytes": 40828,
+      "sha256": "0040b78bcffc7f4f1d17ec9f48dbdc435efc8f6032b48b9381f626089f9ca219"
+    },
+    {
+      "path": "test_0_judge_seed11.json.gz",
+      "bytes": 14737,
+      "sha256": "90549597cc8aa4e3154ff1584d61822aed2019af7358452799ca3c741880c12f"
+    },
+    {
+      "path": "test_0_judge_seed11.mp4",
+      "bytes": 43469,
+      "sha256": "95735902676c53114e0901caad14d01d84fa4f4e1136718d69bc352c83548a3a"
+    },
+    {
+      "path": "test_1_always_accurate.json.gz",
+      "bytes": 37851,
+      "sha256": "bc8f99ad86e8256f78fb5e849aedcc8cb7c5b62ee18c05c367bf4f84e6f6bde6"
+    },
+    {
+      "path": "test_1_always_accurate.mp4",
+      "bytes": 77689,
+      "sha256": "6bff704630f0aa71c833f54ceb59ca0428fa5fe6ac191837573545e091920c7e"
+    },
+    {
+      "path": "test_1_always_keep.json.gz",
+      "bytes": 38527,
+      "sha256": "c9676cf0b45a8ac02f36c2e2e4ae9179c59dde0433d2d79670ca523f706d337f"
+    },
+    {
+      "path": "test_1_always_keep.mp4",
+      "bytes": 80789,
+      "sha256": "57958c52492c5961bdf2bc495770ba43d75e3e5093bddaed766d6134d08bddff"
+    },
+    {
+      "path": "test_1_judge_seed11.json.gz",
+      "bytes": 35711,
+      "sha256": "3eb9738b663d32099aeecf0b1dbcaa54440ae61ccb4cc6f4df457113504eec29"
+    },
+    {
+      "path": "test_1_judge_seed11.mp4",
+      "bytes": 74539,
+      "sha256": "2c7dc8c4bd52cd6a6f3cd692a9f22ba491f9f0e1cfe96cd76d02655bd785eb8f"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1768,
+      "sha256": "8ad8064befd743f44719bf42548a74a4445fa9680fb6d61b25a41ddb7a4a8a97"
+    }
+  ],
+  "note": "judge_001 original videos have render-induced timing differences; use judge_001_replay for verified outcome and duration matches."
+}

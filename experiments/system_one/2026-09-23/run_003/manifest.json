@@ -1,0 +1,86 @@
+{
+  "schema": "roborsi.system_one.deadline.v1",
+  "scope": "sealed analytic timeout study; no new training; checkpoint dependency ../run_002/models",
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 3632,
+      "sha256": "ce83fb3a55e2ce2f168b4b4cdccb28a065a080375ae9cadefdc682bdcf1328bf"
+    },
+    {
+      "path": "decisions.json.gz",
+      "bytes": 3444519,
+      "sha256": "b60e0ef2f5734420b898a39d911f5bae06c6b49b4e103daa10644390ec763e6a"
+    },
+    {
+      "path": "frozen_protocol.json",
+      "bytes": 515,
+      "sha256": "9289a0035501405d893905daebbe1bfc455760bab788284c43deab25358f4933"
+    },
+    {
+      "path": "frozen_protocol.sha256",
+      "bytes": 65,
+      "sha256": "437a35c583a02c003b436efb3490dad36ca0562a9b5fe6cad8d37a54c6c02c51"
+    },
+    {
+      "path": "results.json",
+      "bytes": 28782,
+      "sha256": "3afc3aa84eb6f59a66346de490d56e0314a9f9ec81cb6798cc8eedfa26035494"
+    },
+    {
+      "path": "source/__init__.py",
+      "bytes": 79,
+      "sha256": "b5c8e854153f0095d7ff90b098e1740a0bbc2743b440861d6988f0baf174f18e"
+    },
+    {
+      "path": "source/deadlines.py",
+      "bytes": 12041,
+      "sha256": "04a530616e33fec531ca7e5f48906baabe3ddc8d7d2d2438f2bf2b9ae491ed9f"
+    },
+    {
+      "path": "source/effect.py",
+      "bytes": 3464,
+      "sha256": "017181c65f949011ccbeca39a1677025879ba944f9070b31531829d6be252d38"
+    },
+    {
+      "path": "source/effect_study.py",
+      "bytes": 12697,
+      "sha256": "a0700cfe0128ee3f832bba15628108729dae179f694325dbd8b3189ee6c8eb20"
+    },
+    {
+      "path": "source/network.py",
+      "bytes": 4708,
+      "sha256": "3bd760a1e3875bc6819fe82edc00d9d61f712e6eb93c26c55f59c796c08bd7ba"
+    },
+    {
+      "path": "source/study.py",
+      "bytes": 18393,
+      "sha256": "55fcf17cdc9a52416001f998a5d4b1ca2acc4fe6be90bccb42d487ecd63bd59f"
+    },
+    {
+      "path": "source/world.py",
+      "bytes": 8446,
+      "sha256": "6b505d76fe4f43b78d951a6d4031b4bf9d5fa199fdbe376fdb9243cdd23412ec"
+    },
+    {
+      "path": "test_fast_motion.npz",
+      "bytes": 1030040,
+      "sha256": "3e1aa0c394a630c808c82a5cabd8c2dbdcf05948054dadc3a4e5d608824233f0"
+    },
+    {
+      "path": "test_iid_queue.npz",
+      "bytes": 978183,
+      "sha256": "c229bfb004204e9a2365893dd101e436c5db84530c14e260438c4f23be1afef2"
+    },
+    {
+      "path": "test_tail_queue.npz",
+      "bytes": 978598,
+      "sha256": "3c1b666c8f68f14a888d33754a4bcd4fbc714e0462d1c60b83f5e616108621a1"
+    },
+    {
+      "path": "validation.npz",
+      "bytes": 868620,
+      "sha256": "f82835358e76a208f92376804f570f26447d7617fcac77cd591c4fd08aa49839"
+    }
+  ]
+}

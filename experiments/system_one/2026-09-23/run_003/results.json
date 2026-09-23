@@ -1,0 +1,1064 @@
+{
+  "completed_utc": "2026-09-22T16:24:02.830293+00:00",
+  "protocol_sha256": "9289a0035501405d893905daebbe1bfc455760bab788284c43deab25358f4933",
+  "scope": "pre-request state-dependent timeout; no repeated observation or recurrent learned stopping",
+  "summaries": [
+    {
+      "cohort": "iid_queue",
+      "contexts": 1000,
+      "methods": {
+        "always_act": {
+          "mean_cost": 0.4495659291818592,
+          "success_rate": 0.6041796875,
+          "mean_duration_s": 0.22000000000000006,
+          "request_rate": 0.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            1000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "always_wait": {
+          "mean_cost": 0.514305125245396,
+          "success_rate": 0.6292167087415819,
+          "mean_duration_s": 0.5854221555061929,
+          "request_rate": 1.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1000
+          ]
+        },
+        "fixed_timeout": {
+          "mean_cost": 0.4495659291818592,
+          "success_rate": 0.6041796875,
+          "mean_duration_s": 0.22000000000000006,
+          "request_rate": 0.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            1000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "effect64_seed11": {
+          "mean_cost": 0.3990933341477747,
+          "success_rate": 0.6779723553053202,
+          "mean_duration_s": 0.32900635519207777,
+          "request_rate": 0.492,
+          "cancellation_rate": 0.12762664531628132,
+          "deadline_counts": [
+            508,
+            0,
+            103,
+            188,
+            59,
+            0,
+            142
+          ]
+        },
+        "no_cancel_effect64_seed11": {
+          "mean_cost": 0.4068865656381366,
+          "success_rate": 0.6725875091471857,
+          "mean_duration_s": 0.3414762084056869,
+          "request_rate": 0.365,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            635,
+            0,
+            0,
+            0,
+            0,
+            0,
+            365
+          ]
+        },
+        "effect64_seed22": {
+          "mean_cost": 0.399209458760139,
+          "success_rate": 0.6785290708405275,
+          "mean_duration_s": 0.3312887618879713,
+          "request_rate": 0.505,
+          "cancellation_rate": 0.13337700058585034,
+          "deadline_counts": [
+            495,
+            0,
+            109,
+            186,
+            72,
+            4,
+            134
+          ]
+        },
+        "no_cancel_effect64_seed22": {
+          "mean_cost": 0.4070666457494209,
+          "success_rate": 0.673281886098119,
+          "mean_duration_s": 0.34483436983021354,
+          "request_rate": 0.377,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            623,
+            0,
+            0,
+            0,
+            0,
+            0,
+            377
+          ]
+        },
+        "effect64_seed33": {
+          "mean_cost": 0.399399193457316,
+          "success_rate": 0.6776772067352641,
+          "mean_duration_s": 0.3287128116490488,
+          "request_rate": 0.5,
+          "cancellation_rate": 0.13642087860672125,
+          "deadline_counts": [
+            500,
+            2,
+            120,
+            179,
+            69,
+            1,
+            129
+          ]
+        },
+        "no_cancel_effect64_seed33": {
+          "mean_cost": 0.4070541265625211,
+          "success_rate": 0.6720030837874117,
+          "mean_duration_s": 0.34144202471645213,
+          "request_rate": 0.365,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            635,
+            0,
+            0,
+            0,
+            0,
+            0,
+            365
+          ]
+        },
+        "raw_candidate64_seed11": {
+          "mean_cost": 0.39987420134753937,
+          "success_rate": 0.6761031205070934,
+          "mean_duration_s": 0.3242177179420174,
+          "request_rate": 0.496,
+          "cancellation_rate": 0.14117790381236056,
+          "deadline_counts": [
+            504,
+            0,
+            109,
+            187,
+            98,
+            14,
+            88
+          ]
+        },
+        "raw_candidate64_seed22": {
+          "mean_cost": 0.3999392016670878,
+          "success_rate": 0.6753341293957353,
+          "mean_duration_s": 0.32096747715026197,
+          "request_rate": 0.471,
+          "cancellation_rate": 0.13296414471121903,
+          "deadline_counts": [
+            529,
+            8,
+            103,
+            169,
+            64,
+            13,
+            114
+          ]
+        },
+        "raw_candidate64_seed33": {
+          "mean_cost": 0.401193408911422,
+          "success_rate": 0.6736000278654428,
+          "mean_duration_s": 0.31839154603937675,
+          "request_rate": 0.465,
+          "cancellation_rate": 0.13360068559300872,
+          "deadline_counts": [
+            535,
+            4,
+            108,
+            147,
+            90,
+            39,
+            77
+          ]
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.40076756021756144,
+          "success_rate": 0.6755019286012958,
+          "mean_duration_s": 0.32594741028902213,
+          "request_rate": 0.483,
+          "cancellation_rate": 0.12967564197068085,
+          "deadline_counts": [
+            517,
+            6,
+            99,
+            168,
+            83,
+            6,
+            121
+          ]
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.4010448805340237,
+          "success_rate": 0.6749107684990815,
+          "mean_duration_s": 0.3232151255851902,
+          "request_rate": 0.499,
+          "cancellation_rate": 0.14638759362515885,
+          "deadline_counts": [
+            501,
+            6,
+            116,
+            182,
+            93,
+            16,
+            86
+          ]
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.40203900919289126,
+          "success_rate": 0.6762636343827455,
+          "mean_duration_s": 0.3348970322028905,
+          "request_rate": 0.532,
+          "cancellation_rate": 0.15331453635249404,
+          "deadline_counts": [
+            468,
+            9,
+            113,
+            182,
+            102,
+            20,
+            106
+          ]
+        },
+        "known_model_mc1024": {
+          "mean_cost": 0.3989763014510489,
+          "success_rate": 0.6779179736713006,
+          "mean_duration_s": 0.32699920152166145,
+          "request_rate": 0.495,
+          "cancellation_rate": 0.13763398351002654,
+          "deadline_counts": [
+            505,
+            4,
+            118,
+            178,
+            67,
+            2,
+            126
+          ]
+        }
+      },
+      "variant_means": {
+        "effect64": {
+          "mean_cost": 0.3992339954550766,
+          "success_rate": 0.678059544293704,
+          "mean_duration_s": 0.3296693095763659,
+          "request_rate": 0.49899999999999994,
+          "cancellation_rate": 0.13247484150295097,
+          "training_seed_costs": [
+            0.3990933341477747,
+            0.399209458760139,
+            0.399399193457316
+          ]
+        },
+        "raw_candidate64": {
+          "mean_cost": 0.4003356039753497,
+          "success_rate": 0.6750124259227572,
+          "mean_duration_s": 0.3211922470438853,
+          "request_rate": 0.47733333333333333,
+          "cancellation_rate": 0.13591424470552946,
+          "training_seed_costs": [
+            0.39987420134753937,
+            0.3999392016670878,
+            0.401193408911422
+          ]
+        },
+        "outcome64": {
+          "mean_cost": 0.4012838166481589,
+          "success_rate": 0.675558777161041,
+          "mean_duration_s": 0.328019856025701,
+          "request_rate": 0.5046666666666667,
+          "cancellation_rate": 0.1431259239827779,
+          "training_seed_costs": [
+            0.40076756021756144,
+            0.4010448805340237,
+            0.40203900919289126
+          ]
+        },
+        "no_cancel_effect64": {
+          "mean_cost": 0.4070024459833595,
+          "success_rate": 0.672624159677572,
+          "mean_duration_s": 0.3425842009841175,
+          "request_rate": 0.369,
+          "cancellation_rate": 0.0,
+          "training_seed_costs": [
+            0.4068865656381366,
+            0.4070666457494209,
+            0.4070541265625211
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "effect_minus_fixed": {
+          "mean": -0.0503319337267827,
+          "ci95": [
+            -0.055392873899098506,
+            -0.045472520725361114
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_no_cancel": {
+          "mean": -0.007768450528282971,
+          "ci95": [
+            -0.008830642468047531,
+            -0.006764376840798039
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_raw": {
+          "mean": -0.0011016085202731568,
+          "ci95": [
+            -0.0014569865197566491,
+            -0.0007700951963274505
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_known_model": {
+          "mean": 0.0002576940040276038,
+          "ci95": [
+            2.0675251505123867e-05,
+            0.0005319442670889032
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    },
+    {
+      "cohort": "tail_queue",
+      "contexts": 1000,
+      "methods": {
+        "always_act": {
+          "mean_cost": 0.45265263546813495,
+          "success_rate": 0.6007421875,
+          "mean_duration_s": 0.22000000000000006,
+          "request_rate": 0.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            1000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "always_wait": {
+          "mean_cost": 0.6900217857296793,
+          "success_rate": 0.513897294791307,
+          "mean_duration_s": 0.8402293542937002,
+          "request_rate": 1.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1000
+          ]
+        },
+        "fixed_timeout": {
+          "mean_cost": 0.45265263546813495,
+          "success_rate": 0.6007421875,
+          "mean_duration_s": 0.22000000000000006,
+          "request_rate": 0.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            1000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "effect64_seed11": {
+          "mean_cost": 0.438361211147045,
+          "success_rate": 0.630539687135243,
+          "mean_duration_s": 0.30438365208847085,
+          "request_rate": 0.179,
+          "cancellation_rate": 0.04576136593480788,
+          "deadline_counts": [
+            821,
+            0,
+            41,
+            16,
+            4,
+            0,
+            118
+          ]
+        },
+        "no_cancel_effect64_seed11": {
+          "mean_cost": 0.4389673772871859,
+          "success_rate": 0.6297954037780221,
+          "mean_duration_s": 0.30401317394738736,
+          "request_rate": 0.135,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            865,
+            0,
+            0,
+            0,
+            0,
+            0,
+            135
+          ]
+        },
+        "effect64_seed22": {
+          "mean_cost": 0.43842281037052694,
+          "success_rate": 0.6319514895135903,
+          "mean_duration_s": 0.3106591424277154,
+          "request_rate": 0.194,
+          "cancellation_rate": 0.05126548591636595,
+          "deadline_counts": [
+            806,
+            0,
+            46,
+            14,
+            9,
+            0,
+            125
+          ]
+        },
+        "no_cancel_effect64_seed22": {
+          "mean_cost": 0.4387924152763871,
+          "success_rate": 0.6314540551796359,
+          "mean_duration_s": 0.3095270566607071,
+          "request_rate": 0.144,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            856,
+            0,
+            0,
+            0,
+            0,
+            0,
+            144
+          ]
+        },
+        "effect64_seed33": {
+          "mean_cost": 0.43841116418424436,
+          "success_rate": 0.6306106132220805,
+          "mean_duration_s": 0.3041615903892337,
+          "request_rate": 0.181,
+          "cancellation_rate": 0.048679874333509926,
+          "deadline_counts": [
+            819,
+            1,
+            39,
+            19,
+            6,
+            1,
+            115
+          ]
+        },
+        "no_cancel_effect64_seed33": {
+          "mean_cost": 0.43919430704114454,
+          "success_rate": 0.6288256256011007,
+          "mean_duration_s": 0.30044154012159685,
+          "request_rate": 0.129,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            871,
+            0,
+            0,
+            0,
+            0,
+            0,
+            129
+          ]
+        },
+        "raw_candidate64_seed11": {
+          "mean_cost": 0.43958972467052426,
+          "success_rate": 0.6270787749656851,
+          "mean_duration_s": 0.29558676594237976,
+          "request_rate": 0.176,
+          "cancellation_rate": 0.059208702580542644,
+          "deadline_counts": [
+            824,
+            3,
+            41,
+            17,
+            20,
+            3,
+            92
+          ]
+        },
+        "raw_candidate64_seed22": {
+          "mean_cost": 0.43943481546892404,
+          "success_rate": 0.6275317204577523,
+          "mean_duration_s": 0.2945890113967775,
+          "request_rate": 0.179,
+          "cancellation_rate": 0.06503768370070079,
+          "deadline_counts": [
+            821,
+            2,
+            47,
+            15,
+            25,
+            2,
+            88
+          ]
+        },
+        "raw_candidate64_seed33": {
+          "mean_cost": 0.44133271899314774,
+          "success_rate": 0.6241050227292118,
+          "mean_duration_s": 0.2884650943780908,
+          "request_rate": 0.172,
+          "cancellation_rate": 0.07228465111913097,
+          "deadline_counts": [
+            828,
+            1,
+            42,
+            18,
+            28,
+            27,
+            56
+          ]
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.440284371656663,
+          "success_rate": 0.6271618348794089,
+          "mean_duration_s": 0.2984828695928053,
+          "request_rate": 0.186,
+          "cancellation_rate": 0.06525705376184471,
+          "deadline_counts": [
+            814,
+            9,
+            41,
+            22,
+            13,
+            4,
+            97
+          ]
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.44003800407849597,
+          "success_rate": 0.6263312169238303,
+          "mean_duration_s": 0.291502983301646,
+          "request_rate": 0.178,
+          "cancellation_rate": 0.06963284532668029,
+          "deadline_counts": [
+            822,
+            4,
+            41,
+            22,
+            31,
+            0,
+            80
+          ]
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.4440182017729305,
+          "success_rate": 0.6267561339848176,
+          "mean_duration_s": 0.31871319632585354,
+          "request_rate": 0.243,
+          "cancellation_rate": 0.09774233337507086,
+          "deadline_counts": [
+            757,
+            6,
+            46,
+            33,
+            42,
+            21,
+            95
+          ]
+        },
+        "known_model_mc1024": {
+          "mean_cost": 0.4384557361085641,
+          "success_rate": 0.6310706539430102,
+          "mean_duration_s": 0.3051323140146432,
+          "request_rate": 0.184,
+          "cancellation_rate": 0.05060783586426722,
+          "deadline_counts": [
+            816,
+            3,
+            35,
+            21,
+            9,
+            1,
+            115
+          ]
+        }
+      },
+      "variant_means": {
+        "effect64": {
+          "mean_cost": 0.43839839523393875,
+          "success_rate": 0.6310339299569713,
+          "mean_duration_s": 0.30640146163514,
+          "request_rate": 0.18466666666666667,
+          "cancellation_rate": 0.048568908728227916,
+          "training_seed_costs": [
+            0.438361211147045,
+            0.43842281037052694,
+            0.43841116418424436
+          ]
+        },
+        "raw_candidate64": {
+          "mean_cost": 0.440119086377532,
+          "success_rate": 0.626238506050883,
+          "mean_duration_s": 0.292880290572416,
+          "request_rate": 0.17566666666666664,
+          "cancellation_rate": 0.06551034580012481,
+          "training_seed_costs": [
+            0.43958972467052426,
+            0.43943481546892404,
+            0.44133271899314774
+          ]
+        },
+        "outcome64": {
+          "mean_cost": 0.4414468591693632,
+          "success_rate": 0.626749728596019,
+          "mean_duration_s": 0.30289968307343496,
+          "request_rate": 0.20233333333333334,
+          "cancellation_rate": 0.07754407748786529,
+          "training_seed_costs": [
+            0.440284371656663,
+            0.44003800407849597,
+            0.4440182017729305
+          ]
+        },
+        "no_cancel_effect64": {
+          "mean_cost": 0.4389846998682392,
+          "success_rate": 0.6300250281862528,
+          "mean_duration_s": 0.30466059024323044,
+          "request_rate": 0.136,
+          "cancellation_rate": 0.0,
+          "training_seed_costs": [
+            0.4389673772871859,
+            0.4387924152763871,
+            0.43919430704114454
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "effect_minus_fixed": {
+          "mean": -0.014254240234196195,
+          "ci95": [
+            -0.017230007691182176,
+            -0.011574213597520184
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_no_cancel": {
+          "mean": -0.000586304634300434,
+          "ci95": [
+            -0.0008985737447575435,
+            -0.0003037520712719218
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_raw": {
+          "mean": -0.0017206911435933094,
+          "ci95": [
+            -0.0022841203008996543,
+            -0.0012267400583151186
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_known_model": {
+          "mean": -5.734087462532732e-05,
+          "ci95": [
+            -0.00031072639652640854,
+            0.00018783156355622012
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    },
+    {
+      "cohort": "fast_motion",
+      "contexts": 1000,
+      "methods": {
+        "always_act": {
+          "mean_cost": 0.615934741046206,
+          "success_rate": 0.437380859375,
+          "mean_duration_s": 0.22000000000000006,
+          "request_rate": 0.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            1000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "always_wait": {
+          "mean_cost": 0.8121038889670582,
+          "success_rate": 0.32932839235834604,
+          "mean_duration_s": 0.5816626805222886,
+          "request_rate": 1.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1000
+          ]
+        },
+        "fixed_timeout": {
+          "mean_cost": 0.615934741046206,
+          "success_rate": 0.437380859375,
+          "mean_duration_s": 0.22000000000000006,
+          "request_rate": 0.0,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            1000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "effect64_seed11": {
+          "mean_cost": 0.6149161056640404,
+          "success_rate": 0.4411336162370943,
+          "mean_duration_s": 0.2350745520069409,
+          "request_rate": 0.097,
+          "cancellation_rate": 0.031023396308546395,
+          "deadline_counts": [
+            903,
+            2,
+            39,
+            42,
+            12,
+            0,
+            2
+          ]
+        },
+        "no_cancel_effect64_seed11": {
+          "mean_cost": 0.615606284331768,
+          "success_rate": 0.4399679060256699,
+          "mean_duration_s": 0.23250997187162767,
+          "request_rate": 0.049,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            951,
+            0,
+            0,
+            0,
+            0,
+            0,
+            49
+          ]
+        },
+        "effect64_seed22": {
+          "mean_cost": 0.6158283921081376,
+          "success_rate": 0.44115056717363266,
+          "mean_duration_s": 0.23970847056910105,
+          "request_rate": 0.126,
+          "cancellation_rate": 0.047105883285835856,
+          "deadline_counts": [
+            874,
+            12,
+            51,
+            45,
+            11,
+            0,
+            7
+          ]
+        },
+        "no_cancel_effect64_seed22": {
+          "mean_cost": 0.6155332675985633,
+          "success_rate": 0.43995229688535337,
+          "mean_duration_s": 0.23215274709693268,
+          "request_rate": 0.047,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            953,
+            0,
+            0,
+            0,
+            0,
+            0,
+            47
+          ]
+        },
+        "effect64_seed33": {
+          "mean_cost": 0.6148376965240829,
+          "success_rate": 0.4409749402981272,
+          "mean_duration_s": 0.2327002309818309,
+          "request_rate": 0.081,
+          "cancellation_rate": 0.027344851600987305,
+          "deadline_counts": [
+            919,
+            6,
+            44,
+            14,
+            4,
+            3,
+            10
+          ]
+        },
+        "no_cancel_effect64_seed33": {
+          "mean_cost": 0.6154665698841969,
+          "success_rate": 0.43967048525986513,
+          "mean_duration_s": 0.230452367397514,
+          "request_rate": 0.04,
+          "cancellation_rate": 0.0,
+          "deadline_counts": [
+            960,
+            0,
+            0,
+            0,
+            0,
+            0,
+            40
+          ]
+        },
+        "raw_candidate64_seed11": {
+          "mean_cost": 0.6178326745871079,
+          "success_rate": 0.43896750680619395,
+          "mean_duration_s": 0.23989414746392485,
+          "request_rate": 0.163,
+          "cancellation_rate": 0.08053658172000373,
+          "deadline_counts": [
+            837,
+            53,
+            71,
+            28,
+            5,
+            0,
+            6
+          ]
+        },
+        "raw_candidate64_seed22": {
+          "mean_cost": 0.6198714448896735,
+          "success_rate": 0.4365686677095504,
+          "mean_duration_s": 0.2411893260139824,
+          "request_rate": 0.09,
+          "cancellation_rate": 0.009185821399963778,
+          "deadline_counts": [
+            910,
+            4,
+            3,
+            1,
+            7,
+            50,
+            25
+          ]
+        },
+        "raw_candidate64_seed33": {
+          "mean_cost": 0.6431300616825654,
+          "success_rate": 0.42324879132115534,
+          "mean_duration_s": 0.2941089619694467,
+          "request_rate": 0.294,
+          "cancellation_rate": 0.049660247040412754,
+          "deadline_counts": [
+            706,
+            0,
+            3,
+            21,
+            121,
+            144,
+            5
+          ]
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.614846524906909,
+          "success_rate": 0.4398694367624485,
+          "mean_duration_s": 0.22853918991200947,
+          "request_rate": 0.061,
+          "cancellation_rate": 0.023041823868884145,
+          "deadline_counts": [
+            939,
+            8,
+            24,
+            24,
+            3,
+            2,
+            0
+          ]
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.6162435566082779,
+          "success_rate": 0.43902351110766896,
+          "mean_duration_s": 0.23278638405604346,
+          "request_rate": 0.086,
+          "cancellation_rate": 0.031601812328197816,
+          "deadline_counts": [
+            914,
+            16,
+            26,
+            28,
+            8,
+            0,
+            8
+          ]
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.6243501593366294,
+          "success_rate": 0.4352880162323771,
+          "mean_duration_s": 0.25497341773857635,
+          "request_rate": 0.263,
+          "cancellation_rate": 0.15437203901161115,
+          "deadline_counts": [
+            737,
+            101,
+            88,
+            51,
+            23,
+            0,
+            0
+          ]
+        },
+        "known_model_mc1024": {
+          "mean_cost": 0.6139637215921852,
+          "success_rate": 0.44146506621635667,
+          "mean_duration_s": 0.23137410336118552,
+          "request_rate": 0.083,
+          "cancellation_rate": 0.03497946201074784,
+          "deadline_counts": [
+            917,
+            5,
+            50,
+            25,
+            3,
+            0,
+            0
+          ]
+        }
+      },
+      "variant_means": {
+        "effect64": {
+          "mean_cost": 0.6151940647654203,
+          "success_rate": 0.441086374569618,
+          "mean_duration_s": 0.23582775118595764,
+          "request_rate": 0.10133333333333333,
+          "cancellation_rate": 0.03515804373178985,
+          "training_seed_costs": [
+            0.6149161056640404,
+            0.6158283921081376,
+            0.6148376965240829
+          ]
+        },
+        "raw_candidate64": {
+          "mean_cost": 0.6269447270531155,
+          "success_rate": 0.43292832194563324,
+          "mean_duration_s": 0.2583974784824513,
+          "request_rate": 0.18233333333333332,
+          "cancellation_rate": 0.04646088338679342,
+          "training_seed_costs": [
+            0.6178326745871079,
+            0.6198714448896735,
+            0.6431300616825654
+          ]
+        },
+        "outcome64": {
+          "mean_cost": 0.6184800802839389,
+          "success_rate": 0.43806032136749823,
+          "mean_duration_s": 0.23876633056887644,
+          "request_rate": 0.1366666666666667,
+          "cancellation_rate": 0.06967189173623103,
+          "training_seed_costs": [
+            0.614846524906909,
+            0.6162435566082779,
+            0.6243501593366294
+          ]
+        },
+        "no_cancel_effect64": {
+          "mean_cost": 0.615535373938176,
+          "success_rate": 0.4398635627236294,
+          "mean_duration_s": 0.23170502878869148,
+          "request_rate": 0.04533333333333334,
+          "cancellation_rate": 0.0,
+          "training_seed_costs": [
+            0.615606284331768,
+            0.6155332675985633,
+            0.6154665698841969
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "effect_minus_fixed": {
+          "mean": -0.0007406762807856489,
+          "ci95": [
+            -0.0016374571888808551,
+            0.00029113747188870223
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_no_cancel": {
+          "mean": -0.0003413091727557613,
+          "ci95": [
+            -0.0008351396626021113,
+            0.0001605299783981072
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_raw": {
+          "mean": -0.011750662287695272,
+          "ci95": [
+            -0.013363778181419008,
+            -0.010153267646642483
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_known_model": {
+          "mean": 0.0012303431732351134,
+          "ci95": [
+            0.0007283306342629718,
+            0.001774756259961643
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    }
+  ],
+  "known_limitations": [
+    "Known queue law independent of latent state",
+    "Ballistic 1D dynamics",
+    "No real asynchronous worker",
+    "Timeout selected before request",
+    "MC expected cost integrates queue probabilities"
+  ]
+}

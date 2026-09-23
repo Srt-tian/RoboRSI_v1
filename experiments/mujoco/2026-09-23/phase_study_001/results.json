@@ -1,0 +1,1461 @@
+{
+  "scope": "Paired mid-skill information decisions in MuJoCo, without GPT or official Jev.\n\nClean scripted prefixes form a controlled checkpoint curriculum. After the fork,\nall policies see only noisy/delayed object sensors and exact proprioception.\nOne typed decision per checkpoint; this is not yet a recurrent learned policy.\n",
+  "summaries": [
+    {
+      "split": "test",
+      "methods": {
+        "continue": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.7194444537162781,
+            "mean_cost": 0.551641583442688,
+            "duration_s": 3.384777784347534,
+            "oracle_regret": 0.30245843529701233,
+            "choices": [
+              360,
+              0,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.5777778029441833,
+            "mean_cost": 0.7474536299705505,
+            "duration_s": 3.878666400909424,
+            "oracle_regret": 0.43377193808555603,
+            "choices": [
+              180,
+              0,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.8611111044883728,
+            "mean_cost": 0.3558294475078583,
+            "duration_s": 2.8908886909484863,
+            "oracle_regret": 0.17114493250846863,
+            "choices": [
+              180,
+              0,
+              0
+            ]
+          }
+        },
+        "stop_refresh": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9222221970558167,
+            "mean_cost": 0.32104331254959106,
+            "duration_s": 3.0776665210723877,
+            "oracle_regret": 0.07186013460159302,
+            "choices": [
+              0,
+              360,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8444444537162781,
+            "mean_cost": 0.42770636081695557,
+            "duration_s": 3.2708890438079834,
+            "oracle_regret": 0.11402460932731628,
+            "choices": [
+              0,
+              180,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 1.0,
+            "mean_cost": 0.2143802046775818,
+            "duration_s": 2.88444447517395,
+            "oracle_regret": 0.029695667326450348,
+            "choices": [
+              0,
+              180,
+              0
+            ]
+          }
+        },
+        "async_refresh": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9194444417953491,
+            "mean_cost": 0.309505432844162,
+            "duration_s": 2.893777370452881,
+            "oracle_regret": 0.06032228097319603,
+            "choices": [
+              0,
+              0,
+              360
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.855555534362793,
+            "mean_cost": 0.41089341044425964,
+            "duration_s": 3.2166666984558105,
+            "oracle_regret": 0.09721162915229797,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.20811747014522552,
+            "duration_s": 2.5708889961242676,
+            "oracle_regret": 0.02343294396996498,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          }
+        },
+        "validation_fixed": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9194444417953491,
+            "mean_cost": 0.309505432844162,
+            "duration_s": 2.893777370452881,
+            "oracle_regret": 0.06032228097319603,
+            "choices": [
+              0,
+              0,
+              360
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.855555534362793,
+            "mean_cost": 0.41089341044425964,
+            "duration_s": 3.2166666984558105,
+            "oracle_regret": 0.09721162915229797,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.20811747014522552,
+            "duration_s": 2.5708889961242676,
+            "oracle_regret": 0.02343294396996498,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          }
+        },
+        "task_phase_lookup": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9222221970558167,
+            "mean_cost": 0.3101542592048645,
+            "duration_s": 2.9344444274902344,
+            "oracle_regret": 0.060971084982156754,
+            "choices": [
+              108,
+              98,
+              154
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8444444537162781,
+            "mean_cost": 0.4284995496273041,
+            "duration_s": 3.276888608932495,
+            "oracle_regret": 0.11481776833534241,
+            "choices": [
+              0,
+              62,
+              118
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 1.0,
+            "mean_cost": 0.19180890917778015,
+            "duration_s": 2.5920000076293945,
+            "oracle_regret": 0.007124390918761492,
+            "choices": [
+              108,
+              36,
+              36
+            ]
+          }
+        },
+        "age_noise_rule": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9166666865348816,
+            "mean_cost": 0.3123578131198883,
+            "duration_s": 2.8946664333343506,
+            "oracle_regret": 0.06317465752363205,
+            "choices": [
+              7,
+              0,
+              353
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8500000238418579,
+            "mean_cost": 0.41658470034599304,
+            "duration_s": 3.218222141265869,
+            "oracle_regret": 0.10290289670228958,
+            "choices": [
+              4,
+              0,
+              176
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.20813094079494476,
+            "duration_s": 2.571110963821411,
+            "oracle_regret": 0.02344641461968422,
+            "choices": [
+              3,
+              0,
+              177
+            ]
+          }
+        },
+        "oracle_infeasible": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9555555582046509,
+            "mean_cost": 0.24918314814567566,
+            "duration_s": 2.5822222232818604,
+            "oracle_regret": 0.0,
+            "choices": [
+              217,
+              48,
+              95
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.9111111164093018,
+            "mean_cost": 0.31368178129196167,
+            "duration_s": 2.6764442920684814,
+            "oracle_regret": 0.0,
+            "choices": [
+              84,
+              40,
+              56
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 1.0,
+            "mean_cost": 0.18468454480171204,
+            "duration_s": 2.48799991607666,
+            "oracle_regret": 0.0,
+            "choices": [
+              133,
+              8,
+              39
+            ]
+          }
+        },
+        "full_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.925000011920929,
+            "mean_cost": 0.3025761544704437,
+            "duration_s": 2.8946664333343506,
+            "oracle_regret": 0.05339299142360687,
+            "choices": [
+              39,
+              70,
+              251
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8666666746139526,
+            "mean_cost": 0.3928622901439667,
+            "duration_s": 3.15755558013916,
+            "oracle_regret": 0.079180508852005,
+            "choices": [
+              0,
+              48,
+              132
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.21229001879692078,
+            "duration_s": 2.63177752494812,
+            "oracle_regret": 0.027605490759015083,
+            "choices": [
+              39,
+              22,
+              119
+            ]
+          }
+        },
+        "full_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9305555820465088,
+            "mean_cost": 0.29723018407821655,
+            "duration_s": 2.8781111240386963,
+            "oracle_regret": 0.0480470135807991,
+            "choices": [
+              51,
+              60,
+              249
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8666666746139526,
+            "mean_cost": 0.3969450294971466,
+            "duration_s": 3.173999786376953,
+            "oracle_regret": 0.08326326310634613,
+            "choices": [
+              2,
+              43,
+              135
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9944444298744202,
+            "mean_cost": 0.19751527905464172,
+            "duration_s": 2.5822222232818604,
+            "oracle_regret": 0.0128307631239295,
+            "choices": [
+              49,
+              17,
+              114
+            ]
+          }
+        },
+        "full_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9111111164093018,
+            "mean_cost": 0.3158208727836609,
+            "duration_s": 2.8539998531341553,
+            "oracle_regret": 0.06663770973682404,
+            "choices": [
+              133,
+              72,
+              155
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8277778029441833,
+            "mean_cost": 0.4313785433769226,
+            "duration_s": 3.094888687133789,
+            "oracle_regret": 0.11769682914018631,
+            "choices": [
+              52,
+              41,
+              87
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9944444298744202,
+            "mean_cost": 0.2002631276845932,
+            "duration_s": 2.6131110191345215,
+            "oracle_regret": 0.015578601509332657,
+            "choices": [
+              81,
+              31,
+              68
+            ]
+          }
+        },
+        "no_phase_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9222221970558167,
+            "mean_cost": 0.30800849199295044,
+            "duration_s": 2.9127776622772217,
+            "oracle_regret": 0.05882532149553299,
+            "choices": [
+              50,
+              50,
+              260
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8611111044883728,
+            "mean_cost": 0.4045582711696625,
+            "duration_s": 3.2022223472595215,
+            "oracle_regret": 0.09087648242712021,
+            "choices": [
+              0,
+              32,
+              148
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.2114586979150772,
+            "duration_s": 2.623332977294922,
+            "oracle_regret": 0.026774168014526367,
+            "choices": [
+              50,
+              18,
+              112
+            ]
+          }
+        },
+        "no_phase_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9277777671813965,
+            "mean_cost": 0.2992098927497864,
+            "duration_s": 2.8627777099609375,
+            "oracle_regret": 0.050026729702949524,
+            "choices": [
+              64,
+              49,
+              247
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8611111044883728,
+            "mean_cost": 0.40169957280158997,
+            "duration_s": 3.1539998054504395,
+            "oracle_regret": 0.0880177840590477,
+            "choices": [
+              4,
+              34,
+              142
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9944444298744202,
+            "mean_cost": 0.1967202126979828,
+            "duration_s": 2.5715556144714355,
+            "oracle_regret": 0.012035668827593327,
+            "choices": [
+              60,
+              15,
+              105
+            ]
+          }
+        },
+        "no_phase_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9194444417953491,
+            "mean_cost": 0.31059718132019043,
+            "duration_s": 2.9127776622772217,
+            "oracle_regret": 0.06141401827335358,
+            "choices": [
+              31,
+              37,
+              292
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.855555534362793,
+            "mean_cost": 0.4112388491630554,
+            "duration_s": 3.224222183227539,
+            "oracle_regret": 0.09755704551935196,
+            "choices": [
+              2,
+              22,
+              156
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.20995551347732544,
+            "duration_s": 2.6013333797454834,
+            "oracle_regret": 0.025270987302064896,
+            "choices": [
+              29,
+              15,
+              136
+            ]
+          }
+        },
+        "no_age_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9333333373069763,
+            "mean_cost": 0.2926625609397888,
+            "duration_s": 2.869333267211914,
+            "oracle_regret": 0.04347940534353256,
+            "choices": [
+              44,
+              74,
+              242
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8777777552604675,
+            "mean_cost": 0.3793623149394989,
+            "duration_s": 3.1104445457458496,
+            "oracle_regret": 0.06568057090044022,
+            "choices": [
+              1,
+              47,
+              132
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9888888597488403,
+            "mean_cost": 0.20596277713775635,
+            "duration_s": 2.6282219886779785,
+            "oracle_regret": 0.02127823606133461,
+            "choices": [
+              43,
+              27,
+              110
+            ]
+          }
+        },
+        "no_age_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9166666865348816,
+            "mean_cost": 0.3134636878967285,
+            "duration_s": 2.9121108055114746,
+            "oracle_regret": 0.06428053230047226,
+            "choices": [
+              35,
+              46,
+              279
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8500000238418579,
+            "mean_cost": 0.41700494289398193,
+            "duration_s": 3.2204439640045166,
+            "oracle_regret": 0.10332315415143967,
+            "choices": [
+              1,
+              31,
+              148
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.2099224478006363,
+            "duration_s": 2.6037776470184326,
+            "oracle_regret": 0.0252379160374403,
+            "choices": [
+              34,
+              15,
+              131
+            ]
+          }
+        },
+        "no_age_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9027777910232544,
+            "mean_cost": 0.3240143656730652,
+            "duration_s": 2.8580000400543213,
+            "oracle_regret": 0.07483118772506714,
+            "choices": [
+              145,
+              56,
+              159
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8277778029441833,
+            "mean_cost": 0.4294065833091736,
+            "duration_s": 3.077777862548828,
+            "oracle_regret": 0.11572475731372833,
+            "choices": [
+              52,
+              34,
+              94
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9777777791023254,
+            "mean_cost": 0.2186221480369568,
+            "duration_s": 2.6382222175598145,
+            "oracle_regret": 0.033937614411115646,
+            "choices": [
+              93,
+              22,
+              65
+            ]
+          }
+        },
+        "no_history_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9333333373069763,
+            "mean_cost": 0.29118847846984863,
+            "duration_s": 2.8389999866485596,
+            "oracle_regret": 0.04200531914830208,
+            "choices": [
+              79,
+              63,
+              218
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8833333253860474,
+            "mean_cost": 0.372991681098938,
+            "duration_s": 3.084444284439087,
+            "oracle_regret": 0.05930991843342781,
+            "choices": [
+              22,
+              54,
+              104
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.2093852162361145,
+            "duration_s": 2.593555450439453,
+            "oracle_regret": 0.0247007105499506,
+            "choices": [
+              57,
+              9,
+              114
+            ]
+          }
+        },
+        "no_history_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9277777671813965,
+            "mean_cost": 0.30052489042282104,
+            "duration_s": 2.885777711868286,
+            "oracle_regret": 0.0513417050242424,
+            "choices": [
+              89,
+              87,
+              184
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8611111044883728,
+            "mean_cost": 0.4007566571235657,
+            "duration_s": 3.143111228942871,
+            "oracle_regret": 0.08707485347986221,
+            "choices": [
+              21,
+              54,
+              105
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9944444298744202,
+            "mean_cost": 0.20029309391975403,
+            "duration_s": 2.6284444332122803,
+            "oracle_regret": 0.015608558431267738,
+            "choices": [
+              68,
+              33,
+              79
+            ]
+          }
+        },
+        "no_history_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9222221970558167,
+            "mean_cost": 0.3063414692878723,
+            "duration_s": 2.8828887939453125,
+            "oracle_regret": 0.057158295065164566,
+            "choices": [
+              33,
+              38,
+              289
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8611111044883728,
+            "mean_cost": 0.40377509593963623,
+            "duration_s": 3.1764445304870605,
+            "oracle_regret": 0.09009332954883575,
+            "choices": [
+              0,
+              29,
+              151
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9833333492279053,
+            "mean_cost": 0.20890778303146362,
+            "duration_s": 2.5893330574035645,
+            "oracle_regret": 0.02422325871884823,
+            "choices": [
+              33,
+              9,
+              138
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "delay",
+      "methods": {
+        "continue": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.7583333253860474,
+            "mean_cost": 0.5073495507240295,
+            "duration_s": 3.2616665363311768,
+            "oracle_regret": 0.1815333515405655,
+            "choices": [
+              360,
+              0,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6277777552604675,
+            "mean_cost": 0.6821953654289246,
+            "duration_s": 3.82711124420166,
+            "oracle_regret": 0.2408715933561325,
+            "choices": [
+              180,
+              0,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.8888888955116272,
+            "mean_cost": 0.3325038552284241,
+            "duration_s": 2.6962223052978516,
+            "oracle_regret": 0.12219506502151489,
+            "choices": [
+              180,
+              0,
+              0
+            ]
+          }
+        },
+        "stop_refresh": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8111110925674438,
+            "mean_cost": 0.5099672675132751,
+            "duration_s": 3.9533331394195557,
+            "oracle_regret": 0.1841510385274887,
+            "choices": [
+              0,
+              360,
+              0
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6277777552604675,
+            "mean_cost": 0.734973669052124,
+            "duration_s": 4.484444618225098,
+            "oracle_regret": 0.29364997148513794,
+            "choices": [
+              0,
+              180,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9944444298744202,
+            "mean_cost": 0.28496089577674866,
+            "duration_s": 3.422222137451172,
+            "oracle_regret": 0.07465211302042007,
+            "choices": [
+              0,
+              180,
+              0
+            ]
+          }
+        },
+        "async_refresh": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8027777671813965,
+            "mean_cost": 0.46656662225723267,
+            "duration_s": 3.2874443531036377,
+            "oracle_regret": 0.14075034856796265,
+            "choices": [
+              0,
+              0,
+              360
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6944444179534912,
+            "mean_cost": 0.6246382594108582,
+            "duration_s": 3.9126667976379395,
+            "oracle_regret": 0.18331453204154968,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9111111164093018,
+            "mean_cost": 0.3084949851036072,
+            "duration_s": 2.662222385406494,
+            "oracle_regret": 0.09818616509437561,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          }
+        },
+        "validation_fixed": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8027777671813965,
+            "mean_cost": 0.46656662225723267,
+            "duration_s": 3.2874443531036377,
+            "oracle_regret": 0.14075034856796265,
+            "choices": [
+              0,
+              0,
+              360
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6944444179534912,
+            "mean_cost": 0.6246382594108582,
+            "duration_s": 3.9126667976379395,
+            "oracle_regret": 0.18331453204154968,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9111111164093018,
+            "mean_cost": 0.3084949851036072,
+            "duration_s": 2.662222385406494,
+            "oracle_regret": 0.09818616509437561,
+            "choices": [
+              0,
+              0,
+              180
+            ]
+          }
+        },
+        "task_phase_lookup": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8083333373069763,
+            "mean_cost": 0.4680495262145996,
+            "duration_s": 3.36822247505188,
+            "oracle_regret": 0.14223328232765198,
+            "choices": [
+              108,
+              100,
+              152
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6666666865348816,
+            "mean_cost": 0.6615059971809387,
+            "duration_s": 4.010666847229004,
+            "oracle_regret": 0.22018225491046906,
+            "choices": [
+              0,
+              64,
+              116
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.949999988079071,
+            "mean_cost": 0.27459314465522766,
+            "duration_s": 2.7257778644561768,
+            "oracle_regret": 0.0642843246459961,
+            "choices": [
+              108,
+              36,
+              36
+            ]
+          }
+        },
+        "age_noise_rule": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8027777671813965,
+            "mean_cost": 0.4662541151046753,
+            "duration_s": 3.283888816833496,
+            "oracle_regret": 0.14043785631656647,
+            "choices": [
+              8,
+              0,
+              352
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6944444179534912,
+            "mean_cost": 0.6240133047103882,
+            "duration_s": 3.905555486679077,
+            "oracle_regret": 0.18268953263759613,
+            "choices": [
+              3,
+              0,
+              177
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9111111164093018,
+            "mean_cost": 0.3084949851036072,
+            "duration_s": 2.662222385406494,
+            "oracle_regret": 0.09818616509437561,
+            "choices": [
+              5,
+              0,
+              175
+            ]
+          }
+        },
+        "oracle_infeasible": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.9111111164093018,
+            "mean_cost": 0.32581627368927,
+            "duration_s": 2.9094440937042236,
+            "oracle_regret": 0.0,
+            "choices": [
+              281,
+              48,
+              31
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.8277778029441833,
+            "mean_cost": 0.44132372736930847,
+            "duration_s": 3.313555955886841,
+            "oracle_regret": 0.0,
+            "choices": [
+              127,
+              28,
+              25
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9944444298744202,
+            "mean_cost": 0.21030879020690918,
+            "duration_s": 2.505333185195923,
+            "oracle_regret": 0.0,
+            "choices": [
+              154,
+              20,
+              6
+            ]
+          }
+        },
+        "full_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.824999988079071,
+            "mean_cost": 0.44660767912864685,
+            "duration_s": 3.336888551712036,
+            "oracle_regret": 0.12079141288995743,
+            "choices": [
+              30,
+              73,
+              257
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6944444179534912,
+            "mean_cost": 0.6234480738639832,
+            "duration_s": 3.9131109714508057,
+            "oracle_regret": 0.1821243315935135,
+            "choices": [
+              0,
+              34,
+              146
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9555555582046509,
+            "mean_cost": 0.26976728439331055,
+            "duration_s": 2.760666608810425,
+            "oracle_regret": 0.05945849046111107,
+            "choices": [
+              30,
+              39,
+              111
+            ]
+          }
+        },
+        "full_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8277778029441833,
+            "mean_cost": 0.44166162610054016,
+            "duration_s": 3.3132221698760986,
+            "oracle_regret": 0.11584533751010895,
+            "choices": [
+              35,
+              88,
+              237
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6777777671813965,
+            "mean_cost": 0.6427381038665771,
+            "duration_s": 3.9444448947906494,
+            "oracle_regret": 0.20141436159610748,
+            "choices": [
+              0,
+              49,
+              131
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9777777791023254,
+            "mean_cost": 0.24058513343334198,
+            "duration_s": 2.681999921798706,
+            "oracle_regret": 0.03027632273733616,
+            "choices": [
+              35,
+              39,
+              106
+            ]
+          }
+        },
+        "full_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8527777791023254,
+            "mean_cost": 0.41088804602622986,
+            "duration_s": 3.2166666984558105,
+            "oracle_regret": 0.08507177233695984,
+            "choices": [
+              144,
+              77,
+              139
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.7166666388511658,
+            "mean_cost": 0.5907687544822693,
+            "duration_s": 3.7431111335754395,
+            "oracle_regret": 0.1494450718164444,
+            "choices": [
+              64,
+              31,
+              85
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9888888597488403,
+            "mean_cost": 0.23100726306438446,
+            "duration_s": 2.6902222633361816,
+            "oracle_regret": 0.02069847844541073,
+            "choices": [
+              80,
+              46,
+              54
+            ]
+          }
+        },
+        "no_phase_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.824999988079071,
+            "mean_cost": 0.44548046588897705,
+            "duration_s": 3.335444450378418,
+            "oracle_regret": 0.11966422200202942,
+            "choices": [
+              18,
+              79,
+              263
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6944444179534912,
+            "mean_cost": 0.6242270469665527,
+            "duration_s": 3.9526665210723877,
+            "oracle_regret": 0.18290337920188904,
+            "choices": [
+              0,
+              44,
+              136
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9555555582046509,
+            "mean_cost": 0.26673388481140137,
+            "duration_s": 2.7182223796844482,
+            "oracle_regret": 0.05642509460449219,
+            "choices": [
+              18,
+              35,
+              127
+            ]
+          }
+        },
+        "no_phase_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8194444179534912,
+            "mean_cost": 0.4490251839160919,
+            "duration_s": 3.304222345352173,
+            "oracle_regret": 0.1232089027762413,
+            "choices": [
+              13,
+              72,
+              275
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6722221970558167,
+            "mean_cost": 0.6511268019676208,
+            "duration_s": 3.9926669597625732,
+            "oracle_regret": 0.20980308949947357,
+            "choices": [
+              0,
+              51,
+              129
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9666666388511658,
+            "mean_cost": 0.2469235360622406,
+            "duration_s": 2.6157777309417725,
+            "oracle_regret": 0.03661471605300903,
+            "choices": [
+              13,
+              21,
+              146
+            ]
+          }
+        },
+        "no_phase_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8111110925674438,
+            "mean_cost": 0.4649711549282074,
+            "duration_s": 3.3805551528930664,
+            "oracle_regret": 0.13915486633777618,
+            "choices": [
+              7,
+              85,
+              268
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6833333373069763,
+            "mean_cost": 0.6520046591758728,
+            "duration_s": 4.118000030517578,
+            "oracle_regret": 0.21068091690540314,
+            "choices": [
+              2,
+              71,
+              107
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9388889074325562,
+            "mean_cost": 0.2779376208782196,
+            "duration_s": 2.643111228942871,
+            "oracle_regret": 0.06762881577014923,
+            "choices": [
+              5,
+              14,
+              161
+            ]
+          }
+        },
+        "no_age_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8305555582046509,
+            "mean_cost": 0.4392080008983612,
+            "duration_s": 3.315333366394043,
+            "oracle_regret": 0.11339174211025238,
+            "choices": [
+              27,
+              76,
+              257
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6833333373069763,
+            "mean_cost": 0.6356445550918579,
+            "duration_s": 3.9177777767181396,
+            "oracle_regret": 0.19432084262371063,
+            "choices": [
+              0,
+              33,
+              147
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9777777791023254,
+            "mean_cost": 0.2427714467048645,
+            "duration_s": 2.7128889560699463,
+            "oracle_regret": 0.03246263042092323,
+            "choices": [
+              27,
+              43,
+              110
+            ]
+          }
+        },
+        "no_age_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8305555582046509,
+            "mean_cost": 0.4339204430580139,
+            "duration_s": 3.2588887214660645,
+            "oracle_regret": 0.1081041619181633,
+            "choices": [
+              35,
+              68,
+              257
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6888889074325562,
+            "mean_cost": 0.6244097352027893,
+            "duration_s": 3.881333351135254,
+            "oracle_regret": 0.18308597803115845,
+            "choices": [
+              0,
+              40,
+              140
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9722222089767456,
+            "mean_cost": 0.24343115091323853,
+            "duration_s": 2.636444330215454,
+            "oracle_regret": 0.03312234207987785,
+            "choices": [
+              35,
+              28,
+              117
+            ]
+          }
+        },
+        "no_age_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8361111283302307,
+            "mean_cost": 0.43387576937675476,
+            "duration_s": 3.2813334465026855,
+            "oracle_regret": 0.10805953294038773,
+            "choices": [
+              169,
+              87,
+              104
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.7111111283302307,
+            "mean_cost": 0.6064960360527039,
+            "duration_s": 3.8637776374816895,
+            "oracle_regret": 0.16517230868339539,
+            "choices": [
+              76,
+              53,
+              51
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9611111283302307,
+            "mean_cost": 0.26125556230545044,
+            "duration_s": 2.6988887786865234,
+            "oracle_regret": 0.05094675347208977,
+            "choices": [
+              93,
+              34,
+              53
+            ]
+          }
+        },
+        "no_history_11": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8222222328186035,
+            "mean_cost": 0.44377830624580383,
+            "duration_s": 3.2394442558288574,
+            "oracle_regret": 0.11796203255653381,
+            "choices": [
+              130,
+              46,
+              184
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.699999988079071,
+            "mean_cost": 0.6107827425003052,
+            "duration_s": 3.759333372116089,
+            "oracle_regret": 0.1694590449333191,
+            "choices": [
+              102,
+              19,
+              59
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9444444179534912,
+            "mean_cost": 0.2767737805843353,
+            "duration_s": 2.719555616378784,
+            "oracle_regret": 0.06646499037742615,
+            "choices": [
+              28,
+              27,
+              125
+            ]
+          }
+        },
+        "no_history_22": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8472222089767456,
+            "mean_cost": 0.4203651547431946,
+            "duration_s": 3.266111135482788,
+            "oracle_regret": 0.09454888105392456,
+            "choices": [
+              81,
+              80,
+              199
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.7055555582046509,
+            "mean_cost": 0.6081510782241821,
+            "duration_s": 3.8368890285491943,
+            "oracle_regret": 0.16682736575603485,
+            "choices": [
+              48,
+              36,
+              96
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9888888597488403,
+            "mean_cost": 0.23257921636104584,
+            "duration_s": 2.695333242416382,
+            "oracle_regret": 0.02227042056620121,
+            "choices": [
+              33,
+              44,
+              103
+            ]
+          }
+        },
+        "no_history_33": {
+          "all": {
+            "contexts": 360,
+            "success_rate": 0.8277778029441833,
+            "mean_cost": 0.44768211245536804,
+            "duration_s": 3.37744402885437,
+            "oracle_regret": 0.12186582386493683,
+            "choices": [
+              14,
+              112,
+              234
+            ]
+          },
+          "FetchPush-v4": {
+            "contexts": 180,
+            "success_rate": 0.6833333373069763,
+            "mean_cost": 0.6446597576141357,
+            "duration_s": 4.050888538360596,
+            "oracle_regret": 0.20333603024482727,
+            "choices": [
+              0,
+              77,
+              103
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "contexts": 180,
+            "success_rate": 0.9722222089767456,
+            "mean_cost": 0.25070443749427795,
+            "duration_s": 2.7039997577667236,
+            "oracle_regret": 0.04039561003446579,
+            "choices": [
+              14,
+              35,
+              131
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "training_device": "cuda",
+  "candidate_branches": 4500
+}

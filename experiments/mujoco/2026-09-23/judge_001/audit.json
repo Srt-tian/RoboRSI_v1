@@ -1,0 +1,159 @@
+{
+  "split_contexts": {
+    "train": 400,
+    "validation": 120,
+    "test": 200,
+    "delay": 200
+  },
+  "split_isolation": "passed",
+  "checkpoint_hashes": "passed",
+  "replay_matches": 12,
+  "cost_identity": "passed",
+  "contrasts": [
+    {
+      "split": "test",
+      "task": "FetchPush-v4",
+      "contrast": "judge_mean_minus_always_fast",
+      "difference": -0.043845783457793545,
+      "ci95": [
+        -0.14365442582292556,
+        0.0486986578402998
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "test",
+      "task": "FetchPush-v4",
+      "contrast": "judge_mean_minus_always_accurate",
+      "difference": -0.008964350459616998,
+      "ci95": [
+        -0.08568223174925481,
+        0.07184279957694677
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "test",
+      "task": "FetchPush-v4",
+      "contrast": "judge_mean_minus_uncertainty_rule",
+      "difference": 0.019616658476277252,
+      "ci95": [
+        -0.04586205319660042,
+        0.0911818983064075
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "test",
+      "task": "FetchPickAndPlace-v4",
+      "contrast": "judge_mean_minus_always_fast",
+      "difference": -0.006284099978237274,
+      "ci95": [
+        -0.022009886251247886,
+        0.00222090260611032
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "test",
+      "task": "FetchPickAndPlace-v4",
+      "contrast": "judge_mean_minus_always_accurate",
+      "difference": -0.008300707298246956,
+      "ci95": [
+        -0.024829459612637945,
+        0.01735144804829008
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "test",
+      "task": "FetchPickAndPlace-v4",
+      "contrast": "judge_mean_minus_uncertainty_rule",
+      "difference": -0.0033048869265120662,
+      "ci95": [
+        -0.020266647626078046,
+        0.022640778785085604
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "delay",
+      "task": "FetchPush-v4",
+      "contrast": "judge_mean_minus_always_fast",
+      "difference": 0.023611413501215026,
+      "ci95": [
+        -0.002413560132452032,
+        0.05352757383173687
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "delay",
+      "task": "FetchPush-v4",
+      "contrast": "judge_mean_minus_always_accurate",
+      "difference": 0.07860650886064356,
+      "ci95": [
+        -0.026255066873909782,
+        0.18920724350707652
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "delay",
+      "task": "FetchPush-v4",
+      "contrast": "judge_mean_minus_uncertainty_rule",
+      "difference": 0.07721407388407422,
+      "ci95": [
+        -0.018727838117503986,
+        0.1791869146692119
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "delay",
+      "task": "FetchPickAndPlace-v4",
+      "contrast": "judge_mean_minus_always_fast",
+      "difference": 0.0018372727736145921,
+      "ci95": [
+        0.0007987089318520215,
+        0.003067636188988578
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "delay",
+      "task": "FetchPickAndPlace-v4",
+      "contrast": "judge_mean_minus_always_accurate",
+      "difference": -0.0979224962202767,
+      "ci95": [
+        -0.15602767990031732,
+        -0.04566309830000374
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    },
+    {
+      "split": "delay",
+      "task": "FetchPickAndPlace-v4",
+      "contrast": "judge_mean_minus_uncertainty_rule",
+      "difference": -0.07044899380096355,
+      "ci95": [
+        -0.1226760023193842,
+        -0.023406481680284887
+      ],
+      "unit": "paired scene; averaged three fixed training seeds",
+      "scenes": 100
+    }
+  ],
+  "note": "Post-hoc descriptive paired bootstrap, no multiplicity correction; not a trained-seed population interval."
+}

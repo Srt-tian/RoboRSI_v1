@@ -1,0 +1,147 @@
+{
+  "schema": "roborsi.mujoco.local-cache.v1",
+  "execution_commit": "7953b35c5a493876b65d66cf92562d673cc45e75",
+  "coverage": "local metadata/models and selected replays; full remote file list in remote_manifest.json",
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 1932,
+      "sha256": "c2a2709958040007868453e0bf440bf852b1df6b70fee17eecf37fdf4c560f17"
+    },
+    {
+      "path": "delay.json",
+      "bytes": 468879,
+      "sha256": "4b84dff27c15542c3389e16a91e869be270e39127005dcebbe4e83570a12537a"
+    },
+    {
+      "path": "delay_decisions.json",
+      "bytes": 1171100,
+      "sha256": "686d623e7c482eecf4854ee0607073b22da20894e755fb271bd91afd752312ec"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 178,
+      "sha256": "6d9aa283705b9abd5c82f839d0439c1bc2863f3b114f62fe8ae4ebcc25d32bca"
+    },
+    {
+      "path": "frozen_protocol.json",
+      "bytes": 1728,
+      "sha256": "bcdfdef00b9d759eaa4cff7be5581f442e437b4902b08c788fb343f3108b9101"
+    },
+    {
+      "path": "full_11.pt",
+      "bytes": 29397,
+      "sha256": "181f40ba1691876e80dbcd19749974e333ebeba5b6f3c8445f290cc7aa6d1e13"
+    },
+    {
+      "path": "full_22.pt",
+      "bytes": 29397,
+      "sha256": "6996408d522b441e2b8fee41be2fecafea74d1200f2ddeb25d4729ed9c6bc631"
+    },
+    {
+      "path": "full_33.pt",
+      "bytes": 29397,
+      "sha256": "6ae0b65ab045a7f647f98d0f297ca7ea3b4f0cfea903070bc4f98ede4a087190"
+    },
+    {
+      "path": "no_age_11.pt",
+      "bytes": 29741,
+      "sha256": "1d8d9171460e020e2c1d5975810ae9e1e94fba19761a615d4574c8e9d29d6d9f"
+    },
+    {
+      "path": "no_age_22.pt",
+      "bytes": 29741,
+      "sha256": "4e2665e9dc35ac96d2c4bd267e4d8becb2ecd2f1723c6a12f4bddb6ce4d75de2"
+    },
+    {
+      "path": "no_age_33.pt",
+      "bytes": 29741,
+      "sha256": "5f9a1ad1b10472e70ad86a19422e86c67170efeb120a3ea59f1ac07fcbf22b76"
+    },
+    {
+      "path": "no_history_11.pt",
+      "bytes": 29789,
+      "sha256": "c9fa7a1dde88425956e1a9d88ada358dfbc6e0addc2b1019beec17263d872a75"
+    },
+    {
+      "path": "no_history_22.pt",
+      "bytes": 29789,
+      "sha256": "81cf8814b7649dad6aac4a7d56f81b4844a1703773c0bc51c257d184afbceabc"
+    },
+    {
+      "path": "no_history_33.pt",
+      "bytes": 29789,
+      "sha256": "a5fe4e149025ddd8a2f492de0da3524bf6602e39b58ad9ab271b7faf319875fb"
+    },
+    {
+      "path": "no_phase_11.pt",
+      "bytes": 29765,
+      "sha256": "24a67c0210c9c60b647886275ea430fc2732d0ae3a506a289cad02f0560622ff"
+    },
+    {
+      "path": "no_phase_22.pt",
+      "bytes": 29765,
+      "sha256": "b956101497b745b4aa665138f5bdb64a915e42cd78da30b3516c86af593e78a6"
+    },
+    {
+      "path": "no_phase_33.pt",
+      "bytes": 29765,
+      "sha256": "6b699adfa8f55d39f9dfe68f10b26ba21f0e82401fdb07f702c86e176621be88"
+    },
+    {
+      "path": "remote_manifest.json",
+      "bytes": 248818,
+      "sha256": "74fba380ee05c26afb76577819c661bfb439f779793178c3d54e67b7916c7e15"
+    },
+    {
+      "path": "results.json",
+      "bytes": 41724,
+      "sha256": "4ffec1a50669efbf5a42d4357c1e71de28bc4ecb13b51cab4b5dff1df1b40a5c"
+    },
+    {
+      "path": "source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    },
+    {
+      "path": "source/test_physics_phase.py",
+      "bytes": 1677,
+      "sha256": "9b5735d3c62dce109daa32f84ab52db42bccf64d6d4cb93c3134f2e509efb6f3"
+    },
+    {
+      "path": "test.json",
+      "bytes": 468280,
+      "sha256": "40cd7de2e4844a326c4ad96fd3896e35653bd09151239f168c95e1de6c58d02b"
+    },
+    {
+      "path": "test_decisions.json",
+      "bytes": 1170535,
+      "sha256": "02965581b924db743f1d9e68d487900e7a5e1cf5cddbf9c41a872589bfd9a9fa"
+    },
+    {
+      "path": "train.json",
+      "bytes": 780602,
+      "sha256": "fce876a82d1b5bd11942ce879c4dd2e1bfa6a4610fac36c14d10dc10ecc8360c"
+    },
+    {
+      "path": "trials.json",
+      "bytes": 63047,
+      "sha256": "f9ea65eb5933836e007fef37a45a2ff97a525ce4649f588ad122f01656e575b4"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 235292,
+      "sha256": "fd95870329275031731edf2ed22e448ff21f86ec6ba20231478b7ddfbd9f2e42"
+    }
+  ]
+}

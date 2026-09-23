@@ -1,0 +1,359 @@
+{
+  "scope": "controller qualification; privileged object observations; no learned Jev",
+  "mujoco": "3.6.0",
+  "gymnasium": "1.3.0",
+  "robotics": "1.4.1",
+  "physics_dt": 0.002,
+  "control_dt": 0.04,
+  "horizon": 150,
+  "source_sha256": "28a43180641cf2c6d708657bce8600c1c627b95f2a61783eecebf81ca5d18dc7",
+  "episodes": [
+    {
+      "task": "FetchReach-v4",
+      "seed": 0,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.5754045741632581
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 1,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.13932394329458475
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 2,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.1531358640640974
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 3,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.1544665414839983
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 4,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.12557295989245176
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 5,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.13211019150912762
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 6,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.1354169137775898
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 7,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.13395250868052244
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 8,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.13257237151265144
+    },
+    {
+      "task": "FetchReach-v4",
+      "seed": 9,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.13461399730294943
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 0,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.47315708361566067
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 1,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.16686981078237295
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 2,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.16160532366484404
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 3,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.16171474941074848
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 4,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.1683146096765995
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 5,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.16592219937592745
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 6,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.16311402432620525
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 7,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.16737364884465933
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 8,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.16500255465507507
+    },
+    {
+      "task": "FetchPush-v4",
+      "seed": 9,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.1649879589676857
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 0,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.48390723671764135
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 1,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": false,
+      "sustained_last10": false,
+      "steps": 150,
+      "wall_s": 0.1771049303933978
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 2,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": false,
+      "sustained_last10": false,
+      "steps": 150,
+      "wall_s": 0.1610520202666521
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 3,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": false,
+      "sustained_last10": false,
+      "steps": 150,
+      "wall_s": 0.16653177235275507
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 4,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": false,
+      "sustained_last10": false,
+      "steps": 150,
+      "wall_s": 0.15583727601915598
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 5,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": false,
+      "sustained_last10": false,
+      "steps": 150,
+      "wall_s": 0.16313324309885502
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 6,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.17457399424165487
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 7,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.17744661215692759
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 8,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": false,
+      "sustained_last10": false,
+      "steps": 150,
+      "wall_s": 0.16379541158676147
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "seed": 9,
+      "delay_steps": 0,
+      "refresh_steps": 1,
+      "ever_success": true,
+      "final_success": true,
+      "sustained_last10": true,
+      "steps": 150,
+      "wall_s": 0.17621546890586615
+    }
+  ],
+  "metrics": {
+    "FetchPickAndPlace-v4": {
+      "ever_success": 1.0,
+      "final_success": 0.4,
+      "sustained_last10": 0.4
+    },
+    "FetchPush-v4": {
+      "ever_success": 1.0,
+      "final_success": 1.0,
+      "sustained_last10": 1.0
+    },
+    "FetchReach-v4": {
+      "ever_success": 1.0,
+      "final_success": 1.0,
+      "sustained_last10": 1.0
+    }
+  }
+}

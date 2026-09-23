@@ -1,0 +1,344 @@
+{
+  "schema": "roborsi.mujoco.v2",
+  "repository": "https://github.com/Srt-tian/RoboRSI_v1.git",
+  "branch": "research/mujoco-jev-physics",
+  "execution_commit": "7953b35c5a493876b65d66cf92562d673cc45e75",
+  "coverage": "complete remote experiment record",
+  "files": [
+    {
+      "path": "FetchPickAndPlace-v4_2000.json.gz",
+      "bytes": 74493,
+      "sha256": "3b944a97f663befddad48dabe9a0c9a19e5068939c47af1b53f6f8b978867d14"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2001.json.gz",
+      "bytes": 74510,
+      "sha256": "8379ca5f3452c8ce6264825c5439bbe9a315dccddbe6f79c3a51c3c5bcd18586"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2002.json.gz",
+      "bytes": 74486,
+      "sha256": "61e17d89bf40e506469446d3b02af1e0b55a48b3836b0b244f66d6ce521edf72"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2003.json.gz",
+      "bytes": 74224,
+      "sha256": "ead127a61b3b80ba0f0487c77076fad0b4b38a664ec1f45f078b8a8905c5a826"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2004.json.gz",
+      "bytes": 74309,
+      "sha256": "6295574789a56492e6fc3ddf1ec9553f5f06af37b36cb2f9a9562972f824f161"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2005.json.gz",
+      "bytes": 74417,
+      "sha256": "e6a938c5f9c117ac11d2c84a8165dacacdbde87c0b09944049bb9eb477824761"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2006.json.gz",
+      "bytes": 74416,
+      "sha256": "93c5e12cad5bccdbed3c32a074b1a06564c32e847874d5413c042936b172c9b8"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2007.json.gz",
+      "bytes": 74499,
+      "sha256": "4a2bc2b4269c57bda56ad60e7ba16952a16664edb6b9b6d861de2af0d4dd1401"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2008.json.gz",
+      "bytes": 74660,
+      "sha256": "032b6a49e5dc1282970d7f58f8f34fa4559a9d7eeed236823fbd4b05aeff0e84"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2009.json.gz",
+      "bytes": 74595,
+      "sha256": "21fd0056eaacbc52c0717a693917f30342f2bb3f5e13b2d57bc03ca7c90cfab6"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2010.json.gz",
+      "bytes": 74224,
+      "sha256": "08c6ec1002845fd0787d790f5c18164aeb3a8f48b54c2b301bd23c65956025d7"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2011.json.gz",
+      "bytes": 73972,
+      "sha256": "daab2ecfa3c4e1dd0dd3e160f55be3a884dec0985ce5dc589dc7799ed0a0f59a"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2012.json.gz",
+      "bytes": 74529,
+      "sha256": "fe828b14fbadb275bb7e4c1e55730c6e6c220d440d65bdc802bfcc0b604f63c2"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2013.json.gz",
+      "bytes": 74666,
+      "sha256": "50b66a7182481fa25d5abfa09590d726068f098c49285506dabe5e680e32d272"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2014.json.gz",
+      "bytes": 74680,
+      "sha256": "7a8c0bf069b0a60c7a04f3e74e4c7b1b187a2351f031e2bd0112728b50b4a5a2"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2015.json.gz",
+      "bytes": 74504,
+      "sha256": "b1058d429f56a35f74d5c306b6535758a5392ef5fd20675cf4f545a407f61113"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2016.json.gz",
+      "bytes": 74445,
+      "sha256": "090138c952987b505740579c6e92aa20cbdd2a46c36a8b5f59a987be7587f410"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2017.json.gz",
+      "bytes": 74196,
+      "sha256": "1f49bc1d89a222b3bae0bf99e13229a615ab66a1ce865446295cad97fa4615b7"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2018.json.gz",
+      "bytes": 74641,
+      "sha256": "0ffa93a678a61606212f5a0224f28f6da9c4b1892111ec7f5e5a65a5f0bba1b7"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2019.json.gz",
+      "bytes": 74373,
+      "sha256": "1f5de8c18fc5ae50e9f219f6d38e0fca9ef0f140c61e967d1c80bd6b6dcb309e"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2020.json.gz",
+      "bytes": 74412,
+      "sha256": "c34cee0afac70f486df2664102fcbb877147a12feb67b06f0f5cbf4268cbb81c"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2021.json.gz",
+      "bytes": 74470,
+      "sha256": "fd37388dec4020affbc88271c2bd54d782f67393c508fe3213bd9b25787bf7e3"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2022.json.gz",
+      "bytes": 74202,
+      "sha256": "e70d1378b6dcdc930dedd831c9a4def964e481c819c1e04c40c0d1292aaadaed"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2023.json.gz",
+      "bytes": 74640,
+      "sha256": "a27195963a6fc3ad698d891ef7d6c708b4d9088bb7abccfb8ccbd7502b3ab377"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2024.json.gz",
+      "bytes": 74432,
+      "sha256": "393297bd61eef7b40f3f3f1077bc7830e06686223063ab3856f52b0400841d06"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2025.json.gz",
+      "bytes": 74498,
+      "sha256": "f1c2d4051b3d815a052ab37edf24417b9cf97c6350efab3c8b1713acb5b5b015"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2026.json.gz",
+      "bytes": 74309,
+      "sha256": "9bd21e9ad68c8eeee0ae17ce9b51528c75bd09cc28896a146400a2a17ef9538a"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2027.json.gz",
+      "bytes": 74603,
+      "sha256": "9af3fdf1f8a39777d3ac52fbc9f39550ffd5fb92843cbdbb0d4244c16bb2b591"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2028.json.gz",
+      "bytes": 74456,
+      "sha256": "f88fae04ae3073cd6f1aca57746e09f8572c09a46fcf94ea1ac0ec76afc9d10e"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2029.json.gz",
+      "bytes": 74609,
+      "sha256": "971e3d2c858d861a6cb534438c8b1c5c5e12fc98966c97405ab1eece8625021f"
+    },
+    {
+      "path": "FetchPush-v4_2000.json.gz",
+      "bytes": 66084,
+      "sha256": "278c5ae0fbe847229fbbd45da2c414bed5b7920b13fde7e4ed8b6454e9c1dfde"
+    },
+    {
+      "path": "FetchPush-v4_2001.json.gz",
+      "bytes": 62629,
+      "sha256": "aba24b42bf165e9a0e6f565cf10d897482a5d7fc9a334a71c6245b302aa47e32"
+    },
+    {
+      "path": "FetchPush-v4_2002.json.gz",
+      "bytes": 64219,
+      "sha256": "77bdf5c9ec41e2f00ec32c5d80f547c7f865a7ca82962911908545729fe72f63"
+    },
+    {
+      "path": "FetchPush-v4_2003.json.gz",
+      "bytes": 61424,
+      "sha256": "46cace2d3863a8b13a1d6e2f896d6390fad4d6ada54071b95637efca62b84d28"
+    },
+    {
+      "path": "FetchPush-v4_2004.json.gz",
+      "bytes": 61751,
+      "sha256": "ad4f8e22e71c3f65c61f704fedc186aab7f6cb6588a656a00849bbc889651e93"
+    },
+    {
+      "path": "FetchPush-v4_2005.json.gz",
+      "bytes": 63451,
+      "sha256": "1874d769ddd93df918904c2a6e6bf1f1ee4b1bc35a1dd62e9c96dc37c3a23459"
+    },
+    {
+      "path": "FetchPush-v4_2006.json.gz",
+      "bytes": 69429,
+      "sha256": "73d3d94c3625020d31262b825931f795c89bf2089a359aee44362dba302cb722"
+    },
+    {
+      "path": "FetchPush-v4_2007.json.gz",
+      "bytes": 60265,
+      "sha256": "ee912a1a8f9e777980f5d5d1f84e9ad91585b617e2850c4f3cde53a00e82cc50"
+    },
+    {
+      "path": "FetchPush-v4_2008.json.gz",
+      "bytes": 62853,
+      "sha256": "1817050863b912d52d965de5b89ee0f03526670ade17a1c40919112050092eac"
+    },
+    {
+      "path": "FetchPush-v4_2009.json.gz",
+      "bytes": 65849,
+      "sha256": "8a8f9b3a8b9469fc8ee0408679de90dffa45964f5a418b41d2e0c06a53dad721"
+    },
+    {
+      "path": "FetchPush-v4_2010.json.gz",
+      "bytes": 61737,
+      "sha256": "2fba666414816194e4beab9ace1e9299f79097369069eda4a8da609a705679c6"
+    },
+    {
+      "path": "FetchPush-v4_2011.json.gz",
+      "bytes": 60656,
+      "sha256": "54ae05bd09ddb91ac2d057b18442341a810021f2b46fe8554a42cdc8d05ef798"
+    },
+    {
+      "path": "FetchPush-v4_2012.json.gz",
+      "bytes": 61435,
+      "sha256": "53ff7eab49a01b2a8a2a1e6be7ad2f5799b1be81aea93a5e56626dbda7d203a9"
+    },
+    {
+      "path": "FetchPush-v4_2013.json.gz",
+      "bytes": 61385,
+      "sha256": "dcd6931917bd5dfc64d24f4ddad3733d7d0ddc2c97e5ec28d9205ce546919481"
+    },
+    {
+      "path": "FetchPush-v4_2014.json.gz",
+      "bytes": 63427,
+      "sha256": "983bc8339d8def99f88c49374b35a9dae7648c941ab6c5dc1507faaf687c989b"
+    },
+    {
+      "path": "FetchPush-v4_2015.json.gz",
+      "bytes": 72148,
+      "sha256": "7e441f196161607fbced5e1456a8b59f4e7b8a32b33fac166fed73b92976d3d2"
+    },
+    {
+      "path": "FetchPush-v4_2016.json.gz",
+      "bytes": 64101,
+      "sha256": "8da6197573fae83eafcfe540974b3579789fe4186c1363841e59e94ce9f18968"
+    },
+    {
+      "path": "FetchPush-v4_2017.json.gz",
+      "bytes": 61535,
+      "sha256": "8bfd569618a3bf39c9e123956be28bc8b1fb09c8d145c1c31a73404303cd13a0"
+    },
+    {
+      "path": "FetchPush-v4_2018.json.gz",
+      "bytes": 68247,
+      "sha256": "f90a466bc79d3c93f70a4d1f4b06bae0c4ba985f48ced25efbf4a1243b0de555"
+    },
+    {
+      "path": "FetchPush-v4_2019.json.gz",
+      "bytes": 62574,
+      "sha256": "e0d0663717771b0034104df845a105b8bee89c2959c01404210ace29c60a8aaf"
+    },
+    {
+      "path": "FetchPush-v4_2020.json.gz",
+      "bytes": 69291,
+      "sha256": "3bb56079034624bc37e6ef30028412834fa5e02f69cf3856b0f84ebf5a76f65f"
+    },
+    {
+      "path": "FetchPush-v4_2021.json.gz",
+      "bytes": 63071,
+      "sha256": "fdc04ca7a988cfc25255401fb0e37e0b6600ee10ed6a443b3404d036e76d6ea0"
+    },
+    {
+      "path": "FetchPush-v4_2022.json.gz",
+      "bytes": 61841,
+      "sha256": "f1e50c9aa1a992c3a93655824875c699e1390326f9d93d86b188c440ada4027f"
+    },
+    {
+      "path": "FetchPush-v4_2023.json.gz",
+      "bytes": 61732,
+      "sha256": "b41f55191ed5ef7131570c95095b053f3d508eae22e5b622df7b96a6c13fed0c"
+    },
+    {
+      "path": "FetchPush-v4_2024.json.gz",
+      "bytes": 72729,
+      "sha256": "22d6c64550ba37b417072b4d5fe610c12be46a78d7bb74c42867a5ca84cfb9ea"
+    },
+    {
+      "path": "FetchPush-v4_2025.json.gz",
+      "bytes": 62441,
+      "sha256": "4a5c7bf4619a8c9f7a62b912606133c128ed7d1329eaa1739599baca0dd66ddf"
+    },
+    {
+      "path": "FetchPush-v4_2026.json.gz",
+      "bytes": 70895,
+      "sha256": "f8ae8c56dcbae6a8feed6f2366f350cf27d86cb05b92624333c606397efbc4a6"
+    },
+    {
+      "path": "FetchPush-v4_2027.json.gz",
+      "bytes": 60134,
+      "sha256": "1c03d2eab3970c012b4aae5fe3ef751fea036edf326da86ec4f21d3b0393a297"
+    },
+    {
+      "path": "FetchPush-v4_2028.json.gz",
+      "bytes": 62665,
+      "sha256": "9776defb7b5211320a34a70dd0372e68c35557f47071b7575d8b7afc1df948dd"
+    },
+    {
+      "path": "FetchPush-v4_2029.json.gz",
+      "bytes": 71296,
+      "sha256": "aa640e798b1b5e812470298f9e41976d12bb75178cc2f739cc9938228831909b"
+    },
+    {
+      "path": "config.json",
+      "bytes": 1946,
+      "sha256": "c0a1b661839ade1da14218f3b213548586ada21cd999f845ef134d40f9fbed95"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 178,
+      "sha256": "6d9aa283705b9abd5c82f839d0439c1bc2863f3b114f62fe8ae4ebcc25d32bca"
+    },
+    {
+      "path": "source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    },
+    {
+      "path": "source/test_physics_phase.py",
+      "bytes": 1677,
+      "sha256": "9b5735d3c62dce109daa32f84ab52db42bccf64d6d4cb93c3134f2e509efb6f3"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 16074,
+      "sha256": "e51290b0e6d193783fa276513ea9b5e9507240aa5d68961896653d83fa559caf"
+    }
+  ]
+}

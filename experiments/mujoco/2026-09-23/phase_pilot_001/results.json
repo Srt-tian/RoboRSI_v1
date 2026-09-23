@@ -1,0 +1,118 @@
+{
+  "methods": {
+    "continue": {
+      "all": {
+        "contexts": 60,
+        "success_rate": 0.7333333492279053,
+        "mean_cost": 0.5028921365737915,
+        "duration_s": 3.009999990463257,
+        "oracle_regret": 0.30732402205467224,
+        "choices": [
+          60,
+          0,
+          0
+        ]
+      },
+      "FetchPush-v4": {
+        "contexts": 30,
+        "success_rate": 0.6333333253860474,
+        "mean_cost": 0.6282985806465149,
+        "duration_s": 3.305333137512207,
+        "oracle_regret": 0.41789329051971436,
+        "choices": [
+          30,
+          0,
+          0
+        ]
+      },
+      "FetchPickAndPlace-v4": {
+        "contexts": 30,
+        "success_rate": 0.8333333134651184,
+        "mean_cost": 0.37748563289642334,
+        "duration_s": 2.7146668434143066,
+        "oracle_regret": 0.19675476849079132,
+        "choices": [
+          30,
+          0,
+          0
+        ]
+      }
+    },
+    "stop_refresh": {
+      "all": {
+        "contexts": 60,
+        "success_rate": 0.9666666388511658,
+        "mean_cost": 0.26307159662246704,
+        "duration_s": 2.869333505630493,
+        "oracle_regret": 0.06750348210334778,
+        "choices": [
+          0,
+          60,
+          0
+        ]
+      },
+      "FetchPush-v4": {
+        "contexts": 30,
+        "success_rate": 0.9333333373069763,
+        "mean_cost": 0.31626179814338684,
+        "duration_s": 3.0799996852874756,
+        "oracle_regret": 0.10585646331310272,
+        "choices": [
+          0,
+          30,
+          0
+        ]
+      },
+      "FetchPickAndPlace-v4": {
+        "contexts": 30,
+        "success_rate": 1.0,
+        "mean_cost": 0.20988135039806366,
+        "duration_s": 2.6586668491363525,
+        "oracle_regret": 0.029150506481528282,
+        "choices": [
+          0,
+          30,
+          0
+        ]
+      }
+    },
+    "async_refresh": {
+      "all": {
+        "contexts": 60,
+        "success_rate": 0.949999988079071,
+        "mean_cost": 0.2587934136390686,
+        "duration_s": 2.571333408355713,
+        "oracle_regret": 0.06322534382343292,
+        "choices": [
+          0,
+          0,
+          60
+        ]
+      },
+      "FetchPush-v4": {
+        "contexts": 30,
+        "success_rate": 0.8999999761581421,
+        "mean_cost": 0.3363134264945984,
+        "duration_s": 2.8519997596740723,
+        "oracle_regret": 0.12590813636779785,
+        "choices": [
+          0,
+          0,
+          30
+        ]
+      },
+      "FetchPickAndPlace-v4": {
+        "contexts": 30,
+        "success_rate": 1.0,
+        "mean_cost": 0.1812734156847,
+        "duration_s": 2.2906668186187744,
+        "oracle_regret": 0.000542540627066046,
+        "choices": [
+          0,
+          0,
+          30
+        ]
+      }
+    }
+  }
+}

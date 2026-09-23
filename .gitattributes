@@ -1,4 +1,9 @@
 # Preserve byte-identical sealed artifacts across checkout platforms.
 experiments/simulation/** -text
+experiments/system_one/** -text
+experiments/mujoco/** -text
 # Python's CSV writer uses standard CRLF record terminators.
 *.csv -text whitespace=cr-at-eol
+# Preserve the official conference template, including upstream whitespace.
+docs/manuscript/corl_2026.sty -text -whitespace
+docs/manuscript/corlabbrvnat.bst -text -whitespace

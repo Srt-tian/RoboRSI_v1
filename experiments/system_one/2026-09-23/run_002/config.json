@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-22T16:09:35.365960+00:00",
+  "predecessor": "experiments/system_one/2026-09-23/run_001",
+  "train_context_seed": 61001,
+  "validation_context_seed": 62002,
+  "train_branch_seed": 610019,
+  "validation_branch_seed": 620029,
+  "train_contexts": 6000,
+  "validation_contexts": 1500,
+  "training_draws": 128,
+  "epochs": 140,
+  "model_seeds": [
+    11,
+    22,
+    33
+  ],
+  "features": [
+    "left_probability",
+    "separation_per_tolerance",
+    "prior_std_per_tolerance",
+    "execution_drift_per_tolerance",
+    "capture_drift_per_tolerance",
+    "sensor_std_per_tolerance",
+    "actuator_std_per_tolerance",
+    "contact_kick_per_tolerance",
+    "dropout",
+    "fragility",
+    "conditional_std_per_tolerance",
+    "residual_mode_separation_per_tolerance",
+    "mode_separation_per_measurement_std"
+  ],
+  "motivation": "Round 1 found no significant paired-head benefit; test execution-time/task-tolerance representation on new holdouts.",
+  "source_sha256": {
+    "world.py": "6b505d76fe4f43b78d951a6d4031b4bf9d5fa199fdbe376fdb9243cdd23412ec",
+    "__init__.py": "b5c8e854153f0095d7ff90b098e1740a0bbc2743b440861d6988f0baf174f18e",
+    "network.py": "3bd760a1e3875bc6819fe82edc00d9d61f712e6eb93c26c55f59c796c08bd7ba",
+    "effect.py": "017181c65f949011ccbeca39a1677025879ba944f9070b31531829d6be252d38",
+    "study.py": "55fcf17cdc9a52416001f998a5d4b1ca2acc4fe6be90bccb42d487ecd63bd59f",
+    "effect_study.py": "a0700cfe0128ee3f832bba15628108729dae179f694325dbd8b3189ee6c8eb20"
+  }
+}

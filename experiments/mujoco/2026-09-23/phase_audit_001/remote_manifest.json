@@ -1,0 +1,249 @@
+{
+  "schema": "roborsi.mujoco.v2",
+  "repository": "https://github.com/Srt-tian/RoboRSI_v1.git",
+  "branch": "research/mujoco-jev-physics",
+  "execution_commit": "0bfcb808e4c94822606517b282f5dbd01e8718c2",
+  "coverage": "complete remote experiment record",
+  "files": [
+    {
+      "path": "audit.json",
+      "bytes": 14050,
+      "sha256": "49763a614ae1dd50fd87727275720ad8e61072181c07b31e47924fca931fe632"
+    },
+    {
+      "path": "delay_0.json.gz",
+      "bytes": 105123,
+      "sha256": "5a20fd432de85f0c22abf67dcf0d1cf5b287e65abea8131a1c59050c4ceda0ba"
+    },
+    {
+      "path": "delay_0_async_refresh.mp4",
+      "bytes": 47598,
+      "sha256": "a83d60f7e7ab330067a6683b7e83657c1dacc6abeb7861b843c7fb43cbf72531"
+    },
+    {
+      "path": "delay_0_continue.mp4",
+      "bytes": 35056,
+      "sha256": "3690170213a85082211fb290be944d3c30ac1a39ec7c249f5fb47fb0d30a9697"
+    },
+    {
+      "path": "delay_0_stop_refresh.mp4",
+      "bytes": 62222,
+      "sha256": "aecf3b6f9182ad9b40d5f1cbce2c3ff903fe67a8d17841b0569eb97d618f32c8"
+    },
+    {
+      "path": "delay_1.json.gz",
+      "bytes": 160589,
+      "sha256": "98c74040c9c3679b5860586609def37668b8c25288cbe38c3ea5ad309b4217ce"
+    },
+    {
+      "path": "delay_1_async_refresh.mp4",
+      "bytes": 64748,
+      "sha256": "0884602bd428f3db81a1bad106093363cfb713d0db2bbe9659960f5459fa3fcd"
+    },
+    {
+      "path": "delay_1_continue.mp4",
+      "bytes": 64628,
+      "sha256": "9cd8b14ce6554e6d62e635f3a9963ce4ecda53ebd5a6bb6041f20ff2252f0461"
+    },
+    {
+      "path": "delay_1_stop_refresh.mp4",
+      "bytes": 72543,
+      "sha256": "386a8583fde0c2241813ddb3bbdde2fcbe9b022331eb82873af9cd2093078990"
+    },
+    {
+      "path": "delay_4.json.gz",
+      "bytes": 216813,
+      "sha256": "5813d875532ce507bac5109574dcdd49eb7976e792bcfd282e26e4ffa407b49d"
+    },
+    {
+      "path": "delay_4_async_refresh.mp4",
+      "bytes": 95607,
+      "sha256": "5827ca4512da83a679af30af9339c9ce5c0a1c44f6ae65c377c66071f8438fdd"
+    },
+    {
+      "path": "delay_4_continue.mp4",
+      "bytes": 96233,
+      "sha256": "aaef2d95b53fe0b2e683bae2d55237ddedc39f34fcabfdb7154b9a4ed84530ec"
+    },
+    {
+      "path": "delay_4_stop_refresh.mp4",
+      "bytes": 87990,
+      "sha256": "552393f1eead3a261d98225c5b8a8257b64cf789ee0e6bbf4973079183c0fb49"
+    },
+    {
+      "path": "delay_5.json.gz",
+      "bytes": 100602,
+      "sha256": "d1ce0976d2e5d257a869d564b7cead2d5a7910ca8ca0eab3154bc7df12a65b0b"
+    },
+    {
+      "path": "delay_5_async_refresh.mp4",
+      "bytes": 37730,
+      "sha256": "dd367536fd1a0206ed23cac6d0143a757b3c7911fc3b1b2733d935ceae37788a"
+    },
+    {
+      "path": "delay_5_continue.mp4",
+      "bytes": 37730,
+      "sha256": "dd367536fd1a0206ed23cac6d0143a757b3c7911fc3b1b2733d935ceae37788a"
+    },
+    {
+      "path": "delay_5_stop_refresh.mp4",
+      "bytes": 44430,
+      "sha256": "127dde8ac29955b4936b0f9956d991e977d2836d5ebe398173c0e8b8d58fe7e8"
+    },
+    {
+      "path": "delay_9.json.gz",
+      "bytes": 52512,
+      "sha256": "addc4e4f9257af2db41c936c0dda2657917ba46f837be9b41c94e4b88186f0aa"
+    },
+    {
+      "path": "delay_9_async_refresh.mp4",
+      "bytes": 21990,
+      "sha256": "04b6db679e265c51dbc2bc49f3d22dbf3680ff8c414c91ac5ef205d327a9bd4a"
+    },
+    {
+      "path": "delay_9_continue.mp4",
+      "bytes": 21990,
+      "sha256": "04b6db679e265c51dbc2bc49f3d22dbf3680ff8c414c91ac5ef205d327a9bd4a"
+    },
+    {
+      "path": "delay_9_stop_refresh.mp4",
+      "bytes": 30177,
+      "sha256": "0782ac5784844c1b37fee62603d03268ede64bc75a181a2bc4442643f21e228d"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 178,
+      "sha256": "6d9aa283705b9abd5c82f839d0439c1bc2863f3b114f62fe8ae4ebcc25d32bca"
+    },
+    {
+      "path": "replays.json",
+      "bytes": 5999,
+      "sha256": "43ec159500a52e35c45c05aea806b0af5ff6ad73161905958d03787d3e693050"
+    },
+    {
+      "path": "source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "source/physics_phase_audit.py",
+      "bytes": 6766,
+      "sha256": "09278f1a6e0a97a188f6bfe17aca27c64188953d7555aece7a667fdd7f522650"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    },
+    {
+      "path": "source/test_physics_phase.py",
+      "bytes": 1677,
+      "sha256": "9b5735d3c62dce109daa32f84ab52db42bccf64d6d4cb93c3134f2e509efb6f3"
+    },
+    {
+      "path": "test_0.json.gz",
+      "bytes": 103201,
+      "sha256": "fa71862133432092940fd525aa525f7e39d6ad801a6d61c1b497df23680279e3"
+    },
+    {
+      "path": "test_0_async_refresh.mp4",
+      "bytes": 25892,
+      "sha256": "1157f2199291a37c2dec58f20ae71ae88c2f55982b49ac79034af707498301c7"
+    },
+    {
+      "path": "test_0_continue.mp4",
+      "bytes": 91394,
+      "sha256": "7d5b44b062b9b8dd7a51daef5d4e522c61f9bb75bb7c27e7f4d536df50d52fb3"
+    },
+    {
+      "path": "test_0_stop_refresh.mp4",
+      "bytes": 30025,
+      "sha256": "a6b115dd670262857e969e0aacd764ef337f9958630cfa8185fb901fd0591ebc"
+    },
+    {
+      "path": "test_1.json.gz",
+      "bytes": 154123,
+      "sha256": "fe5d6888cdd7e12672a5dcd89a200e108b0a60058cf00288f2b0cc15c2ac2d08"
+    },
+    {
+      "path": "test_1_async_refresh.mp4",
+      "bytes": 52751,
+      "sha256": "561ef30a17208be6f98754255524f9d165f4b7670a180fb5a62251e05b907b0f"
+    },
+    {
+      "path": "test_1_continue.mp4",
+      "bytes": 77886,
+      "sha256": "53c204b8aac88656a75183c1de5b28746ea289457649848713ca233b5d0dd8e6"
+    },
+    {
+      "path": "test_1_stop_refresh.mp4",
+      "bytes": 54280,
+      "sha256": "808d56574c3a3547b478c52eff54527153944d24dace2c2f1fd6da46b96143d3"
+    },
+    {
+      "path": "test_4.json.gz",
+      "bytes": 171002,
+      "sha256": "de01d0eb7edcce6785d0eea4f7d4ec6b08895ad62c804225ba3cb3e971d8dea4"
+    },
+    {
+      "path": "test_4_async_refresh.mp4",
+      "bytes": 74293,
+      "sha256": "7df4cacfcc306534e5111451ffee2d8ad30218061abe4b7cafed914d0695d51b"
+    },
+    {
+      "path": "test_4_continue.mp4",
+      "bytes": 100780,
+      "sha256": "d394d6a518430645280b61d878013fda896f8ee9a3627f78abee847140baa155"
+    },
+    {
+      "path": "test_4_stop_refresh.mp4",
+      "bytes": 64612,
+      "sha256": "ebbee72aa7691b51f5d49cb2911c9209af1063bc3d19f714000ce38cd6d44e16"
+    },
+    {
+      "path": "test_5.json.gz",
+      "bytes": 104333,
+      "sha256": "2593079858b92cdd27ecb65ccbf2db7ed1c6170fd82763043d21a3a52f4c1696"
+    },
+    {
+      "path": "test_5_async_refresh.mp4",
+      "bytes": 43904,
+      "sha256": "8882c0bed2403a82c9ba3dbec3a3e4af7383c23a0b810c2d97eb05834ff9ec24"
+    },
+    {
+      "path": "test_5_continue.mp4",
+      "bytes": 45479,
+      "sha256": "370d7df07210ade1e5c99b33c66e2aa87004041fcd6982a2687756e8e071a3a0"
+    },
+    {
+      "path": "test_5_stop_refresh.mp4",
+      "bytes": 44464,
+      "sha256": "ca40ac680619db207b78a7ba636924b3cb9fe940f803a6eca4d9677d63263110"
+    },
+    {
+      "path": "test_9.json.gz",
+      "bytes": 56303,
+      "sha256": "d864b8b5f950af4ea47779aa9815cf654f4dfe7e088564a71b22a5dd74bc6847"
+    },
+    {
+      "path": "test_9_async_refresh.mp4",
+      "bytes": 24904,
+      "sha256": "f00bf932685268f0d6082f6d6980b5ba7207d2b8bcc7d6b3f66f2bccb7f52eb6"
+    },
+    {
+      "path": "test_9_continue.mp4",
+      "bytes": 24904,
+      "sha256": "f00bf932685268f0d6082f6d6980b5ba7207d2b8bcc7d6b3f66f2bccb7f52eb6"
+    },
+    {
+      "path": "test_9_stop_refresh.mp4",
+      "bytes": 30108,
+      "sha256": "31e1230ce8ad92a925f55fd0e4ba086b3751ac64a278f8a887f1d430bc1aa6fd"
+    }
+  ]
+}

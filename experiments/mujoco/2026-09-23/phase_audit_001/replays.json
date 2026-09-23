@@ -1,0 +1,302 @@
+[
+  {
+    "split": "test",
+    "index": 0,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": false,
+    "duration_s": 6.0,
+    "stem": "test_0_continue"
+  },
+  {
+    "split": "test",
+    "index": 0,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 1.52,
+    "stem": "test_0_stop_refresh"
+  },
+  {
+    "split": "test",
+    "index": 0,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 1.16,
+    "stem": "test_0_async_refresh"
+  },
+  {
+    "split": "test",
+    "index": 1,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": false,
+    "duration_s": 6.0,
+    "stem": "test_1_continue"
+  },
+  {
+    "split": "test",
+    "index": 1,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 3.6,
+    "stem": "test_1_stop_refresh"
+  },
+  {
+    "split": "test",
+    "index": 1,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 3.16,
+    "stem": "test_1_async_refresh"
+  },
+  {
+    "split": "test",
+    "index": 4,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": false,
+    "duration_s": 6.0,
+    "stem": "test_4_continue"
+  },
+  {
+    "split": "test",
+    "index": 4,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 4.16,
+    "stem": "test_4_stop_refresh"
+  },
+  {
+    "split": "test",
+    "index": 4,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 4.48,
+    "stem": "test_4_async_refresh"
+  },
+  {
+    "split": "test",
+    "index": 5,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 2.64,
+    "stem": "test_5_continue"
+  },
+  {
+    "split": "test",
+    "index": 5,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 2.68,
+    "stem": "test_5_stop_refresh"
+  },
+  {
+    "split": "test",
+    "index": 5,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 2.56,
+    "stem": "test_5_async_refresh"
+  },
+  {
+    "split": "test",
+    "index": 9,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 1.08,
+    "stem": "test_9_continue"
+  },
+  {
+    "split": "test",
+    "index": 9,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 1.72,
+    "stem": "test_9_stop_refresh"
+  },
+  {
+    "split": "test",
+    "index": 9,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 1.08,
+    "stem": "test_9_async_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 0,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 1.84,
+    "stem": "delay_0_continue"
+  },
+  {
+    "split": "delay",
+    "index": 0,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 4.12,
+    "stem": "delay_0_stop_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 0,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 2.56,
+    "stem": "delay_0_async_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 1,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 4.0,
+    "stem": "delay_1_continue"
+  },
+  {
+    "split": "delay",
+    "index": 1,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 4.88,
+    "stem": "delay_1_stop_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 1,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 3.96,
+    "stem": "delay_1_async_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 4,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": false,
+    "duration_s": 6.0,
+    "stem": "delay_4_continue"
+  },
+  {
+    "split": "delay",
+    "index": 4,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 6.0,
+    "stem": "delay_4_stop_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 4,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": false,
+    "duration_s": 6.0,
+    "stem": "delay_4_async_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 5,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 2.08,
+    "stem": "delay_5_continue"
+  },
+  {
+    "split": "delay",
+    "index": 5,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 3.44,
+    "stem": "delay_5_stop_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 5,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 2.08,
+    "stem": "delay_5_async_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 9,
+    "choice": 0,
+    "name": "continue",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 0.88,
+    "stem": "delay_9_continue"
+  },
+  {
+    "split": "delay",
+    "index": 9,
+    "choice": 1,
+    "name": "stop_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 1.84,
+    "stem": "delay_9_stop_refresh"
+  },
+  {
+    "split": "delay",
+    "index": 9,
+    "choice": 2,
+    "name": "async_refresh",
+    "exact_trace_match": true,
+    "success": true,
+    "duration_s": 0.88,
+    "stem": "delay_9_async_refresh"
+  }
+]

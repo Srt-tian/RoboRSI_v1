@@ -1,0 +1,111 @@
+{
+  "created_utc": "2026-09-22T16:21:30.698759+00:00",
+  "source_study": "experiments/system_one/2026-09-23/run_002",
+  "source_protocol_sha256": "7906d804cf887b48550829cde242a53d36cb74c18bf8c7435c48a0280ef188b6",
+  "new_training_trials": 0,
+  "reused_models": [
+    {
+      "id": "effect64_seed11",
+      "variant": "effect64",
+      "checkpoint": "models/effect64_seed11.npz",
+      "checkpoint_sha256": "54d3e5d8250e5e531bc921aa82880a2bc0c9ab7365b4159c42791ffff0fa2f39"
+    },
+    {
+      "id": "effect64_seed22",
+      "variant": "effect64",
+      "checkpoint": "models/effect64_seed22.npz",
+      "checkpoint_sha256": "df1285080909ee229a5c2080dddd945df61a4a73af7809c89cbee60351c4b3b0"
+    },
+    {
+      "id": "effect64_seed33",
+      "variant": "effect64",
+      "checkpoint": "models/effect64_seed33.npz",
+      "checkpoint_sha256": "41f4d181161c2c26353ce37f6335029abf0bdc32844bc74fdc5dba3da3c34de1"
+    },
+    {
+      "id": "raw_candidate64_seed11",
+      "variant": "raw_candidate64",
+      "checkpoint": "models/raw_candidate64_seed11.npz",
+      "checkpoint_sha256": "27e2d46a3586e6042614501223de6b25ff0969ffa289579451d0d6d19a97cf35"
+    },
+    {
+      "id": "raw_candidate64_seed22",
+      "variant": "raw_candidate64",
+      "checkpoint": "models/raw_candidate64_seed22.npz",
+      "checkpoint_sha256": "e269960bc3106d7924976a4a334cc196a43125aef3e5c84d30eb3fdc1e1b2623"
+    },
+    {
+      "id": "raw_candidate64_seed33",
+      "variant": "raw_candidate64",
+      "checkpoint": "models/raw_candidate64_seed33.npz",
+      "checkpoint_sha256": "aed0eb716699b978969c0c2c8093eff86c70973bd938514bcb1ec03a27b74242"
+    },
+    {
+      "id": "outcome64_seed11",
+      "variant": "outcome64",
+      "checkpoint": "models/outcome64_seed11.npz",
+      "checkpoint_sha256": "ae0100dac425a12b3e1f8356ae2b3591b40fd425478c4646f1e79fdfc60a2a2f"
+    },
+    {
+      "id": "outcome64_seed22",
+      "variant": "outcome64",
+      "checkpoint": "models/outcome64_seed22.npz",
+      "checkpoint_sha256": "d3453d4fb4f98e488f2357bf2d6ba37caf3c8715be5f992c8ebaaa141e0e7764"
+    },
+    {
+      "id": "outcome64_seed33",
+      "variant": "outcome64",
+      "checkpoint": "models/outcome64_seed33.npz",
+      "checkpoint_sha256": "f3c75b116afedd579cce6409ac7fc645169c67463f49668d4be329fd3d466348"
+    }
+  ],
+  "deadlines_s": [
+    0.0,
+    0.08,
+    0.14,
+    0.24,
+    0.4,
+    0.7,
+    1.0
+  ],
+  "arrival_times_s": [
+    0.08,
+    0.14,
+    0.24,
+    0.4,
+    0.7,
+    1.0
+  ],
+  "validation_seed": 77002,
+  "validation_contexts": 1000,
+  "test_specification": [
+    {
+      "name": "iid_queue",
+      "seed": 88003,
+      "shift": "iid"
+    },
+    {
+      "name": "tail_queue",
+      "seed": 99004,
+      "shift": "tail"
+    },
+    {
+      "name": "fast_motion",
+      "seed": 101005,
+      "shift": "motion"
+    }
+  ],
+  "test_contexts_per_cohort": 1000,
+  "evaluation_draws": 512,
+  "planner_draws": 1024,
+  "scope": "pre-request state-dependent timeout; no repeated observation or recurrent learned stopping",
+  "source_sha256": {
+    "world.py": "6b505d76fe4f43b78d951a6d4031b4bf9d5fa199fdbe376fdb9243cdd23412ec",
+    "__init__.py": "b5c8e854153f0095d7ff90b098e1740a0bbc2743b440861d6988f0baf174f18e",
+    "deadlines.py": "04a530616e33fec531ca7e5f48906baabe3ddc8d7d2d2438f2bf2b9ae491ed9f",
+    "network.py": "3bd760a1e3875bc6819fe82edc00d9d61f712e6eb93c26c55f59c796c08bd7ba",
+    "effect.py": "017181c65f949011ccbeca39a1677025879ba944f9070b31531829d6be252d38",
+    "study.py": "55fcf17cdc9a52416001f998a5d4b1ca2acc4fe6be90bccb42d487ecd63bd59f",
+    "effect_study.py": "a0700cfe0128ee3f832bba15628108729dae179f694325dbd8b3189ee6c8eb20"
+  }
+}

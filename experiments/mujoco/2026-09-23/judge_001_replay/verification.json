@@ -1,0 +1,74 @@
+[
+  {
+    "video": "test_0_always_keep.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "test_0_always_accurate.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "test_0_judge_seed11.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "test_1_always_keep.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "test_1_always_accurate.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "test_1_judge_seed11.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "delay_0_always_keep.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "delay_0_always_accurate.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "delay_0_judge_seed11.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "delay_1_always_keep.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "delay_1_always_accurate.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  },
+  {
+    "video": "delay_1_judge_seed11.mp4",
+    "success_matches": true,
+    "duration_error_s": 0.0,
+    "exact_outcome_and_duration": true
+  }
+]

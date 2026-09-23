@@ -1,0 +1,185 @@
+{
+  "schema": "roborsi.mujoco.v1",
+  "repository": "https://github.com/Srt-tian/RoboRSI_v1.git",
+  "branch": "research/mujoco-jev-physics",
+  "execution_commit": "efb769c0746d28d3f4bc9d875cafe0ef102d6616",
+  "environment": "CLOUD development machine, MuJoCo 3.6.0, Fetch v4",
+  "files": [
+    {
+      "path": "FetchPickAndPlace-v4.mp4",
+      "bytes": 84548,
+      "sha256": "4a6da349f09cf6febb9361b1f3cf14128d8671e328658a00a6bba4fcf1308efc"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_0.json.gz",
+      "bytes": 74770,
+      "sha256": "e3fc11f02b634dd34a629e50ab28e134b9f90fc6394a5a5480f72422808961ce"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_1.json.gz",
+      "bytes": 74752,
+      "sha256": "58b924735ac63856758057882d22d2bc649267c9149eba81fd927cc8afb81653"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2.json.gz",
+      "bytes": 74582,
+      "sha256": "ec06090caa853a3f0763c9cae895347506ebc64642054df0aebf9f533d88c619"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_3.json.gz",
+      "bytes": 74704,
+      "sha256": "4a489e551bb216c8280af3d8af2cffb20fa767c0d93f2a2923e401ab5504e632"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_4.json.gz",
+      "bytes": 74274,
+      "sha256": "92ef8723ac959dd1f6904384472dac06533e906f0e70b86f213268f867906d80"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_5.json.gz",
+      "bytes": 74430,
+      "sha256": "b9af7b0a116c045b526195060040f8b7f5fc2ad7e731dfa823a8292623ab9787"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_6.json.gz",
+      "bytes": 74348,
+      "sha256": "946f7c0c42a9dcc15c09043b6a2802d4550f1a674645041179cb7884772533a1"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_7.json.gz",
+      "bytes": 74513,
+      "sha256": "39c1d6f1136fc22ef0c142d1fa5257b6f6f6b3ee2da1d96d86f57790b3bc2343"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_8.json.gz",
+      "bytes": 74098,
+      "sha256": "9006dabc3c857e32c4105e8f5c61bdab2daf72bba5250fe2fcff59d7bec21354"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_9.json.gz",
+      "bytes": 74662,
+      "sha256": "e688664c6b5f0778fc9e76e88c9a2e137044a3b60442e612134f909d01966114"
+    },
+    {
+      "path": "FetchPush-v4.mp4",
+      "bytes": 74886,
+      "sha256": "ab79d7400b5e9b237f947563980fc2a2a6e2c1890137a62fc1040e24b8513504"
+    },
+    {
+      "path": "FetchPush-v4_0.json.gz",
+      "bytes": 70193,
+      "sha256": "fc7ca1a98ad4d0108591d3a4944953e6df3333bda5a23a5bc3ce8b10ee4bf481"
+    },
+    {
+      "path": "FetchPush-v4_1.json.gz",
+      "bytes": 68244,
+      "sha256": "fd1ba38e7f8c26ab61539745ec2d3ee6442863b04a8b5728bed7daae8a95f967"
+    },
+    {
+      "path": "FetchPush-v4_2.json.gz",
+      "bytes": 70094,
+      "sha256": "de2fce4e29e05c1053cd4c02981c92156155dae19f7eb1a95cead16fc75d6a10"
+    },
+    {
+      "path": "FetchPush-v4_3.json.gz",
+      "bytes": 66979,
+      "sha256": "bac50e9d1d8e3783ffe58fcb9b898d08148ff517073601f6e6d781a95d3f94ca"
+    },
+    {
+      "path": "FetchPush-v4_4.json.gz",
+      "bytes": 70395,
+      "sha256": "0118902f56107e9740b5bac843f404281a87788dfae159578e00cae130c3b01f"
+    },
+    {
+      "path": "FetchPush-v4_5.json.gz",
+      "bytes": 70878,
+      "sha256": "05a77ffce2bab6725b4bc40d8c191cdb09bdc934355eada8a95cfcf98a4b9549"
+    },
+    {
+      "path": "FetchPush-v4_6.json.gz",
+      "bytes": 68603,
+      "sha256": "71b395bda861d636b34c51332edecb1caa33af51fb2d56cc8cbb0f162c4a98de"
+    },
+    {
+      "path": "FetchPush-v4_7.json.gz",
+      "bytes": 63843,
+      "sha256": "ac527896c77213c6682fd864f742da5d171d3fbca1729b77fa552890cc63363c"
+    },
+    {
+      "path": "FetchPush-v4_8.json.gz",
+      "bytes": 67988,
+      "sha256": "9e141377a16a269002e6ffb66f82d29a3d1b6a9a33473ee8498807cd653ff2d3"
+    },
+    {
+      "path": "FetchPush-v4_9.json.gz",
+      "bytes": 70028,
+      "sha256": "332fb736887b605f0137b843b8b39c291688bc5f9ccab81a06358ec8da2bf7c6"
+    },
+    {
+      "path": "FetchReach-v4.mp4",
+      "bytes": 44224,
+      "sha256": "6b9133ce53c2478abbabdcea31caba0f22e1bacd720ad106c5fddb4125c24fdc"
+    },
+    {
+      "path": "FetchReach-v4_0.json.gz",
+      "bytes": 51952,
+      "sha256": "9e96a592a22e7f73665d2c4c2ca3a474ccd13380e71a0aaaaed3eea53e36a721"
+    },
+    {
+      "path": "FetchReach-v4_1.json.gz",
+      "bytes": 51380,
+      "sha256": "3b23478441609769e73bc3c51ab7f5c97d88951cd2e8224aac7147e882076707"
+    },
+    {
+      "path": "FetchReach-v4_2.json.gz",
+      "bytes": 51541,
+      "sha256": "70199df331f966355d28bbacb3ffa15093d1df8f9d4a45711fa273e89698f0ea"
+    },
+    {
+      "path": "FetchReach-v4_3.json.gz",
+      "bytes": 52689,
+      "sha256": "7a1ca7119024bc92114ad3fd623db39e735768b7e4e930f5cfffb66660a22562"
+    },
+    {
+      "path": "FetchReach-v4_4.json.gz",
+      "bytes": 52659,
+      "sha256": "269b0fcd0e1a4ec0d3341035a361fc6a1a6b8b2652bbc0d94570d5c4b5e3fd34"
+    },
+    {
+      "path": "FetchReach-v4_5.json.gz",
+      "bytes": 51565,
+      "sha256": "87d7da9faf4abf717681fe054f0876a6aa4c841d564901ca8c2664e88f6860ee"
+    },
+    {
+      "path": "FetchReach-v4_6.json.gz",
+      "bytes": 51631,
+      "sha256": "71d7dc322a9aabe03a0633e1fa647a39dcce1ad530b1da6d4d1fbc5310136e9e"
+    },
+    {
+      "path": "FetchReach-v4_7.json.gz",
+      "bytes": 51378,
+      "sha256": "a0fc4b44875232ec1a99276f3b974e46463828c1993d6ca0a9e1a80d9366947d"
+    },
+    {
+      "path": "FetchReach-v4_8.json.gz",
+      "bytes": 51573,
+      "sha256": "0b7393cadc7426388f19f54f0e8974342d2ac10963657eccc040467ce8ea8e3f"
+    },
+    {
+      "path": "FetchReach-v4_9.json.gz",
+      "bytes": 51763,
+      "sha256": "c1ca80814f7576f60c145ce368633fd7fca241d2386341369dda348cf72e9495"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 8430,
+      "sha256": "be8cb58da0aaa6d884b2ff9da958543a2dd9988a50949837218af4c5e858cd15"
+    }
+  ],
+  "note": "judge_001 original videos have render-induced timing differences; use judge_001_replay for verified outcome and duration matches."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "roborsi.mujoco.local-cache.v1",
+  "execution_commit": "7953b35c5a493876b65d66cf92562d673cc45e75",
+  "coverage": "local metadata/models and selected replays; full remote file list in remote_manifest.json",
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 1948,
+      "sha256": "65cd5452268408e4aefbbd3444ca002840935fc397dcc4528f52b78b9b538d47"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 178,
+      "sha256": "6d9aa283705b9abd5c82f839d0439c1bc2863f3b114f62fe8ae4ebcc25d32bca"
+    },
+    {
+      "path": "remote_manifest.json",
+      "bytes": 17857,
+      "sha256": "53fb0e20b18e78e6e8c4dbd8d80984a57ff8289d4a785247177bec512013d6ce"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 26514,
+      "sha256": "de4a41c2ff292c5ab3e03de15e9af7daa39f38b684572afb026ae93eb2ac76f6"
+    }
+  ]
+}

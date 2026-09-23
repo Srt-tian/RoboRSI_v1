@@ -1,0 +1,32 @@
+{
+  "scope": "Learn a typed sensor-macro judge on MuJoCo Fetch contact outcomes.\n\nState-sensor corruption benchmark, NOT learned visual perception or official Jev.\nPolicy receives noisy/delayed object position, exact proprioception and known goal.\nCandidate macros share the same fixed controller. Each scene evaluates all three\nsensor choices from the same reset and noise sequence. No test labels in training.\n",
+  "counts": {
+    "output": "/pfs/user/roborsi_physics/judge_001",
+    "train": 400,
+    "validation": 120,
+    "test": 200
+  },
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "feature_names": [
+    "pick_task",
+    "noise_std",
+    "fast_delay_s",
+    "accurate_delay_s",
+    "fast_std",
+    "time_price",
+    "object_minus_grip_x",
+    "object_minus_grip_y",
+    "object_minus_grip_z",
+    "goal_minus_object_x",
+    "goal_minus_object_y",
+    "goal_minus_object_z"
+  ],
+  "source_sha256": {
+    "physics_judge.py": "69a57ba7386e2b709c0ae42400d97ddb3d1d099a927ef7ea3f32259631dbccfa",
+    "physics_pilot.py": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+  }
+}

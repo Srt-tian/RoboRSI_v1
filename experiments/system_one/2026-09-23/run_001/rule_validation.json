@@ -1,0 +1,362 @@
+[
+  {
+    "threshold": 0,
+    "multiplier": 0.5,
+    "mean_cost": 0.363219324967592,
+    "success_rate": 0.720328125,
+    "sense_rate": 0.6973333333333334,
+    "mean_duration_s": 0.3601350746414731,
+    "rescue_rate": 0.1818984375,
+    "spoil_rate": 0.07065364583333333,
+    "action_counts": {
+      "grasp_now": 454,
+      "look_then_grasp": 515,
+      "probe_then_grasp": 531
+    }
+  },
+  {
+    "threshold": 0,
+    "multiplier": 1.0,
+    "mean_cost": 0.36156262583415355,
+    "success_rate": 0.7182760416666667,
+    "sense_rate": 0.654,
+    "mean_duration_s": 0.3469837373410404,
+    "rescue_rate": 0.17462760416666667,
+    "spoil_rate": 0.06543489583333334,
+    "action_counts": {
+      "grasp_now": 519,
+      "look_then_grasp": 464,
+      "probe_then_grasp": 517
+    }
+  },
+  {
+    "threshold": 0,
+    "multiplier": 1.5,
+    "mean_cost": 0.36152646920344583,
+    "success_rate": 0.7145625,
+    "sense_rate": 0.604,
+    "mean_duration_s": 0.33306153363298685,
+    "rescue_rate": 0.16544270833333333,
+    "spoil_rate": 0.05996354166666667,
+    "action_counts": {
+      "grasp_now": 594,
+      "look_then_grasp": 419,
+      "probe_then_grasp": 487
+    }
+  },
+  {
+    "threshold": 0,
+    "multiplier": 2.0,
+    "mean_cost": 0.3630993768751978,
+    "success_rate": 0.7100026041666667,
+    "sense_rate": 0.56,
+    "mean_duration_s": 0.32172499489747336,
+    "rescue_rate": 0.155203125,
+    "spoil_rate": 0.054283854166666666,
+    "action_counts": {
+      "grasp_now": 660,
+      "look_then_grasp": 380,
+      "probe_then_grasp": 460
+    }
+  },
+  {
+    "threshold": 0.4,
+    "multiplier": 0.5,
+    "mean_cost": 0.36321562959134374,
+    "success_rate": 0.7203229166666667,
+    "sense_rate": 0.6966666666666667,
+    "mean_duration_s": 0.3600871870486291,
+    "rescue_rate": 0.1818671875,
+    "spoil_rate": 0.07062760416666666,
+    "action_counts": {
+      "grasp_now": 455,
+      "look_then_grasp": 514,
+      "probe_then_grasp": 531
+    }
+  },
+  {
+    "threshold": 0.4,
+    "multiplier": 1.0,
+    "mean_cost": 0.36156262583415355,
+    "success_rate": 0.7182760416666667,
+    "sense_rate": 0.654,
+    "mean_duration_s": 0.3469837373410404,
+    "rescue_rate": 0.17462760416666667,
+    "spoil_rate": 0.06543489583333334,
+    "action_counts": {
+      "grasp_now": 519,
+      "look_then_grasp": 464,
+      "probe_then_grasp": 517
+    }
+  },
+  {
+    "threshold": 0.4,
+    "multiplier": 1.5,
+    "mean_cost": 0.36152646920344583,
+    "success_rate": 0.7145625,
+    "sense_rate": 0.604,
+    "mean_duration_s": 0.33306153363298685,
+    "rescue_rate": 0.16544270833333333,
+    "spoil_rate": 0.05996354166666667,
+    "action_counts": {
+      "grasp_now": 594,
+      "look_then_grasp": 419,
+      "probe_then_grasp": 487
+    }
+  },
+  {
+    "threshold": 0.4,
+    "multiplier": 2.0,
+    "mean_cost": 0.3630993768751978,
+    "success_rate": 0.7100026041666667,
+    "sense_rate": 0.56,
+    "mean_duration_s": 0.32172499489747336,
+    "rescue_rate": 0.155203125,
+    "spoil_rate": 0.054283854166666666,
+    "action_counts": {
+      "grasp_now": 660,
+      "look_then_grasp": 380,
+      "probe_then_grasp": 460
+    }
+  },
+  {
+    "threshold": 0.7,
+    "multiplier": 0.5,
+    "mean_cost": 0.3643336517395907,
+    "success_rate": 0.7176614583333333,
+    "sense_rate": 0.6493333333333333,
+    "mean_duration_s": 0.351310013604458,
+    "rescue_rate": 0.17781510416666665,
+    "spoil_rate": 0.06923697916666667,
+    "action_counts": {
+      "grasp_now": 526,
+      "look_then_grasp": 456,
+      "probe_then_grasp": 518
+    }
+  },
+  {
+    "threshold": 0.7,
+    "multiplier": 1.0,
+    "mean_cost": 0.36292212320204553,
+    "success_rate": 0.7157395833333333,
+    "sense_rate": 0.6153333333333333,
+    "mean_duration_s": 0.3401206055367367,
+    "rescue_rate": 0.17119010416666666,
+    "spoil_rate": 0.06453385416666667,
+    "action_counts": {
+      "grasp_now": 577,
+      "look_then_grasp": 417,
+      "probe_then_grasp": 506
+    }
+  },
+  {
+    "threshold": 0.7,
+    "multiplier": 1.5,
+    "mean_cost": 0.36275801635097166,
+    "success_rate": 0.7126692708333333,
+    "sense_rate": 0.576,
+    "mean_duration_s": 0.32855265240587617,
+    "rescue_rate": 0.16290104166666666,
+    "spoil_rate": 0.05931510416666667,
+    "action_counts": {
+      "grasp_now": 636,
+      "look_then_grasp": 384,
+      "probe_then_grasp": 480
+    }
+  },
+  {
+    "threshold": 0.7,
+    "multiplier": 2.0,
+    "mean_cost": 0.3642064268783719,
+    "success_rate": 0.7084296875,
+    "sense_rate": 0.5353333333333333,
+    "mean_duration_s": 0.3180795547531291,
+    "rescue_rate": 0.15298958333333335,
+    "spoil_rate": 0.05364322916666667,
+    "action_counts": {
+      "grasp_now": 697,
+      "look_then_grasp": 350,
+      "probe_then_grasp": 453
+    }
+  },
+  {
+    "threshold": 1.0,
+    "multiplier": 0.5,
+    "mean_cost": 0.37323740658525595,
+    "success_rate": 0.7026770833333333,
+    "sense_rate": 0.532,
+    "mean_duration_s": 0.32480971552304716,
+    "rescue_rate": 0.1555078125,
+    "spoil_rate": 0.0619140625,
+    "action_counts": {
+      "grasp_now": 702,
+      "look_then_grasp": 334,
+      "probe_then_grasp": 464
+    }
+  },
+  {
+    "threshold": 1.0,
+    "multiplier": 1.0,
+    "mean_cost": 0.3722824034981698,
+    "success_rate": 0.7015026041666667,
+    "sense_rate": 0.5093333333333333,
+    "mean_duration_s": 0.3172964205829914,
+    "rescue_rate": 0.15069270833333334,
+    "spoil_rate": 0.0582734375,
+    "action_counts": {
+      "grasp_now": 736,
+      "look_then_grasp": 308,
+      "probe_then_grasp": 456
+    }
+  },
+  {
+    "threshold": 1.0,
+    "multiplier": 1.5,
+    "mean_cost": 0.37205903684732705,
+    "success_rate": 0.6999140625,
+    "sense_rate": 0.486,
+    "mean_duration_s": 0.3105713611587432,
+    "rescue_rate": 0.14507291666666666,
+    "spoil_rate": 0.0542421875,
+    "action_counts": {
+      "grasp_now": 771,
+      "look_then_grasp": 294,
+      "probe_then_grasp": 435
+    }
+  },
+  {
+    "threshold": 1.0,
+    "multiplier": 2.0,
+    "mean_cost": 0.3731334220225696,
+    "success_rate": 0.6967057291666666,
+    "sense_rate": 0.456,
+    "mean_duration_s": 0.30292620044182367,
+    "rescue_rate": 0.13716927083333333,
+    "spoil_rate": 0.049546875,
+    "action_counts": {
+      "grasp_now": 816,
+      "look_then_grasp": 273,
+      "probe_then_grasp": 411
+    }
+  },
+  {
+    "threshold": 1.4,
+    "multiplier": 0.5,
+    "mean_cost": 0.3974613076520847,
+    "success_rate": 0.6712005208333334,
+    "sense_rate": 0.364,
+    "mean_duration_s": 0.29106321316562783,
+    "rescue_rate": 0.10936197916666666,
+    "spoil_rate": 0.04724479166666667,
+    "action_counts": {
+      "grasp_now": 954,
+      "look_then_grasp": 200,
+      "probe_then_grasp": 346
+    }
+  },
+  {
+    "threshold": 1.4,
+    "multiplier": 1.0,
+    "mean_cost": 0.3966674564069538,
+    "success_rate": 0.6704869791666667,
+    "sense_rate": 0.3486666666666667,
+    "mean_duration_s": 0.2856990068805278,
+    "rescue_rate": 0.10627864583333334,
+    "spoil_rate": 0.044875,
+    "action_counts": {
+      "grasp_now": 977,
+      "look_then_grasp": 179,
+      "probe_then_grasp": 344
+    }
+  },
+  {
+    "threshold": 1.4,
+    "multiplier": 1.5,
+    "mean_cost": 0.39605978121564656,
+    "success_rate": 0.6700078125,
+    "sense_rate": 0.33466666666666667,
+    "mean_duration_s": 0.28172015077557006,
+    "rescue_rate": 0.10295572916666666,
+    "spoil_rate": 0.04203125,
+    "action_counts": {
+      "grasp_now": 998,
+      "look_then_grasp": 174,
+      "probe_then_grasp": 328
+    }
+  },
+  {
+    "threshold": 1.4,
+    "multiplier": 2.0,
+    "mean_cost": 0.39642401867645866,
+    "success_rate": 0.6680989583333333,
+    "sense_rate": 0.31333333333333335,
+    "mean_duration_s": 0.2763183287530326,
+    "rescue_rate": 0.09747135416666666,
+    "spoil_rate": 0.03845572916666667,
+    "action_counts": {
+      "grasp_now": 1030,
+      "look_then_grasp": 162,
+      "probe_then_grasp": 308
+    }
+  },
+  {
+    "threshold": 2.0,
+    "multiplier": 0.5,
+    "mean_cost": 0.4218343685654492,
+    "success_rate": 0.6384739583333333,
+    "sense_rate": 0.18533333333333332,
+    "mean_duration_s": 0.2555765884893582,
+    "rescue_rate": 0.055236979166666665,
+    "spoil_rate": 0.025846354166666665,
+    "action_counts": {
+      "grasp_now": 1222,
+      "look_then_grasp": 93,
+      "probe_then_grasp": 185
+    }
+  },
+  {
+    "threshold": 2.0,
+    "multiplier": 1.0,
+    "mean_cost": 0.42137240754139665,
+    "success_rate": 0.6380364583333333,
+    "sense_rate": 0.176,
+    "mean_duration_s": 0.25237308956050314,
+    "rescue_rate": 0.05333854166666667,
+    "spoil_rate": 0.024385416666666666,
+    "action_counts": {
+      "grasp_now": 1236,
+      "look_then_grasp": 81,
+      "probe_then_grasp": 183
+    }
+  },
+  {
+    "threshold": 2.0,
+    "multiplier": 1.5,
+    "mean_cost": 0.4209109135969693,
+    "success_rate": 0.6378619791666666,
+    "sense_rate": 0.16733333333333333,
+    "mean_duration_s": 0.25001730533222916,
+    "rescue_rate": 0.05134635416666666,
+    "spoil_rate": 0.022567708333333332,
+    "action_counts": {
+      "grasp_now": 1249,
+      "look_then_grasp": 80,
+      "probe_then_grasp": 171
+    }
+  },
+  {
+    "threshold": 2.0,
+    "multiplier": 2.0,
+    "mean_cost": 0.4212452708145045,
+    "success_rate": 0.6366458333333334,
+    "sense_rate": 0.154,
+    "mean_duration_s": 0.24682418322219837,
+    "rescue_rate": 0.04799479166666667,
+    "spoil_rate": 0.020432291666666668,
+    "action_counts": {
+      "grasp_now": 1269,
+      "look_then_grasp": 74,
+      "probe_then_grasp": 157
+    }
+  }
+]

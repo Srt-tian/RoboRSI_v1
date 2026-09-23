@@ -1,0 +1,819 @@
+{
+  "completed_utc": "2026-09-22T16:14:34.674879+00:00",
+  "scope": "analytic grasp micro-simulator, not physics, language or official Jev",
+  "protocol_sha256": "7906d804cf887b48550829cde242a53d36cb74c18bf8c7435c48a0280ef188b6",
+  "summaries": [
+    {
+      "cohort": "iid",
+      "contexts": 1200,
+      "draws_per_context": 512,
+      "methods": {
+        "effect64_seed11": {
+          "mean_cost": 0.3555863447842276,
+          "success_rate": 0.72412109375,
+          "sense_rate": 0.5991666666666666,
+          "mean_duration_s": 0.33672064303643834,
+          "rescue_rate": 0.16850260416666665,
+          "spoil_rate": 0.054168294270833334,
+          "action_counts": {
+            "grasp_now": 481,
+            "look_then_grasp": 345,
+            "probe_then_grasp": 374
+          },
+          "probability_mse_vs_mc": 0.0006556449190090023
+        },
+        "effect64_seed22": {
+          "mean_cost": 0.3555899427231264,
+          "success_rate": 0.7244401041666667,
+          "sense_rate": 0.5991666666666666,
+          "mean_duration_s": 0.3375644470892709,
+          "rescue_rate": 0.1681298828125,
+          "spoil_rate": 0.0534765625,
+          "action_counts": {
+            "grasp_now": 481,
+            "look_then_grasp": 352,
+            "probe_then_grasp": 367
+          },
+          "probability_mse_vs_mc": 0.0006666487801729027
+        },
+        "effect64_seed33": {
+          "mean_cost": 0.3554573392276087,
+          "success_rate": 0.7241471354166666,
+          "sense_rate": 0.6,
+          "mean_duration_s": 0.3365633520767612,
+          "rescue_rate": 0.1677490234375,
+          "spoil_rate": 0.053388671875,
+          "action_counts": {
+            "grasp_now": 480,
+            "look_then_grasp": 350,
+            "probe_then_grasp": 370
+          },
+          "probability_mse_vs_mc": 0.0007294434496278648
+        },
+        "raw_candidate64_seed11": {
+          "mean_cost": 0.3555936569229675,
+          "success_rate": 0.7241438802083333,
+          "sense_rate": 0.6041666666666666,
+          "mean_duration_s": 0.33712546962596796,
+          "rescue_rate": 0.1690673828125,
+          "spoil_rate": 0.05471028645833333,
+          "action_counts": {
+            "grasp_now": 475,
+            "look_then_grasp": 354,
+            "probe_then_grasp": 371
+          },
+          "probability_mse_vs_mc": 0.0006713788257865824
+        },
+        "raw_candidate64_seed22": {
+          "mean_cost": 0.35537290262226406,
+          "success_rate": 0.7235123697916667,
+          "sense_rate": 0.5808333333333333,
+          "mean_duration_s": 0.3327080268561039,
+          "rescue_rate": 0.16499348958333335,
+          "spoil_rate": 0.051267903645833335,
+          "action_counts": {
+            "grasp_now": 503,
+            "look_then_grasp": 344,
+            "probe_then_grasp": 353
+          },
+          "probability_mse_vs_mc": 0.0007310758779481101
+        },
+        "raw_candidate64_seed33": {
+          "mean_cost": 0.3556506200330066,
+          "success_rate": 0.7234098307291666,
+          "sense_rate": 0.5791666666666667,
+          "mean_duration_s": 0.3340524576100231,
+          "rescue_rate": 0.16412109375,
+          "spoil_rate": 0.050498046875,
+          "action_counts": {
+            "grasp_now": 505,
+            "look_then_grasp": 349,
+            "probe_then_grasp": 346
+          },
+          "probability_mse_vs_mc": 0.0006854453279139526
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.3562577010627327,
+          "success_rate": 0.7226774088541666,
+          "sense_rate": 0.5891666666666666,
+          "mean_duration_s": 0.3346090449165439,
+          "rescue_rate": 0.16659505208333333,
+          "spoil_rate": 0.05370442708333333,
+          "action_counts": {
+            "grasp_now": 493,
+            "look_then_grasp": 340,
+            "probe_then_grasp": 367
+          },
+          "probability_mse_vs_mc": 0.0009685158464217432
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.35615306829005183,
+          "success_rate": 0.7223697916666667,
+          "sense_rate": 0.5716666666666667,
+          "mean_duration_s": 0.33167369288532184,
+          "rescue_rate": 0.16305338541666667,
+          "spoil_rate": 0.050470377604166665,
+          "action_counts": {
+            "grasp_now": 514,
+            "look_then_grasp": 336,
+            "probe_then_grasp": 350
+          },
+          "probability_mse_vs_mc": 0.0010173482053102173
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.3563937362823474,
+          "success_rate": 0.7219466145833333,
+          "sense_rate": 0.5733333333333334,
+          "mean_duration_s": 0.3314195623374147,
+          "rescue_rate": 0.16272298177083333,
+          "spoil_rate": 0.050563151041666664,
+          "action_counts": {
+            "grasp_now": 512,
+            "look_then_grasp": 341,
+            "probe_then_grasp": 347
+          },
+          "probability_mse_vs_mc": 0.0009992272442383788
+        },
+        "known_model_mc128": {
+          "mean_cost": 0.3584142083553464,
+          "success_rate": 0.7216536458333334,
+          "sense_rate": 0.6066666666666667,
+          "mean_duration_s": 0.339309124010258,
+          "rescue_rate": 0.1689501953125,
+          "spoil_rate": 0.05708333333333333,
+          "action_counts": {
+            "grasp_now": 472,
+            "look_then_grasp": 338,
+            "probe_then_grasp": 390
+          },
+          "probability_mse_vs_mc": 0.0018187808990478517
+        },
+        "known_model_mc2048": {
+          "mean_cost": 0.3550830718822908,
+          "success_rate": 0.7240022786458333,
+          "sense_rate": 0.5883333333333334,
+          "mean_duration_s": 0.3346687601330112,
+          "rescue_rate": 0.16652994791666667,
+          "spoil_rate": 0.052314453125,
+          "action_counts": {
+            "grasp_now": 494,
+            "look_then_grasp": 345,
+            "probe_then_grasp": 361
+          },
+          "probability_mse_vs_mc": 0.0004633420043521457
+        },
+        "always_act": {
+          "mean_cost": 0.4436386335885521,
+          "success_rate": 0.6097867838541666,
+          "sense_rate": 0.0,
+          "mean_duration_s": 0.22,
+          "rescue_rate": 0.0,
+          "spoil_rate": 0.0,
+          "action_counts": {
+            "grasp_now": 1200,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 0
+          }
+        },
+        "always_look": {
+          "mean_cost": 0.49352152338794286,
+          "success_rate": 0.6339664713541666,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.5258952033706557,
+          "rescue_rate": 0.17123209635416667,
+          "spoil_rate": 0.14705240885416668,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 1200,
+            "probe_then_grasp": 0
+          }
+        },
+        "always_probe": {
+          "mean_cost": 0.45011074172429033,
+          "success_rate": 0.6539371744791667,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.4271191917341531,
+          "rescue_rate": 0.22641764322916666,
+          "spoil_rate": 0.18226725260416668,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 1200
+          }
+        }
+      },
+      "variant_means": {
+        "effect64": {
+          "mean_cost": 0.3555445422449875,
+          "success_rate": 0.7242361111111112,
+          "sense_rate": 0.5994444444444444,
+          "mean_duration_s": 0.3369494807341568,
+          "rescue_rate": 0.1681271701388889,
+          "spoil_rate": 0.05367784288194444,
+          "training_seed_costs": [
+            0.3555863447842276,
+            0.3555899427231264,
+            0.3554573392276087
+          ]
+        },
+        "raw_candidate64": {
+          "mean_cost": 0.35553905985941275,
+          "success_rate": 0.7236886935763889,
+          "sense_rate": 0.5880555555555556,
+          "mean_duration_s": 0.3346286513640317,
+          "rescue_rate": 0.16606065538194445,
+          "spoil_rate": 0.05215874565972223,
+          "training_seed_costs": [
+            0.3555936569229675,
+            0.35537290262226406,
+            0.3556506200330066
+          ]
+        },
+        "outcome64": {
+          "mean_cost": 0.356268168545044,
+          "success_rate": 0.722331271701389,
+          "sense_rate": 0.5780555555555554,
+          "mean_duration_s": 0.33256743337976014,
+          "rescue_rate": 0.1641238064236111,
+          "spoil_rate": 0.05157931857638889,
+          "training_seed_costs": [
+            0.3562577010627327,
+            0.35615306829005183,
+            0.3563937362823474
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "effect_minus_outcome": {
+          "mean": -0.000723626300056413,
+          "ci95": [
+            -0.0011386803914334503,
+            -0.0003034091215403365
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_raw_candidate": {
+          "mean": 5.482385574795085e-06,
+          "ci95": [
+            -0.00035755535442605,
+            0.00037695697776131957
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_mc2048": {
+          "mean": 0.00046147036269672683,
+          "ci95": [
+            7.709131660526942e-05,
+            0.0008367288078754838
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    },
+    {
+      "cohort": "delay",
+      "contexts": 1200,
+      "draws_per_context": 512,
+      "methods": {
+        "effect64_seed11": {
+          "mean_cost": 0.37850245609196503,
+          "success_rate": 0.6984830729166667,
+          "sense_rate": 0.5008333333333334,
+          "mean_duration_s": 0.3391177006743616,
+          "rescue_rate": 0.153740234375,
+          "spoil_rate": 0.05940104166666667,
+          "action_counts": {
+            "grasp_now": 599,
+            "look_then_grasp": 51,
+            "probe_then_grasp": 550
+          },
+          "probability_mse_vs_mc": 0.0006973064994706411
+        },
+        "effect64_seed22": {
+          "mean_cost": 0.3786218477540826,
+          "success_rate": 0.6985872395833334,
+          "sense_rate": 0.4925,
+          "mean_duration_s": 0.3387505313712262,
+          "rescue_rate": 0.152021484375,
+          "spoil_rate": 0.057578125,
+          "action_counts": {
+            "grasp_now": 609,
+            "look_then_grasp": 52,
+            "probe_then_grasp": 539
+          },
+          "probability_mse_vs_mc": 0.0007393865455494825
+        },
+        "effect64_seed33": {
+          "mean_cost": 0.37830416845757575,
+          "success_rate": 0.6991080729166667,
+          "sense_rate": 0.5033333333333333,
+          "mean_duration_s": 0.33871456619792134,
+          "rescue_rate": 0.1553076171875,
+          "spoil_rate": 0.060343424479166664,
+          "action_counts": {
+            "grasp_now": 596,
+            "look_then_grasp": 47,
+            "probe_then_grasp": 557
+          },
+          "probability_mse_vs_mc": 0.0008915665536351288
+        },
+        "raw_candidate64_seed11": {
+          "mean_cost": 0.37896101219402,
+          "success_rate": 0.6959505208333333,
+          "sense_rate": 0.4825,
+          "mean_duration_s": 0.32820019935457734,
+          "rescue_rate": 0.14974934895833333,
+          "spoil_rate": 0.057942708333333336,
+          "action_counts": {
+            "grasp_now": 621,
+            "look_then_grasp": 34,
+            "probe_then_grasp": 545
+          },
+          "probability_mse_vs_mc": 0.0011974919305494794
+        },
+        "raw_candidate64_seed22": {
+          "mean_cost": 0.37886709945582225,
+          "success_rate": 0.696376953125,
+          "sense_rate": 0.4841666666666667,
+          "mean_duration_s": 0.32897442664698884,
+          "rescue_rate": 0.15050618489583334,
+          "spoil_rate": 0.05827311197916667,
+          "action_counts": {
+            "grasp_now": 619,
+            "look_then_grasp": 36,
+            "probe_then_grasp": 545
+          },
+          "probability_mse_vs_mc": 0.0011764395906640438
+        },
+        "raw_candidate64_seed33": {
+          "mean_cost": 0.3793182726944403,
+          "success_rate": 0.6950309244791667,
+          "sense_rate": 0.4741666666666667,
+          "mean_duration_s": 0.324180923607576,
+          "rescue_rate": 0.14744466145833332,
+          "spoil_rate": 0.0565576171875,
+          "action_counts": {
+            "grasp_now": 631,
+            "look_then_grasp": 31,
+            "probe_then_grasp": 538
+          },
+          "probability_mse_vs_mc": 0.0016233552837281544
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.3822936903351047,
+          "success_rate": 0.6947932942708334,
+          "sense_rate": 0.5225,
+          "mean_duration_s": 0.341266882251641,
+          "rescue_rate": 0.15777994791666666,
+          "spoil_rate": 0.06713053385416666,
+          "action_counts": {
+            "grasp_now": 573,
+            "look_then_grasp": 46,
+            "probe_then_grasp": 581
+          },
+          "probability_mse_vs_mc": 0.001737711822727068
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.38142882534350436,
+          "success_rate": 0.6936214192708333,
+          "sense_rate": 0.4825,
+          "mean_duration_s": 0.32936675873170523,
+          "rescue_rate": 0.14788736979166667,
+          "spoil_rate": 0.05840983072916667,
+          "action_counts": {
+            "grasp_now": 621,
+            "look_then_grasp": 37,
+            "probe_then_grasp": 542
+          },
+          "probability_mse_vs_mc": 0.0017111398959991236
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.381117230832015,
+          "success_rate": 0.6954134114583334,
+          "sense_rate": 0.5116666666666667,
+          "mean_duration_s": 0.3368646286061175,
+          "rescue_rate": 0.15498046875,
+          "spoil_rate": 0.0637109375,
+          "action_counts": {
+            "grasp_now": 586,
+            "look_then_grasp": 40,
+            "probe_then_grasp": 574
+          },
+          "probability_mse_vs_mc": 0.0018801296351702408
+        },
+        "known_model_mc128": {
+          "mean_cost": 0.3815726086130532,
+          "success_rate": 0.6952034505208333,
+          "sense_rate": 0.495,
+          "mean_duration_s": 0.33712516111241003,
+          "rescue_rate": 0.15148763020833333,
+          "spoil_rate": 0.06042805989583333,
+          "action_counts": {
+            "grasp_now": 606,
+            "look_then_grasp": 48,
+            "probe_then_grasp": 546
+          },
+          "probability_mse_vs_mc": 0.0018729241689046225
+        },
+        "known_model_mc2048": {
+          "mean_cost": 0.3780581475323393,
+          "success_rate": 0.698955078125,
+          "sense_rate": 0.4975,
+          "mean_duration_s": 0.33654550537806105,
+          "rescue_rate": 0.15346516927083334,
+          "spoil_rate": 0.05865397135416667,
+          "action_counts": {
+            "grasp_now": 603,
+            "look_then_grasp": 46,
+            "probe_then_grasp": 551
+          },
+          "probability_mse_vs_mc": 0.00047146744198269317
+        },
+        "always_act": {
+          "mean_cost": 0.4482531738237779,
+          "success_rate": 0.6041438802083333,
+          "sense_rate": 0.0,
+          "mean_duration_s": 0.22,
+          "rescue_rate": 0.0,
+          "spoil_rate": 0.0,
+          "action_counts": {
+            "grasp_now": 1200,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 0
+          }
+        },
+        "always_look": {
+          "mean_cost": 0.7868701954652589,
+          "success_rate": 0.4503955078125,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.9941271952445974,
+          "rescue_rate": 0.12404134114583333,
+          "spoil_rate": 0.27778971354166665,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 1200,
+            "probe_then_grasp": 0
+          }
+        },
+        "always_probe": {
+          "mean_cost": 0.4513864118585021,
+          "success_rate": 0.6504427083333333,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.4264926650049833,
+          "rescue_rate": 0.22713053385416668,
+          "spoil_rate": 0.18083170572916665,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 1200
+          }
+        }
+      },
+      "variant_means": {
+        "effect64": {
+          "mean_cost": 0.37847615743454116,
+          "success_rate": 0.6987261284722223,
+          "sense_rate": 0.4988888888888889,
+          "mean_duration_s": 0.3388609327478364,
+          "rescue_rate": 0.15368977864583333,
+          "spoil_rate": 0.05910753038194444,
+          "training_seed_costs": [
+            0.37850245609196503,
+            0.3786218477540826,
+            0.37830416845757575
+          ]
+        },
+        "raw_candidate64": {
+          "mean_cost": 0.37904879478142756,
+          "success_rate": 0.6957861328125,
+          "sense_rate": 0.4802777777777778,
+          "mean_duration_s": 0.32711851653638074,
+          "rescue_rate": 0.14923339843750003,
+          "spoil_rate": 0.05759114583333333,
+          "training_seed_costs": [
+            0.37896101219402,
+            0.37886709945582225,
+            0.3793182726944403
+          ]
+        },
+        "outcome64": {
+          "mean_cost": 0.3816132488368747,
+          "success_rate": 0.6946093750000001,
+          "sense_rate": 0.5055555555555555,
+          "mean_duration_s": 0.3358327565298212,
+          "rescue_rate": 0.15354926215277778,
+          "spoil_rate": 0.06308376736111111,
+          "training_seed_costs": [
+            0.3822936903351047,
+            0.38142882534350436,
+            0.381117230832015
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "effect_minus_outcome": {
+          "mean": -0.003137091402333582,
+          "ci95": [
+            -0.0037881151824717707,
+            -0.002525850589407181
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_raw_candidate": {
+          "mean": -0.000572637346886394,
+          "ci95": [
+            -0.0010468160698939167,
+            -0.00015096176125711902
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_mc2048": {
+          "mean": 0.00041800990220174067,
+          "ci95": [
+            5.964878412580006e-05,
+            0.0007929750884551651
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    },
+    {
+      "cohort": "cost",
+      "contexts": 1200,
+      "draws_per_context": 512,
+      "methods": {
+        "effect64_seed11": {
+          "mean_cost": 0.5755548390796713,
+          "success_rate": 0.6885791015625,
+          "sense_rate": 0.32083333333333336,
+          "mean_duration_s": 0.2688972212909725,
+          "rescue_rate": 0.1054443359375,
+          "spoil_rate": 0.0217431640625,
+          "action_counts": {
+            "grasp_now": 815,
+            "look_then_grasp": 193,
+            "probe_then_grasp": 192
+          },
+          "probability_mse_vs_mc": 0.000643804793567977
+        },
+        "effect64_seed22": {
+          "mean_cost": 0.5757830899489214,
+          "success_rate": 0.6892317708333333,
+          "sense_rate": 0.3233333333333333,
+          "mean_duration_s": 0.2700973761853312,
+          "rescue_rate": 0.1057763671875,
+          "spoil_rate": 0.021422526041666667,
+          "action_counts": {
+            "grasp_now": 812,
+            "look_then_grasp": 195,
+            "probe_then_grasp": 193
+          },
+          "probability_mse_vs_mc": 0.0006635749079828607
+        },
+        "effect64_seed33": {
+          "mean_cost": 0.5758793662616125,
+          "success_rate": 0.6880240885416666,
+          "sense_rate": 0.31666666666666665,
+          "mean_duration_s": 0.26889412828007175,
+          "rescue_rate": 0.104287109375,
+          "spoil_rate": 0.021140950520833333,
+          "action_counts": {
+            "grasp_now": 820,
+            "look_then_grasp": 188,
+            "probe_then_grasp": 192
+          },
+          "probability_mse_vs_mc": 0.0007131545508306562
+        },
+        "raw_candidate64_seed11": {
+          "mean_cost": 0.5756575293141799,
+          "success_rate": 0.6880550130208334,
+          "sense_rate": 0.32083333333333336,
+          "mean_duration_s": 0.2689546702251527,
+          "rescue_rate": 0.10475260416666667,
+          "spoil_rate": 0.021575520833333334,
+          "action_counts": {
+            "grasp_now": 815,
+            "look_then_grasp": 202,
+            "probe_then_grasp": 183
+          },
+          "probability_mse_vs_mc": 0.0006455755041316337
+        },
+        "raw_candidate64_seed22": {
+          "mean_cost": 0.5755339826934506,
+          "success_rate": 0.6874641927083334,
+          "sense_rate": 0.31083333333333335,
+          "mean_duration_s": 0.26782271995356055,
+          "rescue_rate": 0.10359375,
+          "spoil_rate": 0.021007486979166667,
+          "action_counts": {
+            "grasp_now": 827,
+            "look_then_grasp": 186,
+            "probe_then_grasp": 187
+          },
+          "probability_mse_vs_mc": 0.000688805890483918
+        },
+        "raw_candidate64_seed33": {
+          "mean_cost": 0.5758909784806984,
+          "success_rate": 0.6865283203125,
+          "sense_rate": 0.30666666666666664,
+          "mean_duration_s": 0.2674968499369052,
+          "rescue_rate": 0.10159993489583333,
+          "spoil_rate": 0.019949544270833335,
+          "action_counts": {
+            "grasp_now": 832,
+            "look_then_grasp": 189,
+            "probe_then_grasp": 179
+          },
+          "probability_mse_vs_mc": 0.0006604863856728868
+        },
+        "outcome64_seed11": {
+          "mean_cost": 0.5762634169622326,
+          "success_rate": 0.6863330078125,
+          "sense_rate": 0.3125,
+          "mean_duration_s": 0.26767557207756787,
+          "rescue_rate": 0.10297688802083334,
+          "spoil_rate": 0.021521809895833334,
+          "action_counts": {
+            "grasp_now": 825,
+            "look_then_grasp": 189,
+            "probe_then_grasp": 186
+          },
+          "probability_mse_vs_mc": 0.000973477053376327
+        },
+        "outcome64_seed22": {
+          "mean_cost": 0.5762284743992586,
+          "success_rate": 0.6851383463541667,
+          "sense_rate": 0.3016666666666667,
+          "mean_duration_s": 0.266216906002364,
+          "rescue_rate": 0.10061848958333333,
+          "spoil_rate": 0.020358072916666668,
+          "action_counts": {
+            "grasp_now": 838,
+            "look_then_grasp": 185,
+            "probe_then_grasp": 177
+          },
+          "probability_mse_vs_mc": 0.0009462137674291924
+        },
+        "outcome64_seed33": {
+          "mean_cost": 0.5764696312208614,
+          "success_rate": 0.6858984375,
+          "sense_rate": 0.31083333333333335,
+          "mean_duration_s": 0.26746797304117936,
+          "rescue_rate": 0.10208984375,
+          "spoil_rate": 0.0210693359375,
+          "action_counts": {
+            "grasp_now": 827,
+            "look_then_grasp": 188,
+            "probe_then_grasp": 185
+          },
+          "probability_mse_vs_mc": 0.0010269601494735932
+        },
+        "known_model_mc128": {
+          "mean_cost": 0.5784619562860409,
+          "success_rate": 0.6867822265625,
+          "sense_rate": 0.32166666666666666,
+          "mean_duration_s": 0.2702573838601005,
+          "rescue_rate": 0.10526041666666666,
+          "spoil_rate": 0.023356119791666668,
+          "action_counts": {
+            "grasp_now": 814,
+            "look_then_grasp": 184,
+            "probe_then_grasp": 202
+          },
+          "probability_mse_vs_mc": 0.0018868965572781033
+        },
+        "known_model_mc2048": {
+          "mean_cost": 0.5754077098378284,
+          "success_rate": 0.6864013671875,
+          "sense_rate": 0.30666666666666664,
+          "mean_duration_s": 0.2666996307132305,
+          "rescue_rate": 0.10215657552083333,
+          "spoil_rate": 0.020633138020833334,
+          "action_counts": {
+            "grasp_now": 832,
+            "look_then_grasp": 182,
+            "probe_then_grasp": 186
+          },
+          "probability_mse_vs_mc": 0.00046907742818196616
+        },
+        "always_act": {
+          "mean_cost": 0.6135773384452321,
+          "success_rate": 0.6048779296875,
+          "sense_rate": 0.0,
+          "mean_duration_s": 0.22,
+          "rescue_rate": 0.0,
+          "spoil_rate": 0.0,
+          "action_counts": {
+            "grasp_now": 1200,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 0
+          }
+        },
+        "always_look": {
+          "mean_cost": 0.8815990961747392,
+          "success_rate": 0.6388134765625,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.524329118180299,
+          "rescue_rate": 0.17704752604166665,
+          "spoil_rate": 0.14311197916666665,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 1200,
+            "probe_then_grasp": 0
+          }
+        },
+        "always_probe": {
+          "mean_cost": 0.774530114451036,
+          "success_rate": 0.6490445963541667,
+          "sense_rate": 1.0,
+          "mean_duration_s": 0.4260459025726147,
+          "rescue_rate": 0.22788899739583332,
+          "spoil_rate": 0.18372233072916666,
+          "action_counts": {
+            "grasp_now": 0,
+            "look_then_grasp": 0,
+            "probe_then_grasp": 1200
+          }
+        }
+      },
+      "variant_means": {
+        "effect64": {
+          "mean_cost": 0.5757390984300684,
+          "success_rate": 0.6886116536458333,
+          "sense_rate": 0.3202777777777778,
+          "mean_duration_s": 0.2692962419187918,
+          "rescue_rate": 0.10516927083333333,
+          "spoil_rate": 0.021435546875,
+          "training_seed_costs": [
+            0.5755548390796713,
+            0.5757830899489214,
+            0.5758793662616125
+          ]
+        },
+        "raw_candidate64": {
+          "mean_cost": 0.5756941634961096,
+          "success_rate": 0.6873491753472223,
+          "sense_rate": 0.31277777777777777,
+          "mean_duration_s": 0.2680914133718728,
+          "rescue_rate": 0.1033154296875,
+          "spoil_rate": 0.02084418402777778,
+          "training_seed_costs": [
+            0.5756575293141799,
+            0.5755339826934506,
+            0.5758909784806984
+          ]
+        },
+        "outcome64": {
+          "mean_cost": 0.5763205075274508,
+          "success_rate": 0.6857899305555556,
+          "sense_rate": 0.30833333333333335,
+          "mean_duration_s": 0.26712015037370374,
+          "rescue_rate": 0.10189507378472223,
+          "spoil_rate": 0.020983072916666668,
+          "training_seed_costs": [
+            0.5762634169622326,
+            0.5762284743992586,
+            0.5764696312208614
+          ]
+        }
+      },
+      "paired_cost_differences": {
+        "effect_minus_outcome": {
+          "mean": -0.0005814090973825306,
+          "ci95": [
+            -0.0009837475852633492,
+            -0.00021020952766252911
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_raw_candidate": {
+          "mean": 4.4934933958741515e-05,
+          "ci95": [
+            -0.00021504587141408528,
+            0.0002952762286839403
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        },
+        "effect_minus_mc2048": {
+          "mean": 0.0003313885922398875,
+          "ci95": [
+            7.129321212655853e-05,
+            0.0005916419233232803
+          ],
+          "resampling_unit": "context",
+          "repeats": 1500
+        }
+      }
+    }
+  ],
+  "bootstrap_note": "Independent contexts; three seeds averaged before resampling. Profiles are a separate diagnostic population.",
+  "coupling_audit": []
+}

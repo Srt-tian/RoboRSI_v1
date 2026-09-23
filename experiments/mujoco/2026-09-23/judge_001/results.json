@@ -1,0 +1,402 @@
+{
+  "scope": "Learn a typed sensor-macro judge on MuJoCo Fetch contact outcomes.\n\nState-sensor corruption benchmark, NOT learned visual perception or official Jev.\nPolicy receives noisy/delayed object position, exact proprioception and known goal.\nCandidate macros share the same fixed controller. Each scene evaluates all three\nsensor choices from the same reset and noise sequence. No test labels in training.\n",
+  "summaries": [
+    {
+      "split": "test",
+      "methods": {
+        "always_keep": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.5299999713897705,
+            "mean_cost": 0.7240017407968066,
+            "duration_s": 3.821199893951416,
+            "choices": [
+              100,
+              0,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.6800000071525574,
+            "mean_cost": 0.6050360885537648,
+            "duration_s": 4.241199970245361,
+            "choices": [
+              100,
+              0,
+              0
+            ]
+          }
+        },
+        "always_fast": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6499999761581421,
+            "mean_cost": 0.5856015530905261,
+            "duration_s": 3.4392001628875732,
+            "choices": [
+              0,
+              100,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.28002539564814094,
+            "duration_s": 3.7923998832702637,
+            "choices": [
+              0,
+              100,
+              0
+            ]
+          }
+        },
+        "always_accurate": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6800000071525574,
+            "mean_cost": 0.5507201200923494,
+            "duration_s": 3.515199661254883,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 1.0,
+            "mean_cost": 0.28204200296815063,
+            "duration_s": 4.097599983215332,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          }
+        },
+        "validation_fixed": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6800000071525574,
+            "mean_cost": 0.5507201200923494,
+            "duration_s": 3.515199661254883,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 1.0,
+            "mean_cost": 0.28204200296815063,
+            "duration_s": 4.097599983215332,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          }
+        },
+        "uncertainty_rule": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.699999988079071,
+            "mean_cost": 0.5221391111564553,
+            "duration_s": 3.4000000953674316,
+            "choices": [
+              14,
+              0,
+              86
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 1.0,
+            "mean_cost": 0.2770461825964157,
+            "duration_s": 4.039200305938721,
+            "choices": [
+              11,
+              0,
+              89
+            ]
+          }
+        },
+        "judge_seed11": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6700000166893005,
+            "mean_cost": 0.5592227851369921,
+            "duration_s": 3.4179999828338623,
+            "choices": [
+              20,
+              35,
+              45
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9800000190734863,
+            "mean_cost": 0.28177121355623647,
+            "duration_s": 3.8339998722076416,
+            "choices": [
+              3,
+              82,
+              15
+            ]
+          }
+        },
+        "judge_seed22": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6800000071525574,
+            "mean_cost": 0.545490335068828,
+            "duration_s": 3.387200117111206,
+            "choices": [
+              18,
+              36,
+              46
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9900000095367432,
+            "mean_cost": 0.2706229551110387,
+            "duration_s": 3.8164000511169434,
+            "choices": [
+              9,
+              72,
+              19
+            ]
+          }
+        },
+        "judge_seed33": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.699999988079071,
+            "mean_cost": 0.5205541886923771,
+            "duration_s": 3.3031997680664062,
+            "choices": [
+              23,
+              32,
+              45
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9900000095367432,
+            "mean_cost": 0.26882971834243585,
+            "duration_s": 3.782399892807007,
+            "choices": [
+              10,
+              77,
+              13
+            ]
+          }
+        }
+      }
+    },
+    {
+      "split": "delay",
+      "methods": {
+        "always_keep": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.46000000834465027,
+            "mean_cost": 0.8615718267659039,
+            "duration_s": 4.072000026702881,
+            "choices": [
+              100,
+              0,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.6899999976158142,
+            "mean_cost": 0.6013146837390174,
+            "duration_s": 4.337600231170654,
+            "choices": [
+              100,
+              0,
+              0
+            ]
+          }
+        },
+        "always_fast": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6100000143051147,
+            "mean_cost": 0.6754451513869565,
+            "duration_s": 3.697200059890747,
+            "choices": [
+              0,
+              100,
+              0
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9900000095367432,
+            "mean_cost": 0.2949620660521126,
+            "duration_s": 4.162799835205078,
+            "choices": [
+              0,
+              100,
+              0
+            ]
+          }
+        },
+        "always_accurate": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6800000071525574,
+            "mean_cost": 0.6204500560275278,
+            "duration_s": 3.8399999141693115,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9300000071525574,
+            "mean_cost": 0.394721835046004,
+            "duration_s": 4.74560022354126,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          }
+        },
+        "validation_fixed": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6800000071525574,
+            "mean_cost": 0.6204500560275278,
+            "duration_s": 3.8399999141693115,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9300000071525574,
+            "mean_cost": 0.394721835046004,
+            "duration_s": 4.74560022354126,
+            "choices": [
+              0,
+              0,
+              100
+            ]
+          }
+        },
+        "uncertainty_rule": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6700000166893005,
+            "mean_cost": 0.6218424910040972,
+            "duration_s": 3.7299997806549072,
+            "choices": [
+              17,
+              0,
+              83
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.949999988079071,
+            "mean_cost": 0.3672483326266909,
+            "duration_s": 4.645999908447266,
+            "choices": [
+              11,
+              0,
+              89
+            ]
+          }
+        },
+        "judge_seed11": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.6200000047683716,
+            "mean_cost": 0.6636757654605454,
+            "duration_s": 3.6700000762939453,
+            "choices": [
+              3,
+              91,
+              6
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9900000095367432,
+            "mean_cost": 0.2954925125871926,
+            "duration_s": 4.178800106048584,
+            "choices": [
+              0,
+              97,
+              3
+            ]
+          }
+        },
+        "judge_seed22": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.5799999833106995,
+            "mean_cost": 0.7092674439707354,
+            "duration_s": 3.7547998428344727,
+            "choices": [
+              21,
+              77,
+              2
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9900000095367432,
+            "mean_cost": 0.3003655086257689,
+            "duration_s": 4.2372002601623535,
+            "choices": [
+              0,
+              86,
+              14
+            ]
+          }
+        },
+        "judge_seed33": {
+          "FetchPush-v4": {
+            "episodes": 100,
+            "success_rate": 0.5699999928474426,
+            "mean_cost": 0.7242264852332337,
+            "duration_s": 3.803999900817871,
+            "choices": [
+              15,
+              83,
+              2
+            ]
+          },
+          "FetchPickAndPlace-v4": {
+            "episodes": 100,
+            "success_rate": 0.9900000095367432,
+            "mean_cost": 0.29453999526422014,
+            "duration_s": 4.15880012512207,
+            "choices": [
+              1,
+              99,
+              0
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "training_device": "cuda",
+  "candidate_branches": 2760,
+  "test_contexts": 400
+}

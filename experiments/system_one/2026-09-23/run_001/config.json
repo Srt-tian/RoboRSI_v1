@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-22T16:05:23.943927+00:00",
+  "phase": "validation_only",
+  "train_context_seed": 11001,
+  "validation_context_seed": 22002,
+  "train_branch_seed": 110019,
+  "validation_branch_seed": 220029,
+  "train_contexts": 6000,
+  "validation_contexts": 1500,
+  "label_draws": 128,
+  "epochs": 140,
+  "model_seeds": [
+    11,
+    22,
+    33
+  ],
+  "feature_names": [
+    "left_probability",
+    "separation",
+    "position_std",
+    "tolerance",
+    "velocity_std",
+    "look_std",
+    "look_delay",
+    "look_dropout",
+    "probe_std",
+    "probe_delay",
+    "probe_kick_std",
+    "fragility",
+    "prior_std_over_tolerance",
+    "look_drift_over_tolerance",
+    "probe_drift_over_tolerance",
+    "look_noise_over_tolerance",
+    "probe_noise_over_tolerance",
+    "kick_over_tolerance"
+  ],
+  "python": "3.14.6",
+  "numpy": "2.5.2",
+  "git_base": "49cc7cb9260c07756a7a1734a2ff2ed540c2f98c",
+  "source_sha256": {
+    "world.py": "6b505d76fe4f43b78d951a6d4031b4bf9d5fa199fdbe376fdb9243cdd23412ec",
+    "__init__.py": "b5c8e854153f0095d7ff90b098e1740a0bbc2743b440861d6988f0baf174f18e",
+    "network.py": "3bd760a1e3875bc6819fe82edc00d9d61f712e6eb93c26c55f59c796c08bd7ba",
+    "study.py": "55fcf17cdc9a52416001f998a5d4b1ca2acc4fe6be90bccb42d487ecd63bd59f"
+  }
+}

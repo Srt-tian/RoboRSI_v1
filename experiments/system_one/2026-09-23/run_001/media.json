@@ -1,0 +1,28 @@
+{
+  "videos": [
+    {
+      "path": "iid_sample0.mp4",
+      "cohort": "iid",
+      "context_index": 0,
+      "draw_index": 0,
+      "selection_rule": "first context, first draw; no success filtering",
+      "caption": "iid · 场景 0 / 随机样本 0 · 三个候选分支 · 0.25× 回放"
+    },
+    {
+      "path": "delay_sample0.mp4",
+      "cohort": "delay",
+      "context_index": 0,
+      "draw_index": 0,
+      "selection_rule": "first context, first draw; no success filtering",
+      "caption": "delay · 场景 0 / 随机样本 0 · 三个候选分支 · 0.25× 回放"
+    },
+    {
+      "path": "cost_sample0.mp4",
+      "cohort": "cost",
+      "context_index": 0,
+      "draw_index": 0,
+      "selection_rule": "first context, first draw; no success filtering",
+      "caption": "cost · 场景 0 / 随机样本 0 · 三个候选分支 · 0.25× 回放"
+    }
+  ]
+}
