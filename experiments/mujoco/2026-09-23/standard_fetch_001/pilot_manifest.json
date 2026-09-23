@@ -1,0 +1,2467 @@
+{
+  "schema": "roborsi.fetch.remote-archive.v1",
+  "role": "pilot",
+  "execution_commit": "0739786a5d50ad1465c34e6a00f827781be6f707",
+  "files": [
+    {
+      "path": "archive_environment.json",
+      "bytes": 175,
+      "sha256": "66f299b6db4bab587bcb8d2d322759e0aa946fffd6cb2853dfc4b2f0fdb51fd2"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 1441,
+      "sha256": "c31ec5a96df0ae4480522a978923e14497474370543c99227efc37b7108c1a6c"
+    },
+    {
+      "path": "rows.json",
+      "bytes": 270285,
+      "sha256": "f7025f4176388a249f1a2c323ecd6eab8a5f4be00479cf75d6447ba2d07742af"
+    },
+    {
+      "path": "source/fetch_robustness.py",
+      "bytes": 7566,
+      "sha256": "c0ab02cc7c050b2a4db412e81200f021415cc5a5fa8bacd5bdee16d81668f6ef"
+    },
+    {
+      "path": "source/fetch_sensors.py",
+      "bytes": 6992,
+      "sha256": "d096634d323a14d39be178f91cd192efb9ac18123f6e79bf185775dd12c0f38e"
+    },
+    {
+      "path": "source/fetch_standard.py",
+      "bytes": 7473,
+      "sha256": "324b1b99d11973c9a647474970742b420a78ceda14b01b59f73ced738dc2cc3f"
+    },
+    {
+      "path": "source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "source/physics_queue_evidence.py",
+      "bytes": 12498,
+      "sha256": "741e115bc6de4e8e384f22ee41976f1e4fa9b35cb4a18cd91c6f3f6b70ec7b1d"
+    },
+    {
+      "path": "source/physics_queue_replay.py",
+      "bytes": 3791,
+      "sha256": "b063f0140363a1ed53eea8eed04b66c2d837aa1cb44359bf5ececb3eaccedc6e"
+    },
+    {
+      "path": "source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 13510,
+      "sha256": "f0bb1e95f080757e970abd30d94c1a0219e13c669fe2458e75349026e93d9401"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_clean_kalman_reactive.json.gz",
+      "bytes": 33863,
+      "sha256": "4830ad1b8424115e6457111d1ac3f27fb174e6f27ab2f9fce7ed8a562d399e24"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_clean_kalman_smooth.json.gz",
+      "bytes": 33928,
+      "sha256": "c1651088d3dd70aae3f7055ce5540ae67bccd2b06ad432dc53ff281007b38b7d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_clean_phase_rule.json.gz",
+      "bytes": 33931,
+      "sha256": "323850ffb9b7a2f8f27471e58d7f94d0d10ce20b40db74a41e71ffa097c52fe3"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_clean_raw_fast.json.gz",
+      "bytes": 33188,
+      "sha256": "f538f6a9b58840234f0799442b45a3590c35545820bfd1236e08a9d11f45db70"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_clean_sensor_delta.json.gz",
+      "bytes": 33196,
+      "sha256": "e838d8219b0ebd5dcfab9a242bf7a62d4e2353fc9a76ef0505cc51ca969c6c39"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_drift_kalman_reactive.json.gz",
+      "bytes": 38783,
+      "sha256": "214e31ee387b8dc3a7ce165ed8b352995bb719c6d64adf5ded32f76f3342b297"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_drift_kalman_smooth.json.gz",
+      "bytes": 39211,
+      "sha256": "822487e4e2ac06b8465f04b69734941dcd9c060c761924a5c423b360841e8b26"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_drift_phase_rule.json.gz",
+      "bytes": 39208,
+      "sha256": "9be1a6766ee477a16e97b6ece3960c95ede2dc0be801ed22967cb17ad35a5ad3"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_drift_raw_fast.json.gz",
+      "bytes": 38923,
+      "sha256": "87af37964433f79306bc3b7fc65050cf3b2cfdad3ae38a6954b3513d5f6713c4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_drift_sensor_delta.json.gz",
+      "bytes": 38849,
+      "sha256": "c193572b9d1bef2630cac10966fbf8c640d75885c12c25631712dc0e292d4214"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_jitter_kalman_reactive.json.gz",
+      "bytes": 40621,
+      "sha256": "f6f58ca92947a0529859f1e97cef45f66bbd92f9801eea567e615dd90b1aa471"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_jitter_kalman_smooth.json.gz",
+      "bytes": 41028,
+      "sha256": "230a2000cd50bdbac96a80e018fa848609086a034e844a9c0166d41cef280ae8"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_jitter_phase_rule.json.gz",
+      "bytes": 41026,
+      "sha256": "da15477a88cf01ec6b3e3cbecf8254d262597d5c3715cff11097b8ab408ded70"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_jitter_raw_fast.json.gz",
+      "bytes": 40863,
+      "sha256": "2aebfe6a5bd82266023c969d7c32fb8c752de0391ddd57fbc9708eff0add7004"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_jitter_sensor_delta.json.gz",
+      "bytes": 40377,
+      "sha256": "09c18a20c0ec371cd1eee4107ed5abd158529cb7aa79fdf39687c8cbb41a7067"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_occlusion_kalman_reactive.json.gz",
+      "bytes": 40064,
+      "sha256": "c52690c820742f6d86ca419a5d105360895a7d8ed6d32463466888e28b1fedf7"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_occlusion_kalman_smooth.json.gz",
+      "bytes": 39610,
+      "sha256": "667f4bde03c9422425cc01033d524e867b785f2fd8c58f26e52b9757476d4ce1"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_occlusion_phase_rule.json.gz",
+      "bytes": 39597,
+      "sha256": "5be5579f37928ee79fb4c9cdb5927f5b9ec0a56276efc4c6dd54460a6fe03d01"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_occlusion_raw_fast.json.gz",
+      "bytes": 39954,
+      "sha256": "71a32ff651ebbc80f396e771ff4f528f3375202bc38eb50f1a6b00aa0cae4f3f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301000_occlusion_sensor_delta.json.gz",
+      "bytes": 39756,
+      "sha256": "d84a1ce648880dbbec6b8edc5059b1efbb699dcb5b437631520e6e91c2521ecf"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_clean_kalman_reactive.json.gz",
+      "bytes": 33724,
+      "sha256": "451d9043008e29a1fdfdd18940ce544b6b390696be33eb5515f405a1fde4ad8f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_clean_kalman_smooth.json.gz",
+      "bytes": 33730,
+      "sha256": "1c2caa2f949070358546baedca72a918d34c606e2906d3b19fc00c8ff29358bc"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_clean_phase_rule.json.gz",
+      "bytes": 33735,
+      "sha256": "eca4d24bd427b3f1312a07e1c1e0a456a9213af9171191b747ad9894d1e33efe"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_clean_raw_fast.json.gz",
+      "bytes": 33048,
+      "sha256": "323de11593af2ee7563f0377c6ace6b2ffeaf92d0fe6251fbd8c0611f9faaef5"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_clean_sensor_delta.json.gz",
+      "bytes": 33056,
+      "sha256": "a1e5cb48f68ce4a387d3984036cf9a74a1e933d4d3d7b0327ec1cdea925a6c10"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_drift_kalman_reactive.json.gz",
+      "bytes": 38696,
+      "sha256": "8b4f36538167534c778920513cff4002d0093b07f143cf759463782bffed5f9d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_drift_kalman_smooth.json.gz",
+      "bytes": 39208,
+      "sha256": "bc2d4913b2d01fe87032f7f25d880fe4f64d0f0308a33db69d9924a83fff345c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_drift_phase_rule.json.gz",
+      "bytes": 39199,
+      "sha256": "dd4edc59979e4a4a72df6b2bd33db3b7572a8f1ce7605f6b425432aae938983a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_drift_raw_fast.json.gz",
+      "bytes": 39930,
+      "sha256": "e5be5bdb5ead99abc21b8d9e66d38135a601abd55e79343b1651004dce5ea7d1"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_drift_sensor_delta.json.gz",
+      "bytes": 38270,
+      "sha256": "08100ab3266921bc47fdd494e08f501e1c7162336750dc358ee61af88184295f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_jitter_kalman_reactive.json.gz",
+      "bytes": 40930,
+      "sha256": "9e989c8d5d828e84554b77debc3ee132461fe698289153379c2bc4fc2104fa00"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_jitter_kalman_smooth.json.gz",
+      "bytes": 41389,
+      "sha256": "cd8d4495b9ed7a6ce5f137f8e15f58f2666c1a6d2e9c0ab72e1c1ce43a0639fe"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_jitter_phase_rule.json.gz",
+      "bytes": 41383,
+      "sha256": "2f585e4ec1f75e4d18dfce4091280f1dd8383922470694fcdd3d11b642b0c4b0"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_jitter_raw_fast.json.gz",
+      "bytes": 41137,
+      "sha256": "90f72ee6826d37cc3deee36cb841c9c6786545c5f1fd400d949eecd723acb697"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_jitter_sensor_delta.json.gz",
+      "bytes": 41474,
+      "sha256": "40b65673589b304702ec2bfa16ad45c82a8b9a05b42aacfc6adaa4316971481e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_occlusion_kalman_reactive.json.gz",
+      "bytes": 40062,
+      "sha256": "e0220ac1a69c9d1889ee9e78de0595a7ba986f8873dad6ca4401e15e937b67ef"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_occlusion_kalman_smooth.json.gz",
+      "bytes": 40071,
+      "sha256": "9e9fd810bdf53f9b0ecc5520808cdaa19e540aa8f108b280dc22435bb4a34e60"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_occlusion_phase_rule.json.gz",
+      "bytes": 40050,
+      "sha256": "d91e29d36f91d61bac2c57c9ee2c082d2221b93365d5db74a034b454ee9f2515"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_occlusion_raw_fast.json.gz",
+      "bytes": 39474,
+      "sha256": "589467d00c539c76a94bc471daed37828648649c0fe3a810f6c5f656db6b328a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301001_occlusion_sensor_delta.json.gz",
+      "bytes": 40043,
+      "sha256": "8cd87156a1fa6f86f96a6103bb80a1d1359e54185287bcc36a29d47743a78901"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_clean_kalman_reactive.json.gz",
+      "bytes": 34259,
+      "sha256": "5de82d299a5acc66bf4ed2caeabb6863bd56c85602f293955e16518e4cc43c70"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_clean_kalman_smooth.json.gz",
+      "bytes": 34284,
+      "sha256": "ddf5a3b2a1d981496b9196d0eb2abcb81544a386ada9833b0116eaf36dfad06e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_clean_phase_rule.json.gz",
+      "bytes": 34284,
+      "sha256": "605e95120e17f3b8f96c0cb6359048a11926345d0d49d09e1cd754e0e3fa62b0"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_clean_raw_fast.json.gz",
+      "bytes": 33659,
+      "sha256": "aa79835fa3c5efbae0bb6411e08b7a9bbe315e3a385977f7dc3c13e992a67e8c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_clean_sensor_delta.json.gz",
+      "bytes": 33667,
+      "sha256": "d2c7fb679d8bbde5adea805148e8fb40fec964f5ccd9992a37ee180138d501b0"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_drift_kalman_reactive.json.gz",
+      "bytes": 39252,
+      "sha256": "0356e5df94ddaa428f81b6ebabd4f208e40524a79a1607f6da096926bacd3420"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_drift_kalman_smooth.json.gz",
+      "bytes": 39130,
+      "sha256": "e84da115d55f262dfdc610b04076c5d6d0a163852b60789fcdb5c72fdb765ab3"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_drift_phase_rule.json.gz",
+      "bytes": 39123,
+      "sha256": "d536fe6179ca8dd33fff34432d3b6986af8743e6bd89973424749c9587f4bea2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_drift_raw_fast.json.gz",
+      "bytes": 38801,
+      "sha256": "671d33eca935ec0956d37e92849a1b9f2c9bb319dd69f8d826099ad349014318"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_drift_sensor_delta.json.gz",
+      "bytes": 38755,
+      "sha256": "ae73f257b9bb121d495956d7538a3e501c1fbdaceb0e6fce193c8ec203db85d9"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_jitter_kalman_reactive.json.gz",
+      "bytes": 41201,
+      "sha256": "1b03c4309d09183fdac9eab007f9f551cff4717c5f6ca95dbe8e62a0c8a34985"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_jitter_kalman_smooth.json.gz",
+      "bytes": 41160,
+      "sha256": "f6001c12cac7ef03da193109cf9159017c9b0b79fb2b8b4e25966dc7a351ec60"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_jitter_phase_rule.json.gz",
+      "bytes": 41152,
+      "sha256": "df926fc0a7a2caeb536c5c8930e7af92123e5f2303ebce7120826441076c6209"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_jitter_raw_fast.json.gz",
+      "bytes": 41078,
+      "sha256": "613918b0166f976e6b8812d62f8e363a138d60497372e7d87db8f476f0573e0f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_jitter_sensor_delta.json.gz",
+      "bytes": 39501,
+      "sha256": "9c791d9e499b1c4296d6a94ea7e7d3c538f08be15ab0e49bf78691b62d5352cd"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_occlusion_kalman_reactive.json.gz",
+      "bytes": 39664,
+      "sha256": "32f6397e6bfebd5cab472328140737fe4b98415404735bfb41eefcfd3ae5b950"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_occlusion_kalman_smooth.json.gz",
+      "bytes": 40340,
+      "sha256": "1fd6832713e432346a57d1efa6d129336d2f1b9250a6858a5da8cb3ffb4294cc"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_occlusion_phase_rule.json.gz",
+      "bytes": 40338,
+      "sha256": "b594e605efc188dfdf89a44c8f96af4526e140a64d56bf28e8f0183cb908c12d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_occlusion_raw_fast.json.gz",
+      "bytes": 40037,
+      "sha256": "f2a6c152b9d90be34b805e223ba11fb0613ee085e8a0139a6a2c5f7ce670188a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301002_occlusion_sensor_delta.json.gz",
+      "bytes": 40317,
+      "sha256": "90bc5a6b4c64b9846de027f8d07a3f10b57ccca7ba775474406854e584fd77a2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_clean_kalman_reactive.json.gz",
+      "bytes": 34315,
+      "sha256": "a45fbda2dfdba045ca28432037b25e38d9821f138b13a15997056c253e21ef7c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_clean_kalman_smooth.json.gz",
+      "bytes": 34263,
+      "sha256": "57ff03a55ffb3ecfc3bb24f9c082fb57ae1c86853986410f8e7bae15a453c762"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_clean_phase_rule.json.gz",
+      "bytes": 34268,
+      "sha256": "aa6de1927d0ab52a3e8d3e1b9fab80f56687a6fa0be0b900c962b0672b8fb78a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_clean_raw_fast.json.gz",
+      "bytes": 33631,
+      "sha256": "2de357516c92c1328588d513d4478fe9950f6a735e7876fb9c70fe51a0e5abbd"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_clean_sensor_delta.json.gz",
+      "bytes": 33640,
+      "sha256": "69f44ff534042a41e2e289f3a8ce11a92720acf09bad28cd8667ffe3a4d6b63d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_drift_kalman_reactive.json.gz",
+      "bytes": 39356,
+      "sha256": "d19018aa699669be2dab7f87c5a154467ad49fe85d56c734e3a95989e14cb23a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_drift_kalman_smooth.json.gz",
+      "bytes": 39312,
+      "sha256": "91b6f42bb0a6077054e4f975af3db98909c6cd3dedb886ae138c057b1a16abd1"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_drift_phase_rule.json.gz",
+      "bytes": 39304,
+      "sha256": "e5795846a321ea8c70a0bac5eb464cff812362599126481cf64e64811a650bb7"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_drift_raw_fast.json.gz",
+      "bytes": 38992,
+      "sha256": "277ba696044e3bbdcc2a13a8088f56e7168caa3f9bccf5e8fa92b4902c0408e7"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_drift_sensor_delta.json.gz",
+      "bytes": 39286,
+      "sha256": "453694a7c2f1ad3d3bc642cefe53d9dce4bf4d1dbb817a38dec01f6e33af042d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_jitter_kalman_reactive.json.gz",
+      "bytes": 41180,
+      "sha256": "eedfad1b45877d15f429aeb5e5ec4dbab77ce6e45504506798a8b7522f98946a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_jitter_kalman_smooth.json.gz",
+      "bytes": 41309,
+      "sha256": "e3b6ae28d53d3205d893a51b639e46442f28f94c9cdbad7488b39a6706d26b6f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_jitter_phase_rule.json.gz",
+      "bytes": 41294,
+      "sha256": "1750f25b8096098124ef95c7c27ea6832d8ebe421426664d2904c821fd725df5"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_jitter_raw_fast.json.gz",
+      "bytes": 41208,
+      "sha256": "35183fc20be05645777d4075758c78667af35f6eda287c4736032d791c6b06b7"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_jitter_sensor_delta.json.gz",
+      "bytes": 41458,
+      "sha256": "28151e37e0a505ac64434c2c850f8e2834b645ad5197acb07b113446f8e3c117"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_occlusion_kalman_reactive.json.gz",
+      "bytes": 39799,
+      "sha256": "a70a4fc3ead5052b932092335226c81891f748c486df3e3eda063b5f16f9b20a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_occlusion_kalman_smooth.json.gz",
+      "bytes": 40441,
+      "sha256": "4d33b8f3fd23099fde0e7792f6796aab640da50323d6af72ec28057e0b90612a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_occlusion_phase_rule.json.gz",
+      "bytes": 40433,
+      "sha256": "70eeef5fabdac24fc5d52b6eea4627667f7da77657b79b848342a6ad270361cc"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_occlusion_raw_fast.json.gz",
+      "bytes": 40339,
+      "sha256": "17f1f9777394ed038497a160639ac95c7db8cffd645a58be9f68e404300f2ee0"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301003_occlusion_sensor_delta.json.gz",
+      "bytes": 40389,
+      "sha256": "0ba65ecfb2c319e38b5b7718738f96e9aea73da89916df9800e437219a0ff140"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_clean_kalman_reactive.json.gz",
+      "bytes": 34257,
+      "sha256": "11328ea0c67eac3b3468bb3287aed8d0320d9f049d5a2d1680b86b899cc0f41f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_clean_kalman_smooth.json.gz",
+      "bytes": 34198,
+      "sha256": "4ed8b09acc77dfdcf75384cb87f6144fecfd9274a073ff3e2615f87115c53ce0"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_clean_phase_rule.json.gz",
+      "bytes": 34191,
+      "sha256": "0c97da045a8841261274b8f202a83b9dc520126b4702b9fd5712e9836b65fe6f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_clean_raw_fast.json.gz",
+      "bytes": 33583,
+      "sha256": "745ff4a493e2ffc5181b0db78de36eaecc88b777fe2866433943518dedc630ff"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_clean_sensor_delta.json.gz",
+      "bytes": 33591,
+      "sha256": "36251976c3f2e2285dea7d419650d47bb79e8fffcb4446b661ce903d7f8a7437"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_drift_kalman_reactive.json.gz",
+      "bytes": 39304,
+      "sha256": "097c8f6e8c6f9821bd14828bc31eea990ab782736578cbaa44b3b00b1ff7b07b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_drift_kalman_smooth.json.gz",
+      "bytes": 39454,
+      "sha256": "b15a99a7261be613b200395bac90cbdcb74ffac6bc63e00f1aefec9e2f3ae1bf"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_drift_phase_rule.json.gz",
+      "bytes": 39450,
+      "sha256": "c29806ff466f7afb85c7db36db6e7e6abfab11806da4583906d4363100270645"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_drift_raw_fast.json.gz",
+      "bytes": 38575,
+      "sha256": "9f3c868b08e2c218777cb2058a9289da57ef7cdee955b008247dea40ab5ad03d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_drift_sensor_delta.json.gz",
+      "bytes": 39111,
+      "sha256": "53d8fc2164ac59160648a2f519f3f4e58c9e3628e3a934c9a025369bf48d1063"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_jitter_kalman_reactive.json.gz",
+      "bytes": 41172,
+      "sha256": "19226e8692986b6b10443f90ed133ff674cf2ece065ac615dca14fb285c7898c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_jitter_kalman_smooth.json.gz",
+      "bytes": 41184,
+      "sha256": "b800e70324b18b4af73c9c4b8331123df2d8a8ebf5404525a75d096fa8a893e9"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_jitter_phase_rule.json.gz",
+      "bytes": 41186,
+      "sha256": "fb61c0e8d7d6da1385555c5ac76d351b44fad82514fe4e5f1f917843a1fe0d94"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_jitter_raw_fast.json.gz",
+      "bytes": 41458,
+      "sha256": "59d3477b5d273e0a1dda1a5cb106060b40ad03f10d24b40db7802405a4c80346"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_jitter_sensor_delta.json.gz",
+      "bytes": 40908,
+      "sha256": "61343bdb2541906f767fcff819c7778317b6d16f2c516c63d153682637066846"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_occlusion_kalman_reactive.json.gz",
+      "bytes": 39892,
+      "sha256": "59aec8de533f1307cba8c1338d55aa0cadad28b360a45aac7cf80a069066ba8a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_occlusion_kalman_smooth.json.gz",
+      "bytes": 40538,
+      "sha256": "aab5b8619cf96be6e38c2b0af6dcf6eba7443683ca45e2e5faf31b6a73ffb2c2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_occlusion_phase_rule.json.gz",
+      "bytes": 40538,
+      "sha256": "721bf9c099fff2c932d537d14fb4c0c1b7b2808079d8d04b386b2bb4a1577cbe"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_occlusion_raw_fast.json.gz",
+      "bytes": 40453,
+      "sha256": "f4e586a2fdf970fd6e070d13e48f8367a980b66df28a57194350821842b6f243"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301004_occlusion_sensor_delta.json.gz",
+      "bytes": 40566,
+      "sha256": "8b56f3e3fe448c55e6d2299f022e2ee45e3f828285279ba2c175957156171402"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_clean_kalman_reactive.json.gz",
+      "bytes": 34062,
+      "sha256": "8e473f4a65fdf302179fc87912ec2e1bc7c9b8f2220ac9937d3f1da8e0a02ba2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_clean_kalman_smooth.json.gz",
+      "bytes": 34022,
+      "sha256": "a227f953bcf697155e2aacd39d30faffc1f62e0a31d426690d1fc2658cc7913c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_clean_phase_rule.json.gz",
+      "bytes": 34016,
+      "sha256": "4b3d2c556354b735baed1a31dc994484c76141292fb36a7bcc237920722676ce"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_clean_raw_fast.json.gz",
+      "bytes": 33402,
+      "sha256": "293199b7ee7dc0b2d3728a3e979d4cda54e1f6013dc2a4715e6844396d40386b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_clean_sensor_delta.json.gz",
+      "bytes": 33411,
+      "sha256": "60d72e8d5a9cc564f77a4461b5029cd1d821cf38ad2fde844f1e295f4728985f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_drift_kalman_reactive.json.gz",
+      "bytes": 39549,
+      "sha256": "823c68b3fd06fcc5c29941688d560e7ef0c7a8ed622d86bdd4fc903396a4abba"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_drift_kalman_smooth.json.gz",
+      "bytes": 39114,
+      "sha256": "2f77e5379ac08f7c14ca8ca50c1bda42667b1a089100858c38d70d5dfea2ef0b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_drift_phase_rule.json.gz",
+      "bytes": 39111,
+      "sha256": "c29fa63971bb00f7fc8cfb415364250f6235752502f60a6194a9e38ba2f4f1ae"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_drift_raw_fast.json.gz",
+      "bytes": 39942,
+      "sha256": "4ddf4e4207ffd57580e53dadd0bd5186bf81bab4cfef7a9d1bd9a08b3b01de28"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_drift_sensor_delta.json.gz",
+      "bytes": 39500,
+      "sha256": "2a1a2961d86fdc90ec6b8c406b6e093f5d4227730cd39f9c18a71d592a9074d9"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_jitter_kalman_reactive.json.gz",
+      "bytes": 40576,
+      "sha256": "8564d8d5609df78cc89366e42ed7b2d95881561975923c8ec69f453856ca5006"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_jitter_kalman_smooth.json.gz",
+      "bytes": 41124,
+      "sha256": "bad256ef11e2de70a4e8ad5079ef0d70f32734869fae86e243e84d665ba903df"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_jitter_phase_rule.json.gz",
+      "bytes": 41100,
+      "sha256": "9c63b0b06d1ee595921086fc8e11acdb09f1a926eff03a7bf4c5de54a7feed2f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_jitter_raw_fast.json.gz",
+      "bytes": 40557,
+      "sha256": "026b89502d06b68aba26d8a114835b19935ea2d61898914c27a09b7fd6bc7164"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_jitter_sensor_delta.json.gz",
+      "bytes": 40499,
+      "sha256": "9292373fd33783a238dafc8558fb7185761b698e022300482a87ab7ad6e39c01"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_occlusion_kalman_reactive.json.gz",
+      "bytes": 40727,
+      "sha256": "f0b7477cc5c05a35264cb2c02d8a42f518b6910ed17a776e6cd500d6380d56b4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_occlusion_kalman_smooth.json.gz",
+      "bytes": 40407,
+      "sha256": "c99fa4e1284216f4216b7fbdfba9fd2f4f543ce59db45ec11d69b788266cb3fa"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_occlusion_phase_rule.json.gz",
+      "bytes": 40401,
+      "sha256": "afa2f5e9e446b23f3c79441186e5faf96ff2a6b353001aa40ac42a09f182c6f8"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_occlusion_raw_fast.json.gz",
+      "bytes": 40706,
+      "sha256": "59d5c4a7b22bcfc43b1fa9f7d527a0718d27617605ceaddd95c6893d8559d88f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301005_occlusion_sensor_delta.json.gz",
+      "bytes": 40679,
+      "sha256": "84037c85e2f3ed41ad4978176b2ad6be6834e10774acfbd97b3b280d2ba09f5e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_clean_kalman_reactive.json.gz",
+      "bytes": 34007,
+      "sha256": "227f11601fbfb8232dd89eb9dae5f03c5813aa3de9f0fd0e6fa6240a1d62957b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_clean_kalman_smooth.json.gz",
+      "bytes": 33989,
+      "sha256": "eee6596b0203f4d34cb61847ec9344ca75ec92412c74ce7229fcb7adeab76b75"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_clean_phase_rule.json.gz",
+      "bytes": 33987,
+      "sha256": "4e332bcfd10929db30b57f67f051596dede5ea529e14fc6b88d275609853317f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_clean_raw_fast.json.gz",
+      "bytes": 33394,
+      "sha256": "cd5528df3d9796936028ac81d08ae57210eff8705992806ca9deb107e03f390f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_clean_sensor_delta.json.gz",
+      "bytes": 33403,
+      "sha256": "371d011ef25d0a5592eecb139f7b8db540941593abf035d942f8f50d4a9094e2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_drift_kalman_reactive.json.gz",
+      "bytes": 39023,
+      "sha256": "97822db4777493b945f9e28ecf7453463d747ec37ea66a4af8d01b74610344ef"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_drift_kalman_smooth.json.gz",
+      "bytes": 39027,
+      "sha256": "08029832d9d4659071c881ec7381f3eeab5cad977f3e4ce0b50c3ff036930e89"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_drift_phase_rule.json.gz",
+      "bytes": 39012,
+      "sha256": "eb25811904d266648f8a1c69d54e25ad2f7e467efe3a2af53342791d3172d3f7"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_drift_raw_fast.json.gz",
+      "bytes": 39868,
+      "sha256": "0b1b63fdc8a962ac837962a86a92196397f4ca57782112f05688ecae8ed0caf8"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_drift_sensor_delta.json.gz",
+      "bytes": 38595,
+      "sha256": "c4ef7aa75c459eb7a02ce7d9b1ad4876e77b9994e502192189ff6f9873582b37"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_jitter_kalman_reactive.json.gz",
+      "bytes": 41091,
+      "sha256": "04927b0157d3e5f36e4d2a6b9574fdc9a73c04c215e2544a274a2416b8e8f59e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_jitter_kalman_smooth.json.gz",
+      "bytes": 41389,
+      "sha256": "05e04a1d5cd6ea3d1a4c00c63e71413b1eec9d4ce1580aee4d9d712169463afe"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_jitter_phase_rule.json.gz",
+      "bytes": 41381,
+      "sha256": "98a83bf2588897347c9d6d6fd4ac02ef2f6a649842fa20e43fe2adce6cb75932"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_jitter_raw_fast.json.gz",
+      "bytes": 41187,
+      "sha256": "3211c1173a954a5826ca03e71fb012891ef7b09bedac79504e6c2bd9260cb96d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_jitter_sensor_delta.json.gz",
+      "bytes": 41137,
+      "sha256": "53e3ea8aae7d2c0ad1d071ceffb600761c8c184bb29a875222e6bc3da8099e9f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_occlusion_kalman_reactive.json.gz",
+      "bytes": 40258,
+      "sha256": "0f3b832bca5e7963da95062cbbbe06125dd93425d4535be4423b8f6d54821cae"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_occlusion_kalman_smooth.json.gz",
+      "bytes": 40490,
+      "sha256": "cb42cc0c721b4a94d9a347426d2b666293f12c982047fc0bc044f0c8751710ea"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_occlusion_phase_rule.json.gz",
+      "bytes": 40487,
+      "sha256": "70e7639e8143311339cba6be9295390d1822a96c7972e090e41c2ac2f56b79f8"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_occlusion_raw_fast.json.gz",
+      "bytes": 40488,
+      "sha256": "4db9a5c416299ac61014475178f3e71fc23b6ee59b7002a03476d2416fe424bc"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301006_occlusion_sensor_delta.json.gz",
+      "bytes": 40291,
+      "sha256": "3b5fdeb34b97d2a07eb47e6a135a361e9df581e3b52e374190f1f5d60de98108"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_clean_kalman_reactive.json.gz",
+      "bytes": 34282,
+      "sha256": "687b9c7300ba06e1344a4bc256ac4314b306816c0bb6c022889bf18f0c6db599"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_clean_kalman_smooth.json.gz",
+      "bytes": 34266,
+      "sha256": "477030884ad11ae857108638a2e714608774759465374d300e732bb9b4e09f82"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_clean_phase_rule.json.gz",
+      "bytes": 34258,
+      "sha256": "5a58716cad2cb28ef8f1ca3597189aed30c9493b24c1c94fd5c4018facf325f7"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_clean_raw_fast.json.gz",
+      "bytes": 33586,
+      "sha256": "3122849b242f6af1316cfc9cbfdcaab1a28d55ee1d92d201672477ed232a774a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_clean_sensor_delta.json.gz",
+      "bytes": 33594,
+      "sha256": "eba9a4a0d98a1247997b177215bbf8e6292bcf7d65404500bf98fa83bd0c67ba"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_drift_kalman_reactive.json.gz",
+      "bytes": 39280,
+      "sha256": "0f260584a38cf4c1616378a2c5f86f4d67ddf54308a49c224a771bbc6b744065"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_drift_kalman_smooth.json.gz",
+      "bytes": 39125,
+      "sha256": "7599a38517176b1651c748a3845696ff40ee03dc8ce130cbd9cfccc152ef9ada"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_drift_phase_rule.json.gz",
+      "bytes": 39122,
+      "sha256": "562ab3f3cd3ded7567841697728ff040a4632b7acb545ee8f15d9be694d419e8"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_drift_raw_fast.json.gz",
+      "bytes": 40016,
+      "sha256": "f57254b1d056a4cee882ed0fafc8a39da51a96d7b48b46336f54787a58436a0e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_drift_sensor_delta.json.gz",
+      "bytes": 39192,
+      "sha256": "8070383befa15432e9b3a9fe0cf424f87e8e96a1db2bbc0e6787c33d47432746"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_jitter_kalman_reactive.json.gz",
+      "bytes": 41032,
+      "sha256": "19eb4f8208c9d9d4e1bdd492c6e496c72202487b70a9dac11699dce6864f1b41"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_jitter_kalman_smooth.json.gz",
+      "bytes": 41443,
+      "sha256": "78f89c001ac2f3438f2c4b92d14bccd0b4ef8aad95eb0aab8a13dd5fb9cd1e19"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_jitter_phase_rule.json.gz",
+      "bytes": 41435,
+      "sha256": "c2be960db5e06e64f7a6960bc62466a7a09e85af625b9784ba76f8b02e5bbc53"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_jitter_raw_fast.json.gz",
+      "bytes": 41519,
+      "sha256": "225508670aa9fbdbb505c3ee31a1fb461a05e5539b58a473eb34a939bdff1c44"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_jitter_sensor_delta.json.gz",
+      "bytes": 41327,
+      "sha256": "6d70a9287c718c8dfa5df491e7d2c207f21e46effdb53080b032418158437b8b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_occlusion_kalman_reactive.json.gz",
+      "bytes": 40747,
+      "sha256": "eb3e6c93c4ac4920270bb1492941cff9fdd8460998c646aa2574082f0d9a72af"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_occlusion_kalman_smooth.json.gz",
+      "bytes": 40719,
+      "sha256": "fdf297c54987a9011bccc8015de5196967e53199d0f68e22d75b9f0a92df0b41"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_occlusion_phase_rule.json.gz",
+      "bytes": 40707,
+      "sha256": "e5d64d7a5cf8cb27f362742f54c825c1c5da561ee27caa967caa54f6192ecd02"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_occlusion_raw_fast.json.gz",
+      "bytes": 40803,
+      "sha256": "37643fd0b2450e75be0f6dafe5b9234f4eab24993f1dee18af5e90af16bc7652"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301007_occlusion_sensor_delta.json.gz",
+      "bytes": 40776,
+      "sha256": "5af2fcb9b78e720dcc875744795f98ab5d228d77555c3802734ff3d58e976da9"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_clean_kalman_reactive.json.gz",
+      "bytes": 34183,
+      "sha256": "308f5d5ef53538a876fe99ca5b665d39ab55e806fbd9d718f0dc7151cff36e63"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_clean_kalman_smooth.json.gz",
+      "bytes": 34167,
+      "sha256": "5a73f954df1da5e6b7d810b2c452d4e8c0abbe21c219d0b7ff469c5ca191aa94"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_clean_phase_rule.json.gz",
+      "bytes": 34180,
+      "sha256": "22a43b63a1db0b5fe5bc113cd96a55427677f720fb1663e2e51411ca923db078"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_clean_raw_fast.json.gz",
+      "bytes": 33472,
+      "sha256": "11e56a13d99182478dbc7793cf0925a321c3407e1ca87be101d94566c6c2178a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_clean_sensor_delta.json.gz",
+      "bytes": 33480,
+      "sha256": "d3b793fa79a7a1b2f2f649d339a40c5c42e87389ec41915514d2eac55bfe47bb"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_drift_kalman_reactive.json.gz",
+      "bytes": 39773,
+      "sha256": "68cfc26f9f828dcf53de180d55c03efd53340c502f1a33f4667790b819d17eed"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_drift_kalman_smooth.json.gz",
+      "bytes": 38971,
+      "sha256": "5de28bdaa081f93615753f8966ac68ea387f2bad65532858ef100236d073c0e0"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_drift_phase_rule.json.gz",
+      "bytes": 38966,
+      "sha256": "ed28ea84da095d6f3bb47836ea3ca38908363dd3ac8c7c7cf6a731e6e0cb7d20"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_drift_raw_fast.json.gz",
+      "bytes": 39556,
+      "sha256": "e4d8c5d6b2eba08f7cc62946a7b0a58440ae3a3e7e3d170b1e8829dbbfcf50b8"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_drift_sensor_delta.json.gz",
+      "bytes": 38528,
+      "sha256": "7131c279fad99f724b0e240e95eac9928e2d8154cada783acd7c9e5cd1298a5d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_jitter_kalman_reactive.json.gz",
+      "bytes": 40786,
+      "sha256": "2f593e59bbeaebd1164a3cf93d464357f12cabce95008afd0574dc3ab13de42c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_jitter_kalman_smooth.json.gz",
+      "bytes": 41296,
+      "sha256": "af1c16ef6a691af1b9b24a53c5c4ab4d8d543eb28ad3c19d68419d00761106f9"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_jitter_phase_rule.json.gz",
+      "bytes": 41282,
+      "sha256": "87ca2b66b8976b91470e6cc94a175619c71f79f3af3c8f5cc1e6429fe2c2570f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_jitter_raw_fast.json.gz",
+      "bytes": 40236,
+      "sha256": "57fa3d0a15abbcbb6a0da2abbc762a2e569767957adbe3b72551406668bbf5db"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_jitter_sensor_delta.json.gz",
+      "bytes": 39962,
+      "sha256": "982758def6c3c206d0dfee449af63bf0ec9ada8816f4a82d0e38824eee540931"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_occlusion_kalman_reactive.json.gz",
+      "bytes": 40298,
+      "sha256": "690c93e9ee76f75b2da8a224e98814720264d2afa2e005458b63e1e666d195c4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_occlusion_kalman_smooth.json.gz",
+      "bytes": 40146,
+      "sha256": "53c886e5d2c04c8dee01748108ca24806fbcff366518b81dc82a1cf6e1c59b30"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_occlusion_phase_rule.json.gz",
+      "bytes": 40135,
+      "sha256": "d69d88e8aa6b6d9b68e6afe76067f2cef654de4ed421c4a98d2135f76497a7d4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_occlusion_raw_fast.json.gz",
+      "bytes": 40796,
+      "sha256": "7589a88f2f00443769da11fedae5251fc656e9c2394f7515758b3149712f6e32"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301008_occlusion_sensor_delta.json.gz",
+      "bytes": 40621,
+      "sha256": "3149c84589f596b003663d2dd1b4a96783875bc09e9e56ec3c95bd9c20e71b54"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_clean_kalman_reactive.json.gz",
+      "bytes": 34187,
+      "sha256": "0872b74d8bdea639508b432a55932c0168b4eb712faac61c76f9948fee3e718d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_clean_kalman_smooth.json.gz",
+      "bytes": 34208,
+      "sha256": "2d065e9c02d6350de84e773acda1a011550f91459d90b132111e5702d1308f8e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_clean_phase_rule.json.gz",
+      "bytes": 34202,
+      "sha256": "ddbb98042ec5d3eebf8f8d5e785d6415ede0d251673bfd050134ec77dbff278e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_clean_raw_fast.json.gz",
+      "bytes": 33585,
+      "sha256": "78f6a5973f4b2b3e81e7bf57ce0cae7a75dcb5f2fef0d1cd3cc24b672fb1e4dd"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_clean_sensor_delta.json.gz",
+      "bytes": 33593,
+      "sha256": "a5771aff093385c25b8e89fd5ca643a2791f1cce0ed62678d6049415d46211dd"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_drift_kalman_reactive.json.gz",
+      "bytes": 39727,
+      "sha256": "d7591a6ad1ed92f66e3608a33177a1445cd7ca0e13e106548e4dbb02895cf6f9"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_drift_kalman_smooth.json.gz",
+      "bytes": 39507,
+      "sha256": "84aef27db8b39b158213b3966f98bd47a9054e9eecb631f76cb732890b37677c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_drift_phase_rule.json.gz",
+      "bytes": 39508,
+      "sha256": "ca68789df4a28fd32fc37fe0e9c56afdf8273bbe711ebd734564e1654e9a9e3b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_drift_raw_fast.json.gz",
+      "bytes": 39092,
+      "sha256": "daaf8d80a086fa7df9878233863bc9d2602e9a70adf085aa124aa2cb7aa2643f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_drift_sensor_delta.json.gz",
+      "bytes": 39386,
+      "sha256": "a25140f353129053297d94ade9112c8d152e5dec6e74a9abdfeeca7976ec35cf"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_jitter_kalman_reactive.json.gz",
+      "bytes": 41317,
+      "sha256": "35d4c51239d42a24f4fd1fbaf9c6b91a1dcb6ec733d8c8c70d2aecbd3630233e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_jitter_kalman_smooth.json.gz",
+      "bytes": 41350,
+      "sha256": "63230e9ed298cfca268a656fb93ecdd346082deb4cdb5bd12677330a078c5b01"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_jitter_phase_rule.json.gz",
+      "bytes": 41339,
+      "sha256": "8ede7b44f1391a58e87ad77929d1833e91de6d24eda07b9a8a062fdaa40ab3bd"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_jitter_raw_fast.json.gz",
+      "bytes": 41540,
+      "sha256": "07ee33a71c34ce6fc961cd7996d8c1bf98f1d445aecc4e61254f0e2fc4ff2c61"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_jitter_sensor_delta.json.gz",
+      "bytes": 41661,
+      "sha256": "035190c04f9194709a3a67ea9e5571ae17423df17cef9112aade464009acd121"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_occlusion_kalman_reactive.json.gz",
+      "bytes": 40021,
+      "sha256": "316479795b9610a108776160d1bd8458025d0ff081a5dab6523dbf7a279faa81"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_occlusion_kalman_smooth.json.gz",
+      "bytes": 40329,
+      "sha256": "3de26d19f7a0b28bd34168ab1dd1672478b8913c0e33e3b188edc165fc444be6"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_occlusion_phase_rule.json.gz",
+      "bytes": 40329,
+      "sha256": "787befa38b6ce78dfa2249ae1f15d09ced3106a9f8fc091100f971ccaa42d25b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_occlusion_raw_fast.json.gz",
+      "bytes": 40020,
+      "sha256": "bef2a12554e02e42d61bb72acc468bac1c5f8b8293345544681181dfa7001820"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301009_occlusion_sensor_delta.json.gz",
+      "bytes": 39956,
+      "sha256": "97710958d4ea512f1b89bdce87c9b9f0ea8e76a5ee921898d008d1945d3416dd"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_clean_kalman_reactive.json.gz",
+      "bytes": 33731,
+      "sha256": "b798df552b043d564cad5f89f798aa19c46bb93571c6de0fc6f760b7d76d2d7e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_clean_kalman_smooth.json.gz",
+      "bytes": 33722,
+      "sha256": "c6ed432fb8c15eb648a01d1e03972ee7068261cce4a0618a020476fcf53ccde2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_clean_phase_rule.json.gz",
+      "bytes": 33718,
+      "sha256": "9cdab0dd16d6ad57fdf2c10c2c6b20c04a1689303e03a981088bfd908474bf51"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_clean_raw_fast.json.gz",
+      "bytes": 33084,
+      "sha256": "5d2a830f85cc0028d95dd56a5a759d91764d869a4836e2c2ac8e9dbbba5ef93a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_clean_sensor_delta.json.gz",
+      "bytes": 33093,
+      "sha256": "5491c2283f4297ee9aacd00ab0bcb4cd9fbdeccdd0815b3433942a500b9873f5"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_drift_kalman_reactive.json.gz",
+      "bytes": 38950,
+      "sha256": "17e248bb1086cea387c40af6100a535d7634de87807d886ca8411521f1019ab4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_drift_kalman_smooth.json.gz",
+      "bytes": 39131,
+      "sha256": "8858201f5ab20b11ceaaeac0116d9ebead09a735c70c8c51e41dc7add8fdf830"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_drift_phase_rule.json.gz",
+      "bytes": 39134,
+      "sha256": "f773477422390e7440072fcd4672772c6f460335a547adeb38e9ecc11d15ce66"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_drift_raw_fast.json.gz",
+      "bytes": 39033,
+      "sha256": "8dbe05dd77429ba48b653eddbc3d638d72e2484bf25cafa8984875f2b98bd6e5"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_drift_sensor_delta.json.gz",
+      "bytes": 38835,
+      "sha256": "7b9b9c6b0e918923676cbdd1f5ae1d9a7b509ecbc4bbc4e3fc8110692fd918c8"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_jitter_kalman_reactive.json.gz",
+      "bytes": 41043,
+      "sha256": "e1cac321fff16895b8d2915dfa4cc00ab487466c5ad16bf6e7eccc006c6a757b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_jitter_kalman_smooth.json.gz",
+      "bytes": 41090,
+      "sha256": "5060e998c9e31945961d456a73567b5eef8f538cdb1568bafc9066ee8fe59c7f"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_jitter_phase_rule.json.gz",
+      "bytes": 41089,
+      "sha256": "3054606f4d22b7c902c785dd37d20b4329cefeacfc193e0183eb884d1794cea2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_jitter_raw_fast.json.gz",
+      "bytes": 40558,
+      "sha256": "1145b4095b6119c02be43560091f0d141cb7680af1f50cc52db8fc995cae9bf4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_jitter_sensor_delta.json.gz",
+      "bytes": 39658,
+      "sha256": "cd54239e25a2c2aa01bafd22162b399ce75e10ed7121722515fc63af00004fa4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_occlusion_kalman_reactive.json.gz",
+      "bytes": 39913,
+      "sha256": "eafa1f89eada411a442c63761126470dc217a3db19f2e3e2cc510efbac67e020"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_occlusion_kalman_smooth.json.gz",
+      "bytes": 40298,
+      "sha256": "e4fef2ea38ff6b6e7f4c4c621cd3b711dc2bc30dd1250667b1b319cfa2c89fbf"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_occlusion_phase_rule.json.gz",
+      "bytes": 40297,
+      "sha256": "7e8d41b8c0d9917bf609f61f2872c66fa345180ab22817054e71086a81fb4df2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_occlusion_raw_fast.json.gz",
+      "bytes": 40935,
+      "sha256": "831854c1693d61dd3f5451f3bf3cf643bad4935eb1c40c742231668a7b159359"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301010_occlusion_sensor_delta.json.gz",
+      "bytes": 40140,
+      "sha256": "4733cb48e71d15fa836687d913a0efbbbc4e8bff6f10933b6f88e9ad4f22e963"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_clean_kalman_reactive.json.gz",
+      "bytes": 33785,
+      "sha256": "4169f9aa20626b664f9080ee47b5265c6abfadca73e13f3b55f4bc7840da1bea"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_clean_kalman_smooth.json.gz",
+      "bytes": 33774,
+      "sha256": "113f0b95b6c289aee82bf1a6fbcbe6fb33c97b061a55888d3a306d87bfd45c18"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_clean_phase_rule.json.gz",
+      "bytes": 33778,
+      "sha256": "fc0f82cdee79451dfd3fb2b33c32660ed02d543c2a98d906257f170919f7bf68"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_clean_raw_fast.json.gz",
+      "bytes": 33162,
+      "sha256": "feb04e57cea5e1deaf098bb7b7dd32845146a94b84dce56839174bc27535735b"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_clean_sensor_delta.json.gz",
+      "bytes": 33170,
+      "sha256": "3056a54a157b2150af924b7c6c1aaf4340cd9c1d2464d8a165f1848010ca157a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_drift_kalman_reactive.json.gz",
+      "bytes": 40100,
+      "sha256": "023b813f09afc4c98481bf368c6feac259ac90128bbfaa4d9e251ba690cf9e7d"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_drift_kalman_smooth.json.gz",
+      "bytes": 40050,
+      "sha256": "14a02dd51bcd04e02cdcf557cba0295d7d9b03fdbef2465ac6e8029c8d43a88c"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_drift_phase_rule.json.gz",
+      "bytes": 40057,
+      "sha256": "5ab950da8550c215262f0ab3b115c0d9d2c17c895b21437d4720959f919c5dc0"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_drift_raw_fast.json.gz",
+      "bytes": 40628,
+      "sha256": "62c504ae5edc2da4010390e8993cd28fe6c29a5564555bee0bc6a945ae8d602e"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_drift_sensor_delta.json.gz",
+      "bytes": 40122,
+      "sha256": "e739a38650abbafd68137110bb06e305a857cbd97dcdb8068b45b544320a0542"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_jitter_kalman_reactive.json.gz",
+      "bytes": 40576,
+      "sha256": "6a7e438769ce34a7f72b45d38d0507dfbf795f19176f22b39c8edad6961b9fe4"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_jitter_kalman_smooth.json.gz",
+      "bytes": 40732,
+      "sha256": "d9b308d43fe48ed6908230ee4069fa76e59bc85423ff3aa05593b6bca16fc650"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_jitter_phase_rule.json.gz",
+      "bytes": 40726,
+      "sha256": "8a93d55aa8eed1b62d03c2bede470663ea8da0bd8d85519f0de1d95404f070fa"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_jitter_raw_fast.json.gz",
+      "bytes": 42299,
+      "sha256": "85f1149d07c8dce781dc1cd7b0f35d2eb04cf78214facf26ee61b64438ae5567"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_jitter_sensor_delta.json.gz",
+      "bytes": 40396,
+      "sha256": "ac258caf09413b2b75dce83c96c2448f97f153fa25ff599201fe782295fc11d2"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_occlusion_kalman_reactive.json.gz",
+      "bytes": 41085,
+      "sha256": "b07bffbdb6c1e44f886fb380b6e2aafffbaff45554bf65cae005ec4c1c42f70a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_occlusion_kalman_smooth.json.gz",
+      "bytes": 41145,
+      "sha256": "505775b816237ac62d7cb18c6bff19477d1eabf38b40d297fe99f95d594bb2fc"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_occlusion_phase_rule.json.gz",
+      "bytes": 41145,
+      "sha256": "57a3282d7b573c4b07e69ff3420dab5433dd31eb9846b0b1a0fb42e47e85756a"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_occlusion_raw_fast.json.gz",
+      "bytes": 41401,
+      "sha256": "5fdbc9ed0abe656c537e7383144178a9f715d625e94a204d60106a340603a0bb"
+    },
+    {
+      "path": "traces/FetchPickAndPlace-v4_2301011_occlusion_sensor_delta.json.gz",
+      "bytes": 41051,
+      "sha256": "2d3aaa3bcbe38874ce12bf0df985cab62dcd5226db73902bfc2f031861349f59"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_clean_kalman_reactive.json.gz",
+      "bytes": 32235,
+      "sha256": "acc7e868626395c99942b9856a249f0ae9b66b20fabcaca6b232da361b4171cd"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_clean_kalman_smooth.json.gz",
+      "bytes": 32289,
+      "sha256": "7add094b2ccec9113fb0c76de8a1010d372e7ed3a0a8f0a950e3b64a3f85c40e"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_clean_phase_rule.json.gz",
+      "bytes": 32218,
+      "sha256": "e99b5952a23335d35c74abab2df507d1b1f6e73a27615b4e8ddf494e0318b7ad"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_clean_raw_fast.json.gz",
+      "bytes": 31587,
+      "sha256": "aaaf94981105fefc8545621ef84642cdaf54496edc7e9db45fe850d812dbf5e1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_clean_sensor_delta.json.gz",
+      "bytes": 31593,
+      "sha256": "7a4b0bbe98968da3201ce64f2398a84191a21ad3a31b9ae6e0e484cec17f4df9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_drift_kalman_reactive.json.gz",
+      "bytes": 38634,
+      "sha256": "5fb5f8e9845eb49259efbc33e4346ede134c593854ee632c8bf3a5dfee2bb01a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_drift_kalman_smooth.json.gz",
+      "bytes": 38569,
+      "sha256": "50cd2c6ef1e9ea9e7e00c12c985aad3f7a6c8682a139377afa495d85f4cda209"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_drift_phase_rule.json.gz",
+      "bytes": 38649,
+      "sha256": "6698e9a1f35f4f3c1519df37cc9746d47bd85d64f7964eb6bdf8060921242450"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_drift_raw_fast.json.gz",
+      "bytes": 36850,
+      "sha256": "2126b51a158d867fcdf5e9cf45c10a43bff048be62cda8d2fd4f47d13adce43e"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_drift_sensor_delta.json.gz",
+      "bytes": 38597,
+      "sha256": "75fc23c0e43914902800eb3511a1aa606bee61a9bf7d9aa1352b20d28b727dba"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_jitter_kalman_reactive.json.gz",
+      "bytes": 40338,
+      "sha256": "b1e6f9d84667361a38c05e82558c799dc504c3be57f86232099054b1b131bdbd"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_jitter_kalman_smooth.json.gz",
+      "bytes": 39752,
+      "sha256": "e571aabf271fa17dfc72de9a6a99e828b5c0ad2b124e1b452ec09899a8714392"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_jitter_phase_rule.json.gz",
+      "bytes": 40419,
+      "sha256": "ac6f50d52f1181ca02b08252c10469f3395b9071df864c87f909ddd8afd1e48b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_jitter_raw_fast.json.gz",
+      "bytes": 40499,
+      "sha256": "48888242cbd67f7eb949ec24442b44066f44e987b59f5a62e1986bb17c225347"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_jitter_sensor_delta.json.gz",
+      "bytes": 40279,
+      "sha256": "522ad77cbd6d9ff03c7068936cd4748d145689467915b8e44a8c97cae6865682"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_occlusion_kalman_reactive.json.gz",
+      "bytes": 39114,
+      "sha256": "b83479f3d9af28fed87f6545ef2e06f75b09a0ad9b8cdcf1f7146313ff6b447d"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_occlusion_kalman_smooth.json.gz",
+      "bytes": 39023,
+      "sha256": "d61a18423113a2f4dbcc76d294f46d0a727d3b3fb237daef880e20b6072c64bb"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_occlusion_phase_rule.json.gz",
+      "bytes": 39108,
+      "sha256": "b0ffe20a43508d12df55acfe3c949762bbac7f9440c9afdc46fff0cc424029fa"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_occlusion_raw_fast.json.gz",
+      "bytes": 38733,
+      "sha256": "c6aa431c4e3113a2ba0d1082b7203f33b42015a135999607a7d607589fa6f25b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300000_occlusion_sensor_delta.json.gz",
+      "bytes": 39051,
+      "sha256": "5beb91bd72d34bfef4c0a6872c0d942e56f4338c3925864c0a7c36ca6a255273"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_clean_kalman_reactive.json.gz",
+      "bytes": 31528,
+      "sha256": "ad61b7694cd8d91134669afb07cf52cb3ba497b8effdb751c7216b7a0fe23c88"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_clean_kalman_smooth.json.gz",
+      "bytes": 31562,
+      "sha256": "1343cc3c478e40324f9757f4b4b9ccd9a0494848679c8b94aa2ff9ea388dd2b2"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_clean_phase_rule.json.gz",
+      "bytes": 31580,
+      "sha256": "f9e9410563a9f00479c41a2967d8a6819b30756670a5cc92fd41610bd0d15ae8"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_clean_raw_fast.json.gz",
+      "bytes": 30933,
+      "sha256": "bdcf1523d15bb179e274da1bcb751ecf8d1d7a19e4ecd24c883816faac569eba"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_clean_sensor_delta.json.gz",
+      "bytes": 30938,
+      "sha256": "cd177c949179234da05761754868c988325deef5e1e73217f6ea86e692165b48"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_drift_kalman_reactive.json.gz",
+      "bytes": 37995,
+      "sha256": "180b8121358417b2e8a58edc3648ac29d34468bb0da644a7298f18bc8df1607e"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_drift_kalman_smooth.json.gz",
+      "bytes": 38071,
+      "sha256": "a8008890f93bbf8295a3847b56ffa7d1d1c32c173c349aafd4944c723ef0ef89"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_drift_phase_rule.json.gz",
+      "bytes": 38205,
+      "sha256": "60921ea349ddbaff4d3f6c689f873d2deedaf2ed83fbe9ab6409da92d2544747"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_drift_raw_fast.json.gz",
+      "bytes": 37989,
+      "sha256": "7d59151b8f1faa99ec70dce01ab382888ec9acab3ce7211644b495656ddcf8fc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_drift_sensor_delta.json.gz",
+      "bytes": 37877,
+      "sha256": "e737c0e72ee4ea772459b098264a50d8e72bf198b9e6f1e2296cf21125748c9c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_jitter_kalman_reactive.json.gz",
+      "bytes": 39419,
+      "sha256": "3d4ee4c679a67f1b1a7edf622869ce150c123107cd3798be17146e0b41cd7805"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_jitter_kalman_smooth.json.gz",
+      "bytes": 38907,
+      "sha256": "b43e52f0f0f0673d0513fa5e1845ec65b8e0d102e03a994785cbfec871394a5f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_jitter_phase_rule.json.gz",
+      "bytes": 39383,
+      "sha256": "8314bdbac50be2817e69fae3ea0ab9c193c97a22fea20f6cac9ab037e9429132"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_jitter_raw_fast.json.gz",
+      "bytes": 39769,
+      "sha256": "d286d7cc3a41a2c31bd314f421fd7480b9012931a7e7895f966b47bbf82d1db6"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_jitter_sensor_delta.json.gz",
+      "bytes": 40178,
+      "sha256": "0db01ee155e592fb6a01052e90b1f1cfa021fb3d466403a8e370ec4f1bab74ef"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_occlusion_kalman_reactive.json.gz",
+      "bytes": 38336,
+      "sha256": "365e703ad5dd3e974fa8b3fef3d56be46b2d5f4b31365ada6a586e76aa303b1d"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_occlusion_kalman_smooth.json.gz",
+      "bytes": 38256,
+      "sha256": "835edb33bd1b37f067ad30bca54f56fa1390afbb1a66776fcf27b65a5cf75e44"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_occlusion_phase_rule.json.gz",
+      "bytes": 38640,
+      "sha256": "c43a73c2b3c9ddb6e1c64781139869e58cb005cf9d7510213ece62d2a05845fb"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_occlusion_raw_fast.json.gz",
+      "bytes": 38341,
+      "sha256": "5609ad96553541fe127ab65974763dc2c20624017e5dfd9c19bfeb254f88f7ee"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300001_occlusion_sensor_delta.json.gz",
+      "bytes": 38199,
+      "sha256": "3c99dee4e431b7fd1b90bd3074fd2670e3021d1cf637fcdc6866a5c9109d5b3c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_clean_kalman_reactive.json.gz",
+      "bytes": 32081,
+      "sha256": "ad545fafed1ccce5a7e3d20b557c0dcbd66cb09b8b70453ba7fe4631bc18a78c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_clean_kalman_smooth.json.gz",
+      "bytes": 32033,
+      "sha256": "e8a84c5c7d45e20ce7299b4e853d9a06ce6990b44201601e42e9a967cc95659e"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_clean_phase_rule.json.gz",
+      "bytes": 31997,
+      "sha256": "9797d47cc6f4dda47f1de549d1224d5ff1422395c6d08ae1c8f50e3a8d58d481"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_clean_raw_fast.json.gz",
+      "bytes": 31442,
+      "sha256": "fa700d1491de02e4efc089be553bf880e41ea00d6d6baa5d762c91a91735379f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_clean_sensor_delta.json.gz",
+      "bytes": 31448,
+      "sha256": "a83907c42768cebf8567fc3292d4c84f45ebd75fc4028551f87542e96e4e2ec5"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_drift_kalman_reactive.json.gz",
+      "bytes": 38492,
+      "sha256": "d6edb34ca9e0fb8eeb76b830d52a71d6da112f9c50d0a47816c03171853dff08"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_drift_kalman_smooth.json.gz",
+      "bytes": 38572,
+      "sha256": "798dce13d0aecc7247b8c9700cfc417ffb74deb416ce23ab6ba1bb05c0130fd1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_drift_phase_rule.json.gz",
+      "bytes": 38472,
+      "sha256": "e9d2738e922e18a838b1376f0ab721c247072bca66a231adf9db290a0a3f7fd0"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_drift_raw_fast.json.gz",
+      "bytes": 38741,
+      "sha256": "e1e26fe4d25dc48761e547633ca18e4cfc7855edbf95c713afd405a60d9b3fd8"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_drift_sensor_delta.json.gz",
+      "bytes": 38776,
+      "sha256": "bf1640b36a14c61c4e66a1e47d69bf72ab47bc2ff2df59e1ac7b9fd4a839fdb9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_jitter_kalman_reactive.json.gz",
+      "bytes": 40627,
+      "sha256": "e40a984b38415414060cda84c46d6310a8330475473cf12723175ac70ee21f9e"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_jitter_kalman_smooth.json.gz",
+      "bytes": 39888,
+      "sha256": "4a7eaa98bddc1b79dc3649cedd2be1023795af07db4dd18b6ad841e5e7e0450c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_jitter_phase_rule.json.gz",
+      "bytes": 40471,
+      "sha256": "3379e360c32da4e91386da0179a60fa8a5647c5583662461355c2301972c6d1b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_jitter_raw_fast.json.gz",
+      "bytes": 40645,
+      "sha256": "7f4cad91d3473c960259c2d775b8e088a60e59676ab3249d37ef845f4c6235b8"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_jitter_sensor_delta.json.gz",
+      "bytes": 40219,
+      "sha256": "5bd8319f627cd1e1fb1a46bb671cd49edb41a088cdf1fed6ba5504defc708cb0"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_occlusion_kalman_reactive.json.gz",
+      "bytes": 39621,
+      "sha256": "127c99f57fd57a756a459b79ed6a1eda75175aa2214a82bcf8a17c3a88a342fd"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_occlusion_kalman_smooth.json.gz",
+      "bytes": 39431,
+      "sha256": "62f5a2ba1c85203b1a4e64da68ac066aec25ac6da61ca3a914770a7125293d71"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_occlusion_phase_rule.json.gz",
+      "bytes": 39452,
+      "sha256": "a48ec6f1f7c8c32a847fe29f14aa8a532edcacb523005865cd261271d977edba"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_occlusion_raw_fast.json.gz",
+      "bytes": 38996,
+      "sha256": "fdf8f285a34404c9a90df245405d438f7093fa5e99c67571d75ebfce0af824ed"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300002_occlusion_sensor_delta.json.gz",
+      "bytes": 39864,
+      "sha256": "e3b4b6cf735c7caf8cc69b55a6ef2210b1340df704e12dfd59dc5c322e897aa1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_clean_kalman_reactive.json.gz",
+      "bytes": 32697,
+      "sha256": "6cb61f13ee23c60fa1a2b6088ccf4c99d6b344fd88285832e32853b15c80e9fe"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_clean_kalman_smooth.json.gz",
+      "bytes": 32628,
+      "sha256": "4e5b60d56023b716f72f21ac0959d8da7df669f80c8619e5975554bafdb98db3"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_clean_phase_rule.json.gz",
+      "bytes": 32608,
+      "sha256": "cb336cb965b138c1dde75e2ed5a2698cd60fa20e3e2e59141add9701b237c02e"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_clean_raw_fast.json.gz",
+      "bytes": 32055,
+      "sha256": "5eb8214b3a1677561c983ed2d2fb223526d80cecf115233718615d5530916fbf"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_clean_sensor_delta.json.gz",
+      "bytes": 32061,
+      "sha256": "b641f4b4b356ec227e2ab1c7cdcd36aefcd495c05f34d440e450a1a2db1d38bf"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_drift_kalman_reactive.json.gz",
+      "bytes": 37901,
+      "sha256": "851f884ad4b840b92ea3a10b6759a4d4b0db1420477b0d41610e161f1ee824d5"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_drift_kalman_smooth.json.gz",
+      "bytes": 38357,
+      "sha256": "80a0e89b234c15188dea478f15094a4d09e8541a00939ce430e5080c5f6052c4"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_drift_phase_rule.json.gz",
+      "bytes": 38371,
+      "sha256": "0d9d3bad9805815b0901888081961d26ab7c61b4dc4908e21f85bc5c5b272ad6"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_drift_raw_fast.json.gz",
+      "bytes": 38569,
+      "sha256": "ba21e50b508c6a92b7799e3177b0ae39c29726bcbcee6048a6d6fa583ca6a899"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_drift_sensor_delta.json.gz",
+      "bytes": 38498,
+      "sha256": "99f53fe3812729d7fdc4eeeb28f418f155a75f9468daf58fd53a0155c6abc7ba"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_jitter_kalman_reactive.json.gz",
+      "bytes": 40215,
+      "sha256": "83b27094463866ef61c9fe23c9bf5d1152d1d4eac8b55e146e7331dcef47af35"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_jitter_kalman_smooth.json.gz",
+      "bytes": 39013,
+      "sha256": "4f27264ea2fa542c1adfc3c1849095eb7d13f385cbb4c4e44e639cfb27cda2aa"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_jitter_phase_rule.json.gz",
+      "bytes": 39095,
+      "sha256": "7b53ff30d1a9ca6ba7641abd37a3a3791c0e1aa29762d830854afff78d83565a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_jitter_raw_fast.json.gz",
+      "bytes": 40605,
+      "sha256": "8538493a35d35756ccce955020b9e940e99ee1074f1f60c987439224553a82b8"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_jitter_sensor_delta.json.gz",
+      "bytes": 40363,
+      "sha256": "2b86f892c413fe08c75be018fe9e93e21ffebda98c2e2ee2a4d8459a18178d77"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_occlusion_kalman_reactive.json.gz",
+      "bytes": 39711,
+      "sha256": "ede2e939f51d07d3714a1ca47fd3d073eba4e2aef0e0083e77d3c5322f4db7e9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_occlusion_kalman_smooth.json.gz",
+      "bytes": 38420,
+      "sha256": "3dbf24f8d85ab5709085aee60b54a618376b35887aecc465949638d8c52744cc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_occlusion_phase_rule.json.gz",
+      "bytes": 39632,
+      "sha256": "fd4eb0cf801420afda50875c44ef00a20db3f818839471c1f2b866114c51310f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_occlusion_raw_fast.json.gz",
+      "bytes": 38247,
+      "sha256": "d1cf66e015066435938416598b390d8d0f4465e90e6dcb59c7d41190fe9b4f42"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300003_occlusion_sensor_delta.json.gz",
+      "bytes": 39208,
+      "sha256": "805b137780700bd4f3edd71061d4b9734a8d7e64748b19be050abdf50eb40239"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_clean_kalman_reactive.json.gz",
+      "bytes": 33576,
+      "sha256": "535605436823ab341d0393f467a78fe1cf37c6f6d0104071396bd3e2fd5ea0c7"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_clean_kalman_smooth.json.gz",
+      "bytes": 33544,
+      "sha256": "06a2922644cd59fcee5312a90e665d74d98227cff8cdddc8cdafd5617017d277"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_clean_phase_rule.json.gz",
+      "bytes": 33607,
+      "sha256": "3bc03294033d727ab8b39f82feb1e15059842552a62e587d25a7eac8038e42f9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_clean_raw_fast.json.gz",
+      "bytes": 32924,
+      "sha256": "de8537d9e79f257dd917e27bf8ce01f3f2274e628fecc14724cd08eaac2d6dee"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_clean_sensor_delta.json.gz",
+      "bytes": 32930,
+      "sha256": "dc28febdf405ac316636996bf8c547c586be0e953d0282d8c3fff7ebf39880e2"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_drift_kalman_reactive.json.gz",
+      "bytes": 38473,
+      "sha256": "b5c1593445e98afc58d1b0ce4e3bcda7d4ad951c26eb3b72191e5962d1fa3f21"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_drift_kalman_smooth.json.gz",
+      "bytes": 38253,
+      "sha256": "e5d35a9e14df5edd301118bec25bc04a86304c27f6656bbae5f66a3ddaf28875"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_drift_phase_rule.json.gz",
+      "bytes": 38381,
+      "sha256": "52909ed7d5874e9525b113065e6d17fa9c803037453caa8d268d4650aa075df6"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_drift_raw_fast.json.gz",
+      "bytes": 38492,
+      "sha256": "86d776a00f8d2fb93048842ab5ae777b622125c75ae721b1ed35eca084ffb31f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_drift_sensor_delta.json.gz",
+      "bytes": 38340,
+      "sha256": "2926dbeb72032ce36c6034b13b7aba24ca391d1c27210766a24ca6f3920189e2"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_jitter_kalman_reactive.json.gz",
+      "bytes": 40249,
+      "sha256": "8e27c2a6358d7f515801d8230b685d6e5350c62106973dcf8e82d47f8d045a0c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_jitter_kalman_smooth.json.gz",
+      "bytes": 40348,
+      "sha256": "febf2a355139ed23d697c4b5231eedcf2114e49b4aa07cae92083fba73008606"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_jitter_phase_rule.json.gz",
+      "bytes": 40244,
+      "sha256": "3a739384784e6f5d3832c6ae80f9383244f689eec80b89d5c552593ee93ff786"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_jitter_raw_fast.json.gz",
+      "bytes": 40500,
+      "sha256": "22dc55defbe5cad047ff4e2b74caf2b04c9103e931df980a00ac5a31b68d45ff"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_jitter_sensor_delta.json.gz",
+      "bytes": 40406,
+      "sha256": "3bede5a86be9426ea233ea47526df87b30a85836a796d62f774eb93b6bb1147f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_occlusion_kalman_reactive.json.gz",
+      "bytes": 39519,
+      "sha256": "f80c106d16c28070b7facd8741612f4cd7bcd861ce6e0978c0668484da86fd52"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_occlusion_kalman_smooth.json.gz",
+      "bytes": 39529,
+      "sha256": "688e965cf52c5df087b01b3cac43f88add49abb2ed2fa4ba7f88d0818e7481c8"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_occlusion_phase_rule.json.gz",
+      "bytes": 39561,
+      "sha256": "2cb7d25b36702913600be95d1add809740018fa232595ef87470b24f4d1ca18c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_occlusion_raw_fast.json.gz",
+      "bytes": 39737,
+      "sha256": "2a6f2f517e925f6cf41a4f121ac3919176ea6b8dd63619c4e5950429e9421a8a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300004_occlusion_sensor_delta.json.gz",
+      "bytes": 39438,
+      "sha256": "43b0106806633633971e10896db14f02d7d5052ac2fbe2eba95b62c24c25d1df"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_clean_kalman_reactive.json.gz",
+      "bytes": 33617,
+      "sha256": "74399c7000400f40f29bd328a49a11fb4cd991dc2bc7f84c31b1d307118c868d"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_clean_kalman_smooth.json.gz",
+      "bytes": 33562,
+      "sha256": "98e0e79271eeccd5b7fcf15cbfcfe421e1cae633527d63f58442d4ae1a5a6d2a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_clean_phase_rule.json.gz",
+      "bytes": 33616,
+      "sha256": "27cc83017070684f8e71d2f6751f9663cbe2dc9b832b86fb30432ded92555131"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_clean_raw_fast.json.gz",
+      "bytes": 32963,
+      "sha256": "23a3ae6f94b1c14b434b2851d64a197a2014b156601c39fce403d8eae7dc80d9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_clean_sensor_delta.json.gz",
+      "bytes": 32969,
+      "sha256": "09a0d49424065269fcbf640671240223512cd3af85f941145aa59bd6eea2cce9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_drift_kalman_reactive.json.gz",
+      "bytes": 38777,
+      "sha256": "45f0a791b2da70096a870f6fcb4d869d5a8ed08a25a1a04c8e7da85a67e2c44c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_drift_kalman_smooth.json.gz",
+      "bytes": 38931,
+      "sha256": "a63d90a6bb57a90e9f1fbd2157efeb9fe86c7b68dc3be9a090427c49e9137ad1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_drift_phase_rule.json.gz",
+      "bytes": 38634,
+      "sha256": "69d9340964e5d51ebfc51e6961b146404d9d23988fc1252c020a848d19ede86c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_drift_raw_fast.json.gz",
+      "bytes": 38818,
+      "sha256": "2c9e0c7e8fad1919519023026ffddc971dcd0e66898b268eed30f216310d7e3c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_drift_sensor_delta.json.gz",
+      "bytes": 38726,
+      "sha256": "70631657c87915fc86f7b1d5518dfb32729cc3ffb11b43b45b02f7e133d460c9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_jitter_kalman_reactive.json.gz",
+      "bytes": 40788,
+      "sha256": "49c2c38ce4c6fb63d1bd6fd0d2013712b21254ba1cfef296532a497eea80615b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_jitter_kalman_smooth.json.gz",
+      "bytes": 40643,
+      "sha256": "ee1c24f13664fd6b786f49d34bdb5a8a58ad320c1aefba1b60c85e2dbed839b6"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_jitter_phase_rule.json.gz",
+      "bytes": 40630,
+      "sha256": "f069317f3cb532670b719f5d5e059d3b9de132a7d64826defa68db9ab5aabebd"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_jitter_raw_fast.json.gz",
+      "bytes": 40760,
+      "sha256": "87e53556611836e30ef041147acc778c0c9032437acbb9354dd05572020e621c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_jitter_sensor_delta.json.gz",
+      "bytes": 40510,
+      "sha256": "9be3d91478f7c3f1835361bef1904737304d37683ec849913dccfc00adfa7c2c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_occlusion_kalman_reactive.json.gz",
+      "bytes": 39720,
+      "sha256": "8d6947812a3f644a501d1409a44389eec687305fc6077d57afe69eae05287584"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_occlusion_kalman_smooth.json.gz",
+      "bytes": 39920,
+      "sha256": "9623b3146ea5230a68fac523f4a69b3b66b4b3d359b712380641fef40bcda566"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_occlusion_phase_rule.json.gz",
+      "bytes": 39700,
+      "sha256": "9b8502d0d40259a7afec0f8c053419c17978686a49951cc1c2a5d779dbb32d37"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_occlusion_raw_fast.json.gz",
+      "bytes": 39708,
+      "sha256": "ea5a5a30915b807ae7ef5604a522ea6ab099a6ce7d374583ebcda6ac6be59e79"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300005_occlusion_sensor_delta.json.gz",
+      "bytes": 39924,
+      "sha256": "a9be2f95d22a242f86ea490a3b8fe4a3a207405dd0bf6b4d13603a1776c0b11d"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_clean_kalman_reactive.json.gz",
+      "bytes": 33962,
+      "sha256": "c857aba15477991cd3c33809fb118047ece85e61e78f0eda108b8fa169a6e10c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_clean_kalman_smooth.json.gz",
+      "bytes": 33875,
+      "sha256": "71b960836edbc47cf3b8855109274c9a0a8f6ba24a8e1215e82d7f0b4a55959f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_clean_phase_rule.json.gz",
+      "bytes": 33906,
+      "sha256": "de3da014e836097a8a3522792fba9e8a56ab95a2e3c419787e2fe57949af8261"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_clean_raw_fast.json.gz",
+      "bytes": 33353,
+      "sha256": "7565a96a13cdc7ae9bf63c9a7418011824389eade2c8eb13bcb81e7a070ace5b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_clean_sensor_delta.json.gz",
+      "bytes": 33359,
+      "sha256": "543589076e0efda4b42a8da6d3e45aa1aa2aff45159aa70e74ef00a72b84cd5c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_drift_kalman_reactive.json.gz",
+      "bytes": 38772,
+      "sha256": "fcb427418361f07bf10281c7c306927dd1d5137f62866477a4be6db74a6821f2"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_drift_kalman_smooth.json.gz",
+      "bytes": 38679,
+      "sha256": "508ad4d92f2646b3af2584cd0be8b7dda08dab421816aeb879b7a657cdb57342"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_drift_phase_rule.json.gz",
+      "bytes": 38714,
+      "sha256": "42e0a9ccc437853e1d5c9cd4c8b5850ddda89af801f30725b704aa3e7d16073b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_drift_raw_fast.json.gz",
+      "bytes": 36993,
+      "sha256": "4622d7faf8025284c9f72bc85219df6007800e3f185ae093c56bdbd067c8587c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_drift_sensor_delta.json.gz",
+      "bytes": 38787,
+      "sha256": "0d72c51ca12c2a59dfeb82c949d8bc426dab110adb7da6f8c047506252bce1c6"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_jitter_kalman_reactive.json.gz",
+      "bytes": 40380,
+      "sha256": "0e989a37a9bd3fbb72960d0a2c7dd5dc259e1bf28d350d5d8ff04523aa7d36dc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_jitter_kalman_smooth.json.gz",
+      "bytes": 39816,
+      "sha256": "49cea4f396dd2ba26c076947908441eb4941dba3227d5f3ef76ba4ab86973d90"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_jitter_phase_rule.json.gz",
+      "bytes": 40416,
+      "sha256": "3b985a66c9ca129c05cba8203da54c54145aa99cc0069a7411df4f2b01c413e3"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_jitter_raw_fast.json.gz",
+      "bytes": 40335,
+      "sha256": "9b639b38a687083b55f24d62baac5e0378370f28da346c241c6e3cd86b73fe17"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_jitter_sensor_delta.json.gz",
+      "bytes": 40739,
+      "sha256": "8aa8d426bdfa50ded45a8ad2d6e4ebdf8e06316f9dda604eeced9fd71dc1354f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_occlusion_kalman_reactive.json.gz",
+      "bytes": 39588,
+      "sha256": "0e1510321fa00d5073847e1aea6ee09342c63861992447fec3703199ac94e019"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_occlusion_kalman_smooth.json.gz",
+      "bytes": 39562,
+      "sha256": "9034a46437123c4b63f5a0cedc1a0a0c1009b492f55cdf4dfdd7cb886e1b17c1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_occlusion_phase_rule.json.gz",
+      "bytes": 39506,
+      "sha256": "43bb11930adfccb999f63fd67bd252a4537e9aab18f9d84bdddc7b96cf55ca27"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_occlusion_raw_fast.json.gz",
+      "bytes": 37762,
+      "sha256": "b4c488155900b653b44f23139c72623e52e460df7f67ce4fdcf44c168bc03b9a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300006_occlusion_sensor_delta.json.gz",
+      "bytes": 39660,
+      "sha256": "786c377aa8e4ae6ee25f379edba60bfd37e3d5266c9105ac6b06d2d91d720fa1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_clean_kalman_reactive.json.gz",
+      "bytes": 31649,
+      "sha256": "75f62dccd344febc30b072e422be6c245f5c178fe37ae8edd894893385b62f19"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_clean_kalman_smooth.json.gz",
+      "bytes": 31676,
+      "sha256": "b33ce8a75736d28b803b2fa01f783b69b71da78081e17b7b4783bcfd909079f0"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_clean_phase_rule.json.gz",
+      "bytes": 31670,
+      "sha256": "80645daad450253c0d39491e6484fccf4dac34858eb815a081e513b841531a99"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_clean_raw_fast.json.gz",
+      "bytes": 31060,
+      "sha256": "f33dea12469a1c4b87b903f7e5d327fc19173536e27471f09a9240e0029c06d1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_clean_sensor_delta.json.gz",
+      "bytes": 31066,
+      "sha256": "f07093aa4bbe003f23c20e5607b3730cda783e0fce427a99e6437151e28f97e5"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_drift_kalman_reactive.json.gz",
+      "bytes": 38061,
+      "sha256": "1be4befdae0157241b033a9ce86df8308f6f4a24f60872ed75a65336e8114b14"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_drift_kalman_smooth.json.gz",
+      "bytes": 37920,
+      "sha256": "10b766c2847d6054d9819742bf43695991ca5766149b7eff0dfa7e4e7aee651a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_drift_phase_rule.json.gz",
+      "bytes": 38190,
+      "sha256": "f4d8d85513af4eb2dd247b6228b6e4dea71e6962ad03a9938b9ea40470402162"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_drift_raw_fast.json.gz",
+      "bytes": 36933,
+      "sha256": "7327fe0098a084bfedd65e93a4ad156d4ff9969ae9cdefa859c217de45acecdc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_drift_sensor_delta.json.gz",
+      "bytes": 38501,
+      "sha256": "8c0f7bda2bf2fc33a4818ac4bb29616df0c6765aa2bad6f376a3a985b0f82ba0"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_jitter_kalman_reactive.json.gz",
+      "bytes": 39359,
+      "sha256": "35e75597215e34cda318b22779b62dcef8e8dc7d2d7db3335328899e7a5e9ead"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_jitter_kalman_smooth.json.gz",
+      "bytes": 39132,
+      "sha256": "b37ace30ea9bc1421e02858cdb247a1e4c4970ac75d78715b65e3e086c9bfbc0"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_jitter_phase_rule.json.gz",
+      "bytes": 39015,
+      "sha256": "c8ec424e28f3d50155815a031261c9a131ff9294bd62abf652504a1417aaaa31"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_jitter_raw_fast.json.gz",
+      "bytes": 40206,
+      "sha256": "85c2066f2949be5c4ece93cb448a5dd63a4090a1e1e70f3bf2fcf75d97767b72"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_jitter_sensor_delta.json.gz",
+      "bytes": 39796,
+      "sha256": "1d2436ea056d21559e899127782cf15cfde464b734bda5fec8dcd16b37db4a91"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_occlusion_kalman_reactive.json.gz",
+      "bytes": 39471,
+      "sha256": "8d9eb00643c2677bb0d82fe389a799e51a047b3f5c2e7fb1dc05f00d7a9d7b40"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_occlusion_kalman_smooth.json.gz",
+      "bytes": 38560,
+      "sha256": "ec6ab61dce326f93803fe9c16aba988c853b6530055cb51e16a6a9a9f6b06e61"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_occlusion_phase_rule.json.gz",
+      "bytes": 39485,
+      "sha256": "76047dc4237bc2502d9929166b9855152d12510a8240e21aa27d775385e7e28f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_occlusion_raw_fast.json.gz",
+      "bytes": 39714,
+      "sha256": "6586ded785170a6a3c16dfa4ed96e9297d354319fccd85c8b65670119d7d78ef"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300007_occlusion_sensor_delta.json.gz",
+      "bytes": 39464,
+      "sha256": "ff84971571fd7140250ca893aee1451e6fe37e674cf0c324d2eb37eb6884a9d7"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_clean_kalman_reactive.json.gz",
+      "bytes": 32358,
+      "sha256": "f777ead0bdd402815950035458963079f0f747650a7057b9037ef674c6724f9a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_clean_kalman_smooth.json.gz",
+      "bytes": 32371,
+      "sha256": "13dac287e01e821b6fb2cb1fe68b10fda79a3607a53724c618d8734502ee2795"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_clean_phase_rule.json.gz",
+      "bytes": 32277,
+      "sha256": "76c4fe3bb97ac6fb4e39393d935d46743e4fb0888757459b09efbcad8e2c795c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_clean_raw_fast.json.gz",
+      "bytes": 31735,
+      "sha256": "135e26400048547f0a873ab4d6389856ae937dc613e01450f3ed22ad488d09de"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_clean_sensor_delta.json.gz",
+      "bytes": 31741,
+      "sha256": "bdc82cf52c0133264ac56bea686278caf437bba941646824a87c7ea3a034f6cf"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_drift_kalman_reactive.json.gz",
+      "bytes": 37960,
+      "sha256": "4184c8ebf4f5b1a9e1a9c98046e6d2b72b734ecb03fb946da75f491b0424675c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_drift_kalman_smooth.json.gz",
+      "bytes": 38125,
+      "sha256": "81fdcfa5dc70a76e09ae91ce9d382abf57dda8dd0b380436a4cf643897f2ab88"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_drift_phase_rule.json.gz",
+      "bytes": 37862,
+      "sha256": "00d2681decedb55ca7356bdc2601b7cd86a560734e432cbc377eddc58f92b407"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_drift_raw_fast.json.gz",
+      "bytes": 36848,
+      "sha256": "6c2ee989acb74169153bddf09b33386e057759b3d0c986523c9e8ef5961045e5"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_drift_sensor_delta.json.gz",
+      "bytes": 37949,
+      "sha256": "46227bbf4a5149e1f426fc96e7e7d8cfef5d3aae8d69f695a1cf7606a6975213"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_jitter_kalman_reactive.json.gz",
+      "bytes": 40233,
+      "sha256": "88a7986b9e6e0a9f9fd66d117221efdcde633a24b436dd19fd30b4c106acabbd"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_jitter_kalman_smooth.json.gz",
+      "bytes": 40265,
+      "sha256": "1044bc60914533ec7b1e933060d665220416e9e15cd4b1357557579dde62a8e5"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_jitter_phase_rule.json.gz",
+      "bytes": 40170,
+      "sha256": "e0158ee4359d9766f6084d510ef41ebabdc865685bf76b4ad653b7967ec9fc96"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_jitter_raw_fast.json.gz",
+      "bytes": 40343,
+      "sha256": "1daea13b7cf13697073ce0333b02eb2c09279571a2c53ffffb125341d2f4ff7b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_jitter_sensor_delta.json.gz",
+      "bytes": 39361,
+      "sha256": "19d2e0c2c6b2d4e233bb8009eb016ccc4ac4193c96204d6651ea61b33ab93fcd"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_occlusion_kalman_reactive.json.gz",
+      "bytes": 38911,
+      "sha256": "c86f1a230753b37869022764db3a3ebb7954d4b3b2a178646aeb7dea758f2069"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_occlusion_kalman_smooth.json.gz",
+      "bytes": 39143,
+      "sha256": "4f7163357997ec288bb9f8f37221ce38266d6be868f40e37d741a1d2b786fdd0"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_occlusion_phase_rule.json.gz",
+      "bytes": 39098,
+      "sha256": "90c4f74b7668700528f70474e8a4136811d605cd37b02dd2549d02e7300d8175"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_occlusion_raw_fast.json.gz",
+      "bytes": 39500,
+      "sha256": "b2d25fed20eb44158aee1692133434732a19020c3d058709b8a043f9f1983cce"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300008_occlusion_sensor_delta.json.gz",
+      "bytes": 38801,
+      "sha256": "ec1c6d2bf437ef133289d7f119718bda66f00b93dcb579680aeafe9894a3e0ea"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_clean_kalman_reactive.json.gz",
+      "bytes": 33354,
+      "sha256": "9ffbe8a66ea6faefbace1091cdb19be6f8b1392161610ee809ea524d7b1d7c53"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_clean_kalman_smooth.json.gz",
+      "bytes": 33366,
+      "sha256": "361252a4d8a40fb282e52ca808f8eebf655a5d4db3acd14107bd6ea7c50fd9ef"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_clean_phase_rule.json.gz",
+      "bytes": 33337,
+      "sha256": "e5c4117b337f4070a886d8a49e4dced65d7b98557ff87b876471f2b8a5eec4b3"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_clean_raw_fast.json.gz",
+      "bytes": 32776,
+      "sha256": "3c3ed4368596ac82f14f02643d58da7acb835295a667dc1b75809c6e291c6512"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_clean_sensor_delta.json.gz",
+      "bytes": 32782,
+      "sha256": "2c5d2ce1886f4912ce1cb3d0a55abb61d65d67659459fc653d217b64e6f18e12"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_drift_kalman_reactive.json.gz",
+      "bytes": 38236,
+      "sha256": "3bb6d73bcbcb4e98f0972a64e087cb6229664150bef843901b6bb67b3b1854c4"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_drift_kalman_smooth.json.gz",
+      "bytes": 38118,
+      "sha256": "f712e8cb1ffb3c1d75b865e2022fa33a4db93c616b86377cd80ad9ea1bac8491"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_drift_phase_rule.json.gz",
+      "bytes": 38051,
+      "sha256": "a56aed37e1fa2352e4b400f92d5ce5afefb4f6da99fb2fe6ec57e96603376f01"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_drift_raw_fast.json.gz",
+      "bytes": 38806,
+      "sha256": "44870806594ea2c892a6cced4d0da4cf88e1a356a3882681a456160827801145"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_drift_sensor_delta.json.gz",
+      "bytes": 38333,
+      "sha256": "e8b9ae4a5b242ffc4de4d694a5b3423843133003230cec8e107b66195a70ae37"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_jitter_kalman_reactive.json.gz",
+      "bytes": 39868,
+      "sha256": "c68c23aa18128683fba6946f27d6ffb75f3a64089cbfca6094a90ccb2ce8bd50"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_jitter_kalman_smooth.json.gz",
+      "bytes": 40521,
+      "sha256": "2190b924faa921b9df95e23f3601438d2fb9434b4cd813f4ff811a0cf733ed91"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_jitter_phase_rule.json.gz",
+      "bytes": 39889,
+      "sha256": "9cab5ef12db9147e5bd8f50c4e7746bebd9349073d66b65fd16cec682f9edc7c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_jitter_raw_fast.json.gz",
+      "bytes": 40688,
+      "sha256": "a3fe37c72166330cf57ac393395a3180f726dae42c066cc6d0d7b0eff4d25331"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_jitter_sensor_delta.json.gz",
+      "bytes": 40636,
+      "sha256": "64f4b252d557c160b4f822579a7a7a224454565fdab45240c1b7d0c40ee6fe66"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_occlusion_kalman_reactive.json.gz",
+      "bytes": 39917,
+      "sha256": "9e4193afa5d70392eb40ff11c8b611a912a2674791355dcc361b5bf04cf47b18"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_occlusion_kalman_smooth.json.gz",
+      "bytes": 39260,
+      "sha256": "a74f9444bd1aff554e6dabcb0a42dc2c05c5d983a7263d4cd43c6cd6b1dc88e1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_occlusion_phase_rule.json.gz",
+      "bytes": 39316,
+      "sha256": "e0e3af91fd407bf6e670e677f23f3105ab2d0e91d2147bc4d8405bcd8e98b0f2"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_occlusion_raw_fast.json.gz",
+      "bytes": 40164,
+      "sha256": "15ec1733b4a5f4c56d35faa089ec7593651703dd26c9e499b593f24e7b21a4f6"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300009_occlusion_sensor_delta.json.gz",
+      "bytes": 39418,
+      "sha256": "f3042821c2a929a2e7851eede4b9d6d1fd7feb0676edae1ae5d94ff6da24903b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_clean_kalman_reactive.json.gz",
+      "bytes": 32256,
+      "sha256": "39e999048695e442836fe19c7c2adeffe6d0764506d044534a26bd20ae3a2e27"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_clean_kalman_smooth.json.gz",
+      "bytes": 32283,
+      "sha256": "5e2ae67f2c97d8686b203c7632ccc55c6cfbee5b0280cca549106a0a667e281b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_clean_phase_rule.json.gz",
+      "bytes": 32270,
+      "sha256": "a399d1ca4fa7ed0d24a4e85cbccc679511dc81b846fcd9239e3874ccfa9355bc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_clean_raw_fast.json.gz",
+      "bytes": 31658,
+      "sha256": "53e0b4203ae145e0e9cfcadca939777ba8e4d68dd34cca7f58ca210742aff4b1"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_clean_sensor_delta.json.gz",
+      "bytes": 31664,
+      "sha256": "31de2bf063d2b7ea82a06be9328768c34d37c74905da83c2b0b46b65a535c00f"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_drift_kalman_reactive.json.gz",
+      "bytes": 38482,
+      "sha256": "9e790a8a241b32856ca6c864f98f2c4c2ee4ae594a2d83b4f98654347c0d2741"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_drift_kalman_smooth.json.gz",
+      "bytes": 38353,
+      "sha256": "15a334b09ac28c17de6786a2de3fa11b894b2d763ca6c848e26422336fa06ee8"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_drift_phase_rule.json.gz",
+      "bytes": 38475,
+      "sha256": "227c3fb26748b96d5dd2970b90f26a91a1dbae3407ff78130e914bf7ca670cbf"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_drift_raw_fast.json.gz",
+      "bytes": 38445,
+      "sha256": "f79ad0ea5f46d090021971452ab08c0b816272a3d0f5b2cc03f73de685667ede"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_drift_sensor_delta.json.gz",
+      "bytes": 38299,
+      "sha256": "f741bf15abc8fb35fefad0ee4e4b14aad6a34402847861270cafd7b68e6b2575"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_jitter_kalman_reactive.json.gz",
+      "bytes": 39737,
+      "sha256": "1734d23e5890af46eb289c7aa46a92bad196b35a78aba45d4dded971bc46f871"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_jitter_kalman_smooth.json.gz",
+      "bytes": 39741,
+      "sha256": "81913520ec726ab6f83dc634f29e2fddef3fe304a658ed61a95ed81d25edb3fa"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_jitter_phase_rule.json.gz",
+      "bytes": 40309,
+      "sha256": "08763db7d84ace0e3b1da61aad76d826899cc638b10fd98a04b840ab42c26360"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_jitter_raw_fast.json.gz",
+      "bytes": 40530,
+      "sha256": "4dffb510ab5e64c1892cc6872937a9473854ac50572bbdc318e44f8202bd49da"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_jitter_sensor_delta.json.gz",
+      "bytes": 39680,
+      "sha256": "5a62fa976055d5ecfc55d53db60bb7403cad622d86f7ae70c02a08f120b31a4c"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_occlusion_kalman_reactive.json.gz",
+      "bytes": 38506,
+      "sha256": "36dd9d06d57e237a935dbc1661e0799bb7ed071c1123cfe4173ab8cd84486c89"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_occlusion_kalman_smooth.json.gz",
+      "bytes": 38487,
+      "sha256": "48a490eadc12f6898faec385c74433bd39395b7c6fef2573d68c8a35dc2a72f9"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_occlusion_phase_rule.json.gz",
+      "bytes": 38471,
+      "sha256": "437019714235786280a872e2cf74267f605e254cfa73a1489a17182e564e9a93"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_occlusion_raw_fast.json.gz",
+      "bytes": 39389,
+      "sha256": "f2d1fe837e937bf754eed3f10f9884467140a1971c1a4e90da5c133bd77ad5bc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300010_occlusion_sensor_delta.json.gz",
+      "bytes": 38464,
+      "sha256": "619f322f744c9bb6b119c447c88fcbd23bf92506c3c6657414c65a90053a5eee"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_clean_kalman_reactive.json.gz",
+      "bytes": 32895,
+      "sha256": "35547e347ee0e790e96982ddae99e397dbf6a8cf7f8e681e47278b4ae6d10a59"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_clean_kalman_smooth.json.gz",
+      "bytes": 32798,
+      "sha256": "b35aa5e2227b92aa2d7b6965b19b218f27db5ef14080d832f9c4392a393fe560"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_clean_phase_rule.json.gz",
+      "bytes": 32810,
+      "sha256": "2e109e5738715d7c50adf26a9c2b9420c4f33014b9b32613f6168a6839b50f23"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_clean_raw_fast.json.gz",
+      "bytes": 32237,
+      "sha256": "c884b9bb741556c0dccedeada2e0f7be737b038bfd78101c39b4571e9846ed8b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_clean_sensor_delta.json.gz",
+      "bytes": 32245,
+      "sha256": "1cb66e62d4b44cb3c79d403cd846261e448603a76718f34ef3ae493e74da2053"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_drift_kalman_reactive.json.gz",
+      "bytes": 38421,
+      "sha256": "c81ad45ba18b3a17f96e2cc941d2e28f44fd381efbbbe5b9beee03bb16f4c85a"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_drift_kalman_smooth.json.gz",
+      "bytes": 38337,
+      "sha256": "7e44aa53954727ed53fab138f2d55c8cadc1346db6b9fb8e1792b89d53b85039"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_drift_phase_rule.json.gz",
+      "bytes": 38311,
+      "sha256": "5164a9f6d2af800eda9ec3f4b4cdb1909d0940e5e2421ac34c0f229c8528cfe4"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_drift_raw_fast.json.gz",
+      "bytes": 38521,
+      "sha256": "35bf82e9cc6c477e9e8e0cfd90277d275cc0aee4206af806655581342d80f8cc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_drift_sensor_delta.json.gz",
+      "bytes": 38492,
+      "sha256": "c4dbff7be0115c1e7a969f6515d814315a45846219a757d026834f823e057dfc"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_jitter_kalman_reactive.json.gz",
+      "bytes": 40346,
+      "sha256": "8b680c6ccaeb288260db569cbc344115ce9423e8353c06c6f7a730dca9832390"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_jitter_kalman_smooth.json.gz",
+      "bytes": 40446,
+      "sha256": "b2c44b5a715f64a211a7a881ea0180e89dd62e2f7b07b682257c435f1c133699"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_jitter_phase_rule.json.gz",
+      "bytes": 40381,
+      "sha256": "f1a59e5cc34cf4d0e11615742b069d7043c86f7a37811669a472837e51f6b0ce"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_jitter_raw_fast.json.gz",
+      "bytes": 40309,
+      "sha256": "2f1a4aa3540ebdf7dfde2aa7382d335c436fdc83f1a53afb55f88fac026c556b"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_jitter_sensor_delta.json.gz",
+      "bytes": 40289,
+      "sha256": "5b47068d884efbe6b462880a68a81e004329b22ccb3039f792f66c845a52d12d"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_occlusion_kalman_reactive.json.gz",
+      "bytes": 38874,
+      "sha256": "9be433fd1d83ed7a2b7244fafcaa96c1b7740517e0de4ef7419986f8600f7a54"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_occlusion_kalman_smooth.json.gz",
+      "bytes": 39256,
+      "sha256": "7a982aa1cee33590796fef3d2bfd94e100b4352a04b62fa2054ac8a5382c7eea"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_occlusion_phase_rule.json.gz",
+      "bytes": 39248,
+      "sha256": "d018c54200f4b87562f34cfd6c90b3eac082c824465e1c87a5c116b44c790081"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_occlusion_raw_fast.json.gz",
+      "bytes": 39476,
+      "sha256": "391b5df54e3f846282ae0a1ac979d075f930449b47f0f571a2720f0a9d396181"
+    },
+    {
+      "path": "traces/FetchPush-v4_2300011_occlusion_sensor_delta.json.gz",
+      "bytes": 39443,
+      "sha256": "46353fc0b2d326e49610c33afa1dca9985d13a11370921d97893a2f5af667fed"
+    }
+  ]
+}

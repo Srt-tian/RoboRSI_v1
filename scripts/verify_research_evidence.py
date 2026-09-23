@@ -39,7 +39,7 @@ def main():
                     continue
                 if remote_files.get(entry["path"]) != entry:
                     raise ValueError(f"Cache differs from archive: {root / entry['path']}")
-        elif record["schema"] in {"roborsi.rsi.local-cache.v1", "roborsi.queue.local-cache.v1"}:
+        elif record["schema"] in {"roborsi.rsi.local-cache.v1", "roborsi.queue.local-cache.v1", "roborsi.fetch.local-cache.v1"}:
             partial += 1
             originals = set()
             archive_names = set()

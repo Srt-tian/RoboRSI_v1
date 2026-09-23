@@ -1,0 +1,26 @@
+{
+  "FetchReach-v4": {
+    "name": "gain20_close8",
+    "gain": 2.0,
+    "close_ticks": 8,
+    "closed_speed": 0.25
+  },
+  "FetchPush-v4": {
+    "name": "gain15",
+    "gain": 1.5,
+    "close_ticks": 12,
+    "closed_speed": 0.25
+  },
+  "FetchPickAndPlace-v4": {
+    "name": "gain15_close8_fast",
+    "gain": 1.5,
+    "close_ticks": 8,
+    "closed_speed": 0.5
+  },
+  "FetchSlide-v4": {
+    "name": "gain20_close8",
+    "gain": 2.0,
+    "close_ticks": 8,
+    "closed_speed": 0.25
+  }
+}

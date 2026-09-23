@@ -1,0 +1,231 @@
+{
+  "summaries": [
+    {
+      "task": "FetchReach-v4",
+      "config": {
+        "name": "original",
+        "gain": 1.0,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 1.0,
+      "ever_success": 1.0,
+      "last10_success": 1.0,
+      "final_distance": 0.002308998875421101
+    },
+    {
+      "task": "FetchReach-v4",
+      "config": {
+        "name": "gain15",
+        "gain": 1.5,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 1.0,
+      "ever_success": 1.0,
+      "last10_success": 1.0,
+      "final_distance": 0.002122980842694688
+    },
+    {
+      "task": "FetchReach-v4",
+      "config": {
+        "name": "gain20_close8",
+        "gain": 2.0,
+        "close_ticks": 8,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 1.0,
+      "ever_success": 1.0,
+      "last10_success": 1.0,
+      "final_distance": 0.001998534257200244
+    },
+    {
+      "task": "FetchReach-v4",
+      "config": {
+        "name": "gain15_close8_fast",
+        "gain": 1.5,
+        "close_ticks": 8,
+        "closed_speed": 0.5
+      },
+      "episodes": 20,
+      "success": 1.0,
+      "ever_success": 1.0,
+      "last10_success": 1.0,
+      "final_distance": 0.002122980842694688
+    },
+    {
+      "task": "FetchPush-v4",
+      "config": {
+        "name": "original",
+        "gain": 1.0,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.5,
+      "ever_success": 0.5,
+      "last10_success": 0.35,
+      "final_distance": 0.06496343824029135
+    },
+    {
+      "task": "FetchPush-v4",
+      "config": {
+        "name": "gain15",
+        "gain": 1.5,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.9,
+      "ever_success": 0.95,
+      "last10_success": 0.85,
+      "final_distance": 0.03996215103291372
+    },
+    {
+      "task": "FetchPush-v4",
+      "config": {
+        "name": "gain20_close8",
+        "gain": 2.0,
+        "close_ticks": 8,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.9,
+      "ever_success": 1.0,
+      "last10_success": 0.85,
+      "final_distance": 0.04597065754288336
+    },
+    {
+      "task": "FetchPush-v4",
+      "config": {
+        "name": "gain15_close8_fast",
+        "gain": 1.5,
+        "close_ticks": 8,
+        "closed_speed": 0.5
+      },
+      "episodes": 20,
+      "success": 0.9,
+      "ever_success": 0.95,
+      "last10_success": 0.85,
+      "final_distance": 0.03996215103291372
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "config": {
+        "name": "original",
+        "gain": 1.0,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.0,
+      "ever_success": 0.0,
+      "last10_success": 0.0,
+      "final_distance": 0.18917818900673905
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "config": {
+        "name": "gain15",
+        "gain": 1.5,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.05,
+      "ever_success": 0.05,
+      "last10_success": 0.0,
+      "final_distance": 0.15018870306821455
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "config": {
+        "name": "gain20_close8",
+        "gain": 2.0,
+        "close_ticks": 8,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 1.0,
+      "ever_success": 1.0,
+      "last10_success": 0.15,
+      "final_distance": 0.0261184247652393
+    },
+    {
+      "task": "FetchPickAndPlace-v4",
+      "config": {
+        "name": "gain15_close8_fast",
+        "gain": 1.5,
+        "close_ticks": 8,
+        "closed_speed": 0.5
+      },
+      "episodes": 20,
+      "success": 1.0,
+      "ever_success": 1.0,
+      "last10_success": 0.1,
+      "final_distance": 0.025349419436081284
+    },
+    {
+      "task": "FetchSlide-v4",
+      "config": {
+        "name": "original",
+        "gain": 1.0,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.0,
+      "ever_success": 0.0,
+      "last10_success": 0.0,
+      "final_distance": 0.39784724021105267
+    },
+    {
+      "task": "FetchSlide-v4",
+      "config": {
+        "name": "gain15",
+        "gain": 1.5,
+        "close_ticks": 12,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.0,
+      "ever_success": 0.05,
+      "last10_success": 0.0,
+      "final_distance": 0.3453563075286312
+    },
+    {
+      "task": "FetchSlide-v4",
+      "config": {
+        "name": "gain20_close8",
+        "gain": 2.0,
+        "close_ticks": 8,
+        "closed_speed": 0.25
+      },
+      "episodes": 20,
+      "success": 0.1,
+      "ever_success": 0.25,
+      "last10_success": 0.1,
+      "final_distance": 0.2927223163598347
+    },
+    {
+      "task": "FetchSlide-v4",
+      "config": {
+        "name": "gain15_close8_fast",
+        "gain": 1.5,
+        "close_ticks": 8,
+        "closed_speed": 0.5
+      },
+      "episodes": 20,
+      "success": 0.05,
+      "ever_success": 0.45,
+      "last10_success": 0.05,
+      "final_distance": 0.2837732442138993
+    }
+  ],
+  "wall_s": 3.138169131241739,
+  "episodes": 320,
+  "control_steps": 16000
+}

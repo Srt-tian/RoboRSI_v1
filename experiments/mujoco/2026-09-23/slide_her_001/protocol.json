@@ -1,0 +1,47 @@
+{
+  "source_commit": "8aff4750da1fdb1918816d49c1076a8c96485cc5",
+  "task": "FetchSlide-v4",
+  "training_transitions": 250000,
+  "seed": 11,
+  "num_envs": 4,
+  "validation_episodes": 50,
+  "validation_first_seed": 2810000,
+  "validation_interval": 25000,
+  "selection": "highest final-step success, then lowest final distance; validation only",
+  "held_out_test_generated": false,
+  "registered_horizon": 50,
+  "scope": "Clean privileged-state lower-level skill baseline; not a learned JEV judgment result",
+  "inputs": "Full standard observation dict, including privileged object pose/velocity, achieved and desired goals",
+  "outputs": "Four continuous Cartesian/gripper action values in [-1, 1]",
+  "algorithm": "Stable Baselines3 SAC + future HER",
+  "hyperparameters": {
+    "net_arch": [
+      256,
+      256
+    ],
+    "buffer_size": 250000,
+    "batch_size": 256,
+    "gamma": 0.95,
+    "tau": 0.05,
+    "learning_rate": 0.001,
+    "learning_starts": 10000,
+    "train_freq": 1,
+    "gradient_steps": 1,
+    "n_sampled_goal": 4,
+    "entropy": "auto",
+    "normalize_observations": false,
+    "tf32": false
+  },
+  "parameters": {
+    "actor": 76040,
+    "critics": 150530
+  },
+  "versions": {
+    "torch": "2.7.1+cu128",
+    "numpy": "2.4.2",
+    "mujoco": "3.6.0",
+    "gymnasium": "1.2.3",
+    "gymnasium-robotics": "1.4.1",
+    "stable-baselines3": "2.8.0"
+  }
+}

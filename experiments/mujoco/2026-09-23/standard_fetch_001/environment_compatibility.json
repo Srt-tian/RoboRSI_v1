@@ -1,0 +1,9 @@
+{
+  "episodes": 8,
+  "max_qpos_difference": 0.0,
+  "versions_compared": [
+    "gymnasium1.3.0",
+    "gymnasium1.2.3"
+  ],
+  "scope": "Fixed-skill trajectories; same MuJoCo3.6 and Robotics1.4.1; eight diagnostic seed/task pairs only"
+}

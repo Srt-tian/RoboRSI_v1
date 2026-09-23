@@ -1,0 +1,362 @@
+{
+  "summary": {
+    "steps": 50000,
+    "wall_s": 114.59212658088654,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.4298772078694818,
+    "mean_return": -49.5,
+    "mean_ever_success": 0.06
+  },
+  "rows": [
+    {
+      "seed": 2810000,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.6642588609831535,
+      "return": -50.0
+    },
+    {
+      "seed": 2810001,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5244892962628985,
+      "return": -50.0
+    },
+    {
+      "seed": 2810002,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.3217533231036697,
+      "return": -50.0
+    },
+    {
+      "seed": 2810003,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.580738077323246,
+      "return": -50.0
+    },
+    {
+      "seed": 2810004,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.49964395689014757,
+      "return": -50.0
+    },
+    {
+      "seed": 2810005,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.4935550999470489,
+      "return": -50.0
+    },
+    {
+      "seed": 2810006,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.4263106075653306,
+      "return": -50.0
+    },
+    {
+      "seed": 2810007,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.3055162858711113,
+      "return": -50.0
+    },
+    {
+      "seed": 2810008,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.6195249016773644,
+      "return": -50.0
+    },
+    {
+      "seed": 2810009,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.4067733545510402,
+      "return": -50.0
+    },
+    {
+      "seed": 2810010,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.22438062323536115,
+      "return": -50.0
+    },
+    {
+      "seed": 2810011,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.31843768300755,
+      "return": -50.0
+    },
+    {
+      "seed": 2810012,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.14418931436573337,
+      "return": -50.0
+    },
+    {
+      "seed": 2810013,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5640928460448567,
+      "return": -50.0
+    },
+    {
+      "seed": 2810014,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.4813445572600997,
+      "return": -50.0
+    },
+    {
+      "seed": 2810015,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.42991245108078285,
+      "return": -50.0
+    },
+    {
+      "seed": 2810016,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.4426570713342084,
+      "return": -50.0
+    },
+    {
+      "seed": 2810017,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.646771438359946,
+      "return": -50.0
+    },
+    {
+      "seed": 2810018,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.37332531628545323,
+      "return": -50.0
+    },
+    {
+      "seed": 2810019,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.08457311366370716,
+      "return": -50.0
+    },
+    {
+      "seed": 2810020,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.561022696794076,
+      "return": -50.0
+    },
+    {
+      "seed": 2810021,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5839964588711676,
+      "return": -50.0
+    },
+    {
+      "seed": 2810022,
+      "success": false,
+      "ever_success": true,
+      "final_distance": 0.6842443902119996,
+      "return": -47.0
+    },
+    {
+      "seed": 2810023,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.4536707294901005,
+      "return": -50.0
+    },
+    {
+      "seed": 2810024,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5984933211776093,
+      "return": -50.0
+    },
+    {
+      "seed": 2810025,
+      "success": false,
+      "ever_success": true,
+      "final_distance": 0.07038992006385206,
+      "return": -30.0
+    },
+    {
+      "seed": 2810026,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.48403743807410693,
+      "return": -50.0
+    },
+    {
+      "seed": 2810027,
+      "success": false,
+      "ever_success": true,
+      "final_distance": 0.6374526857783486,
+      "return": -48.0
+    },
+    {
+      "seed": 2810028,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5325686812903128,
+      "return": -50.0
+    },
+    {
+      "seed": 2810029,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.6458519846302898,
+      "return": -50.0
+    },
+    {
+      "seed": 2810030,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.17461769562766782,
+      "return": -50.0
+    },
+    {
+      "seed": 2810031,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.4375111454137109,
+      "return": -50.0
+    },
+    {
+      "seed": 2810032,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.528408500100634,
+      "return": -50.0
+    },
+    {
+      "seed": 2810033,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5118590817120201,
+      "return": -50.0
+    },
+    {
+      "seed": 2810034,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.42127756440310604,
+      "return": -50.0
+    },
+    {
+      "seed": 2810035,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.3915660592696974,
+      "return": -50.0
+    },
+    {
+      "seed": 2810036,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.554232208348053,
+      "return": -50.0
+    },
+    {
+      "seed": 2810037,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.2845928275734957,
+      "return": -50.0
+    },
+    {
+      "seed": 2810038,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.08129107714989149,
+      "return": -50.0
+    },
+    {
+      "seed": 2810039,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.552695235472719,
+      "return": -50.0
+    },
+    {
+      "seed": 2810040,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.36776330281851743,
+      "return": -50.0
+    },
+    {
+      "seed": 2810041,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5390685205857518,
+      "return": -50.0
+    },
+    {
+      "seed": 2810042,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.12940981766722687,
+      "return": -50.0
+    },
+    {
+      "seed": 2810043,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.3670929794740419,
+      "return": -50.0
+    },
+    {
+      "seed": 2810044,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.3585832112512738,
+      "return": -50.0
+    },
+    {
+      "seed": 2810045,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.21231543083853444,
+      "return": -50.0
+    },
+    {
+      "seed": 2810046,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.24977028104758422,
+      "return": -50.0
+    },
+    {
+      "seed": 2810047,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.5567232278809735,
+      "return": -50.0
+    },
+    {
+      "seed": 2810048,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.57208445011461,
+      "return": -50.0
+    },
+    {
+      "seed": 2810049,
+      "success": false,
+      "ever_success": false,
+      "final_distance": 0.3990212915300126,
+      "return": -50.0
+    }
+  ]
+}

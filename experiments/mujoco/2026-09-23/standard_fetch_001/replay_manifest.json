@@ -1,0 +1,257 @@
+{
+  "schema": "roborsi.fetch.remote-archive.v1",
+  "role": "replay",
+  "execution_commit": "8aff4750da1fdb1918816d49c1076a8c96485cc5",
+  "files": [
+    {
+      "path": "FetchPickAndPlace-v4_2200000_gain15_close8_fast.mp4",
+      "bytes": 32632,
+      "sha256": "b1d14384872a5d7808d8df0d56f856018de42e43d7400ef168faaee0c2d2c3c1"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2200001_gain15_close8_fast.mp4",
+      "bytes": 29483,
+      "sha256": "768d4d49bd020a2ef981e5b81fa75d396108b41e5a5d8f888c4ba05084480de6"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_drift_kalman_reactive.mp4",
+      "bytes": 31594,
+      "sha256": "3941049b603532c4b62778ca9c53517b3623436532d5b6f38000dd4fc5fe4864"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_drift_kalman_smooth.mp4",
+      "bytes": 32327,
+      "sha256": "19bfd24c061a70961786ee59b9d04a6cf98907a86d49ad915480d0e7ff601feb"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_drift_phase_rule.mp4",
+      "bytes": 32327,
+      "sha256": "19bfd24c061a70961786ee59b9d04a6cf98907a86d49ad915480d0e7ff601feb"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_drift_raw_fast.mp4",
+      "bytes": 32619,
+      "sha256": "498c242b54cb2421b4226ca35e4bd7b038517bce614e9575c5807b25f9ef55f6"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_drift_sensor_delta.mp4",
+      "bytes": 32241,
+      "sha256": "dc0e6735beabca6ea53b9a0745f3790449d43a141ae871749b3509512affc670"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_jitter_kalman_reactive.mp4",
+      "bytes": 31237,
+      "sha256": "5f1bd7a948ddc0604690b1bbf9d347914e78cbafdbf22d8e1bcc1ca14ce903b7"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_jitter_kalman_smooth.mp4",
+      "bytes": 31922,
+      "sha256": "565a30f3823998fb1ec424358300621755811f304b9acd0736f5748246fa9a18"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_jitter_phase_rule.mp4",
+      "bytes": 31922,
+      "sha256": "565a30f3823998fb1ec424358300621755811f304b9acd0736f5748246fa9a18"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_jitter_raw_fast.mp4",
+      "bytes": 32109,
+      "sha256": "3d40a01b0ed7d1cc5af2e6fc43190dc5037e130848c7b82c38ab464682b4bea8"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_jitter_sensor_delta.mp4",
+      "bytes": 29870,
+      "sha256": "c04593abc0f8b1f5be8c4f609a924de2b27487eb1e4dc990d8241a00f1b00a1f"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_occlusion_kalman_reactive.mp4",
+      "bytes": 32010,
+      "sha256": "a84633e03ddb41913e3e024428385e5e7e3d7f20180b817d27be01b73de9921a"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_occlusion_kalman_smooth.mp4",
+      "bytes": 31782,
+      "sha256": "829a15761c6ce923bba74d0d6219a907792dd5f5ac551ae338babcf7a419b235"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_occlusion_phase_rule.mp4",
+      "bytes": 31782,
+      "sha256": "829a15761c6ce923bba74d0d6219a907792dd5f5ac551ae338babcf7a419b235"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_occlusion_raw_fast.mp4",
+      "bytes": 31762,
+      "sha256": "066456904818cdd266d270196029ac342642c927ace65fe773c827dca2834dd8"
+    },
+    {
+      "path": "FetchPickAndPlace-v4_2301000_occlusion_sensor_delta.mp4",
+      "bytes": 31739,
+      "sha256": "0b9026301b2bfdc656ae8f3a076b656ffe9769286170bd784a36ec6433989d9c"
+    },
+    {
+      "path": "FetchPush-v4_2200000_gain15.mp4",
+      "bytes": 31389,
+      "sha256": "f4ac20d661971e5f1846ea03d60852847719951eddc9a80d3653e724ce03a8d4"
+    },
+    {
+      "path": "FetchPush-v4_2200001_gain15.mp4",
+      "bytes": 29059,
+      "sha256": "d9fc266f3b77d706b6009e107d1a6e270be305b8c305bd1e788f5ddaa99c0b56"
+    },
+    {
+      "path": "FetchPush-v4_2300000_drift_kalman_reactive.mp4",
+      "bytes": 33444,
+      "sha256": "5bddacd931264bc017ffd4bf99a10c26b0c40c70c4d0323aa718284e02084113"
+    },
+    {
+      "path": "FetchPush-v4_2300000_drift_kalman_smooth.mp4",
+      "bytes": 33922,
+      "sha256": "bfaaae675483414f30f4d4020d4da2ad25024cee8908391822f21150cc70a6fb"
+    },
+    {
+      "path": "FetchPush-v4_2300000_drift_phase_rule.mp4",
+      "bytes": 32860,
+      "sha256": "9c60024f8d8dd488510684a520c84e89cd4a76abab45a267a9f9811d11456a08"
+    },
+    {
+      "path": "FetchPush-v4_2300000_drift_raw_fast.mp4",
+      "bytes": 31490,
+      "sha256": "3076463cf069b4ba8d3c874eb0509b0f9928c6f30d791489b8b3ecb69d0b6479"
+    },
+    {
+      "path": "FetchPush-v4_2300000_drift_sensor_delta.mp4",
+      "bytes": 32861,
+      "sha256": "3cdae145ac12bf5290b532ddafde788a6a506afa44de9e52c19442a7e081e905"
+    },
+    {
+      "path": "FetchPush-v4_2300000_jitter_kalman_reactive.mp4",
+      "bytes": 32507,
+      "sha256": "8a83360debb17cc349aa7bf28988b6e26a9148a345e1b5a7297d070c1d6406ff"
+    },
+    {
+      "path": "FetchPush-v4_2300000_jitter_kalman_smooth.mp4",
+      "bytes": 31706,
+      "sha256": "f15d38aa8cdd7c44ac998b8dba7d0264eca8189303e7b49431728f1d1045b86b"
+    },
+    {
+      "path": "FetchPush-v4_2300000_jitter_phase_rule.mp4",
+      "bytes": 33137,
+      "sha256": "bb20ed08b884a065c8b4bb77c95d47599c817c603d71622145cb303b057882e8"
+    },
+    {
+      "path": "FetchPush-v4_2300000_jitter_raw_fast.mp4",
+      "bytes": 34801,
+      "sha256": "f5bb4585b303e549b65901294708be5c8d178c3742d4fd368bed90419774c6bb"
+    },
+    {
+      "path": "FetchPush-v4_2300000_jitter_sensor_delta.mp4",
+      "bytes": 33488,
+      "sha256": "7f31350ccbde7a4db762a55c7d2634828c4d2b3090856107a90960fac8a3ebcf"
+    },
+    {
+      "path": "FetchPush-v4_2300000_occlusion_kalman_reactive.mp4",
+      "bytes": 32924,
+      "sha256": "0780e582a2ddf4804fc003b1ceb48959d3c1cfd78a0e0f5a2f65cf048cad0a37"
+    },
+    {
+      "path": "FetchPush-v4_2300000_occlusion_kalman_smooth.mp4",
+      "bytes": 33015,
+      "sha256": "2c37da323439a335636cdb4deb25b58a3d0bd2bfda8e9ae58b4f443ea96b2937"
+    },
+    {
+      "path": "FetchPush-v4_2300000_occlusion_phase_rule.mp4",
+      "bytes": 33398,
+      "sha256": "cf274e36ed84ce346b8c92742b4b92711fd5f8f7403deb6e89f2db376a82f454"
+    },
+    {
+      "path": "FetchPush-v4_2300000_occlusion_raw_fast.mp4",
+      "bytes": 31845,
+      "sha256": "2791d8859ba64547db0943b0f84c47ee04466371dc21f281caa5b63f54cf628e"
+    },
+    {
+      "path": "FetchPush-v4_2300000_occlusion_sensor_delta.mp4",
+      "bytes": 33012,
+      "sha256": "c518ea2de67d84753c6d269ab9d2ce2f1faab0f0d1daed535419b03d6021222e"
+    },
+    {
+      "path": "FetchReach-v4_2200000_gain20_close8.mp4",
+      "bytes": 25483,
+      "sha256": "be04cc891621ba214bd6d0eaca5aa95b664276f1cf03786571f297927c8ac318"
+    },
+    {
+      "path": "FetchReach-v4_2200001_gain20_close8.mp4",
+      "bytes": 22123,
+      "sha256": "a3b2d070639a3969162e454e01721e5d3c5dcb273ddb59b30e3ab63d6bf8c8e0"
+    },
+    {
+      "path": "FetchSlide-v4_2200000_gain20_close8.mp4",
+      "bytes": 33832,
+      "sha256": "cbe4abef0e43edaf3e11198a0d7c4780b490e5868b0b6fafffd2373e12b5ad11"
+    },
+    {
+      "path": "FetchSlide-v4_2200001_gain20_close8.mp4",
+      "bytes": 30718,
+      "sha256": "3c23e1cad60027040dc0c250ff39995c5933366c8daacc3b2cc1b87a3de9529a"
+    },
+    {
+      "path": "archive_environment.json",
+      "bytes": 175,
+      "sha256": "66f299b6db4bab587bcb8d2d322759e0aa946fffd6cb2853dfc4b2f0fdb51fd2"
+    },
+    {
+      "path": "replays.json",
+      "bytes": 30402,
+      "sha256": "b7897cb18bcad523d49cc4a86c1ad7d5c477f6877b49c155e2190f01bf90a309"
+    },
+    {
+      "path": "source/fetch_audit.py",
+      "bytes": 6244,
+      "sha256": "7a5e6bb661e19315a64c2194f742b0a7c566c6dbce0903bbf2ecd045118da580"
+    },
+    {
+      "path": "source/fetch_replay.py",
+      "bytes": 2584,
+      "sha256": "5d81cb11190c361dc1d4727ef0bf206b792b604767449697c78bd6786964fdaa"
+    },
+    {
+      "path": "source/fetch_robustness.py",
+      "bytes": 7566,
+      "sha256": "c0ab02cc7c050b2a4db412e81200f021415cc5a5fa8bacd5bdee16d81668f6ef"
+    },
+    {
+      "path": "source/fetch_sensors.py",
+      "bytes": 6992,
+      "sha256": "d096634d323a14d39be178f91cd192efb9ac18123f6e79bf185775dd12c0f38e"
+    },
+    {
+      "path": "source/fetch_standard.py",
+      "bytes": 7473,
+      "sha256": "324b1b99d11973c9a647474970742b420a78ceda14b01b59f73ced738dc2cc3f"
+    },
+    {
+      "path": "source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "source/physics_queue_evidence.py",
+      "bytes": 12498,
+      "sha256": "741e115bc6de4e8e384f22ee41976f1e4fa9b35cb4a18cd91c6f3f6b70ec7b1d"
+    },
+    {
+      "path": "source/physics_queue_replay.py",
+      "bytes": 3791,
+      "sha256": "b063f0140363a1ed53eea8eed04b66c2d837aa1cb44359bf5ececb3eaccedc6e"
+    },
+    {
+      "path": "source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    }
+  ]
+}

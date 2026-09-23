@@ -1,0 +1,90 @@
+[
+  {
+    "steps": 0,
+    "wall_s": 4.7704954193905,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.4219250658168964,
+    "mean_return": -50.0,
+    "mean_ever_success": 0.0
+  },
+  {
+    "steps": 25000,
+    "wall_s": 51.059186389669776,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.40575319355140316,
+    "mean_return": -50.0,
+    "mean_ever_success": 0.0
+  },
+  {
+    "steps": 50000,
+    "wall_s": 114.59212658088654,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.4298772078694818,
+    "mean_return": -49.5,
+    "mean_ever_success": 0.06
+  },
+  {
+    "steps": 75000,
+    "wall_s": 182.6356527917087,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.4550843408087972,
+    "mean_return": -49.94,
+    "mean_ever_success": 0.02
+  },
+  {
+    "steps": 100000,
+    "wall_s": 250.04268047772348,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.4600173327888838,
+    "mean_return": -49.94,
+    "mean_ever_success": 0.02
+  },
+  {
+    "steps": 125000,
+    "wall_s": 318.2947649154812,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.42741731463193317,
+    "mean_return": -49.94,
+    "mean_ever_success": 0.02
+  },
+  {
+    "steps": 150000,
+    "wall_s": 387.2032598350197,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.41285132481034253,
+    "mean_return": -50.0,
+    "mean_ever_success": 0.0
+  },
+  {
+    "steps": 175000,
+    "wall_s": 456.41363993193954,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.44732819726761663,
+    "mean_return": -49.9,
+    "mean_ever_success": 0.02
+  },
+  {
+    "steps": 200000,
+    "wall_s": 523.9904477465898,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.3963664049992438,
+    "mean_return": -49.92,
+    "mean_ever_success": 0.02
+  },
+  {
+    "steps": 225000,
+    "wall_s": 591.9928204771131,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.40021688173003944,
+    "mean_return": -49.84,
+    "mean_ever_success": 0.04
+  },
+  {
+    "steps": 250000,
+    "wall_s": 660.2373180342838,
+    "validation_success": 0.0,
+    "mean_final_distance": 0.40947667680988475,
+    "mean_return": -49.92,
+    "mean_ever_success": 0.02
+  }
+]

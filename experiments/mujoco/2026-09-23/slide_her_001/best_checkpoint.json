@@ -1,0 +1,8 @@
+{
+  "steps": 200000,
+  "wall_s": 523.9904477465898,
+  "validation_success": 0.0,
+  "mean_final_distance": 0.3963664049992438,
+  "mean_return": -49.92,
+  "mean_ever_success": 0.02
+}

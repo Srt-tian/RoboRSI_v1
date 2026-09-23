@@ -1,0 +1,27 @@
+{
+  "source_commit": "879e7ee2dca9ad718c894e63171275c000e3f715",
+  "mode": "calibrate",
+  "tasks": [
+    "FetchReach-v4",
+    "FetchPush-v4",
+    "FetchPickAndPlace-v4",
+    "FetchSlide-v4"
+  ],
+  "episodes_per_task": 20,
+  "first_seed": 2100000,
+  "scope": "Fixed-skill qualification; not learned JEV algorithm evaluation",
+  "horizon": "registered default: 50 control steps, no override",
+  "primary_metric": "is_success at the final time-limit step",
+  "secondary_metrics": [
+    "ever_success",
+    "last10_success",
+    "final_distance"
+  ],
+  "configuration_selection": "calibration final-success first, then lower mean final distance, then configuration order",
+  "selection_sha256": null,
+  "env": {
+    "mujoco": "3.6.0",
+    "gymnasium": "1.3.0",
+    "robotics": "1.4.1"
+  }
+}

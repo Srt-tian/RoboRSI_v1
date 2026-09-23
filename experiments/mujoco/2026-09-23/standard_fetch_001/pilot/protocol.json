@@ -1,0 +1,61 @@
+{
+  "source_commit": "0739786a5d50ad1465c34e6a00f827781be6f707",
+  "split": "pilot",
+  "parents_per_task": 12,
+  "tasks": [
+    "FetchPush-v4",
+    "FetchPickAndPlace-v4"
+  ],
+  "methods": [
+    "raw_fast",
+    "sensor_delta",
+    "kalman_smooth",
+    "kalman_reactive",
+    "phase_rule"
+  ],
+  "regimes": {
+    "clean": {
+      "bias": 0.0,
+      "jitter": 0.0,
+      "drift": 0.0,
+      "precise": 0.0,
+      "delay": 0,
+      "occlusion": false
+    },
+    "jitter": {
+      "bias": 0.015,
+      "jitter": 0.01,
+      "drift": 0.0005,
+      "precise": 0.002,
+      "delay": 5,
+      "occlusion": false
+    },
+    "drift": {
+      "bias": 0.02,
+      "jitter": 0.006,
+      "drift": 0.003,
+      "precise": 0.002,
+      "delay": 8,
+      "occlusion": false
+    },
+    "occlusion": {
+      "bias": 0.02,
+      "jitter": 0.004,
+      "drift": 0.001,
+      "precise": 0.002,
+      "delay": 8,
+      "occlusion": true
+    }
+  },
+  "first_seed": 2300000,
+  "task_seed_stride": 1000,
+  "primary": "final is_success at registered TimeLimit step 50",
+  "shared": "same physical seed and exogenous sensor tape across methods; same reset seed across regimes",
+  "scope": "Synthetic sensor robustness extension of standard tasks; fixed estimators, no learned router yet",
+  "selection_sha256": "82951cfc30e0f95881a02aee06dd8dc95c7e11ef6506669a1d847e82928910b4",
+  "env": {
+    "mujoco": "3.6.0",
+    "gymnasium": "1.3.0",
+    "robotics": "1.4.1"
+  }
+}

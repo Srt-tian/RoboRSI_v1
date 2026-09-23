@@ -1,0 +1,97 @@
+{
+  "schema": "roborsi.fetch.local-cache.v1",
+  "scope": "Curves and per-seed validation records only; weights and replay buffer retained remotely",
+  "remote_archives": [
+    {
+      "manifest": "remote_manifest.json",
+      "prefix": ""
+    }
+  ],
+  "files": [
+    {
+      "path": "best_checkpoint.json",
+      "bytes": 180,
+      "sha256": "e90e535f78d1748959024ddc39d92dbd192e44f92cd6208fe6b6b0b7b5807aa8"
+    },
+    {
+      "path": "completion.json",
+      "bytes": 106,
+      "sha256": "266d547dbc69cf3f402c151e69b259947a3b493daaa9f13ec99559a69319d0ce"
+    },
+    {
+      "path": "curve.json",
+      "bytes": 2172,
+      "sha256": "01ceae49b418f8282e0448f926d2a445829f77ae0e1e7bbe6e2307188506d54c"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 1372,
+      "sha256": "c0d86e3e8ab11696b66d05d3e45581ca490d77c3d7c0b6935658067b38c8eb7c"
+    },
+    {
+      "path": "remote_manifest.json",
+      "bytes": 3159,
+      "sha256": "b15573be36d6cb52fbd6755b3f756949095d483e2b73145bcd79029db82eba4d"
+    },
+    {
+      "path": "source/fetch_sac_her.py",
+      "bytes": 7697,
+      "sha256": "f567387d82773709b188bee776bd05770f51b256a662d8d7058819e3b1ab3b02"
+    },
+    {
+      "path": "validation_00000000.json",
+      "bytes": 7977,
+      "sha256": "5798f0bb2a4d2e81285ecaa1e547c5f677a4ddd7e8c3879364a345927d7325d0"
+    },
+    {
+      "path": "validation_00025000.json",
+      "bytes": 7988,
+      "sha256": "3ebe1bc4b88af513071710f50c69c370eef4579ca2a2b2ce8dd94a0b656431dd"
+    },
+    {
+      "path": "validation_00050000.json",
+      "bytes": 7978,
+      "sha256": "80536983849acc6f64b4ef01598661ee9f35d986969bc4d174b5443ac72c0bca"
+    },
+    {
+      "path": "validation_00075000.json",
+      "bytes": 7977,
+      "sha256": "01bedd161a2be77c4354375dfb3ba466214ed9deb4294bf7b431b654b22b4544"
+    },
+    {
+      "path": "validation_00100000.json",
+      "bytes": 7980,
+      "sha256": "ac863fb15a5c14ad41dddfe7ee81aec6856d1f1fc7f1778efcfd3ff31213f1e2"
+    },
+    {
+      "path": "validation_00125000.json",
+      "bytes": 7986,
+      "sha256": "1b8f9e04d043a96b9aee8eeeff4d756018107111d0ff1257bce45c3705098e19"
+    },
+    {
+      "path": "validation_00150000.json",
+      "bytes": 7982,
+      "sha256": "dde07d168ae1af93a439011d41131504bd087669372b2981ff2070f610cc6458"
+    },
+    {
+      "path": "validation_00175000.json",
+      "bytes": 7982,
+      "sha256": "4203aa9e9966f0a782ff35e5fb6de5b3004e9a1248fb12f086e4ead51381e1b5"
+    },
+    {
+      "path": "validation_00200000.json",
+      "bytes": 7985,
+      "sha256": "d28a8aa5e175f4ee5dfe3c0aafb6f9fa42d2c148d1df3de9798a7966eb01d90e"
+    },
+    {
+      "path": "validation_00225000.json",
+      "bytes": 7988,
+      "sha256": "956851194db4b209d10f7ff72e20775de9d4c64aea0087b3bc86ae4594dbc3b6"
+    },
+    {
+      "path": "validation_00250000.json",
+      "bytes": 7990,
+      "sha256": "66898052bc3e51958155c8ef8310cbfa1d1530dcc44aa651770df5dd5df917a4"
+    }
+  ]
+}
