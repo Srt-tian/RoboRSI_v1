@@ -92,12 +92,13 @@ def feature_vector(c, snap, queue):
     return list(map(float, x))
 
 
-def branch(env, c, snap, queue, route):
+def branch(env, c, snap, queue, route, estimate_fn=None):
     obs, ctrl, history = restore(env, snap)
     grips = copy.deepcopy(snap['grips'])
+    estimate_fn = streams if estimate_fn is None else estimate_fn
     trace, streak = [], 0
     for k in range(150):
-        estimates, sample = streams(c, obs, history, grips)
+        estimates, sample = estimate_fn(c, obs, history, grips)
         locked = k < len(queue)
         perceived = estimates[0 if locked else route]
         # Controller bookkeeping sees the same fast stream during the prefix.
