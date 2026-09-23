@@ -27,7 +27,7 @@ class Controller:
             return np.r_[np.clip((goal-grip)*8, -1, 1), 0.0]
         opening = 1.0
         if self.task == 'FetchPickAndPlace-v4':
-            targets = [obj+np.array([0,0,.10]),obj+np.array([0,0,-.012]),obj+np.array([0,0,-.012]),obj+np.array([0,0,.16]),goal]
+            targets = [obj+np.array([0,0,.10]),obj+np.array([0,0,-.022]),obj+np.array([0,0,-.022]),obj+np.array([0,0,.16]),goal]
             target = targets[min(self.stage,4)]
             if self.stage >= 2:
                 opening = -1.0
@@ -52,7 +52,7 @@ class Controller:
                 opening=-1.0
             if self.stage < 2 and np.linalg.norm(grip-target) < .012:
                 self.stage += 1
-        return np.r_[np.clip((target-grip)*8,-1,1),opening]
+        return np.r_[np.clip((target-grip)*6,-.35 if opening < 0 else -1,.35 if opening < 0 else 1),opening]
 
 
 def episode(env, task, seed, *, delay=0, refresh=1, writer=None):
