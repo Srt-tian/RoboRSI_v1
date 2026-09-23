@@ -1,0 +1,7832 @@
+[
+  {
+    "context": {
+      "seed": 1510000,
+      "index": 0,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.02530502543122247,
+      "time_price": 0.04842351397984391
+    },
+    "queue": "hold",
+    "cost": 0.12396419578840041,
+    "success": true,
+    "duration_s": 2.56,
+    "old_cost": [
+      1.2905410838790634,
+      0.1781985314458256,
+      1.2905410838790634
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510000,
+      "index": 0,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.02530502543122247,
+      "time_price": 0.04842351397984391
+    },
+    "queue": "half_proposal",
+    "cost": 0.1549552447355005,
+    "success": true,
+    "duration_s": 3.2,
+    "old_cost": [
+      1.2905410838790634,
+      0.24599145101760705,
+      1.2905410838790634
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510000,
+      "index": 0,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.02530502543122247,
+      "time_price": 0.04842351397984391
+    },
+    "queue": "proposal",
+    "cost": 0.13945972026195044,
+    "success": true,
+    "duration_s": 2.88,
+    "old_cost": [
+      0.1781985314458256,
+      0.16270300697227552,
+      1.2905410838790634
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510001,
+      "index": 1,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.025264538506693572,
+      "time_price": 0.07568451478452994
+    },
+    "queue": "hold",
+    "cost": 0.2845737755898326,
+    "success": true,
+    "duration_s": 3.7600000000000002,
+    "old_cost": [
+      1.4541070887071796,
+      0.2845737755898326,
+      1.4541070887071796
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510001,
+      "index": 1,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.025264538506693572,
+      "time_price": 0.07568451478452994
+    },
+    "queue": "half_proposal",
+    "cost": 0.26338211145016416,
+    "success": true,
+    "duration_s": 3.48,
+    "old_cost": [
+      1.4541070887071796,
+      0.26338211145016416,
+      1.4541070887071796
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510001,
+      "index": 1,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.025264538506693572,
+      "time_price": 0.07568451478452994
+    },
+    "queue": "proposal",
+    "cost": 0.2542999696760206,
+    "success": true,
+    "duration_s": 3.36,
+    "old_cost": [
+      1.4541070887071796,
+      0.2724642532243078,
+      0.33906662623469414
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510002,
+      "index": 2,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 13,
+      "queue_steps": 4,
+      "noise_std": 0.009350334778278097,
+      "time_price": 0.14141341823935435
+    },
+    "queue": "hold",
+    "cost": 0.19232224880552193,
+    "success": true,
+    "duration_s": 1.36,
+    "old_cost": [
+      0.18666571207594776,
+      0.3789879608814697,
+      1.848480509436126
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510002,
+      "index": 2,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 13,
+      "queue_steps": 4,
+      "noise_std": 0.009350334778278097,
+      "time_price": 0.14141341823935435
+    },
+    "queue": "half_proposal",
+    "cost": 0.1810091753463736,
+    "success": true,
+    "duration_s": 1.28,
+    "old_cost": [
+      0.1753526386167994,
+      0.36767488742232135,
+      1.848480509436126
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510002,
+      "index": 2,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 13,
+      "queue_steps": 4,
+      "noise_std": 0.009350334778278097,
+      "time_price": 0.14141341823935435
+    },
+    "queue": "proposal",
+    "cost": 0.15272649169850272,
+    "success": true,
+    "duration_s": 1.08,
+    "old_cost": [
+      0.15272649169850272,
+      0.3450487405040246,
+      1.848480509436126
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510003,
+      "index": 3,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 8,
+      "noise_std": 0.008662045202646995,
+      "time_price": 0.08997138271094766
+    },
+    "queue": "hold",
+    "cost": 0.2879084246750325,
+    "success": true,
+    "duration_s": 3.2,
+    "old_cost": [
+      0.2951061352919084,
+      0.2879084246750325,
+      0.3238969777594116
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510003,
+      "index": 3,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 8,
+      "noise_std": 0.008662045202646995,
+      "time_price": 0.08997138271094766
+    },
+    "queue": "half_proposal",
+    "cost": 0.2735130034412809,
+    "success": true,
+    "duration_s": 3.04,
+    "old_cost": [
+      0.269914148132843,
+      0.2735130034412809,
+      0.38867637331129395
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510003,
+      "index": 3,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 8,
+      "noise_std": 0.008662045202646995,
+      "time_price": 0.08997138271094766
+    },
+    "queue": "proposal",
+    "cost": 0.2519198715906535,
+    "success": true,
+    "duration_s": 2.8000000000000003,
+    "old_cost": [
+      0.2519198715906535,
+      0.2519198715906535,
+      0.24832101628221556
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510004,
+      "index": 4,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.01906451183981799,
+      "time_price": 0.07149466393370142
+    },
+    "queue": "hold",
+    "cost": 0.11153167573657422,
+    "success": true,
+    "duration_s": 1.56,
+    "old_cost": [
+      0.11153167573657422,
+      0.15156868753944702,
+      0.11153167573657422
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510004,
+      "index": 4,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.01906451183981799,
+      "time_price": 0.07149466393370142
+    },
+    "queue": "half_proposal",
+    "cost": 0.09437295639248588,
+    "success": true,
+    "duration_s": 1.32,
+    "old_cost": [
+      0.09437295639248588,
+      0.1258306085233145,
+      0.09437295639248588
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510004,
+      "index": 4,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.01906451183981799,
+      "time_price": 0.07149466393370142
+    },
+    "queue": "proposal",
+    "cost": 0.07721423704839754,
+    "success": true,
+    "duration_s": 1.08,
+    "old_cost": [
+      0.07721423704839754,
+      0.15442847409679508,
+      0.07721423704839754
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510005,
+      "index": 5,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.009898561577782992,
+      "time_price": 0.11378865469312541
+    },
+    "queue": "hold",
+    "cost": 0.29129895601440103,
+    "success": true,
+    "duration_s": 2.56,
+    "old_cost": [
+      0.29129895601440103,
+      0.29129895601440103,
+      0.29129895601440103
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510005,
+      "index": 5,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.009898561577782992,
+      "time_price": 0.11378865469312541
+    },
+    "queue": "half_proposal",
+    "cost": 0.282195863638951,
+    "success": true,
+    "duration_s": 2.48,
+    "old_cost": [
+      0.282195863638951,
+      0.282195863638951,
+      0.282195863638951
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510005,
+      "index": 5,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.009898561577782992,
+      "time_price": 0.11378865469312541
+    },
+    "queue": "proposal",
+    "cost": 0.277644317451226,
+    "success": true,
+    "duration_s": 2.44,
+    "old_cost": [
+      0.277644317451226,
+      0.277644317451226,
+      0.277644317451226
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510006,
+      "index": 6,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.018636235756891096,
+      "time_price": 0.047113163505926536
+    },
+    "queue": "hold",
+    "cost": 0.09987990663256426,
+    "success": true,
+    "duration_s": 2.12,
+    "old_cost": [
+      1.2826789810355592,
+      0.22237413174797324,
+      1.2826789810355592
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510006,
+      "index": 6,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.018636235756891096,
+      "time_price": 0.047113163505926536
+    },
+    "queue": "half_proposal",
+    "cost": 0.09422632701185307,
+    "success": true,
+    "duration_s": 2.0,
+    "old_cost": [
+      1.2826789810355592,
+      0.1375704374373055,
+      1.2826789810355592
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510006,
+      "index": 6,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.018636235756891096,
+      "time_price": 0.047113163505926536
+    },
+    "queue": "proposal",
+    "cost": 0.09234180047161601,
+    "success": true,
+    "duration_s": 1.96,
+    "old_cost": [
+      1.2826789810355592,
+      1.2826789810355592,
+      1.2826789810355592
+    ],
+    "old_success": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510007,
+      "index": 7,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 12,
+      "noise_std": 0.037487888411275906,
+      "time_price": 0.07027531504778846
+    },
+    "queue": "hold",
+    "cost": 0.16584974351278076,
+    "success": true,
+    "duration_s": 2.36,
+    "old_cost": [
+      0.16584974351278076,
+      0.16584974351278076,
+      0.16584974351278076
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510007,
+      "index": 7,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 12,
+      "noise_std": 0.037487888411275906,
+      "time_price": 0.07027531504778846
+    },
+    "queue": "half_proposal",
+    "cost": 0.14898366790131154,
+    "success": true,
+    "duration_s": 2.12,
+    "old_cost": [
+      0.14898366790131154,
+      0.14898366790131154,
+      0.14898366790131154
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510007,
+      "index": 7,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 12,
+      "noise_std": 0.037487888411275906,
+      "time_price": 0.07027531504778846
+    },
+    "queue": "proposal",
+    "cost": 0.13211759228984232,
+    "success": true,
+    "duration_s": 1.8800000000000001,
+    "old_cost": [
+      0.13211759228984232,
+      0.13211759228984232,
+      0.13211759228984232
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510008,
+      "index": 8,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 2,
+      "queue_steps": 8,
+      "noise_std": 0.01425897887024431,
+      "time_price": 0.0387979348617344
+    },
+    "queue": "hold",
+    "cost": 0.11018613500732569,
+    "success": true,
+    "duration_s": 2.84,
+    "old_cost": [
+      0.15053598726352946,
+      0.08535545669581568,
+      0.07604395232899942
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510008,
+      "index": 8,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 2,
+      "queue_steps": 8,
+      "noise_std": 0.01425897887024431,
+      "time_price": 0.0387979348617344
+    },
+    "queue": "half_proposal",
+    "cost": 0.06983628275112191,
+    "success": true,
+    "duration_s": 1.8,
+    "old_cost": [
+      0.14432831768565196,
+      0.11173805240179506,
+      0.1226014741630807
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510008,
+      "index": 8,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 2,
+      "queue_steps": 8,
+      "noise_std": 0.01425897887024431,
+      "time_price": 0.0387979348617344
+    },
+    "queue": "proposal",
+    "cost": 0.06828436535665254,
+    "success": true,
+    "duration_s": 1.76,
+    "old_cost": [
+      0.11794572197967257,
+      0.07294011754006068,
+      0.12415339155755008
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510009,
+      "index": 9,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 8,
+      "noise_std": 0.006867092798330413,
+      "time_price": 0.1285301200026928
+    },
+    "queue": "hold",
+    "cost": 0.1490949392031236,
+    "success": true,
+    "duration_s": 1.16,
+    "old_cost": [
+      0.1490949392031236,
+      0.1490949392031236,
+      0.1490949392031236
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510009,
+      "index": 9,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 8,
+      "noise_std": 0.006867092798330413,
+      "time_price": 0.1285301200026928
+    },
+    "queue": "half_proposal",
+    "cost": 0.1285301200026928,
+    "success": true,
+    "duration_s": 1.0,
+    "old_cost": [
+      0.1285301200026928,
+      0.1285301200026928,
+      0.1285301200026928
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510009,
+      "index": 9,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 8,
+      "noise_std": 0.006867092798330413,
+      "time_price": 0.1285301200026928
+    },
+    "queue": "proposal",
+    "cost": 0.10796530080226194,
+    "success": true,
+    "duration_s": 0.84,
+    "old_cost": [
+      0.10796530080226194,
+      0.10796530080226194,
+      0.10796530080226194
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510010,
+      "index": 10,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 4,
+      "noise_std": 0.007706345683465129,
+      "time_price": 0.07192687091888289
+    },
+    "queue": "hold",
+    "cost": 0.10069761928643606,
+    "success": true,
+    "duration_s": 1.4000000000000001,
+    "old_cost": [
+      0.10069761928643606,
+      0.3682655791046804,
+      0.12371421798047857
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510010,
+      "index": 10,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 4,
+      "noise_std": 0.007706345683465129,
+      "time_price": 0.07192687091888289
+    },
+    "queue": "half_proposal",
+    "cost": 0.09494346961292542,
+    "success": true,
+    "duration_s": 1.32,
+    "old_cost": [
+      0.09494346961292542,
+      0.36251142943116976,
+      0.11508299347021263
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510010,
+      "index": 10,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 4,
+      "noise_std": 0.007706345683465129,
+      "time_price": 0.07192687091888289
+    },
+    "queue": "proposal",
+    "cost": 0.08918931993941479,
+    "success": true,
+    "duration_s": 1.24,
+    "old_cost": [
+      0.08918931993941479,
+      0.35675727975765914,
+      0.10932884379670199
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510011,
+      "index": 11,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 12,
+      "noise_std": 0.008942712167245515,
+      "time_price": 0.128823861971523
+    },
+    "queue": "hold",
+    "cost": 0.4998365844495093,
+    "success": true,
+    "duration_s": 3.88,
+    "old_cost": [
+      0.49468362997064835,
+      0.4998365844495093,
+      1.7729431718291382
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510011,
+      "index": 11,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 12,
+      "noise_std": 0.008942712167245515,
+      "time_price": 0.128823861971523
+    },
+    "queue": "half_proposal",
+    "cost": 0.4483070396609001,
+    "success": true,
+    "duration_s": 3.48,
+    "old_cost": [
+      0.4483070396609001,
+      0.4483070396609001,
+      1.7729431718291382
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510011,
+      "index": 11,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 12,
+      "noise_std": 0.008942712167245515,
+      "time_price": 0.128823861971523
+    },
+    "queue": "proposal",
+    "cost": 0.4483070396609001,
+    "success": true,
+    "duration_s": 3.48,
+    "old_cost": [
+      0.4483070396609001,
+      0.4483070396609001,
+      1.7729431718291382
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510012,
+      "index": 12,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.03451194360762321,
+      "time_price": 0.10919453977228039
+    },
+    "queue": "hold",
+    "cost": 0.21838907954456077,
+    "success": true,
+    "duration_s": 2.0,
+    "old_cost": [
+      1.6551672386336822,
+      0.37999699840753576,
+      1.6551672386336822
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510012,
+      "index": 12,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.03451194360762321,
+      "time_price": 0.10919453977228039
+    },
+    "queue": "half_proposal",
+    "cost": 0.18781460840832226,
+    "success": true,
+    "duration_s": 1.72,
+    "old_cost": [
+      1.6551672386336822,
+      0.3363191824986236,
+      1.6551672386336822
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510012,
+      "index": 12,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.03451194360762321,
+      "time_price": 0.10919453977228039
+    },
+    "queue": "proposal",
+    "cost": 0.20965351636277832,
+    "success": true,
+    "duration_s": 1.92,
+    "old_cost": [
+      1.6551672386336822,
+      0.34505474568040606,
+      1.6551672386336822
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510013,
+      "index": 13,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 12,
+      "noise_std": 0.015307672520159857,
+      "time_price": 0.10529515174421528
+    },
+    "queue": "hold",
+    "cost": 0.4169688009070925,
+    "success": true,
+    "duration_s": 3.96,
+    "old_cost": [
+      0.4211806069768611,
+      0.4169688009070925,
+      0.4506632494652414
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510013,
+      "index": 13,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 12,
+      "noise_std": 0.015307672520159857,
+      "time_price": 0.10529515174421528
+    },
+    "queue": "half_proposal",
+    "cost": 0.3580035159303319,
+    "success": true,
+    "duration_s": 3.4,
+    "old_cost": [
+      0.36221532200010054,
+      0.3580035159303319,
+      0.36221532200010054
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510013,
+      "index": 13,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 12,
+      "noise_std": 0.015307672520159857,
+      "time_price": 0.10529515174421528
+    },
+    "queue": "proposal",
+    "cost": 0.33694448558148893,
+    "success": true,
+    "duration_s": 3.2,
+    "old_cost": [
+      0.3411562916512575,
+      0.33694448558148893,
+      0.3411562916512575
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510014,
+      "index": 14,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.032081043830202785,
+      "time_price": 0.09726926324554735
+    },
+    "queue": "hold",
+    "cost": 0.13228619801394442,
+    "success": true,
+    "duration_s": 1.36,
+    "old_cost": [
+      0.13617696854376632,
+      0.22566469072966985,
+      0.16341236225251954
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510014,
+      "index": 14,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.032081043830202785,
+      "time_price": 0.09726926324554735
+    },
+    "queue": "half_proposal",
+    "cost": 0.10505080430519115,
+    "success": true,
+    "duration_s": 1.08,
+    "old_cost": [
+      0.12450465695430062,
+      0.12839542748412253,
+      1.583615579473284
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510014,
+      "index": 14,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.032081043830202785,
+      "time_price": 0.09726926324554735
+    },
+    "queue": "proposal",
+    "cost": 0.10116003377536925,
+    "success": true,
+    "duration_s": 1.04,
+    "old_cost": [
+      0.08559695165608168,
+      0.18286621490162905,
+      1.583615579473284
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510015,
+      "index": 15,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.005623748861655001,
+      "time_price": 0.04864352299583404
+    },
+    "queue": "hold",
+    "cost": 0.1264731597891685,
+    "success": true,
+    "duration_s": 2.6,
+    "old_cost": [
+      0.1264731597891685,
+      0.1264731597891685,
+      0.1264731597891685
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510015,
+      "index": 15,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.005623748861655001,
+      "time_price": 0.04864352299583404
+    },
+    "queue": "half_proposal",
+    "cost": 0.1284189007090019,
+    "success": true,
+    "duration_s": 2.64,
+    "old_cost": [
+      0.1284189007090019,
+      0.1284189007090019,
+      0.1284189007090019
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510015,
+      "index": 15,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.005623748861655001,
+      "time_price": 0.04864352299583404
+    },
+    "queue": "proposal",
+    "cost": 0.13036464162883524,
+    "success": true,
+    "duration_s": 2.68,
+    "old_cost": [
+      0.13036464162883524,
+      0.13036464162883524,
+      0.13036464162883524
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510016,
+      "index": 16,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 7,
+      "queue_steps": 8,
+      "noise_std": 0.005101781155328213,
+      "time_price": 0.031762571884012325
+    },
+    "queue": "hold",
+    "cost": 0.05082011501441972,
+    "success": true,
+    "duration_s": 1.6,
+    "old_cost": [
+      0.05082011501441972,
+      0.06860715526946663,
+      0.05082011501441972
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510016,
+      "index": 16,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 7,
+      "queue_steps": 8,
+      "noise_std": 0.005101781155328213,
+      "time_price": 0.031762571884012325
+    },
+    "queue": "half_proposal",
+    "cost": 0.045738103512977746,
+    "success": true,
+    "duration_s": 1.44,
+    "old_cost": [
+      0.045738103512977746,
+      0.06225464089266416,
+      0.045738103512977746
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510016,
+      "index": 16,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 7,
+      "queue_steps": 8,
+      "noise_std": 0.005101781155328213,
+      "time_price": 0.031762571884012325
+    },
+    "queue": "proposal",
+    "cost": 0.04065609201153578,
+    "success": true,
+    "duration_s": 1.28,
+    "old_cost": [
+      0.04065609201153578,
+      0.08004168114771106,
+      0.04065609201153578
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510017,
+      "index": 17,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 4,
+      "noise_std": 0.0027793053516425963,
+      "time_price": 0.13843612063881935
+    },
+    "queue": "hold",
+    "cost": 0.44853303086977475,
+    "success": true,
+    "duration_s": 3.24,
+    "old_cost": [
+      0.44853303086977475,
+      0.44853303086977475,
+      0.44853303086977475
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510017,
+      "index": 17,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 4,
+      "noise_std": 0.0027793053516425963,
+      "time_price": 0.13843612063881935
+    },
+    "queue": "half_proposal",
+    "cost": 0.43745814121866916,
+    "success": true,
+    "duration_s": 3.16,
+    "old_cost": [
+      0.43745814121866916,
+      0.43745814121866916,
+      0.43745814121866916
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510017,
+      "index": 17,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 4,
+      "noise_std": 0.0027793053516425963,
+      "time_price": 0.13843612063881935
+    },
+    "queue": "proposal",
+    "cost": 0.4263832515675636,
+    "success": true,
+    "duration_s": 3.08,
+    "old_cost": [
+      0.4263832515675636,
+      0.4263832515675636,
+      0.4263832515675636
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510018,
+      "index": 18,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.016280533596535272,
+      "time_price": 0.14768868856148493
+    },
+    "queue": "hold",
+    "cost": 0.05907547542459397,
+    "success": true,
+    "duration_s": 0.4,
+    "old_cost": [
+      0.05907547542459397,
+      0.05907547542459397,
+      0.05907547542459397
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510018,
+      "index": 18,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.016280533596535272,
+      "time_price": 0.14768868856148493
+    },
+    "queue": "half_proposal",
+    "cost": 0.05907547542459397,
+    "success": true,
+    "duration_s": 0.4,
+    "old_cost": [
+      0.05907547542459397,
+      0.05907547542459397,
+      0.05907547542459397
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510018,
+      "index": 18,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.016280533596535272,
+      "time_price": 0.14768868856148493
+    },
+    "queue": "proposal",
+    "cost": 0.05907547542459397,
+    "success": true,
+    "duration_s": 0.4,
+    "old_cost": [
+      0.05907547542459397,
+      0.05907547542459397,
+      0.05907547542459397
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510019,
+      "index": 19,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.01666034052524834,
+      "time_price": 0.030143488831521174
+    },
+    "queue": "hold",
+    "cost": 0.03978940525760795,
+    "success": true,
+    "duration_s": 1.32,
+    "old_cost": [
+      0.03978940525760795,
+      0.03978940525760795,
+      0.03978940525760795
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510019,
+      "index": 19,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.01666034052524834,
+      "time_price": 0.030143488831521174
+    },
+    "queue": "half_proposal",
+    "cost": 0.03496644704456456,
+    "success": true,
+    "duration_s": 1.16,
+    "old_cost": [
+      0.03496644704456456,
+      0.03496644704456456,
+      0.03496644704456456
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510019,
+      "index": 19,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.01666034052524834,
+      "time_price": 0.030143488831521174
+    },
+    "queue": "proposal",
+    "cost": 0.030143488831521174,
+    "success": true,
+    "duration_s": 1.0,
+    "old_cost": [
+      0.030143488831521174,
+      0.030143488831521174,
+      0.030143488831521174
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510020,
+      "index": 20,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 12,
+      "noise_std": 0.012014050793666468,
+      "time_price": 0.1319258074841663
+    },
+    "queue": "hold",
+    "cost": 0.242743485770866,
+    "success": true,
+    "duration_s": 1.84,
+    "old_cost": [
+      0.3535611640575657,
+      0.5910276175290651,
+      1.7915548449049978
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510020,
+      "index": 20,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 12,
+      "noise_std": 0.012014050793666468,
+      "time_price": 0.1319258074841663
+    },
+    "queue": "half_proposal",
+    "cost": 0.20052722737593276,
+    "success": true,
+    "duration_s": 1.52,
+    "old_cost": [
+      0.3430070994588324,
+      0.5804735529303318,
+      0.2849597441657992
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510020,
+      "index": 20,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 12,
+      "noise_std": 0.012014050793666468,
+      "time_price": 0.1319258074841663
+    },
+    "queue": "proposal",
+    "cost": 0.21108129197466607,
+    "success": true,
+    "duration_s": 1.6,
+    "old_cost": [
+      0.3060678733632658,
+      0.3852233578537656,
+      0.2638516149683326
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510021,
+      "index": 21,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.02507031878192152,
+      "time_price": 0.1401803279809332
+    },
+    "queue": "hold",
+    "cost": 0.5551140988044955,
+    "success": true,
+    "duration_s": 3.96,
+    "old_cost": [
+      1.8410819678855992,
+      0.5551140988044955,
+      1.8410819678855992
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510021,
+      "index": 21,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.02507031878192152,
+      "time_price": 0.1401803279809332
+    },
+    "queue": "half_proposal",
+    "cost": 0.5382924594467834,
+    "success": true,
+    "duration_s": 3.84,
+    "old_cost": [
+      1.8410819678855992,
+      0.5382924594467834,
+      1.8410819678855992
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510021,
+      "index": 21,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.02507031878192152,
+      "time_price": 0.1401803279809332
+    },
+    "queue": "proposal",
+    "cost": 0.4878275413736475,
+    "success": true,
+    "duration_s": 3.48,
+    "old_cost": [
+      1.8410819678855992,
+      0.4878275413736475,
+      1.8410819678855992
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510022,
+      "index": 22,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.031214767260534536,
+      "time_price": 0.08531839475004611
+    },
+    "queue": "hold",
+    "cost": 0.15016037476008115,
+    "success": true,
+    "duration_s": 1.76,
+    "old_cost": [
+      0.08873113054004796,
+      0.11262028107006088,
+      0.19793867582010696
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510022,
+      "index": 22,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.031214767260534536,
+      "time_price": 0.08531839475004611
+    },
+    "queue": "half_proposal",
+    "cost": 0.13650943160007378,
+    "success": true,
+    "duration_s": 1.6,
+    "old_cost": [
+      0.07508018738004058,
+      0.09555660212005165,
+      1.5119103685002768
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510022,
+      "index": 22,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.031214767260534536,
+      "time_price": 0.08531839475004611
+    },
+    "queue": "proposal",
+    "cost": 0.0614292442200332,
+    "success": true,
+    "duration_s": 0.72,
+    "old_cost": [
+      0.0614292442200332,
+      0.0614292442200332,
+      0.0614292442200332
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510023,
+      "index": 23,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.025618575426378878,
+      "time_price": 0.11752856006933689
+    },
+    "queue": "hold",
+    "cost": 0.4231028162496128,
+    "success": true,
+    "duration_s": 3.6,
+    "old_cost": [
+      0.4278039586523863,
+      0.4231028162496128,
+      0.43250510105515977
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510023,
+      "index": 23,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.025618575426378878,
+      "time_price": 0.11752856006933689
+    },
+    "queue": "half_proposal",
+    "cost": 0.39489596183297193,
+    "success": true,
+    "duration_s": 3.36,
+    "old_cost": [
+      0.39489596183297193,
+      0.39489596183297193,
+      0.47011424027734755
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510023,
+      "index": 23,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.025618575426378878,
+      "time_price": 0.11752856006933689
+    },
+    "queue": "proposal",
+    "cost": 0.3666891074163311,
+    "success": true,
+    "duration_s": 3.12,
+    "old_cost": [
+      0.35728682261078415,
+      0.3619879650135576,
+      0.3525856802080107
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510024,
+      "index": 24,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.009642757063581198,
+      "time_price": 0.06311071290607449
+    },
+    "queue": "hold",
+    "cost": 0.18933213871822346,
+    "success": true,
+    "duration_s": 3.0,
+    "old_cost": [
+      0.24991842310805498,
+      1.3786642774364468,
+      1.3786642774364468
+    ],
+    "old_success": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510024,
+      "index": 24,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.009642757063581198,
+      "time_price": 0.06311071290607449
+    },
+    "queue": "half_proposal",
+    "cost": 0.16661228207203665,
+    "success": true,
+    "duration_s": 2.64,
+    "old_cost": [
+      1.3786642774364468,
+      1.3786642774364468,
+      1.3786642774364468
+    ],
+    "old_success": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510024,
+      "index": 24,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.009642757063581198,
+      "time_price": 0.06311071290607449
+    },
+    "queue": "proposal",
+    "cost": 0.11612371174717707,
+    "success": true,
+    "duration_s": 1.84,
+    "old_cost": [
+      0.17166113910452263,
+      0.27516270827048483,
+      1.3786642774364468
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510025,
+      "index": 25,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.0025216651921068215,
+      "time_price": 0.10185136385769565
+    },
+    "queue": "hold",
+    "cost": 0.23222110959554612,
+    "success": true,
+    "duration_s": 2.2800000000000002,
+    "old_cost": [
+      0.23222110959554612,
+      0.23222110959554612,
+      0.23222110959554612
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510025,
+      "index": 25,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.0025216651921068215,
+      "time_price": 0.10185136385769565
+    },
+    "queue": "half_proposal",
+    "cost": 0.23629516414985388,
+    "success": true,
+    "duration_s": 2.32,
+    "old_cost": [
+      0.23629516414985388,
+      0.23629516414985388,
+      0.23629516414985388
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510025,
+      "index": 25,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.0025216651921068215,
+      "time_price": 0.10185136385769565
+    },
+    "queue": "proposal",
+    "cost": 0.23629516414985388,
+    "success": true,
+    "duration_s": 2.32,
+    "old_cost": [
+      0.23629516414985388,
+      0.23629516414985388,
+      0.23629516414985388
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510026,
+      "index": 26,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 7,
+      "queue_steps": 4,
+      "noise_std": 0.0031701298114299643,
+      "time_price": 0.022698770830904862
+    },
+    "queue": "hold",
+    "cost": 0.021790819997668666,
+    "success": true,
+    "duration_s": 0.96,
+    "old_cost": [
+      0.021790819997668666,
+      0.021790819997668666,
+      0.024514672497377252
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510026,
+      "index": 26,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 7,
+      "queue_steps": 4,
+      "noise_std": 0.0031701298114299643,
+      "time_price": 0.022698770830904862
+    },
+    "queue": "half_proposal",
+    "cost": 0.01997491833119628,
+    "success": true,
+    "duration_s": 0.88,
+    "old_cost": [
+      0.01997491833119628,
+      0.01997491833119628,
+      0.02360672166414106
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510026,
+      "index": 26,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 7,
+      "queue_steps": 4,
+      "noise_std": 0.0031701298114299643,
+      "time_price": 0.022698770830904862
+    },
+    "queue": "proposal",
+    "cost": 0.015435164165015308,
+    "success": true,
+    "duration_s": 0.68,
+    "old_cost": [
+      0.015435164165015308,
+      0.015435164165015308,
+      0.021790819997668666
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510027,
+      "index": 27,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.00578750761271489,
+      "time_price": 0.08819850922645055
+    },
+    "queue": "hold",
+    "cost": 0.18345289919101715,
+    "success": true,
+    "duration_s": 2.08,
+    "old_cost": [
+      0.18345289919101715,
+      0.18345289919101715,
+      0.18345289919101715
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510027,
+      "index": 27,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.00578750761271489,
+      "time_price": 0.08819850922645055
+    },
+    "queue": "half_proposal",
+    "cost": 0.1763970184529011,
+    "success": true,
+    "duration_s": 2.0,
+    "old_cost": [
+      0.1763970184529011,
+      0.1763970184529011,
+      0.1763970184529011
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510027,
+      "index": 27,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.00578750761271489,
+      "time_price": 0.08819850922645055
+    },
+    "queue": "proposal",
+    "cost": 0.16934113771478504,
+    "success": true,
+    "duration_s": 1.92,
+    "old_cost": [
+      0.16934113771478504,
+      0.16934113771478504,
+      0.16934113771478504
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510028,
+      "index": 28,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 4,
+      "noise_std": 0.028512465375196965,
+      "time_price": 0.0317913996200721
+    },
+    "queue": "hold",
+    "cost": 0.09283088689061053,
+    "success": true,
+    "duration_s": 2.92,
+    "old_cost": [
+      1.1907483977204327,
+      0.08647260696659613,
+      0.19074839772043262
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510028,
+      "index": 28,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 4,
+      "noise_std": 0.028512465375196965,
+      "time_price": 0.0317913996200721
+    },
+    "queue": "half_proposal",
+    "cost": 0.06231114325534132,
+    "success": true,
+    "duration_s": 1.96,
+    "old_cost": [
+      1.1907483977204327,
+      0.1360671903739086,
+      1.1907483977204327
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510028,
+      "index": 28,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 4,
+      "noise_std": 0.028512465375196965,
+      "time_price": 0.0317913996200721
+    },
+    "queue": "proposal",
+    "cost": 0.06231114325534132,
+    "success": true,
+    "duration_s": 1.96,
+    "old_cost": [
+      1.1907483977204327,
+      0.13988215832831727,
+      1.1907483977204327
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510029,
+      "index": 29,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 8,
+      "noise_std": 0.022440696365272628,
+      "time_price": 0.06647799302310257
+    },
+    "queue": "hold",
+    "cost": 0.07711447190679899,
+    "success": true,
+    "duration_s": 1.16,
+    "old_cost": [
+      0.07711447190679899,
+      0.07711447190679899,
+      0.07711447190679899
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510029,
+      "index": 29,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 8,
+      "noise_std": 0.022440696365272628,
+      "time_price": 0.06647799302310257
+    },
+    "queue": "half_proposal",
+    "cost": 0.06913711274402667,
+    "success": true,
+    "duration_s": 1.04,
+    "old_cost": [
+      0.06913711274402667,
+      0.06913711274402667,
+      0.06913711274402667
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510029,
+      "index": 29,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 8,
+      "noise_std": 0.022440696365272628,
+      "time_price": 0.06647799302310257
+    },
+    "queue": "proposal",
+    "cost": 0.05850063386033027,
+    "success": true,
+    "duration_s": 0.88,
+    "old_cost": [
+      0.05850063386033027,
+      0.05850063386033027,
+      0.05850063386033027
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510030,
+      "index": 30,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 8,
+      "noise_std": 0.02634936176873344,
+      "time_price": 0.03993139511524202
+    },
+    "queue": "hold",
+    "cost": 0.015972558046096808,
+    "success": true,
+    "duration_s": 0.4,
+    "old_cost": [
+      0.015972558046096808,
+      0.015972558046096808,
+      0.015972558046096808
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510030,
+      "index": 30,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 8,
+      "noise_std": 0.02634936176873344,
+      "time_price": 0.03993139511524202
+    },
+    "queue": "half_proposal",
+    "cost": 0.015972558046096808,
+    "success": true,
+    "duration_s": 0.4,
+    "old_cost": [
+      0.015972558046096808,
+      0.015972558046096808,
+      0.015972558046096808
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510030,
+      "index": 30,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 8,
+      "noise_std": 0.02634936176873344,
+      "time_price": 0.03993139511524202
+    },
+    "queue": "proposal",
+    "cost": 0.015972558046096808,
+    "success": true,
+    "duration_s": 0.4,
+    "old_cost": [
+      0.015972558046096808,
+      0.015972558046096808,
+      0.015972558046096808
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510031,
+      "index": 31,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 4,
+      "noise_std": 0.014107790698344908,
+      "time_price": 0.12866300300345235
+    },
+    "queue": "hold",
+    "cost": 0.2676190462471809,
+    "success": true,
+    "duration_s": 2.08,
+    "old_cost": [
+      0.2676190462471809,
+      0.2676190462471809,
+      0.2933516468478714
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510031,
+      "index": 31,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 4,
+      "noise_std": 0.014107790698344908,
+      "time_price": 0.12866300300345235
+    },
+    "queue": "half_proposal",
+    "cost": 0.2573260060069047,
+    "success": true,
+    "duration_s": 2.0,
+    "old_cost": [
+      0.2521794858867666,
+      0.2573260060069047,
+      0.2882051267277333
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510031,
+      "index": 31,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 4,
+      "noise_std": 0.014107790698344908,
+      "time_price": 0.12866300300345235
+    },
+    "queue": "proposal",
+    "cost": 0.24188644564649042,
+    "success": true,
+    "duration_s": 1.8800000000000001,
+    "old_cost": [
+      0.23159340540621423,
+      0.24188644564649042,
+      0.2779120864874571
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510032,
+      "index": 32,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 12,
+      "noise_std": 0.03985931999316684,
+      "time_price": 0.11586680821128749
+    },
+    "queue": "hold",
+    "cost": 0.296619029020896,
+    "success": true,
+    "duration_s": 2.56,
+    "old_cost": [
+      0.32906173532005645,
+      0.33833107997695944,
+      0.305888373677799
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510032,
+      "index": 32,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 12,
+      "noise_std": 0.03985931999316684,
+      "time_price": 0.11586680821128749
+    },
+    "queue": "half_proposal",
+    "cost": 0.2641763227217355,
+    "success": true,
+    "duration_s": 2.2800000000000002,
+    "old_cost": [
+      0.2919843566924445,
+      0.315157718334702,
+      0.6071420750271465
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510032,
+      "index": 32,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 12,
+      "noise_std": 0.03985931999316684,
+      "time_price": 0.11586680821128749
+    },
+    "queue": "proposal",
+    "cost": 0.4495632158597955,
+    "success": true,
+    "duration_s": 3.88,
+    "old_cost": [
+      0.315157718334702,
+      0.4866405944874075,
+      0.42175518188908645
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510033,
+      "index": 33,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.018604953822151306,
+      "time_price": 0.10492311064419685
+    },
+    "queue": "hold",
+    "cost": 0.40290474487371586,
+    "success": true,
+    "duration_s": 3.84,
+    "old_cost": [
+      0.41549551815101954,
+      0.40290474487371586,
+      0.4196924425767874
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510033,
+      "index": 33,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.018604953822151306,
+      "time_price": 0.10492311064419685
+    },
+    "queue": "half_proposal",
+    "cost": 0.39870782044794806,
+    "success": true,
+    "duration_s": 3.8000000000000003,
+    "old_cost": [
+      0.38611704717064443,
+      0.39870782044794806,
+      0.4406770647056268
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510033,
+      "index": 33,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.018604953822151306,
+      "time_price": 0.10492311064419685
+    },
+    "queue": "proposal",
+    "cost": 0.3693293494675729,
+    "success": true,
+    "duration_s": 3.52,
+    "old_cost": [
+      0.3693293494675729,
+      0.36513242504180504,
+      0.3693293494675729
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510034,
+      "index": 34,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 4,
+      "noise_std": 0.011699925020172367,
+      "time_price": 0.0856298994571728
+    },
+    "queue": "hold",
+    "cost": 0.11645666326175501,
+    "success": true,
+    "duration_s": 1.36,
+    "old_cost": [
+      0.12673225119661574,
+      0.12673225119661574,
+      0.1746849948926325
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510034,
+      "index": 34,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 4,
+      "noise_std": 0.011699925020172367,
+      "time_price": 0.0856298994571728
+    },
+    "queue": "half_proposal",
+    "cost": 0.10618107532689426,
+    "success": true,
+    "duration_s": 1.24,
+    "old_cost": [
+      0.11645666326175501,
+      0.11988185924004192,
+      0.1746849948926325
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510034,
+      "index": 34,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 4,
+      "noise_std": 0.011699925020172367,
+      "time_price": 0.0856298994571728
+    },
+    "queue": "proposal",
+    "cost": 0.09933068337032043,
+    "success": true,
+    "duration_s": 1.16,
+    "old_cost": [
+      0.10275587934860735,
+      0.23976371848008385,
+      0.16098421097948487
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510035,
+      "index": 35,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 13,
+      "queue_steps": 12,
+      "noise_std": 0.03694617558212565,
+      "time_price": 0.08114807388070355
+    },
+    "queue": "hold",
+    "cost": 0.22396868391074182,
+    "success": true,
+    "duration_s": 2.7600000000000002,
+    "old_cost": [
+      0.22396868391074182,
+      0.22396868391074182,
+      0.22396868391074182
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510035,
+      "index": 35,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 13,
+      "queue_steps": 12,
+      "noise_std": 0.03694617558212565,
+      "time_price": 0.08114807388070355
+    },
+    "queue": "half_proposal",
+    "cost": 0.2337064527764262,
+    "success": true,
+    "duration_s": 2.88,
+    "old_cost": [
+      0.2337064527764262,
+      0.2337064527764262,
+      0.2337064527764262
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510035,
+      "index": 35,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 13,
+      "queue_steps": 12,
+      "noise_std": 0.03694617558212565,
+      "time_price": 0.08114807388070355
+    },
+    "queue": "proposal",
+    "cost": 0.23695237573165437,
+    "success": true,
+    "duration_s": 2.92,
+    "old_cost": [
+      0.23695237573165437,
+      0.23695237573165437,
+      0.23695237573165437
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510036,
+      "index": 36,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.008911634579787924,
+      "time_price": 0.10930265588645768
+    },
+    "queue": "hold",
+    "cost": 0.3235358614239147,
+    "success": true,
+    "duration_s": 2.96,
+    "old_cost": [
+      0.24921005542112354,
+      0.48967589837133046,
+      1.655815935318746
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510036,
+      "index": 36,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.008911634579787924,
+      "time_price": 0.10930265588645768
+    },
+    "queue": "half_proposal",
+    "cost": 0.27544269283387335,
+    "success": true,
+    "duration_s": 2.52,
+    "old_cost": [
+      0.21860531177291537,
+      0.43283851731037243,
+      1.655815935318746
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510036,
+      "index": 36,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 12,
+      "noise_std": 0.008911634579787924,
+      "time_price": 0.10930265588645768
+    },
+    "queue": "proposal",
+    "cost": 0.20111688683108214,
+    "success": true,
+    "duration_s": 1.84,
+    "old_cost": [
+      0.20111688683108214,
+      0.24921005542112354,
+      1.655815935318746
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510037,
+      "index": 37,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 8,
+      "noise_std": 0.02222802447453103,
+      "time_price": 0.08635180258112884
+    },
+    "queue": "hold",
+    "cost": 0.17615767726550285,
+    "success": true,
+    "duration_s": 2.04,
+    "old_cost": [
+      0.17615767726550285,
+      0.17615767726550285,
+      0.17615767726550285
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510037,
+      "index": 37,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 8,
+      "noise_std": 0.02222802447453103,
+      "time_price": 0.08635180258112884
+    },
+    "queue": "half_proposal",
+    "cost": 0.16234138885252225,
+    "success": true,
+    "duration_s": 1.8800000000000001,
+    "old_cost": [
+      0.16234138885252225,
+      0.16234138885252225,
+      0.16234138885252225
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510037,
+      "index": 37,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 8,
+      "noise_std": 0.02222802447453103,
+      "time_price": 0.08635180258112884
+    },
+    "queue": "proposal",
+    "cost": 0.14852510043954162,
+    "success": true,
+    "duration_s": 1.72,
+    "old_cost": [
+      0.14852510043954162,
+      0.14852510043954162,
+      0.14852510043954162
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510038,
+      "index": 38,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 12,
+      "noise_std": 0.027433728157991593,
+      "time_price": 0.13381867397858857
+    },
+    "queue": "hold",
+    "cost": 0.16058240877430627,
+    "success": true,
+    "duration_s": 1.2,
+    "old_cost": [
+      0.12846592701944504,
+      0.16058240877430627,
+      0.14452416789687567
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510038,
+      "index": 38,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 12,
+      "noise_std": 0.027433728157991593,
+      "time_price": 0.13381867397858857
+    },
+    "queue": "half_proposal",
+    "cost": 0.0749384574280096,
+    "success": true,
+    "duration_s": 0.56,
+    "old_cost": [
+      0.0749384574280096,
+      0.0749384574280096,
+      0.0749384574280096
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510038,
+      "index": 38,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 12,
+      "noise_std": 0.027433728157991593,
+      "time_price": 0.13381867397858857
+    },
+    "queue": "proposal",
+    "cost": 0.06423296350972252,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.06423296350972252,
+      0.06423296350972252,
+      0.06423296350972252
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510039,
+      "index": 39,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.038065198342819996,
+      "time_price": 0.029857637493711058
+    },
+    "queue": "hold",
+    "cost": 0.03582916499245327,
+    "success": true,
+    "duration_s": 1.2,
+    "old_cost": [
+      0.03582916499245327,
+      0.03582916499245327,
+      0.03582916499245327
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510039,
+      "index": 39,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.038065198342819996,
+      "time_price": 0.029857637493711058
+    },
+    "queue": "half_proposal",
+    "cost": 0.0310519429934595,
+    "success": true,
+    "duration_s": 1.04,
+    "old_cost": [
+      0.0310519429934595,
+      0.0310519429934595,
+      0.0310519429934595
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510039,
+      "index": 39,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.038065198342819996,
+      "time_price": 0.029857637493711058
+    },
+    "queue": "proposal",
+    "cost": 0.02627472099446573,
+    "success": true,
+    "duration_s": 0.88,
+    "old_cost": [
+      0.02627472099446573,
+      0.02627472099446573,
+      0.02627472099446573
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510040,
+      "index": 40,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 12,
+      "noise_std": 0.008744150100819238,
+      "time_price": 0.022442458162688885
+    },
+    "queue": "hold",
+    "cost": 0.03141944142776444,
+    "success": true,
+    "duration_s": 1.4000000000000001,
+    "old_cost": [
+      0.03141944142776444,
+      0.034112536407287106,
+      0.03141944142776444
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510040,
+      "index": 40,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 12,
+      "noise_std": 0.008744150100819238,
+      "time_price": 0.022442458162688885
+    },
+    "queue": "half_proposal",
+    "cost": 0.026033251468719106,
+    "success": true,
+    "duration_s": 1.16,
+    "old_cost": [
+      0.026033251468719106,
+      0.027828648121734217,
+      0.026033251468719106
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510040,
+      "index": 40,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 12,
+      "noise_std": 0.008744150100819238,
+      "time_price": 0.022442458162688885
+    },
+    "queue": "proposal",
+    "cost": 0.020647061509673777,
+    "success": true,
+    "duration_s": 0.92,
+    "old_cost": [
+      0.02154475983618133,
+      0.022442458162688885,
+      0.020647061509673777
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510041,
+      "index": 41,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.03691173761057566,
+      "time_price": 0.0770306494636001
+    },
+    "queue": "hold",
+    "cost": 0.3173662757900324,
+    "success": true,
+    "duration_s": 4.12,
+    "old_cost": [
+      1.4621838967816005,
+      0.3173662757900324,
+      0.4406153149317925
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510041,
+      "index": 41,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.03691173761057566,
+      "time_price": 0.0770306494636001
+    },
+    "queue": "half_proposal",
+    "cost": 0.28347279002604836,
+    "success": true,
+    "duration_s": 3.68,
+    "old_cost": [
+      1.4621838967816005,
+      0.29579769394022437,
+      0.39131569927508847
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510041,
+      "index": 41,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.03691173761057566,
+      "time_price": 0.0770306494636001
+    },
+    "queue": "proposal",
+    "cost": 0.2896352419831364,
+    "success": true,
+    "duration_s": 3.7600000000000002,
+    "old_cost": [
+      1.4621838967816005,
+      0.3204475017685764,
+      0.3943969252536325
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510042,
+      "index": 42,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.017260920451886968,
+      "time_price": 0.13626262584962134
+    },
+    "queue": "hold",
+    "cost": 0.06540606040781824,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.06540606040781824,
+      0.06540606040781824,
+      0.06540606040781824
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510042,
+      "index": 42,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.017260920451886968,
+      "time_price": 0.13626262584962134
+    },
+    "queue": "half_proposal",
+    "cost": 0.06540606040781824,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.06540606040781824,
+      0.06540606040781824,
+      0.06540606040781824
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510042,
+      "index": 42,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.017260920451886968,
+      "time_price": 0.13626262584962134
+    },
+    "queue": "proposal",
+    "cost": 0.06540606040781824,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.06540606040781824,
+      0.06540606040781824,
+      0.06540606040781824
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510043,
+      "index": 43,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.011278147052342601,
+      "time_price": 0.13237667251861632
+    },
+    "queue": "hold",
+    "cost": 0.4765560210670188,
+    "success": true,
+    "duration_s": 3.6,
+    "old_cost": [
+      0.46596588726552945,
+      0.4765560210670188,
+      0.4924412217692527
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510043,
+      "index": 43,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.011278147052342601,
+      "time_price": 0.13237667251861632
+    },
+    "queue": "half_proposal",
+    "cost": 0.41831028515882757,
+    "success": true,
+    "duration_s": 3.16,
+    "old_cost": [
+      0.4024250844565936,
+      0.41831028515882757,
+      0.4236053520595722
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510043,
+      "index": 43,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.011278147052342601,
+      "time_price": 0.13237667251861632
+    },
+    "queue": "proposal",
+    "cost": 0.3918349506551043,
+    "success": true,
+    "duration_s": 2.96,
+    "old_cost": [
+      0.38653988375435966,
+      0.397130017555849,
+      0.4024250844565936
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510044,
+      "index": 44,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 8,
+      "noise_std": 0.003245523041411775,
+      "time_price": 0.1162854820440675
+    },
+    "queue": "hold",
+    "cost": 0.3116450918781009,
+    "success": true,
+    "duration_s": 2.68,
+    "old_cost": [
+      0.32094793044162634,
+      1.697712892264405,
+      1.697712892264405
+    ],
+    "old_success": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510044,
+      "index": 44,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 8,
+      "noise_std": 0.003245523041411775,
+      "time_price": 0.1162854820440675
+    },
+    "queue": "half_proposal",
+    "cost": 0.29769083403281277,
+    "success": true,
+    "duration_s": 2.56,
+    "old_cost": [
+      0.29769083403281277,
+      1.697712892264405,
+      1.697712892264405
+    ],
+    "old_success": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510044,
+      "index": 44,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 8,
+      "noise_std": 0.003245523041411775,
+      "time_price": 0.1162854820440675
+    },
+    "queue": "proposal",
+    "cost": 0.32094793044162634,
+    "success": true,
+    "duration_s": 2.7600000000000002,
+    "old_cost": [
+      0.325599349723389,
+      1.697712892264405,
+      1.697712892264405
+    ],
+    "old_success": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510045,
+      "index": 45,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 8,
+      "noise_std": 0.02527401452812818,
+      "time_price": 0.051767921577819426
+    },
+    "queue": "hold",
+    "cost": 0.18843523454326272,
+    "success": true,
+    "duration_s": 3.64,
+    "old_cost": [
+      0.1905059514063755,
+      0.18843523454326272,
+      0.1905059514063755
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510045,
+      "index": 45,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 8,
+      "noise_std": 0.02527401452812818,
+      "time_price": 0.051767921577819426
+    },
+    "queue": "half_proposal",
+    "cost": 0.1905059514063755,
+    "success": true,
+    "duration_s": 3.68,
+    "old_cost": [
+      0.1905059514063755,
+      0.1905059514063755,
+      0.1905059514063755
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510045,
+      "index": 45,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 8,
+      "noise_std": 0.02527401452812818,
+      "time_price": 0.051767921577819426
+    },
+    "queue": "proposal",
+    "cost": 0.1905059514063755,
+    "success": true,
+    "duration_s": 3.68,
+    "old_cost": [
+      0.18843523454326272,
+      0.1905059514063755,
+      0.1905059514063755
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510046,
+      "index": 46,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.025684716828216776,
+      "time_price": 0.11044431451891995
+    },
+    "queue": "hold",
+    "cost": 0.2253064016185967,
+    "success": true,
+    "duration_s": 2.04,
+    "old_cost": [
+      1.6626658871135196,
+      0.29157299032994866,
+      1.6626658871135196
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510046,
+      "index": 46,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.025684716828216776,
+      "time_price": 0.11044431451891995
+    },
+    "queue": "half_proposal",
+    "cost": 0.2208886290378399,
+    "success": true,
+    "duration_s": 2.0,
+    "old_cost": [
+      1.6626658871135196,
+      0.29157299032994866,
+      1.6626658871135196
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510046,
+      "index": 46,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.025684716828216776,
+      "time_price": 0.11044431451891995
+    },
+    "queue": "proposal",
+    "cost": 0.2208886290378399,
+    "success": true,
+    "duration_s": 2.0,
+    "old_cost": [
+      1.6626658871135196,
+      0.29157299032994866,
+      1.6626658871135196
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510047,
+      "index": 47,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.004687885895256509,
+      "time_price": 0.08596536786540827
+    },
+    "queue": "hold",
+    "cost": 0.1547376621577349,
+    "success": true,
+    "duration_s": 1.8,
+    "old_cost": [
+      0.1547376621577349,
+      0.1547376621577349,
+      0.1547376621577349
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510047,
+      "index": 47,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.004687885895256509,
+      "time_price": 0.08596536786540827
+    },
+    "queue": "half_proposal",
+    "cost": 0.14786043272850222,
+    "success": true,
+    "duration_s": 1.72,
+    "old_cost": [
+      0.14786043272850222,
+      0.14786043272850222,
+      0.14786043272850222
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510047,
+      "index": 47,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.004687885895256509,
+      "time_price": 0.08596536786540827
+    },
+    "queue": "proposal",
+    "cost": 0.14098320329926958,
+    "success": true,
+    "duration_s": 1.6400000000000001,
+    "old_cost": [
+      0.14098320329926958,
+      0.14098320329926958,
+      0.14098320329926958
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510048,
+      "index": 48,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.025574477204015674,
+      "time_price": 0.05624655107320646
+    },
+    "queue": "hold",
+    "cost": 0.11474296418934118,
+    "success": true,
+    "duration_s": 2.04,
+    "old_cost": [
+      0.18673854956304548,
+      0.26773358310846274,
+      1.3374793064392387
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510048,
+      "index": 48,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.025574477204015674,
+      "time_price": 0.05624655107320646
+    },
+    "queue": "half_proposal",
+    "cost": 1.3374793064392387,
+    "success": false,
+    "duration_s": 6.0,
+    "old_cost": [
+      1.3374793064392387,
+      1.3374793064392387,
+      1.3374793064392387
+    ],
+    "old_success": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510048,
+      "index": 48,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.025574477204015674,
+      "time_price": 0.05624655107320646
+    },
+    "queue": "proposal",
+    "cost": 0.10124379193177163,
+    "success": true,
+    "duration_s": 1.8,
+    "old_cost": [
+      0.17098951526254763,
+      0.29023220353774537,
+      1.3374793064392387
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510049,
+      "index": 49,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 12,
+      "noise_std": 0.033569329498659393,
+      "time_price": 0.07598295096706284
+    },
+    "queue": "hold",
+    "cost": 0.03647181646419016,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.03647181646419016,
+      0.03647181646419016,
+      0.03647181646419016
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510049,
+      "index": 49,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 12,
+      "noise_std": 0.033569329498659393,
+      "time_price": 0.07598295096706284
+    },
+    "queue": "half_proposal",
+    "cost": 0.03647181646419016,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.03647181646419016,
+      0.03647181646419016,
+      0.03647181646419016
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510049,
+      "index": 49,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 12,
+      "noise_std": 0.033569329498659393,
+      "time_price": 0.07598295096706284
+    },
+    "queue": "proposal",
+    "cost": 0.03647181646419016,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.03647181646419016,
+      0.03647181646419016,
+      0.03647181646419016
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510050,
+      "index": 50,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 4,
+      "noise_std": 0.026561845671044283,
+      "time_price": 0.044502546254957705
+    },
+    "queue": "hold",
+    "cost": 0.06052346290674248,
+    "success": true,
+    "duration_s": 1.36,
+    "old_cost": [
+      1.2670152775297463,
+      0.07832448140872555,
+      0.1103663147122951
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510050,
+      "index": 50,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 4,
+      "noise_std": 0.026561845671044283,
+      "time_price": 0.044502546254957705
+    },
+    "queue": "half_proposal",
+    "cost": 0.09434539806051034,
+    "success": true,
+    "duration_s": 2.12,
+    "old_cost": [
+      0.18513059242062405,
+      0.08010458325892388,
+      0.14240814801586466
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510050,
+      "index": 50,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 4,
+      "noise_std": 0.026561845671044283,
+      "time_price": 0.044502546254957705
+    },
+    "queue": "proposal",
+    "cost": 0.09968570361110526,
+    "success": true,
+    "duration_s": 2.24,
+    "old_cost": [
+      0.25277446272815973,
+      0.1530887591170545,
+      0.10680611101189849
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510051,
+      "index": 51,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 8,
+      "noise_std": 0.016884089193015313,
+      "time_price": 0.03676384144355965
+    },
+    "queue": "hold",
+    "cost": 0.15146702674746576,
+    "success": true,
+    "duration_s": 4.12,
+    "old_cost": [
+      0.14558481211649624,
+      0.15146702674746576,
+      1.220583048661358
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510051,
+      "index": 51,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 8,
+      "noise_std": 0.016884089193015313,
+      "time_price": 0.03676384144355965
+    },
+    "queue": "half_proposal",
+    "cost": 0.14411425845875384,
+    "success": true,
+    "duration_s": 3.92,
+    "old_cost": [
+      0.13382038285455713,
+      0.14411425845875384,
+      1.220583048661358
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510051,
+      "index": 51,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 8,
+      "noise_std": 0.016884089193015313,
+      "time_price": 0.03676384144355965
+    },
+    "queue": "proposal",
+    "cost": 0.13382038285455713,
+    "success": true,
+    "duration_s": 3.64,
+    "old_cost": [
+      0.12793816822358758,
+      0.13382038285455713,
+      1.220583048661358
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510052,
+      "index": 52,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 4,
+      "noise_std": 0.013111038631887135,
+      "time_price": 0.08278316613063325
+    },
+    "queue": "hold",
+    "cost": 0.12583041251856253,
+    "success": true,
+    "duration_s": 1.52,
+    "old_cost": [
+      0.12251908587333721,
+      0.4039818507174902,
+      1.4966989967837994
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510052,
+      "index": 52,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 4,
+      "noise_std": 0.013111038631887135,
+      "time_price": 0.08278316613063325
+    },
+    "queue": "half_proposal",
+    "cost": 0.1854342921326185,
+    "success": true,
+    "duration_s": 2.24,
+    "old_cost": [
+      0.19536827206829446,
+      0.4006705240722649,
+      1.4966989967837994
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510052,
+      "index": 52,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 4,
+      "noise_std": 0.013111038631887135,
+      "time_price": 0.08278316613063325
+    },
+    "queue": "proposal",
+    "cost": 0.1655663322612665,
+    "success": true,
+    "duration_s": 2.0,
+    "old_cost": [
+      1.4966989967837994,
+      0.4635857303315462,
+      1.4966989967837994
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510053,
+      "index": 53,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 4,
+      "noise_std": 0.01708895255729234,
+      "time_price": 0.05623621077723655
+    },
+    "queue": "hold",
+    "cost": 0.16196028703844126,
+    "success": true,
+    "duration_s": 2.88,
+    "old_cost": [
+      0.16420973546953072,
+      0.16196028703844126,
+      0.16870863233170963
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510053,
+      "index": 53,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 4,
+      "noise_std": 0.01708895255729234,
+      "time_price": 0.05623621077723655
+    },
+    "queue": "half_proposal",
+    "cost": 0.1552119417451729,
+    "success": true,
+    "duration_s": 2.7600000000000002,
+    "old_cost": [
+      0.15971083860735177,
+      0.1552119417451729,
+      0.16645918390062017
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510053,
+      "index": 53,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 4,
+      "noise_std": 0.01708895255729234,
+      "time_price": 0.05623621077723655
+    },
+    "queue": "proposal",
+    "cost": 0.15296249331408343,
+    "success": true,
+    "duration_s": 2.72,
+    "old_cost": [
+      0.15071304488299395,
+      0.15296249331408343,
+      0.19120311664260425
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510054,
+      "index": 54,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 4,
+      "noise_std": 0.004788158734215153,
+      "time_price": 0.09781935334570893
+    },
+    "queue": "hold",
+    "cost": 0.26215586696649995,
+    "success": true,
+    "duration_s": 2.68,
+    "old_cost": [
+      0.26215586696649995,
+      1.5869161200742536,
+      1.5869161200742536
+    ],
+    "old_success": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510054,
+      "index": 54,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 4,
+      "noise_std": 0.004788158734215153,
+      "time_price": 0.09781935334570893
+    },
+    "queue": "half_proposal",
+    "cost": 0.24650477043118652,
+    "success": true,
+    "duration_s": 2.52,
+    "old_cost": [
+      0.25041754456501486,
+      0.4656201219255745,
+      1.5869161200742536
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510054,
+      "index": 54,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 4,
+      "noise_std": 0.004788158734215153,
+      "time_price": 0.09781935334570893
+    },
+    "queue": "proposal",
+    "cost": 0.39910296165049247,
+    "success": true,
+    "duration_s": 4.08,
+    "old_cost": [
+      0.28171973763564173,
+      1.5869161200742536,
+      1.5869161200742536
+    ],
+    "old_success": [
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510055,
+      "index": 55,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 4,
+      "noise_std": 0.008788447697120214,
+      "time_price": 0.03532631620710745
+    },
+    "queue": "hold",
+    "cost": 0.09184842213847938,
+    "success": true,
+    "duration_s": 2.6,
+    "old_cost": [
+      0.09184842213847938,
+      0.09184842213847938,
+      0.09184842213847938
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510055,
+      "index": 55,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 4,
+      "noise_std": 0.008788447697120214,
+      "time_price": 0.03532631620710745
+    },
+    "queue": "half_proposal",
+    "cost": 0.09184842213847938,
+    "success": true,
+    "duration_s": 2.6,
+    "old_cost": [
+      0.09184842213847938,
+      0.09184842213847938,
+      0.09184842213847938
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510055,
+      "index": 55,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 4,
+      "noise_std": 0.008788447697120214,
+      "time_price": 0.03532631620710745
+    },
+    "queue": "proposal",
+    "cost": 0.09184842213847938,
+    "success": true,
+    "duration_s": 2.6,
+    "old_cost": [
+      0.09184842213847938,
+      0.09184842213847938,
+      0.09184842213847938
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510056,
+      "index": 56,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 12,
+      "noise_std": 0.02864066064464215,
+      "time_price": 0.07410977273177419
+    },
+    "queue": "hold",
+    "cost": 0.17489906364698707,
+    "success": true,
+    "duration_s": 2.36,
+    "old_cost": [
+      1.444658636390645,
+      0.2282581000138645,
+      1.444658636390645
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510056,
+      "index": 56,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 12,
+      "noise_std": 0.02864066064464215,
+      "time_price": 0.07410977273177419
+    },
+    "queue": "half_proposal",
+    "cost": 0.18675662728407094,
+    "success": true,
+    "duration_s": 2.52,
+    "old_cost": [
+      1.444658636390645,
+      0.20750736364896774,
+      1.444658636390645
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510056,
+      "index": 56,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 12,
+      "noise_std": 0.02864066064464215,
+      "time_price": 0.07410977273177419
+    },
+    "queue": "proposal",
+    "cost": 0.1363619818264645,
+    "success": true,
+    "duration_s": 1.84,
+    "old_cost": [
+      1.444658636390645,
+      0.18082784546552902,
+      1.444658636390645
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510057,
+      "index": 57,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 2,
+      "queue_steps": 12,
+      "noise_std": 0.02068006960903708,
+      "time_price": 0.07229953876750854
+    },
+    "queue": "hold",
+    "cost": 0.2429264502588287,
+    "success": true,
+    "duration_s": 3.36,
+    "old_cost": [
+      0.2429264502588287,
+      0.2429264502588287,
+      0.2429264502588287
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510057,
+      "index": 57,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 2,
+      "queue_steps": 12,
+      "noise_std": 0.02068006960903708,
+      "time_price": 0.07229953876750854
+    },
+    "queue": "half_proposal",
+    "cost": 0.22557456095462666,
+    "success": true,
+    "duration_s": 3.12,
+    "old_cost": [
+      0.22557456095462666,
+      0.22557456095462666,
+      0.22557456095462666
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510057,
+      "index": 57,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 2,
+      "queue_steps": 12,
+      "noise_std": 0.02068006960903708,
+      "time_price": 0.07229953876750854
+    },
+    "queue": "proposal",
+    "cost": 0.20533069009972424,
+    "success": true,
+    "duration_s": 2.84,
+    "old_cost": [
+      0.20533069009972424,
+      0.20533069009972424,
+      0.20533069009972424
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510058,
+      "index": 58,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.0012267834864672245,
+      "time_price": 0.05217358972726925
+    },
+    "queue": "hold",
+    "cost": 0.15652076918180774,
+    "success": true,
+    "duration_s": 3.0,
+    "old_cost": [
+      0.20034658455271392,
+      0.2399985127454386,
+      1.3130415383636156
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510058,
+      "index": 58,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.0012267834864672245,
+      "time_price": 0.05217358972726925
+    },
+    "queue": "half_proposal",
+    "cost": 0.19617269737453238,
+    "success": true,
+    "duration_s": 3.7600000000000002,
+    "old_cost": [
+      0.15025993841453544,
+      0.24417239992362008,
+      1.3130415383636156
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510058,
+      "index": 58,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.0012267834864672245,
+      "time_price": 0.05217358972726925
+    },
+    "queue": "proposal",
+    "cost": 0.11686884098908314,
+    "success": true,
+    "duration_s": 2.24,
+    "old_cost": [
+      0.14817299482544466,
+      0.2253899076218032,
+      1.3130415383636156
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510059,
+      "index": 59,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 4,
+      "noise_std": 0.013789048440377507,
+      "time_price": 0.0405120870795986
+    },
+    "queue": "hold",
+    "cost": 0.046994021012334374,
+    "success": true,
+    "duration_s": 1.16,
+    "old_cost": [
+      0.046994021012334374,
+      0.046994021012334374,
+      0.046994021012334374
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510059,
+      "index": 59,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 4,
+      "noise_std": 0.013789048440377507,
+      "time_price": 0.0405120870795986
+    },
+    "queue": "half_proposal",
+    "cost": 0.043753054045966494,
+    "success": true,
+    "duration_s": 1.08,
+    "old_cost": [
+      0.043753054045966494,
+      0.043753054045966494,
+      0.043753054045966494
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510059,
+      "index": 59,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 4,
+      "noise_std": 0.013789048440377507,
+      "time_price": 0.0405120870795986
+    },
+    "queue": "proposal",
+    "cost": 0.0405120870795986,
+    "success": true,
+    "duration_s": 1.0,
+    "old_cost": [
+      0.0405120870795986,
+      0.0405120870795986,
+      0.0405120870795986
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510060,
+      "index": 60,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.012922990388379626,
+      "time_price": 0.07818782971788214
+    },
+    "queue": "hold",
+    "cost": 0.22205343639878528,
+    "success": true,
+    "duration_s": 2.84,
+    "old_cost": [
+      1.4691269783072929,
+      0.20954338364392416,
+      1.4691269783072929
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510060,
+      "index": 60,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.012922990388379626,
+      "time_price": 0.07818782971788214
+    },
+    "queue": "half_proposal",
+    "cost": 0.13448306711475727,
+    "success": true,
+    "duration_s": 1.72,
+    "old_cost": [
+      0.2376910023423617,
+      0.22205343639878528,
+      1.4691269783072929
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510060,
+      "index": 60,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.012922990388379626,
+      "time_price": 0.07818782971788214
+    },
+    "queue": "proposal",
+    "cost": 0.14699311986961844,
+    "success": true,
+    "duration_s": 1.8800000000000001,
+    "old_cost": [
+      1.4691269783072929,
+      0.23456348915364644,
+      1.4691269783072929
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510061,
+      "index": 61,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 4,
+      "noise_std": 0.02590234750887089,
+      "time_price": 0.12838562398226666
+    },
+    "queue": "hold",
+    "cost": 0.49300079609190395,
+    "success": true,
+    "duration_s": 3.84,
+    "old_cost": [
+      1.7703137438935999,
+      0.49300079609190395,
+      1.7703137438935999
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510061,
+      "index": 61,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 4,
+      "noise_std": 0.02590234750887089,
+      "time_price": 0.12838562398226666
+    },
+    "queue": "half_proposal",
+    "cost": 0.477594521214032,
+    "success": true,
+    "duration_s": 3.72,
+    "old_cost": [
+      1.7703137438935999,
+      0.477594521214032,
+      1.7703137438935999
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510061,
+      "index": 61,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 4,
+      "noise_std": 0.02590234750887089,
+      "time_price": 0.12838562398226666
+    },
+    "queue": "proposal",
+    "cost": 0.4724590962547413,
+    "success": true,
+    "duration_s": 3.68,
+    "old_cost": [
+      1.7703137438935999,
+      0.46732367129545066,
+      1.7703137438935999
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510062,
+      "index": 62,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 4,
+      "noise_std": 0.03964873130985557,
+      "time_price": 0.050328301378061435
+    },
+    "queue": "hold",
+    "cost": 0.05838082959855126,
+    "success": true,
+    "duration_s": 1.16,
+    "old_cost": [
+      1.3019698082683686,
+      0.13085358358295973,
+      1.3019698082683686
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510062,
+      "index": 62,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 4,
+      "noise_std": 0.03964873130985557,
+      "time_price": 0.050328301378061435
+    },
+    "queue": "half_proposal",
+    "cost": 0.07649901809465338,
+    "success": true,
+    "duration_s": 1.52,
+    "old_cost": [
+      1.3019698082683686,
+      0.21137886578785803,
+      0.11474852714198008
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510062,
+      "index": 62,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 4,
+      "noise_std": 0.03964873130985557,
+      "time_price": 0.050328301378061435
+    },
+    "queue": "proposal",
+    "cost": 0.08455154631514321,
+    "success": true,
+    "duration_s": 1.68,
+    "old_cost": [
+      1.3019698082683686,
+      0.13487984769320466,
+      1.3019698082683686
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510063,
+      "index": 63,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 4,
+      "noise_std": 0.022381861947015025,
+      "time_price": 0.08767111217285431
+    },
+    "queue": "hold",
+    "cost": 0.23846542511016375,
+    "success": true,
+    "duration_s": 2.72,
+    "old_cost": [
+      1.526026673037126,
+      0.23846542511016375,
+      0.2419722695970779
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510063,
+      "index": 63,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 4,
+      "noise_std": 0.022381861947015025,
+      "time_price": 0.08767111217285431
+    },
+    "queue": "half_proposal",
+    "cost": 0.22794489164942122,
+    "success": true,
+    "duration_s": 2.6,
+    "old_cost": [
+      1.526026673037126,
+      0.22794489164942122,
+      0.27704071446621964
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510063,
+      "index": 63,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 4,
+      "noise_std": 0.022381861947015025,
+      "time_price": 0.08767111217285431
+    },
+    "queue": "proposal",
+    "cost": 0.22443804716250704,
+    "success": true,
+    "duration_s": 2.56,
+    "old_cost": [
+      1.526026673037126,
+      0.22443804716250704,
+      0.28756124792696214
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510064,
+      "index": 64,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 12,
+      "noise_std": 0.0339875860689657,
+      "time_price": 0.14617319564368533
+    },
+    "queue": "hold",
+    "cost": 0.31573410259036033,
+    "success": true,
+    "duration_s": 2.16,
+    "old_cost": [
+      1.877039173862112,
+      0.49698886518853014,
+      1.877039173862112
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510064,
+      "index": 64,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 12,
+      "noise_std": 0.0339875860689657,
+      "time_price": 0.14617319564368533
+    },
+    "queue": "half_proposal",
+    "cost": 0.2631117521586336,
+    "success": true,
+    "duration_s": 1.8,
+    "old_cost": [
+      1.877039173862112,
+      0.45021344258255086,
+      1.877039173862112
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510064,
+      "index": 64,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 12,
+      "noise_std": 0.0339875860689657,
+      "time_price": 0.14617319564368533
+    },
+    "queue": "proposal",
+    "cost": 0.28649946346162325,
+    "success": true,
+    "duration_s": 1.96,
+    "old_cost": [
+      1.877039173862112,
+      0.4619072982340457,
+      1.877039173862112
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510065,
+      "index": 65,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 3,
+      "queue_steps": 8,
+      "noise_std": 0.00515562451991344,
+      "time_price": 0.05655432458945371
+    },
+    "queue": "hold",
+    "cost": 0.16740080078478298,
+    "success": true,
+    "duration_s": 2.96,
+    "old_cost": [
+      0.16740080078478298,
+      0.16740080078478298,
+      0.16740080078478298
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510065,
+      "index": 65,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 3,
+      "queue_steps": 8,
+      "noise_std": 0.00515562451991344,
+      "time_price": 0.05655432458945371
+    },
+    "queue": "half_proposal",
+    "cost": 0.1719251467519393,
+    "success": true,
+    "duration_s": 3.04,
+    "old_cost": [
+      0.1719251467519393,
+      0.1719251467519393,
+      0.1719251467519393
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510065,
+      "index": 65,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 3,
+      "queue_steps": 8,
+      "noise_std": 0.00515562451991344,
+      "time_price": 0.05655432458945371
+    },
+    "queue": "proposal",
+    "cost": 0.17418731973551743,
+    "success": true,
+    "duration_s": 3.08,
+    "old_cost": [
+      0.17418731973551743,
+      0.17418731973551743,
+      0.17418731973551743
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510066,
+      "index": 66,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.03061881841573478,
+      "time_price": 0.0704649101489216
+    },
+    "queue": "hold",
+    "cost": 0.18602736279315304,
+    "success": true,
+    "duration_s": 2.64,
+    "old_cost": [
+      1.4227894608935296,
+      0.23112490528846288,
+      1.4227894608935296
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510066,
+      "index": 66,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.03061881841573478,
+      "time_price": 0.0704649101489216
+    },
+    "queue": "half_proposal",
+    "cost": 0.1719343807633687,
+    "success": true,
+    "duration_s": 2.44,
+    "old_cost": [
+      1.4227894608935296,
+      0.21703192325867854,
+      1.4227894608935296
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510066,
+      "index": 66,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.03061881841573478,
+      "time_price": 0.0704649101489216
+    },
+    "queue": "proposal",
+    "cost": 0.17475297716932559,
+    "success": true,
+    "duration_s": 2.48,
+    "old_cost": [
+      1.4227894608935296,
+      0.2198505196646354,
+      1.4227894608935296
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510067,
+      "index": 67,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.03096004160886405,
+      "time_price": 0.12973423404318984
+    },
+    "queue": "hold",
+    "cost": 0.2490897293629245,
+    "success": true,
+    "duration_s": 1.92,
+    "old_cost": [
+      0.2490897293629245,
+      0.2490897293629245,
+      0.2490897293629245
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510067,
+      "index": 67,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.03096004160886405,
+      "time_price": 0.12973423404318984
+    },
+    "queue": "half_proposal",
+    "cost": 0.23871099063946932,
+    "success": true,
+    "duration_s": 1.84,
+    "old_cost": [
+      0.23871099063946932,
+      0.23871099063946932,
+      0.23871099063946932
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510067,
+      "index": 67,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 4,
+      "noise_std": 0.03096004160886405,
+      "time_price": 0.12973423404318984
+    },
+    "queue": "proposal",
+    "cost": 0.22833225191601414,
+    "success": true,
+    "duration_s": 1.76,
+    "old_cost": [
+      0.22833225191601414,
+      0.22833225191601414,
+      0.22833225191601414
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510068,
+      "index": 68,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.03775449822246852,
+      "time_price": 0.13194895138283816
+    },
+    "queue": "hold",
+    "cost": 0.311399525263498,
+    "success": true,
+    "duration_s": 2.36,
+    "old_cost": [
+      1.791693708297029,
+      1.791693708297029,
+      1.791693708297029
+    ],
+    "old_success": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510068,
+      "index": 68,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.03775449822246852,
+      "time_price": 0.13194895138283816
+    },
+    "queue": "half_proposal",
+    "cost": 0.21111832221254107,
+    "success": true,
+    "duration_s": 1.6,
+    "old_cost": [
+      1.791693708297029,
+      0.7758598341310884,
+      1.791693708297029
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510068,
+      "index": 68,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 4,
+      "noise_std": 0.03775449822246852,
+      "time_price": 0.13194895138283816
+    },
+    "queue": "proposal",
+    "cost": 0.22695219637848163,
+    "success": true,
+    "duration_s": 1.72,
+    "old_cost": [
+      1.791693708297029,
+      1.791693708297029,
+      1.791693708297029
+    ],
+    "old_success": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510069,
+      "index": 69,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 4,
+      "noise_std": 0.008720870279827842,
+      "time_price": 0.09785461766382293
+    },
+    "queue": "hold",
+    "cost": 0.09394043295727002,
+    "success": true,
+    "duration_s": 0.96,
+    "old_cost": [
+      0.09394043295727002,
+      0.09394043295727002,
+      0.09394043295727002
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510069,
+      "index": 69,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 4,
+      "noise_std": 0.008720870279827842,
+      "time_price": 0.09785461766382293
+    },
+    "queue": "half_proposal",
+    "cost": 0.08611206354416417,
+    "success": true,
+    "duration_s": 0.88,
+    "old_cost": [
+      0.08611206354416417,
+      0.08611206354416417,
+      0.08611206354416417
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510069,
+      "index": 69,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 15,
+      "queue_steps": 4,
+      "noise_std": 0.008720870279827842,
+      "time_price": 0.09785461766382293
+    },
+    "queue": "proposal",
+    "cost": 0.07828369413105835,
+    "success": true,
+    "duration_s": 0.8,
+    "old_cost": [
+      0.07828369413105835,
+      0.07828369413105835,
+      0.07828369413105835
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510070,
+      "index": 70,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.03486110745142382,
+      "time_price": 0.028637468271968287
+    },
+    "queue": "hold",
+    "cost": 0.08247590862326866,
+    "success": true,
+    "duration_s": 2.88,
+    "old_cost": [
+      1.1718248096318098,
+      0.12485936166578174,
+      1.1718248096318098
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510070,
+      "index": 70,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.03486110745142382,
+      "time_price": 0.028637468271968287
+    },
+    "queue": "half_proposal",
+    "cost": 0.08018491116151122,
+    "success": true,
+    "duration_s": 2.8000000000000003,
+    "old_cost": [
+      1.1718248096318098,
+      0.12371386293490301,
+      1.1718248096318098
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510070,
+      "index": 70,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.03486110745142382,
+      "time_price": 0.028637468271968287
+    },
+    "queue": "proposal",
+    "cost": 0.07674841496887501,
+    "success": true,
+    "duration_s": 2.68,
+    "old_cost": [
+      1.1718248096318098,
+      0.14776933628335637,
+      1.1718248096318098
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510071,
+      "index": 71,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 8,
+      "noise_std": 0.0050051481566175515,
+      "time_price": 0.11427790672547403
+    },
+    "queue": "hold",
+    "cost": 0.4799672082469909,
+    "success": true,
+    "duration_s": 4.2,
+    "old_cost": [
+      0.4799672082469909,
+      0.4799672082469909,
+      1.6856674403528442
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510071,
+      "index": 71,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 8,
+      "noise_std": 0.0050051481566175515,
+      "time_price": 0.11427790672547403
+    },
+    "queue": "half_proposal",
+    "cost": 0.4479693943638582,
+    "success": true,
+    "duration_s": 3.92,
+    "old_cost": [
+      0.4479693943638582,
+      0.4479693943638582,
+      1.6856674403528442
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510071,
+      "index": 71,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 19,
+      "queue_steps": 8,
+      "noise_std": 0.0050051481566175515,
+      "time_price": 0.11427790672547403
+    },
+    "queue": "proposal",
+    "cost": 0.4205426967497444,
+    "success": true,
+    "duration_s": 3.68,
+    "old_cost": [
+      0.4251138130187634,
+      0.4205426967497444,
+      1.6856674403528442
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510072,
+      "index": 72,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.006093190122627402,
+      "time_price": 0.03825651549968429
+    },
+    "queue": "hold",
+    "cost": 0.07192224913940647,
+    "success": true,
+    "duration_s": 1.8800000000000001,
+    "old_cost": [
+      0.0703919885194191,
+      0.07345250975939384,
+      1.2295390929981058
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510072,
+      "index": 72,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.006093190122627402,
+      "time_price": 0.03825651549968429
+    },
+    "queue": "half_proposal",
+    "cost": 0.05814990355952013,
+    "success": true,
+    "duration_s": 1.52,
+    "old_cost": [
+      0.06121042479949487,
+      0.0596801641795075,
+      1.2295390929981058
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510072,
+      "index": 72,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 10,
+      "queue_steps": 8,
+      "noise_std": 0.006093190122627402,
+      "time_price": 0.03825651549968429
+    },
+    "queue": "proposal",
+    "cost": 0.0642709460394696,
+    "success": true,
+    "duration_s": 1.68,
+    "old_cost": [
+      0.06580120665945698,
+      0.06886172789943172,
+      1.2295390929981058
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510073,
+      "index": 73,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 12,
+      "noise_std": 0.003503342090498668,
+      "time_price": 0.13919188362543308
+    },
+    "queue": "hold",
+    "cost": 0.6458503400220095,
+    "success": true,
+    "duration_s": 4.64,
+    "old_cost": [
+      0.6458503400220095,
+      0.6402826646769922,
+      0.6347149893319749
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510073,
+      "index": 73,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 12,
+      "noise_std": 0.003503342090498668,
+      "time_price": 0.13919188362543308
+    },
+    "queue": "half_proposal",
+    "cost": 0.5734705605367844,
+    "success": true,
+    "duration_s": 4.12,
+    "old_cost": [
+      0.5734705605367844,
+      0.5734705605367844,
+      0.567902885191767
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510073,
+      "index": 73,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 4,
+      "queue_steps": 12,
+      "noise_std": 0.003503342090498668,
+      "time_price": 0.13919188362543308
+    },
+    "queue": "proposal",
+    "cost": 0.5456321838116976,
+    "success": true,
+    "duration_s": 3.92,
+    "old_cost": [
+      0.5456321838116976,
+      0.5456321838116976,
+      0.5400645084666803
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510074,
+      "index": 74,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 12,
+      "noise_std": 0.020855202762116713,
+      "time_price": 0.03004659815676504
+    },
+    "queue": "hold",
+    "cost": 0.04446896527201226,
+    "success": true,
+    "duration_s": 1.48,
+    "old_cost": [
+      0.048074557050824064,
+      0.04567082919828286,
+      0.046872693124553465
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510074,
+      "index": 74,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 12,
+      "noise_std": 0.020855202762116713,
+      "time_price": 0.03004659815676504
+    },
+    "queue": "half_proposal",
+    "cost": 0.03605591778811804,
+    "success": true,
+    "duration_s": 1.2,
+    "old_cost": [
+      0.03725778171438865,
+      0.03725778171438865,
+      0.03725778171438865
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510074,
+      "index": 74,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 5,
+      "queue_steps": 12,
+      "noise_std": 0.020855202762116713,
+      "time_price": 0.03004659815676504
+    },
+    "queue": "proposal",
+    "cost": 0.03845964564065925,
+    "success": true,
+    "duration_s": 1.28,
+    "old_cost": [
+      0.039661509566929855,
+      0.039661509566929855,
+      1.1802795889405902
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510075,
+      "index": 75,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.008415694873934244,
+      "time_price": 0.14326406267180744
+    },
+    "queue": "hold",
+    "cost": 0.38967825046731625,
+    "success": true,
+    "duration_s": 2.72,
+    "old_cost": [
+      0.383947687960444,
+      0.38967825046731625,
+      0.38967825046731625
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510075,
+      "index": 75,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.008415694873934244,
+      "time_price": 0.14326406267180744
+    },
+    "queue": "half_proposal",
+    "cost": 0.38967825046731625,
+    "success": true,
+    "duration_s": 2.72,
+    "old_cost": [
+      0.383947687960444,
+      0.38967825046731625,
+      0.38967825046731625
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510075,
+      "index": 75,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 4,
+      "noise_std": 0.008415694873934244,
+      "time_price": 0.14326406267180744
+    },
+    "queue": "proposal",
+    "cost": 0.38967825046731625,
+    "success": true,
+    "duration_s": 2.72,
+    "old_cost": [
+      0.383947687960444,
+      0.38967825046731625,
+      0.38967825046731625
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510076,
+      "index": 76,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 8,
+      "noise_std": 0.027743193484313422,
+      "time_price": 0.127010791658292
+    },
+    "queue": "hold",
+    "cost": 0.28450417331457406,
+    "success": true,
+    "duration_s": 2.24,
+    "old_cost": [
+      0.650295253290455,
+      0.6198126632924649,
+      1.762064749949752
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510076,
+      "index": 76,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 8,
+      "noise_std": 0.027743193484313422,
+      "time_price": 0.127010791658292
+    },
+    "queue": "half_proposal",
+    "cost": 0.31498676331256414,
+    "success": true,
+    "duration_s": 2.48,
+    "old_cost": [
+      1.762064749949752,
+      0.5842496416281432,
+      1.762064749949752
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510076,
+      "index": 76,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 20,
+      "queue_steps": 8,
+      "noise_std": 0.027743193484313422,
+      "time_price": 0.127010791658292
+    },
+    "queue": "proposal",
+    "cost": 0.3556302166432176,
+    "success": true,
+    "duration_s": 2.8000000000000003,
+    "old_cost": [
+      1.762064749949752,
+      1.762064749949752,
+      1.762064749949752
+    ],
+    "old_success": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510077,
+      "index": 77,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.025263296197234327,
+      "time_price": 0.13730167843886193
+    },
+    "queue": "hold",
+    "cost": 0.4778098409672395,
+    "success": true,
+    "duration_s": 3.48,
+    "old_cost": [
+      0.4778098409672395,
+      0.4778098409672395,
+      0.4778098409672395
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510077,
+      "index": 77,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.025263296197234327,
+      "time_price": 0.13730167843886193
+    },
+    "queue": "half_proposal",
+    "cost": 0.45584157241702167,
+    "success": true,
+    "duration_s": 3.3200000000000003,
+    "old_cost": [
+      0.45584157241702167,
+      0.45584157241702167,
+      0.45584157241702167
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510077,
+      "index": 77,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 0,
+      "age": 0,
+      "delay": 14,
+      "queue_steps": 8,
+      "noise_std": 0.025263296197234327,
+      "time_price": 0.13730167843886193
+    },
+    "queue": "proposal",
+    "cost": 0.43387330386680373,
+    "success": true,
+    "duration_s": 3.16,
+    "old_cost": [
+      0.43387330386680373,
+      0.43387330386680373,
+      0.43387330386680373
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510078,
+      "index": 78,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.010697935478168108,
+      "time_price": 0.062129098971181004
+    },
+    "queue": "hold",
+    "cost": 0.12674336190120924,
+    "success": true,
+    "duration_s": 2.04,
+    "old_cost": [
+      1.3727745938270859,
+      0.19632795274893197,
+      1.3727745938270859
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510078,
+      "index": 78,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.010697935478168108,
+      "time_price": 0.062129098971181004
+    },
+    "queue": "half_proposal",
+    "cost": 0.10686205023043133,
+    "success": true,
+    "duration_s": 1.72,
+    "old_cost": [
+      1.3727745938270859,
+      0.17644664107815405,
+      1.3727745938270859
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510078,
+      "index": 78,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 8,
+      "noise_std": 0.010697935478168108,
+      "time_price": 0.062129098971181004
+    },
+    "queue": "proposal",
+    "cost": 0.12922852586005648,
+    "success": true,
+    "duration_s": 2.08,
+    "old_cost": [
+      1.3727745938270859,
+      0.19881311670777924,
+      1.3727745938270859
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510079,
+      "index": 79,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 12,
+      "noise_std": 0.02598497430666859,
+      "time_price": 0.08686950286296587
+    },
+    "queue": "hold",
+    "cost": 0.08339472274844723,
+    "success": true,
+    "duration_s": 0.96,
+    "old_cost": [
+      0.08339472274844723,
+      0.08339472274844723,
+      0.08339472274844723
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510079,
+      "index": 79,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 12,
+      "noise_std": 0.02598497430666859,
+      "time_price": 0.08686950286296587
+    },
+    "queue": "half_proposal",
+    "cost": 0.04864692160326089,
+    "success": true,
+    "duration_s": 0.56,
+    "old_cost": [
+      0.04864692160326089,
+      0.04864692160326089,
+      0.04864692160326089
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510079,
+      "index": 79,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 1,
+      "age": 0,
+      "delay": 16,
+      "queue_steps": 12,
+      "noise_std": 0.02598497430666859,
+      "time_price": 0.08686950286296587
+    },
+    "queue": "proposal",
+    "cost": 0.08339472274844723,
+    "success": true,
+    "duration_s": 0.96,
+    "old_cost": [
+      0.08339472274844723,
+      0.08339472274844723,
+      0.08339472274844723
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510080,
+      "index": 80,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.03237395134653022,
+      "time_price": 0.1323043037987274
+    },
+    "queue": "hold",
+    "cost": 0.22756340253381113,
+    "success": true,
+    "duration_s": 1.72,
+    "old_cost": [
+      0.23814774683770934,
+      0.2910694683572003,
+      0.2593164354455057
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510080,
+      "index": 80,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.03237395134653022,
+      "time_price": 0.1323043037987274
+    },
+    "queue": "half_proposal",
+    "cost": 0.21168688607796385,
+    "success": true,
+    "duration_s": 1.6,
+    "old_cost": [
+      0.20110254177406564,
+      0.275192951901353,
+      1.7938258227923645
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510080,
+      "index": 80,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 8,
+      "noise_std": 0.03237395134653022,
+      "time_price": 0.1323043037987274
+    },
+    "queue": "proposal",
+    "cost": 0.30165381266109853,
+    "success": true,
+    "duration_s": 2.2800000000000002,
+    "old_cost": [
+      0.32811467342084394,
+      0.36515987848448767,
+      1.7938258227923645
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510081,
+      "index": 81,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.01538355277412776,
+      "time_price": 0.06467955941022671
+    },
+    "queue": "hold",
+    "cost": 0.26130542001731594,
+    "success": true,
+    "duration_s": 4.04,
+    "old_cost": [
+      0.263892602393725,
+      0.26130542001731594,
+      1.3880773564613602
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510081,
+      "index": 81,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.01538355277412776,
+      "time_price": 0.06467955941022671
+    },
+    "queue": "half_proposal",
+    "cost": 0.24836950813527056,
+    "success": true,
+    "duration_s": 3.84,
+    "old_cost": [
+      0.24578232575886153,
+      0.24836950813527056,
+      1.3880773564613602
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510081,
+      "index": 81,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 0,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 9,
+      "queue_steps": 8,
+      "noise_std": 0.01538355277412776,
+      "time_price": 0.06467955941022671
+    },
+    "queue": "proposal",
+    "cost": 0.23543359625322524,
+    "success": true,
+    "duration_s": 3.64,
+    "old_cost": [
+      1.3880773564613602,
+      0.2380207786296343,
+      1.3880773564613602
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510082,
+      "index": 82,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 12,
+      "noise_std": 0.03347846318309475,
+      "time_price": 0.0930319320986803
+    },
+    "queue": "hold",
+    "cost": 0.09675320938262752,
+    "success": true,
+    "duration_s": 1.04,
+    "old_cost": [
+      0.09675320938262752,
+      0.10419576395052195,
+      0.09675320938262752
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510082,
+      "index": 82,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 12,
+      "noise_std": 0.03347846318309475,
+      "time_price": 0.0930319320986803
+    },
+    "queue": "half_proposal",
+    "cost": 0.07070426839499702,
+    "success": true,
+    "duration_s": 0.76,
+    "old_cost": [
+      0.07070426839499702,
+      0.07070426839499702,
+      0.07070426839499702
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510082,
+      "index": 82,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 17,
+      "queue_steps": 12,
+      "noise_std": 0.03347846318309475,
+      "time_price": 0.0930319320986803
+    },
+    "queue": "proposal",
+    "cost": 0.052097881975260975,
+    "success": true,
+    "duration_s": 0.56,
+    "old_cost": [
+      0.052097881975260975,
+      0.052097881975260975,
+      0.052097881975260975
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510083,
+      "index": 83,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.0013832080052806888,
+      "time_price": 0.07597700133072084
+    },
+    "queue": "hold",
+    "cost": 0.23097008404539135,
+    "success": true,
+    "duration_s": 3.04,
+    "old_cost": [
+      0.23097008404539135,
+      0.23097008404539135,
+      0.2431264042583067
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510083,
+      "index": 83,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.0013832080052806888,
+      "time_price": 0.07597700133072084
+    },
+    "queue": "half_proposal",
+    "cost": 0.21273560372601838,
+    "success": true,
+    "duration_s": 2.8000000000000003,
+    "old_cost": [
+      0.21273560372601838,
+      0.21273560372601838,
+      0.23097008404539135
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510083,
+      "index": 83,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 1,
+      "extra_ticks": 5,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 8,
+      "noise_std": 0.0013832080052806888,
+      "time_price": 0.07597700133072084
+    },
+    "queue": "proposal",
+    "cost": 0.20057928351310303,
+    "success": true,
+    "duration_s": 2.64,
+    "old_cost": [
+      0.20057928351310303,
+      0.20057928351310303,
+      0.20057928351310303
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510084,
+      "index": 84,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 12,
+      "noise_std": 0.020113763934587598,
+      "time_price": 0.07856239472045627
+    },
+    "queue": "hold",
+    "cost": 0.3079645873041886,
+    "success": true,
+    "duration_s": 3.92,
+    "old_cost": [
+      0.3833844862358266,
+      0.3770994946581901,
+      1.4713743683227376
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510084,
+      "index": 84,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 12,
+      "noise_std": 0.020113763934587598,
+      "time_price": 0.07856239472045627
+    },
+    "queue": "half_proposal",
+    "cost": 0.1414123104968213,
+    "success": true,
+    "duration_s": 1.8,
+    "old_cost": [
+      0.13826981470800304,
+      0.17597976417382208,
+      1.4713743683227376
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510084,
+      "index": 84,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 0,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 8,
+      "queue_steps": 12,
+      "noise_std": 0.020113763934587598,
+      "time_price": 0.07856239472045627
+    },
+    "queue": "proposal",
+    "cost": 0.1539822936520943,
+    "success": true,
+    "duration_s": 1.96,
+    "old_cost": [
+      0.15083979786327603,
+      0.18854974732909505,
+      1.4713743683227376
+    ],
+    "old_success": [
+      true,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510085,
+      "index": 85,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.01725298135156162,
+      "time_price": 0.0861118912328201
+    },
+    "queue": "hold",
+    "cost": 0.28244700324364996,
+    "success": true,
+    "duration_s": 3.2800000000000002,
+    "old_cost": [
+      0.28244700324364996,
+      0.28244700324364996,
+      0.28244700324364996
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510085,
+      "index": 85,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.01725298135156162,
+      "time_price": 0.0861118912328201
+    },
+    "queue": "half_proposal",
+    "cost": 0.28244700324364996,
+    "success": true,
+    "duration_s": 3.2800000000000002,
+    "old_cost": [
+      0.28244700324364996,
+      0.28244700324364996,
+      0.28244700324364996
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510085,
+      "index": 85,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 2,
+      "extra_ticks": 3,
+      "age": 0,
+      "delay": 6,
+      "queue_steps": 12,
+      "noise_std": 0.01725298135156162,
+      "time_price": 0.0861118912328201
+    },
+    "queue": "proposal",
+    "cost": 0.29622490584090116,
+    "success": true,
+    "duration_s": 3.44,
+    "old_cost": [
+      0.29622490584090116,
+      0.29622490584090116,
+      0.29622490584090116
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510086,
+      "index": 86,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 12,
+      "noise_std": 0.027276855786480727,
+      "time_price": 0.11914701380186717
+    },
+    "queue": "hold",
+    "cost": 0.13344465545809123,
+    "success": true,
+    "duration_s": 1.12,
+    "old_cost": [
+      1.714882082811203,
+      0.1382105360101659,
+      0.13344465545809123
+    ],
+    "old_success": [
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510086,
+      "index": 86,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 12,
+      "noise_std": 0.027276855786480727,
+      "time_price": 0.11914701380186717
+    },
+    "queue": "half_proposal",
+    "cost": 0.06672232772904561,
+    "success": true,
+    "duration_s": 0.56,
+    "old_cost": [
+      0.06672232772904561,
+      0.06672232772904561,
+      0.06672232772904561
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510086,
+      "index": 86,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 1,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 12,
+      "queue_steps": 12,
+      "noise_std": 0.027276855786480727,
+      "time_price": 0.11914701380186717
+    },
+    "queue": "proposal",
+    "cost": 0.05719056662489624,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.05719056662489624,
+      0.05719056662489624,
+      0.05719056662489624
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510087,
+      "index": 87,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.03800791251243025,
+      "time_price": 0.11945273138921676
+    },
+    "queue": "hold",
+    "cost": 0.47781092555686705,
+    "success": true,
+    "duration_s": 4.0,
+    "old_cost": [
+      0.47781092555686705,
+      0.47781092555686705,
+      0.47781092555686705
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510087,
+      "index": 87,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.03800791251243025,
+      "time_price": 0.11945273138921676
+    },
+    "queue": "half_proposal",
+    "cost": 0.4491422700234551,
+    "success": true,
+    "duration_s": 3.7600000000000002,
+    "old_cost": [
+      0.4491422700234551,
+      0.4491422700234551,
+      0.4491422700234551
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510087,
+      "index": 87,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 3,
+      "extra_ticks": 4,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.03800791251243025,
+      "time_price": 0.11945273138921676
+    },
+    "queue": "proposal",
+    "cost": 0.420473614490043,
+    "success": true,
+    "duration_s": 3.52,
+    "old_cost": [
+      0.420473614490043,
+      0.420473614490043,
+      0.420473614490043
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510088,
+      "index": 88,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.03829364340145734,
+      "time_price": 0.06499413187235076
+    },
+    "queue": "hold",
+    "cost": 0.1975821608919463,
+    "success": true,
+    "duration_s": 3.04,
+    "old_cost": [
+      1.3899647912341044,
+      0.3015727718877075,
+      1.3899647912341044
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510088,
+      "index": 88,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.03829364340145734,
+      "time_price": 0.06499413187235076
+    },
+    "queue": "half_proposal",
+    "cost": 0.20278169144173436,
+    "success": true,
+    "duration_s": 3.12,
+    "old_cost": [
+      1.3899647912341044,
+      0.3015727718877075,
+      1.3899647912341044
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510088,
+      "index": 88,
+      "split": "pilot",
+      "task": "FetchPush-v4",
+      "target_stage": 2,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 11,
+      "queue_steps": 12,
+      "noise_std": 0.03829364340145734,
+      "time_price": 0.06499413187235076
+    },
+    "queue": "proposal",
+    "cost": 0.15858568176853585,
+    "success": true,
+    "duration_s": 2.44,
+    "old_cost": [
+      1.3899647912341044,
+      0.31197183298728365,
+      1.3899647912341044
+    ],
+    "old_success": [
+      false,
+      true,
+      false
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510089,
+      "index": 89,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 4,
+      "noise_std": 0.030663491896158895,
+      "time_price": 0.05560281233024847
+    },
+    "queue": "hold",
+    "cost": 0.03558579989135902,
+    "success": true,
+    "duration_s": 0.64,
+    "old_cost": [
+      0.03558579989135902,
+      0.03558579989135902,
+      0.03558579989135902
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510089,
+      "index": 89,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 4,
+      "noise_std": 0.030663491896158895,
+      "time_price": 0.05560281233024847
+    },
+    "queue": "half_proposal",
+    "cost": 0.031137574904939146,
+    "success": true,
+    "duration_s": 0.56,
+    "old_cost": [
+      0.031137574904939146,
+      0.031137574904939146,
+      0.031137574904939146
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  },
+  {
+    "context": {
+      "seed": 1510089,
+      "index": 89,
+      "split": "pilot",
+      "task": "FetchPickAndPlace-v4",
+      "target_stage": 4,
+      "extra_ticks": 2,
+      "age": 0,
+      "delay": 18,
+      "queue_steps": 4,
+      "noise_std": 0.030663491896158895,
+      "time_price": 0.05560281233024847
+    },
+    "queue": "proposal",
+    "cost": 0.026689349918519265,
+    "success": true,
+    "duration_s": 0.48,
+    "old_cost": [
+      0.026689349918519265,
+      0.026689349918519265,
+      0.026689349918519265
+    ],
+    "old_success": [
+      true,
+      true,
+      true
+    ]
+  }
+]

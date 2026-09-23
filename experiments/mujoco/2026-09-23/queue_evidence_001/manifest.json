@@ -1,0 +1,285 @@
+{
+  "schema": "roborsi.queue.local-cache.v1",
+  "scope": "All numeric summaries, four fixed parent traces and 16 state videos. Complete raw traces retained remotely.",
+  "remote_archives": [
+    {
+      "manifest": "pilot/manifest.json",
+      "prefix": "pilot/"
+    },
+    {
+      "manifest": "control/manifest.json",
+      "prefix": "control/"
+    },
+    {
+      "manifest": "replay/manifest.json",
+      "prefix": "replay/"
+    }
+  ],
+  "files": [
+    {
+      "path": "control/archive_environment.json",
+      "bytes": 176,
+      "sha256": "c15356678c292d50c1ef11ef9f3c0fc9ac55ec1feaf95a9e48982b124e702586"
+    },
+    {
+      "path": "control/audit.json",
+      "bytes": 260,
+      "sha256": "1eda21e55d9fddce1aa8852bea7f8a41ddaa4eaceeb90ae5d55e35349937eb04"
+    },
+    {
+      "path": "control/manifest.json",
+      "bytes": 16993,
+      "sha256": "eb96358560b49b1ea86b53684a2335bcb2b631dcdd052b99a1f363550d9bb94f"
+    },
+    {
+      "path": "control/protocol.json",
+      "bytes": 12387,
+      "sha256": "9704d967971a2e62af8fa2b4dc524331a0479e2adcdef12b9f25d13db2eea80d"
+    },
+    {
+      "path": "control/rows.json",
+      "bytes": 159813,
+      "sha256": "0e4cb82581574eb145d39ab47d5a21c5468eb2b4fab7cbdea51b21ab994ba999"
+    },
+    {
+      "path": "control/source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "control/source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "control/source/physics_queue_audit.py",
+      "bytes": 3276,
+      "sha256": "ebc4b946d5f120c450f1a3500918d5c605c63357378c960ded00b0f6c4614656"
+    },
+    {
+      "path": "control/source/physics_queue_control.py",
+      "bytes": 4807,
+      "sha256": "b2f7742558e15962fc4adad04ab0a3186a95646f02ab7c36391016a255352e42"
+    },
+    {
+      "path": "control/source/physics_queue_evidence.py",
+      "bytes": 12498,
+      "sha256": "741e115bc6de4e8e384f22ee41976f1e4fa9b35cb4a18cd91c6f3f6b70ec7b1d"
+    },
+    {
+      "path": "control/source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    },
+    {
+      "path": "control/summary.json",
+      "bytes": 406,
+      "sha256": "74a3cc6b8cb52422146297513ba9d0391162fe71ccf3a86128cab8d4208bdeb9"
+    },
+    {
+      "path": "control/traces/pilot_00000.json.gz",
+      "bytes": 106346,
+      "sha256": "4fcb2d6ec0b6089922ae03bb145a3a9f6cdacbaf20abd94fdac54b02abf4695f"
+    },
+    {
+      "path": "control/traces/pilot_00001.json.gz",
+      "bytes": 133494,
+      "sha256": "a3ad1c11783d730616a37202127997b4e91ea50cb876d5efd349a68eac828355"
+    },
+    {
+      "path": "control/traces/pilot_00004.json.gz",
+      "bytes": 48477,
+      "sha256": "0cbf155136658b145a4dfcba69130dd2fc7b14687026863ac0d1bab8dcebef38"
+    },
+    {
+      "path": "control/traces/pilot_00005.json.gz",
+      "bytes": 96544,
+      "sha256": "63f118cd82f54516beb89d9988e2165e0614bbd7b5c709059986047c47ce9133"
+    },
+    {
+      "path": "pilot/archive_environment.json",
+      "bytes": 176,
+      "sha256": "c15356678c292d50c1ef11ef9f3c0fc9ac55ec1feaf95a9e48982b124e702586"
+    },
+    {
+      "path": "pilot/manifest.json",
+      "bytes": 16407,
+      "sha256": "8a8074decc995f6a799bb322b8cec720dda79fb94ec0ea4adf0b082d274d6c56"
+    },
+    {
+      "path": "pilot/protocol.json",
+      "bytes": 2200,
+      "sha256": "c28d52d5c7c5962c0d979a68c69e103a54de3947b40c747a3f4cad49037774f2"
+    },
+    {
+      "path": "pilot/rows.json",
+      "bytes": 587248,
+      "sha256": "2f241cc7affb7c5d752bb4bd34b168d3d2e466743d0d41ee4f739fd2faa1a408"
+    },
+    {
+      "path": "pilot/source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "pilot/source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "pilot/source/physics_queue_evidence.py",
+      "bytes": 12410,
+      "sha256": "7b5669dfd86b4c602537132462d7e31d11397eacd0793dbf5f2884003fecd8dc"
+    },
+    {
+      "path": "pilot/source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    },
+    {
+      "path": "pilot/summary.json",
+      "bytes": 50980,
+      "sha256": "d721dacae1e213275c67be5d5526e004ebb37f9672529d326ccf45b1904d1086"
+    },
+    {
+      "path": "pilot/traces/pilot_00000.json.gz",
+      "bytes": 549501,
+      "sha256": "0634dd2b74b521a67044d314cac057341c9af5ab1c503789bdb687869863790d"
+    },
+    {
+      "path": "pilot/traces/pilot_00001.json.gz",
+      "bytes": 542355,
+      "sha256": "5866b8e86e8728333b7f1c169a2978bfb7098196afa93000d7891e248dd8ea76"
+    },
+    {
+      "path": "pilot/traces/pilot_00004.json.gz",
+      "bytes": 171800,
+      "sha256": "fcba3ed9f7d867b2ec9cd86c1b00ad5d02acb180ad83ee27a34159c3c8f7a9ba"
+    },
+    {
+      "path": "pilot/traces/pilot_00005.json.gz",
+      "bytes": 290594,
+      "sha256": "6c6587f9cd6a1de210c2122b4c7a6926a3e7bac29d3b8b35f38d6e533e4063b0"
+    },
+    {
+      "path": "replay/archive_environment.json",
+      "bytes": 206,
+      "sha256": "85ff2498306b24a8fbb650b211bae26dda6cedccf3f9f475fbb6fdb298fc8fd2"
+    },
+    {
+      "path": "replay/manifest.json",
+      "bytes": 4463,
+      "sha256": "9772018ec94e5ac67e31eaeac698b6165832f4fdaf2a12684748d9589ab9e6c2"
+    },
+    {
+      "path": "replay/pilot_0_proposal_fast_current.mp4",
+      "bytes": 50505,
+      "sha256": "237ceb15a75c08a614ed995e0edc62665ad397c610e205fc6ff21773cc0e7ac5"
+    },
+    {
+      "path": "replay/pilot_0_proposal_grip_transported.mp4",
+      "bytes": 86533,
+      "sha256": "2787cb75cffc2b80c3ceaab1fbc36cda3daa50cd63dea6749d43fd64666bd27c"
+    },
+    {
+      "path": "replay/pilot_0_proposal_precise_delayed.mp4",
+      "bytes": 44056,
+      "sha256": "fabcfa99b589ec630f89239c70247d2064195d59f2c0b3bfd5b5ba142de0295c"
+    },
+    {
+      "path": "replay/pilot_0_proposal_sensor_delta_control.mp4",
+      "bytes": 41560,
+      "sha256": "581a7d8bebef683430ebe54c0aacc43e3f98b395548256a6ff7dbb6274f9e594"
+    },
+    {
+      "path": "replay/pilot_1_proposal_fast_current.mp4",
+      "bytes": 59666,
+      "sha256": "6bdb7e86d1f2eb12a7b7bf88b13c81132860d4680567614e0e14ec72722762a7"
+    },
+    {
+      "path": "replay/pilot_1_proposal_grip_transported.mp4",
+      "bytes": 61987,
+      "sha256": "88ae8dab4391b68d25fb4e6f3769bae8cd1f718750050f4efdeed9f6f69794cd"
+    },
+    {
+      "path": "replay/pilot_1_proposal_precise_delayed.mp4",
+      "bytes": 48007,
+      "sha256": "e986f16ae5e420ce8cf7b8afb42fea42c3c8276b33555218cc36fb0fe4f6feff"
+    },
+    {
+      "path": "replay/pilot_1_proposal_sensor_delta_control.mp4",
+      "bytes": 46214,
+      "sha256": "1a0673a60573dae19dcad38c4895f1da91de894a1baba4e615b5afcdff438f44"
+    },
+    {
+      "path": "replay/pilot_4_proposal_fast_current.mp4",
+      "bytes": 20466,
+      "sha256": "719569f5278b2811cf3f0ae06b39fc52d80fa6110227b77c564a7481d2df415e"
+    },
+    {
+      "path": "replay/pilot_4_proposal_grip_transported.mp4",
+      "bytes": 20017,
+      "sha256": "f36fe0611abe38027d0d4275b67ef79e8c36774c66cf7d14e7afba7f1e695026"
+    },
+    {
+      "path": "replay/pilot_4_proposal_precise_delayed.mp4",
+      "bytes": 31583,
+      "sha256": "613057b7fda6c38614d680aa577e5424cea8219880ab5d8c55ad8bb21fe3992d"
+    },
+    {
+      "path": "replay/pilot_4_proposal_sensor_delta_control.mp4",
+      "bytes": 20112,
+      "sha256": "798eb762aa9286344c88a1b589b93c1325caa50f08a1a6fd0081c40050c5c8c2"
+    },
+    {
+      "path": "replay/pilot_5_proposal_fast_current.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "replay/pilot_5_proposal_grip_transported.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "replay/pilot_5_proposal_precise_delayed.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "replay/pilot_5_proposal_sensor_delta_control.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "replay/replays.json",
+      "bytes": 6248,
+      "sha256": "c74fb1cb0179ff9a8ac9a05674256cad8788afa70c60ecd88efbd1ed7c516bea"
+    },
+    {
+      "path": "replay/source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "replay/source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "replay/source/physics_queue_evidence.py",
+      "bytes": 12498,
+      "sha256": "741e115bc6de4e8e384f22ee41976f1e4fa9b35cb4a18cd91c6f3f6b70ec7b1d"
+    },
+    {
+      "path": "replay/source/physics_queue_replay.py",
+      "bytes": 3791,
+      "sha256": "b063f0140363a1ed53eea8eed04b66c2d837aa1cb44359bf5ececb3eaccedc6e"
+    },
+    {
+      "path": "replay/source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    }
+  ]
+}

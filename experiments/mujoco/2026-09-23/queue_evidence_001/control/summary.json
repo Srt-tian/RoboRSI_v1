@@ -1,0 +1,13 @@
+{
+  "parents": 90,
+  "new_branches": 270,
+  "success_rate": 0.9962962962962963,
+  "mean_cost": 0.20068253103691014,
+  "difference_to_precise_delayed": -0.09065712710527798,
+  "difference_parent_bootstrap_95": [
+    -0.14395480672832708,
+    -0.046505922148301175
+  ],
+  "wall_s": 6.552306522848085,
+  "limitation": "post-hoc control on development pilot; static additive sensor bias; no holdout evidence"
+}

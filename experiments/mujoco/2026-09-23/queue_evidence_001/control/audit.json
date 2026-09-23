@@ -1,0 +1,14 @@
+{
+  "parents": 90,
+  "branches": 1080,
+  "steps": 79443,
+  "all_passed": true,
+  "checks": [
+    "exact common prefix",
+    "seed protocol",
+    "causal sensor reconstruction",
+    "finite states",
+    "bounded actions",
+    "success and cost accounting"
+  ]
+}

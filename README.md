@@ -20,13 +20,15 @@ RoboRSI 包含两条研究路径：Piper 上的粗规划与连续执行，以及
 
 研究分支 `research/mujoco-jev-rsi` 包含三轮解析实验、两轮 MuJoCo 判断研究和一轮离线 RSI 更新。基础判断实验从同一物理检查点分叉，训练 6,402 参数模型选择继续、同步刷新或异步刷新：1,500 检查点、4,500 分支、12 个模型与 30 段逐步一致录像。随后完成 600 个新测试场景的等预算更新检验，另保存 30 段归档状态回放。
 
+最新分支 `research/queue-evidence` 继续检验已提交动作队列与延迟证据：90 个父状态、1,080 条分支、16 段状态回放。预设机制门槛未通过，因此没有训练新模型；事后简单时间对齐已完成 269/270 队列分支，说明固定偏置传感器假设需要改进。[完整反证与下一步](docs/QUEUE_EVIDENCE_STUDY.md)。
+
 当前结果是局部收益与明确负结果：长延迟抓取有改善，同分布阶段查表更强；动作历史独立价值未证实。已完成一轮离线 RSI 等预算更新，但反例采样优于随机补数据的证据不足；图像输入和全任务持续判断仍待验证。它不调用官方 Jev，也不替代下方已验证的 Piper 固定计划链路。
 
 [RSI 更新检验与 CPU 开销](docs/RSI_ACQUISITION_STUDY.md) · [实际 pipeline 与全部实验](docs/STANDALONE_SYSTEM_ONE.md) · [MuJoCo 协议与结果](docs/MUJOCO_JEV_STUDY.md) · [中文研究稿 PDF](docs/manuscript/draft_cn.pdf) · [近期会议与模板](docs/manuscript/README.md)
 
 ![检查点分叉训练与有限候选判断](docs/manuscript/phase_pipeline.png)
 
-[可编辑框架图](docs/manuscript/phase_pipeline.drawio)。本机启动 `python -m http.server 8790 --bind 127.0.0.1`，打开 `http://127.0.0.1:8790/paper/#rsi`；浅色单页包含指标、消融、曲线、三个候选同步视频和观测年龄/接触过程。
+[可编辑框架图](docs/manuscript/phase_pipeline.drawio)。本机启动 `python -m http.server 8790 --bind 127.0.0.1`，打开 `http://127.0.0.1:8790/paper/`；浅色单页包含最新机制检验、RSI 指标、消融、曲线、候选同步视频和观测年龄/接触过程。
 
 ## 系统架构
 

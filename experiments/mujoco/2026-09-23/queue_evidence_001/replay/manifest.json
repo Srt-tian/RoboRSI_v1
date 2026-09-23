@@ -1,0 +1,130 @@
+{
+  "schema": "roborsi.queue.remote-archive.v1",
+  "role": "state_replay",
+  "execution_commit": "c0871e312ea49fddb7a566ae34603a259e88d23f",
+  "source_commits": {
+    "physics_queue_replay.py": "c0871e312ea49fddb7a566ae34603a259e88d23f",
+    "physics_queue_evidence.py": "c0871e312ea49fddb7a566ae34603a259e88d23f",
+    "physics_phase.py": "c0871e312ea49fddb7a566ae34603a259e88d23f",
+    "physics_skills.py": "c0871e312ea49fddb7a566ae34603a259e88d23f",
+    "physics_pilot.py": "c0871e312ea49fddb7a566ae34603a259e88d23f"
+  },
+  "created_at_utc": "2026-09-23T09:43:07Z",
+  "files": [
+    {
+      "path": "archive_environment.json",
+      "bytes": 206,
+      "sha256": "85ff2498306b24a8fbb650b211bae26dda6cedccf3f9f475fbb6fdb298fc8fd2"
+    },
+    {
+      "path": "pilot_0_proposal_fast_current.mp4",
+      "bytes": 50505,
+      "sha256": "237ceb15a75c08a614ed995e0edc62665ad397c610e205fc6ff21773cc0e7ac5"
+    },
+    {
+      "path": "pilot_0_proposal_grip_transported.mp4",
+      "bytes": 86533,
+      "sha256": "2787cb75cffc2b80c3ceaab1fbc36cda3daa50cd63dea6749d43fd64666bd27c"
+    },
+    {
+      "path": "pilot_0_proposal_precise_delayed.mp4",
+      "bytes": 44056,
+      "sha256": "fabcfa99b589ec630f89239c70247d2064195d59f2c0b3bfd5b5ba142de0295c"
+    },
+    {
+      "path": "pilot_0_proposal_sensor_delta_control.mp4",
+      "bytes": 41560,
+      "sha256": "581a7d8bebef683430ebe54c0aacc43e3f98b395548256a6ff7dbb6274f9e594"
+    },
+    {
+      "path": "pilot_1_proposal_fast_current.mp4",
+      "bytes": 59666,
+      "sha256": "6bdb7e86d1f2eb12a7b7bf88b13c81132860d4680567614e0e14ec72722762a7"
+    },
+    {
+      "path": "pilot_1_proposal_grip_transported.mp4",
+      "bytes": 61987,
+      "sha256": "88ae8dab4391b68d25fb4e6f3769bae8cd1f718750050f4efdeed9f6f69794cd"
+    },
+    {
+      "path": "pilot_1_proposal_precise_delayed.mp4",
+      "bytes": 48007,
+      "sha256": "e986f16ae5e420ce8cf7b8afb42fea42c3c8276b33555218cc36fb0fe4f6feff"
+    },
+    {
+      "path": "pilot_1_proposal_sensor_delta_control.mp4",
+      "bytes": 46214,
+      "sha256": "1a0673a60573dae19dcad38c4895f1da91de894a1baba4e615b5afcdff438f44"
+    },
+    {
+      "path": "pilot_4_proposal_fast_current.mp4",
+      "bytes": 20466,
+      "sha256": "719569f5278b2811cf3f0ae06b39fc52d80fa6110227b77c564a7481d2df415e"
+    },
+    {
+      "path": "pilot_4_proposal_grip_transported.mp4",
+      "bytes": 20017,
+      "sha256": "f36fe0611abe38027d0d4275b67ef79e8c36774c66cf7d14e7afba7f1e695026"
+    },
+    {
+      "path": "pilot_4_proposal_precise_delayed.mp4",
+      "bytes": 31583,
+      "sha256": "613057b7fda6c38614d680aa577e5424cea8219880ab5d8c55ad8bb21fe3992d"
+    },
+    {
+      "path": "pilot_4_proposal_sensor_delta_control.mp4",
+      "bytes": 20112,
+      "sha256": "798eb762aa9286344c88a1b589b93c1325caa50f08a1a6fd0081c40050c5c8c2"
+    },
+    {
+      "path": "pilot_5_proposal_fast_current.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "pilot_5_proposal_grip_transported.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "pilot_5_proposal_precise_delayed.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "pilot_5_proposal_sensor_delta_control.mp4",
+      "bytes": 32292,
+      "sha256": "342c0160f9bfba15ff0d53b14530f938d680945ae0802bb1037375dc7c66e4f7"
+    },
+    {
+      "path": "replays.json",
+      "bytes": 6248,
+      "sha256": "c74fb1cb0179ff9a8ac9a05674256cad8788afa70c60ecd88efbd1ed7c516bea"
+    },
+    {
+      "path": "source/physics_phase.py",
+      "bytes": 17922,
+      "sha256": "28f6704dbed28d1998e2cd4b4926422c61b761508e623a38a7ab1dd2458621c6"
+    },
+    {
+      "path": "source/physics_pilot.py",
+      "bytes": 5885,
+      "sha256": "0b2874fb80af91258285522f40784279a1ba9801a209723a8da6d0ba55f5bcd0"
+    },
+    {
+      "path": "source/physics_queue_evidence.py",
+      "bytes": 12498,
+      "sha256": "741e115bc6de4e8e384f22ee41976f1e4fa9b35cb4a18cd91c6f3f6b70ec7b1d"
+    },
+    {
+      "path": "source/physics_queue_replay.py",
+      "bytes": 3791,
+      "sha256": "b063f0140363a1ed53eea8eed04b66c2d837aa1cb44359bf5ececb3eaccedc6e"
+    },
+    {
+      "path": "source/physics_skills.py",
+      "bytes": 1491,
+      "sha256": "bd33cce8b0e7ce58713b2ca4646e4bec46e56ed13af4566d2d101af386724db4"
+    }
+  ]
+}
