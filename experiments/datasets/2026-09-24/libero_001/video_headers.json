@@ -1,0 +1,446 @@
+[
+  {
+    "path": "videos/observation.images.image/chunk-000/file-000.mp4",
+    "duration": 1010.9,
+    "frames": 10109,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-001.mp4",
+    "duration": 1022.2,
+    "frames": 10222,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-002.mp4",
+    "duration": 1006.9,
+    "frames": 10069,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-003.mp4",
+    "duration": 1017.5,
+    "frames": 10175,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-004.mp4",
+    "duration": 1011.7,
+    "frames": 10117,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-005.mp4",
+    "duration": 1005.0,
+    "frames": 10050,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-006.mp4",
+    "duration": 1002.5,
+    "frames": 10025,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-007.mp4",
+    "duration": 1023.0,
+    "frames": 10230,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-008.mp4",
+    "duration": 1017.9,
+    "frames": 10179,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-009.mp4",
+    "duration": 1004.1,
+    "frames": 10041,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-010.mp4",
+    "duration": 659.3,
+    "frames": 6593,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-011.mp4",
+    "duration": 580.1,
+    "frames": 5801,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-012.mp4",
+    "duration": 613.3,
+    "frames": 6133,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-013.mp4",
+    "duration": 618.4,
+    "frames": 6184,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-014.mp4",
+    "duration": 594.1,
+    "frames": 5941,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-015.mp4",
+    "duration": 594.4,
+    "frames": 5944,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-016.mp4",
+    "duration": 604.6,
+    "frames": 6046,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-017.mp4",
+    "duration": 616.3,
+    "frames": 6163,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-018.mp4",
+    "duration": 657.1,
+    "frames": 6571,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-019.mp4",
+    "duration": 742.4,
+    "frames": 7424,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-020.mp4",
+    "duration": 729.4,
+    "frames": 7294,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-021.mp4",
+    "duration": 739.6,
+    "frames": 7396,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-022.mp4",
+    "duration": 741.7,
+    "frames": 7417,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-023.mp4",
+    "duration": 731.0,
+    "frames": 7310,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-024.mp4",
+    "duration": 753.4,
+    "frames": 7534,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-025.mp4",
+    "duration": 730.7,
+    "frames": 7307,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-026.mp4",
+    "duration": 748.0,
+    "frames": 7480,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-027.mp4",
+    "duration": 674.0,
+    "frames": 6740,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-028.mp4",
+    "duration": 614.2,
+    "frames": 6142,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-029.mp4",
+    "duration": 639.3,
+    "frames": 6393,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-030.mp4",
+    "duration": 609.1,
+    "frames": 6091,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-031.mp4",
+    "duration": 618.5,
+    "frames": 6185,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-032.mp4",
+    "duration": 603.4,
+    "frames": 6034,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-033.mp4",
+    "duration": 603.6,
+    "frames": 6036,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-034.mp4",
+    "duration": 608.2,
+    "frames": 6082,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-035.mp4",
+    "duration": 620.8,
+    "frames": 6208,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image/chunk-000/file-036.mp4",
+    "duration": 179.9,
+    "frames": 1799,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-000.mp4",
+    "duration": 1010.9,
+    "frames": 10109,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-001.mp4",
+    "duration": 1022.2,
+    "frames": 10222,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-002.mp4",
+    "duration": 1006.9,
+    "frames": 10069,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-003.mp4",
+    "duration": 1017.5,
+    "frames": 10175,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-004.mp4",
+    "duration": 1011.7,
+    "frames": 10117,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-005.mp4",
+    "duration": 1005.0,
+    "frames": 10050,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-006.mp4",
+    "duration": 1002.5,
+    "frames": 10025,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-007.mp4",
+    "duration": 1023.0,
+    "frames": 10230,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-008.mp4",
+    "duration": 1017.9,
+    "frames": 10179,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-009.mp4",
+    "duration": 1004.1,
+    "frames": 10041,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-010.mp4",
+    "duration": 659.3,
+    "frames": 6593,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-011.mp4",
+    "duration": 580.1,
+    "frames": 5801,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-012.mp4",
+    "duration": 613.3,
+    "frames": 6133,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-013.mp4",
+    "duration": 618.4,
+    "frames": 6184,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-014.mp4",
+    "duration": 594.1,
+    "frames": 5941,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-015.mp4",
+    "duration": 594.4,
+    "frames": 5944,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-016.mp4",
+    "duration": 604.6,
+    "frames": 6046,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-017.mp4",
+    "duration": 616.3,
+    "frames": 6163,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-018.mp4",
+    "duration": 657.1,
+    "frames": 6571,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-019.mp4",
+    "duration": 742.4,
+    "frames": 7424,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-020.mp4",
+    "duration": 729.4,
+    "frames": 7294,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-021.mp4",
+    "duration": 739.6,
+    "frames": 7396,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-022.mp4",
+    "duration": 741.7,
+    "frames": 7417,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-023.mp4",
+    "duration": 731.0,
+    "frames": 7310,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-024.mp4",
+    "duration": 753.4,
+    "frames": 7534,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-025.mp4",
+    "duration": 730.7,
+    "frames": 7307,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-026.mp4",
+    "duration": 748.0,
+    "frames": 7480,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-027.mp4",
+    "duration": 674.0,
+    "frames": 6740,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-028.mp4",
+    "duration": 614.2,
+    "frames": 6142,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-029.mp4",
+    "duration": 639.3,
+    "frames": 6393,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-030.mp4",
+    "duration": 609.1,
+    "frames": 6091,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-031.mp4",
+    "duration": 618.5,
+    "frames": 6185,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-032.mp4",
+    "duration": 603.4,
+    "frames": 6034,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-033.mp4",
+    "duration": 603.6,
+    "frames": 6036,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-034.mp4",
+    "duration": 608.2,
+    "frames": 6082,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-035.mp4",
+    "duration": 620.8,
+    "frames": 6208,
+    "codec": "av1"
+  },
+  {
+    "path": "videos/observation.images.image2/chunk-000/file-036.mp4",
+    "duration": 179.9,
+    "frames": 1799,
+    "codec": "av1"
+  }
+]

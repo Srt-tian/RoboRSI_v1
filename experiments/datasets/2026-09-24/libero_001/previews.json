@@ -1,0 +1,47 @@
+[
+  {
+    "task_id": 0,
+    "task": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+    "episode_id": 0,
+    "frames": 214,
+    "duration": 21.4,
+    "video": "task-00_episode-0000.mp4",
+    "trace": "task-00_episode-0000.json",
+    "camera_order": [
+      "observation.images.image",
+      "observation.images.image2"
+    ],
+    "selection": "First episode of prespecified task, selected without viewing outcome",
+    "type": "training_demonstration"
+  },
+  {
+    "task_id": 2,
+    "task": "put the yellow and white mug in the microwave and close it",
+    "episode_id": 2,
+    "frames": 345,
+    "duration": 34.5,
+    "video": "task-02_episode-0002.mp4",
+    "trace": "task-02_episode-0002.json",
+    "camera_order": [
+      "observation.images.image",
+      "observation.images.image2"
+    ],
+    "selection": "First episode of prespecified task, selected without viewing outcome",
+    "type": "training_demonstration"
+  },
+  {
+    "task_id": 8,
+    "task": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "episode_id": 14,
+    "frames": 257,
+    "duration": 25.7,
+    "video": "task-08_episode-0014.mp4",
+    "trace": "task-08_episode-0014.json",
+    "camera_order": [
+      "observation.images.image",
+      "observation.images.image2"
+    ],
+    "selection": "First episode of prespecified task, selected without viewing outcome",
+    "type": "training_demonstration"
+  }
+]

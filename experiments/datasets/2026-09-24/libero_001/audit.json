@@ -1,0 +1,252 @@
+{
+  "created_at": "2026-09-24T02:37:57.205451+00:00",
+  "source_commit": "20d335fa2ad265f98d621d0739043fb66ffd56f2",
+  "scope": "Existing training demonstrations; no policy execution or task-success measurement",
+  "codebase_version": "v3.0",
+  "robot_type": "panda",
+  "fps": 10.0,
+  "files": 457,
+  "bytes": 1935512060,
+  "frames": 273465,
+  "episodes": 1693,
+  "task_count": 40,
+  "video_files": 74,
+  "source_info_sha256": "630630a1a4f07fc9fc1f1b2b7987ed3bd034bd8cffaaf8a0e6939ae9c468445d",
+  "action_dim": 7,
+  "state_dim": 8,
+  "cameras": [
+    "observation.images.image",
+    "observation.images.image2"
+  ],
+  "splits": {
+    "train": "0:1693"
+  },
+  "action_min": [
+    -0.9375,
+    -0.9375,
+    -0.9375,
+    -0.2582142949104309,
+    -0.375,
+    -0.3675000071525574,
+    -1.0
+  ],
+  "action_max": [
+    0.9375,
+    0.9375,
+    0.9375,
+    0.3557142913341522,
+    0.375,
+    0.375,
+    1.0
+  ],
+  "tasks": [
+    {
+      "id": 0,
+      "name": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "episodes": 38
+    },
+    {
+      "id": 1,
+      "name": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "episodes": 36
+    },
+    {
+      "id": 2,
+      "name": "put the yellow and white mug in the microwave and close it",
+      "episodes": 34
+    },
+    {
+      "id": 3,
+      "name": "turn on the stove and put the moka pot on it",
+      "episodes": 41
+    },
+    {
+      "id": 4,
+      "name": "put both the alphabet soup and the cream cheese box in the basket",
+      "episodes": 43
+    },
+    {
+      "id": 5,
+      "name": "put both the alphabet soup and the tomato sauce in the basket",
+      "episodes": 33
+    },
+    {
+      "id": 6,
+      "name": "put both moka pots on the stove",
+      "episodes": 29
+    },
+    {
+      "id": 7,
+      "name": "put both the cream cheese box and the butter in the basket",
+      "episodes": 49
+    },
+    {
+      "id": 8,
+      "name": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "episodes": 35
+    },
+    {
+      "id": 9,
+      "name": "pick up the book and place it in the back compartment of the caddy",
+      "episodes": 41
+    },
+    {
+      "id": 10,
+      "name": "put the bowl on the plate",
+      "episodes": 49
+    },
+    {
+      "id": 11,
+      "name": "put the wine bottle on the rack",
+      "episodes": 36
+    },
+    {
+      "id": 12,
+      "name": "open the top drawer and put the bowl inside",
+      "episodes": 36
+    },
+    {
+      "id": 13,
+      "name": "put the cream cheese in the bowl",
+      "episodes": 40
+    },
+    {
+      "id": 14,
+      "name": "put the wine bottle on top of the cabinet",
+      "episodes": 47
+    },
+    {
+      "id": 15,
+      "name": "push the plate to the front of the stove",
+      "episodes": 33
+    },
+    {
+      "id": 16,
+      "name": "turn on the stove",
+      "episodes": 50
+    },
+    {
+      "id": 17,
+      "name": "put the bowl on the stove",
+      "episodes": 48
+    },
+    {
+      "id": 18,
+      "name": "put the bowl on top of the cabinet",
+      "episodes": 46
+    },
+    {
+      "id": 19,
+      "name": "open the middle drawer of the cabinet",
+      "episodes": 43
+    },
+    {
+      "id": 20,
+      "name": "pick up the orange juice and place it in the basket",
+      "episodes": 45
+    },
+    {
+      "id": 21,
+      "name": "pick up the ketchup and place it in the basket",
+      "episodes": 45
+    },
+    {
+      "id": 22,
+      "name": "pick up the cream cheese and place it in the basket",
+      "episodes": 45
+    },
+    {
+      "id": 23,
+      "name": "pick up the bbq sauce and place it in the basket",
+      "episodes": 46
+    },
+    {
+      "id": 24,
+      "name": "pick up the alphabet soup and place it in the basket",
+      "episodes": 44
+    },
+    {
+      "id": 25,
+      "name": "pick up the milk and place it in the basket",
+      "episodes": 45
+    },
+    {
+      "id": 26,
+      "name": "pick up the salad dressing and place it in the basket",
+      "episodes": 47
+    },
+    {
+      "id": 27,
+      "name": "pick up the butter and place it in the basket",
+      "episodes": 45
+    },
+    {
+      "id": 28,
+      "name": "pick up the tomato sauce and place it in the basket",
+      "episodes": 42
+    },
+    {
+      "id": 29,
+      "name": "pick up the chocolate pudding and place it in the basket",
+      "episodes": 50
+    },
+    {
+      "id": 30,
+      "name": "pick up the black bowl next to the cookie box and place it on the plate",
+      "episodes": 46
+    },
+    {
+      "id": 31,
+      "name": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate",
+      "episodes": 42
+    },
+    {
+      "id": 32,
+      "name": "pick up the black bowl on the ramekin and place it on the plate",
+      "episodes": 39
+    },
+    {
+      "id": 33,
+      "name": "pick up the black bowl on the stove and place it on the plate",
+      "episodes": 35
+    },
+    {
+      "id": 34,
+      "name": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "episodes": 45
+    },
+    {
+      "id": 35,
+      "name": "pick up the black bowl on the cookie box and place it on the plate",
+      "episodes": 43
+    },
+    {
+      "id": 36,
+      "name": "pick up the black bowl next to the plate and place it on the plate",
+      "episodes": 47
+    },
+    {
+      "id": 37,
+      "name": "pick up the black bowl next to the ramekin and place it on the plate",
+      "episodes": 45
+    },
+    {
+      "id": 38,
+      "name": "pick up the black bowl from table center and place it on the plate",
+      "episodes": 46
+    },
+    {
+      "id": 39,
+      "name": "pick up the black bowl on the wooden cabinet and place it on the plate",
+      "episodes": 44
+    }
+  ],
+  "passed": true,
+  "errors": [],
+  "limits": [
+    "State and action coordinate conventions are not yet verified against simulator conversion code.",
+    "Only train split is declared; a simulator test protocol must be frozen separately.",
+    "Video headers are checked for all files; full decoding is checked only for the fixed preview episodes.",
+    "This is 1693 demonstrations, not a claim of a complete 2000-demonstration benchmark release."
+  ]
+}

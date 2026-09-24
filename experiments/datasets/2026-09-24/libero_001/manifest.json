@@ -1,0 +1,56 @@
+{
+  "files": [
+    {
+      "path": "audit.json",
+      "bytes": 6231,
+      "sha256": "f5995e255666bda92b7d37ff6f3fa90400e039eceed6ef32da1a720c5e489b65"
+    },
+    {
+      "path": "previews.json",
+      "bytes": 1449,
+      "sha256": "b4539b3b1922eac2f029b66699b1b95f004bd282f4aba0abecf9a8ace8f03d1f"
+    },
+    {
+      "path": "source_files.json",
+      "bytes": 73631,
+      "sha256": "fe474a3ac0f64e1feba39e9dc474125ac8bc8515c2105b23982e4fccc371d99a"
+    },
+    {
+      "path": "task-00_episode-0000.json",
+      "bytes": 84020,
+      "sha256": "57b498138aa1e60f1a1146db0224483c6ad908893a3d7f73dd7029f1a85e32c0"
+    },
+    {
+      "path": "task-00_episode-0000.mp4",
+      "bytes": 406133,
+      "sha256": "e7da10255121ad1b0a71617fcde0e1061ca32366fbe1faf0d7826a4923287872"
+    },
+    {
+      "path": "task-02_episode-0002.json",
+      "bytes": 135509,
+      "sha256": "e1512a802b5266a9488709854f82649810bd95041f58d22ced8c5df42ea62ec4"
+    },
+    {
+      "path": "task-02_episode-0002.mp4",
+      "bytes": 696784,
+      "sha256": "27cf162aa6a74a226badefb4dbda06b9d988860c9dc6cf3f9b65387f463bea91"
+    },
+    {
+      "path": "task-08_episode-0014.json",
+      "bytes": 100854,
+      "sha256": "9a22bcd5ce6163e8b40f795764c8ca5e035042c12870467051ac7ce712ce9afa"
+    },
+    {
+      "path": "task-08_episode-0014.mp4",
+      "bytes": 618195,
+      "sha256": "7ccf62caab5250176c8aa063ebe03bdd92dfe9dd974c0d92cd7e6217e3b28a8d"
+    },
+    {
+      "path": "video_headers.json",
+      "bytes": 10514,
+      "sha256": "68f3e60cd59b6c9d33748d0637768f87ef5941bfe515b7406684e39a696f07c1"
+    }
+  ],
+  "scope": "Existing training demonstrations; no policy execution or task-success measurement",
+  "source_commit": "20d335fa2ad265f98d621d0739043fb66ffd56f2"
+}
