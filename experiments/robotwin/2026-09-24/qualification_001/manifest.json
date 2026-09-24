@@ -1,0 +1,80 @@
+{
+  "scope": "Partial export; full physics traces and planned paths retained on execution host",
+  "files": [
+    {
+      "path": "handover/environment.json",
+      "bytes": 137,
+      "sha256": "23641cdc3465879580a06170a2acafbc5f35a3332e6476ca11332bf1661edc17"
+    },
+    {
+      "path": "handover/final.png",
+      "bytes": 59918,
+      "sha256": "5755b3facae2f5f2172039dd305fccda4fcc93cbb317c0b9d81cc3753c591675"
+    },
+    {
+      "path": "handover/frames.json",
+      "bytes": 74266,
+      "sha256": "0f449b54e038c26e71d900d6c61203a5ced20a0795b10ca6130da0b2ba353478"
+    },
+    {
+      "path": "handover/head.mp4",
+      "bytes": 446889,
+      "sha256": "d848df05388b2f31c5442724e7eb8c653f534f60f9ad28edf8a358e744d4bea5"
+    },
+    {
+      "path": "handover/protocol.json",
+      "bytes": 1006,
+      "sha256": "40809f8417928f8c025a26a35e17f2d18a192f3e270e3c46763c5231c4f5071f"
+    },
+    {
+      "path": "handover/result.json",
+      "bytes": 304,
+      "sha256": "5b6be16a45d0e7de8929360a19a2349a5579a8e324336a0bd42cbeaf7c1de109"
+    },
+    {
+      "path": "handover/source_files.json",
+      "bytes": 1513,
+      "sha256": "24740c40b9d3a877fa3faed15fc86668868b42a8dbc961696a841dcd0bdf2089"
+    },
+    {
+      "path": "index.json",
+      "bytes": 1562,
+      "sha256": "3404037bf1e61e406bf81d89f499f8cd97c1d87cdc51f8dfd0e23ffa2683ed41"
+    },
+    {
+      "path": "lift_pot/environment.json",
+      "bytes": 137,
+      "sha256": "23641cdc3465879580a06170a2acafbc5f35a3332e6476ca11332bf1661edc17"
+    },
+    {
+      "path": "lift_pot/final.png",
+      "bytes": 67790,
+      "sha256": "572d6051613ff982df58e28383a88cc3ac10e933c3b76fabbd6db28b7e0ce1e6"
+    },
+    {
+      "path": "lift_pot/frames.json",
+      "bytes": 30114,
+      "sha256": "eb84e0280aebf57936feaab12417b4a467e600e79ed3035eda51d5c5c4bb76c6"
+    },
+    {
+      "path": "lift_pot/head.mp4",
+      "bytes": 179855,
+      "sha256": "09f91149ca72e879c2096335c05e525e396bb7156fa2caa3af6153f52f1eb94e"
+    },
+    {
+      "path": "lift_pot/protocol.json",
+      "bytes": 1000,
+      "sha256": "70747b3e504e813fe59d46c741ca9886055cbfc505ae5393e971a43ab264f9ab"
+    },
+    {
+      "path": "lift_pot/result.json",
+      "bytes": 298,
+      "sha256": "76a9f508c965d23bc28d8334fa848d3f502601bff1a67b5a7b2cce4061f96629"
+    },
+    {
+      "path": "lift_pot/source_files.json",
+      "bytes": 1512,
+      "sha256": "af9ff4f758e1b99c472b486bd5012ec7edb5ef5be9578cccc5333f970f585db9"
+    }
+  ]
+}

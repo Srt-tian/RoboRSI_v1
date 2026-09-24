@@ -18,7 +18,7 @@
   const link = document.createElement('a'); link.href = '#libero'; link.textContent = 'LIBERO 数据'; document.querySelector('nav').prepend(link);
   const $ = id => document.getElementById(id), video = $('liberoVideo');
   const colors = ['#087f78','#436eb3','#b96b37','#9658ad','#517a53','#b85d60','#172b45'];
-  let previews = [], trace = null, generation = 0;
+  let previews = [], trace = null, generation = 0, videoURL = null;
   function draw() {
     const c = $('liberoAction'), ctx = c.getContext('2d'); ctx.clearRect(0,0,c.width,c.height);
     if (!trace) return;
@@ -32,15 +32,19 @@
   }
   async function select() {
     const current = ++generation, p = previews[Number($('liberoTask').value)]; if (!p) return;
-    video.pause(); trace=null; video.src=base+p.video; video.playbackRate=Number($('liberoSpeed').value);
+    video.pause(); trace=null;
     $('liberoCaption').textContent='训练演示 · Episode '+p.episode_id+' · '+p.frames+' 帧 · 按任务固定选择首条，未按观看结果筛选';
-    const response=await fetch(base+p.trace);if(!response.ok)throw Error(response.status);
-    const data=await response.json();if(current!==generation)return;trace=data;draw();
+    const [data,blob]=await Promise.all([fetch(base+p.trace).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}),fetch(base+p.video).then(r=>{if(!r.ok)throw Error(r.status);return r.blob()})]);
+    if(current!==generation)return;
+    // Fixed, small previews use a Blob so seeking also works on static servers
+    // without HTTP Range support. Revoke the previous clip to bound memory.
+    if(videoURL)URL.revokeObjectURL(videoURL);
+    videoURL=URL.createObjectURL(blob);trace=data;video.src=videoURL;video.playbackRate=Number($('liberoSpeed').value);draw();
   }
   $('liberoTask').onchange=()=>select().catch(fail);
   $('liberoSpeed').onchange=()=>{video.playbackRate=Number($('liberoSpeed').value)};
   $('liberoStep').onclick=()=>{if(!trace)return;video.pause();video.currentTime=Math.min((trace.action.length-1)/trace.fps,(Math.floor(video.currentTime*trace.fps+1e-5)+1)/trace.fps)};
-  video.addEventListener('timeupdate',draw);video.addEventListener('seeked',draw);
+  video.addEventListener('timeupdate',draw);video.addEventListener('seeked',draw);video.addEventListener('loadeddata',draw);
   function animate(){if(!video.paused)draw();requestAnimationFrame(animate)}animate();
   function fail(error){$('liberoAudit').textContent='数据加载失败：'+error}
   Promise.all(['audit.json','previews.json'].map(p=>fetch(base+p).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}))).then(async([audit,items])=>{

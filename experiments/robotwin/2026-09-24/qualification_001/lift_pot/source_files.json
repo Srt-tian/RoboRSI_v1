@@ -1,0 +1,57 @@
+[
+  {
+    "path": "config.json",
+    "bytes": 6254,
+    "sha256": "fd885213e91421c28fdbbf7881d81126e116205799fe7a82a8b638ce1b2d87a0"
+  },
+  {
+    "path": "environment.json",
+    "bytes": 137,
+    "sha256": "23641cdc3465879580a06170a2acafbc5f35a3332e6476ca11332bf1661edc17"
+  },
+  {
+    "path": "final.png",
+    "bytes": 67790,
+    "sha256": "572d6051613ff982df58e28383a88cc3ac10e933c3b76fabbd6db28b7e0ce1e6"
+  },
+  {
+    "path": "frames.json",
+    "bytes": 30114,
+    "sha256": "eb84e0280aebf57936feaab12417b4a467e600e79ed3035eda51d5c5c4bb76c6"
+  },
+  {
+    "path": "head.mp4",
+    "bytes": 179855,
+    "sha256": "09f91149ca72e879c2096335c05e525e396bb7156fa2caa3af6153f52f1eb94e"
+  },
+  {
+    "path": "physics.jsonl.gz",
+    "bytes": 1098170,
+    "sha256": "69baef0ac256799166246742a6e445ba6c37bd2b276813391ee51998c19c6a49"
+  },
+  {
+    "path": "plans.json",
+    "bytes": 726371,
+    "sha256": "fb1f6f075f267c9201039cd997f1429d35545372126a7abc8b0eaf5e14279c87"
+  },
+  {
+    "path": "protocol.json",
+    "bytes": 1000,
+    "sha256": "70747b3e504e813fe59d46c741ca9886055cbfc505ae5393e971a43ab264f9ab"
+  },
+  {
+    "path": "result.json",
+    "bytes": 298,
+    "sha256": "76a9f508c965d23bc28d8334fa848d3f502601bff1a67b5a7b2cce4061f96629"
+  },
+  {
+    "path": "source.py",
+    "bytes": 7904,
+    "sha256": "d0216e6e04586c2fae6c8738daeb1bc6a7b702e039e2d40a9847bac30217a8b8"
+  },
+  {
+    "path": "task_info.json",
+    "bytes": 161,
+    "sha256": "b2ce94aa9b0378eaff844ac6d18ca454f89327fdf1c43f4f34535f6de157a594"
+  }
+]

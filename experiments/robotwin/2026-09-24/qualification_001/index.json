@@ -1,0 +1,45 @@
+{
+  "scope": "Task completion and process reliability reported separately; no learned method scores",
+  "rows": [
+    {
+      "id": "handover",
+      "task": "handover_block",
+      "seed": 0,
+      "task_success": true,
+      "plan_success": true,
+      "physics_steps": 3778,
+      "frames": 76,
+      "simulation_time_s": 15.112,
+      "process_clean": false,
+      "exit_code": 255,
+      "exit_code_scope": "SSH command return code; child return code was not captured",
+      "video": "handover/head.mp4",
+      "final_image": "handover/final.png",
+      "result": "handover/result.json",
+      "protocol": "handover/protocol.json",
+      "source_commit": "dc5eff88104728c21269afd626108dab0d9b79e2",
+      "type": "privileged_native_expert",
+      "scope": "Infrastructure development examples, not JEV or RSI benchmark results"
+    },
+    {
+      "id": "lift_pot",
+      "task": "lift_pot",
+      "seed": 0,
+      "task_success": true,
+      "plan_success": true,
+      "physics_steps": 1532,
+      "frames": 31,
+      "simulation_time_s": 6.128,
+      "process_clean": false,
+      "exit_code": -11,
+      "exit_code_scope": "Child process terminated by SIGSEGV after result export",
+      "video": "lift_pot/head.mp4",
+      "final_image": "lift_pot/final.png",
+      "result": "lift_pot/result.json",
+      "protocol": "lift_pot/protocol.json",
+      "source_commit": "dc5eff88104728c21269afd626108dab0d9b79e2",
+      "type": "privileged_native_expert",
+      "scope": "Infrastructure development examples, not JEV or RSI benchmark results"
+    }
+  ]
+}
