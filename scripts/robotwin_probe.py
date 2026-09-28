@@ -83,11 +83,20 @@ def main():
     p.add_argument("--grasp-pilot", action="store_true")
     p.add_argument("--error-x-m", type=float, choices=[-0.04, 0.0, 0.04], default=0.0)
     p.add_argument("--repair-x-m", type=float, choices=[-0.02, 0.0, 0.02], default=0.0)
+    p.add_argument("--frozen-prefix", type=Path)
     args = p.parse_args()
     if args.grasp_pilot and args.task != "handover_block":
         raise ValueError("The custom grasp pilot is defined only in handover_block scenes")
     if not args.grasp_pilot and (args.error_x_m != 0 or args.repair_x_m != 0):
         raise ValueError("Perturbations require explicit grasp-pilot mode")
+    frozen_prefix = None
+    if args.frozen_prefix:
+        if not args.grasp_pilot:
+            raise ValueError("Frozen prefixes are only supported by the custom pilot")
+        frozen_prefix = json.loads(args.frozen_prefix.read_text())
+        if (frozen_prefix["seed"] != args.seed or frozen_prefix["error_x_m"] != args.error_x_m
+                or frozen_prefix["upstream_commit"] != args.expected_upstream):
+            raise ValueError("Frozen prefix belongs to a different condition")
     upstream = args.robotwin_root.resolve()
     own = Path(__file__).resolve().parents[1]
     output = args.output.resolve()
@@ -121,6 +130,7 @@ def main():
                         pairing="Independent scene resets with fixed seed; compare prefix digests and branch object pose before treating branches as matched. Not an exact simulator snapshot.",
                         candidate_policy="Continue or open, shift by a fixed relative 2 cm from measured EE pose, close; then lift 10 cm and hold 0.4 s",
                         video_semantics="5 Hz physics sampling plus explicit branch/final observations; use frames.json timestamps, not nominal video duration for cost")
+        protocol["frozen_prefix_sha256"] = hashlib.sha256(args.frozen_prefix.read_bytes()).hexdigest() if args.frozen_prefix else None
     write_json(output / "protocol.json", protocol)
     (output / "source.py").write_bytes(Path(__file__).read_bytes())
     start = time.monotonic()
@@ -217,7 +227,7 @@ def main():
             info = play_grasp_pilot(task, error_x_m=args.error_x_m,
                                    repair_x_m=args.repair_x_m, output=output, capture=capture,
                                    physics_steps=lambda: counter["physics_steps"],
-                                   prefix_digest=lambda: prefix_hash.hexdigest())
+                                   prefix_digest=lambda: prefix_hash.hexdigest(), frozen_prefix=frozen_prefix)
         else:
             info = task.play_once()
         result.update(status="completed", plan_success=bool(task.plan_success),

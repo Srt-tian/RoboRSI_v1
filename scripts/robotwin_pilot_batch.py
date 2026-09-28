@@ -17,6 +17,9 @@ def main():
     parser.add_argument("--expected-upstream", required=True)
     parser.add_argument("--expected-commit", required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--frozen-prefix-root", type=Path)
+    parser.add_argument("--prefix-check-only", action="store_true",
+                        help="Only the -40 mm parent whose independently planned prefixes differed")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     def git(*argv):
@@ -26,10 +29,11 @@ def main():
     if git("rev-parse", "@{u}") != args.expected_commit:
         raise ValueError("Execution commit must already be published")
     args.output.mkdir(parents=True, exist_ok=False)
-    protocol = {"seed": 0, "error_x_m": [-0.04, 0.0, 0.04],
+    protocol = {"seed": 0, "error_x_m": [-0.04] if args.prefix_check_only else [-0.04, 0.0, 0.04],
                 "repair_x_m": [0.0, -0.02, 0.02], "physics_budget_steps": 2500,
                 "commit": args.expected_commit, "native_upstream": args.expected_upstream,
-                "scope": "Three development parent conditions, nine custom grasp branches; not full-task success or an independent statistical evaluation",
+                "scope": "Fixed custom grasp development branches; not full-task success or an independent statistical evaluation",
+                "frozen_prefix": args.frozen_prefix_root is not None,
                 "gate": "Verify successful cleanup and prefix pairing. Train no selector unless candidates show outcome complementarity beyond the best fixed candidate."}
     (args.output / "protocol.json").write_text(json.dumps(protocol, indent=2) + "\n")
     rows = []
@@ -39,6 +43,9 @@ def main():
                    "--robotwin-root", str(args.robotwin_root), "--expected-upstream", args.expected_upstream,
                    "--task", "handover_block", "--seed", "0", "--output", str(out),
                    "--grasp-pilot", "--error-x-m", str(error), "--repair-x-m", str(repair)]
+        if args.frozen_prefix_root:
+            prefix = args.frozen_prefix_root / f"error_{round(error * 1000):+d}mm.json"
+            command.extend(["--frozen-prefix", str(prefix)])
         started = time.monotonic()
         print(json.dumps({"started": index, "error_x_m": error, "repair_x_m": repair}), flush=True)
         with (args.output / f"branch_{index:02d}.log").open("x") as log:
