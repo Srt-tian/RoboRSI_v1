@@ -1,0 +1,20 @@
+{
+  "phase": "before_recovery",
+  "physics_step": 1003,
+  "prefix_digest": "20e342079929cf9e94e0a155329ef244827f923efcd6dff2168a7aa061996046",
+  "audit_only_object_pose": [
+    -0.21198637783527374,
+    0.29143819212913513,
+    0.7892106175422668,
+    0.5935561060905457,
+    -0.7887102365493774,
+    -0.10685254633426666,
+    0.11920485645532608
+  ],
+  "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+  "error_x_m_audit_only": -0.04,
+  "fixed_repair_x_m": 0.0,
+  "frozen_prefix_sha256": "8ba4fe67518f04026c4d0a6d798767ddb49b118d9dbba474cede530cdf30a92b",
+  "reference_prefix_digest": "20e342079929cf9e94e0a155329ef244827f923efcd6dff2168a7aa061996046",
+  "matches_reference_prefix": true
+}

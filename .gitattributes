@@ -7,3 +7,4 @@ experiments/mujoco/** -text
 # Preserve the official conference template, including upstream whitespace.
 docs/manuscript/corl_2026.sty -text -whitespace
 docs/manuscript/corlabbrvnat.bst -text -whitespace
+experiments/deployable/** -text

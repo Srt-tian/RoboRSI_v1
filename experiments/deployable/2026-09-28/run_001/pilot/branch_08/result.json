@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "task": "handover_block",
+  "seed": 0,
+  "setup_wall_s": 23.576273530721664,
+  "plan_success": true,
+  "task_success": null,
+  "execution_wall_s": 4.302313972264528,
+  "pilot_success": false,
+  "physics_steps": 1977,
+  "frames": 42,
+  "total_wall_s": 33.73533659800887,
+  "simulation_time_s": 7.908,
+  "cleanup_status": "completed"
+}

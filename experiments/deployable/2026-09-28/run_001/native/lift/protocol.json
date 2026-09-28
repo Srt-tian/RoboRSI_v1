@@ -1,0 +1,19 @@
+{
+  "schema": "roborsi.robotwin.native-expert.v1",
+  "scope": "Infrastructure qualification only; privileged scripted expert, no learned policy or JEV/RSI effect",
+  "task": "lift_pot",
+  "seed": 0,
+  "split": "development",
+  "upstream": "https://github.com/RoboTwin-Platform/RoboTwin.git",
+  "upstream_commit": "13c3c47ff4312dd62484bcd51be034af55c062d1",
+  "adapter_commit": "726ac106329497a84e5443675b680c8e4e84516c",
+  "config": "demo_clean",
+  "embodiment": "aloha-agilex",
+  "physics_hz": 250,
+  "video_hz": 5,
+  "video_semantics": "Live rendered observations every 50 physics steps after setup; planning wall time is excluded from simulation time",
+  "joint_semantics": "qpos/qvel are measured full articulations; upstream joint_action.vector contains drive targets, not measured arm joints",
+  "selection": "Fixed task/seed chosen before execution; failures are retained, no successful-seed resampling",
+  "source_sha256": "7149190fe3f5fd74c6b3052a000a0839fb9c49c9b31f6aa01f84170a95cc130c",
+  "cleanup": "Explicit callback removal, native-reference release and scene clear before interpreter shutdown; parent exit status must still be checked"
+}

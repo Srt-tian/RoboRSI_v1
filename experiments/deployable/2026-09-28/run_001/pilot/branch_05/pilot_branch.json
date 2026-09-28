@@ -1,0 +1,17 @@
+{
+  "phase": "before_recovery",
+  "physics_step": 1007,
+  "prefix_digest": "0d04f136b393f9c7f870b12c90f8666645b0d710070b37037086eb2b077ddcf8",
+  "audit_only_object_pose": [
+    -0.17329850792884827,
+    0.19827741384506226,
+    0.8402496576309204,
+    0.994173526763916,
+    -0.001370430807583034,
+    0.003027849132195115,
+    0.10774082690477371
+  ],
+  "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+  "error_x_m_audit_only": 0.0,
+  "fixed_repair_x_m": 0.02
+}

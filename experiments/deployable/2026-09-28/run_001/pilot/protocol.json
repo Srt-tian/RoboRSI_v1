@@ -1,0 +1,18 @@
+{
+  "seed": 0,
+  "error_x_m": [
+    -0.04,
+    0.0,
+    0.04
+  ],
+  "repair_x_m": [
+    0.0,
+    -0.02,
+    0.02
+  ],
+  "physics_budget_steps": 2500,
+  "commit": "1ba9cfb991fa3705f7ce3035ae50edb1fb52468e",
+  "native_upstream": "13c3c47ff4312dd62484bcd51be034af55c062d1",
+  "scope": "Three development parent conditions, nine custom grasp branches; not full-task success or an independent statistical evaluation",
+  "gate": "Verify successful cleanup and prefix pairing. Train no selector unless candidates show outcome complementarity beyond the best fixed candidate."
+}

@@ -1,0 +1,524 @@
+[
+  {
+    "id": 0,
+    "error_x_m": -0.04,
+    "repair_x_m": 0.0,
+    "process_exit": 0,
+    "wall_s": 63.75253588240594,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 50.19658217206597,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 3.0123989656567574,
+      "pilot_success": false,
+      "physics_steps": 1288,
+      "frames": 28,
+      "total_wall_s": 60.290953698568046,
+      "simulation_time_s": 5.152,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": false,
+      "height_gain_m_audit_label": -0.05392777919769287,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.21066997945308685,
+        0.2717485725879669,
+        0.7860724329948425
+      ],
+      "prefix_steps": 1003,
+      "total_physics_steps": 1288,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1003,
+      "prefix_digest": "20e342079929cf9e94e0a155329ef244827f923efcd6dff2168a7aa061996046",
+      "audit_only_object_pose": [
+        -0.21198637783527374,
+        0.29143819212913513,
+        0.7892106175422668,
+        0.5935561060905457,
+        -0.7887102365493774,
+        -0.10685254633426666,
+        0.11920485645532608
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": -0.04,
+      "fixed_repair_x_m": 0.0
+    }
+  },
+  {
+    "id": 1,
+    "error_x_m": -0.04,
+    "repair_x_m": -0.02,
+    "process_exit": 0,
+    "wall_s": 37.84323717281222,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 26.146645517088473,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 4.298517907969654,
+      "pilot_success": false,
+      "physics_steps": 1975,
+      "frames": 42,
+      "total_wall_s": 36.49418552406132,
+      "simulation_time_s": 7.9,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": false,
+      "height_gain_m_audit_label": -0.06440532207489014,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.21202698349952698,
+        0.2815724015235901,
+        0.7755948901176453
+      ],
+      "prefix_steps": 1004,
+      "total_physics_steps": 1975,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1004,
+      "prefix_digest": "bb3e1f5d35ec796f157138fee3f2e5f72d66702ae7b394d3d874396aa9637c03",
+      "audit_only_object_pose": [
+        -0.21107716858386993,
+        0.29144003987312317,
+        0.7870466113090515,
+        0.599388062953949,
+        -0.783708393573761,
+        -0.09751859307289124,
+        0.13048045337200165
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": -0.04,
+      "fixed_repair_x_m": -0.02
+    }
+  },
+  {
+    "id": 2,
+    "error_x_m": -0.04,
+    "repair_x_m": 0.02,
+    "process_exit": 0,
+    "wall_s": 37.06231688987464,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 25.35934933554381,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 4.295596699230373,
+      "pilot_success": false,
+      "physics_steps": 1973,
+      "frames": 42,
+      "total_wall_s": 35.79948682244867,
+      "simulation_time_s": 7.892,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": false,
+      "height_gain_m_audit_label": -0.063912034034729,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.21233415603637695,
+        0.28141188621520996,
+        0.7760881781578064
+      ],
+      "prefix_steps": 1001,
+      "total_physics_steps": 1973,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1001,
+      "prefix_digest": "1fdcad26466af45164dcba5f5bd26b46bd9168952bb10ca371a483830570f983",
+      "audit_only_object_pose": [
+        -0.21164217591285706,
+        0.29147133231163025,
+        0.7889983057975769,
+        0.5886551141738892,
+        -0.7908539175987244,
+        -0.09682998806238174,
+        0.1365990936756134
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": -0.04,
+      "fixed_repair_x_m": 0.02
+    }
+  },
+  {
+    "id": 3,
+    "error_x_m": 0.0,
+    "repair_x_m": 0.0,
+    "process_exit": 0,
+    "wall_s": 33.88861952442676,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 23.748534278012812,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 3.0087637593969703,
+      "pilot_success": true,
+      "physics_steps": 1281,
+      "frames": 28,
+      "total_wall_s": 32.65604876447469,
+      "simulation_time_s": 5.124,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": true,
+      "height_gain_m_audit_label": 0.09897017478942871,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.17464381456375122,
+        0.19815698266029358,
+        0.9389703869819641
+      ],
+      "prefix_steps": 1007,
+      "total_physics_steps": 1281,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1007,
+      "prefix_digest": "0d04f136b393f9c7f870b12c90f8666645b0d710070b37037086eb2b077ddcf8",
+      "audit_only_object_pose": [
+        -0.17329850792884827,
+        0.19827741384506226,
+        0.8402496576309204,
+        0.994173526763916,
+        -0.001370430807583034,
+        0.003027849132195115,
+        0.10774082690477371
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": 0.0,
+      "fixed_repair_x_m": 0.0
+    }
+  },
+  {
+    "id": 4,
+    "error_x_m": 0.0,
+    "repair_x_m": -0.02,
+    "process_exit": 0,
+    "wall_s": 37.793782161548734,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 26.04570508003235,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 4.308661277405918,
+      "pilot_success": true,
+      "physics_steps": 1976,
+      "frames": 42,
+      "total_wall_s": 36.36388676427305,
+      "simulation_time_s": 7.904,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": true,
+      "height_gain_m_audit_label": 0.09928351640701294,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.19169853627681732,
+        0.1946685016155243,
+        0.9392837285995483
+      ],
+      "prefix_steps": 1007,
+      "total_physics_steps": 1976,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1007,
+      "prefix_digest": "0d04f136b393f9c7f870b12c90f8666645b0d710070b37037086eb2b077ddcf8",
+      "audit_only_object_pose": [
+        -0.17329850792884827,
+        0.19827741384506226,
+        0.8402496576309204,
+        0.994173526763916,
+        -0.001370430807583034,
+        0.003027849132195115,
+        0.10774082690477371
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": 0.0,
+      "fixed_repair_x_m": -0.02
+    }
+  },
+  {
+    "id": 5,
+    "error_x_m": 0.0,
+    "repair_x_m": 0.02,
+    "process_exit": 0,
+    "wall_s": 35.02909574192017,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 23.654352995567024,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 4.2993775475770235,
+      "pilot_success": true,
+      "physics_steps": 1972,
+      "frames": 42,
+      "total_wall_s": 33.870915482752025,
+      "simulation_time_s": 7.888,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": true,
+      "height_gain_m_audit_label": 0.09917944669723511,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.15830911695957184,
+        0.20011292397975922,
+        0.9391796588897705
+      ],
+      "prefix_steps": 1007,
+      "total_physics_steps": 1972,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1007,
+      "prefix_digest": "0d04f136b393f9c7f870b12c90f8666645b0d710070b37037086eb2b077ddcf8",
+      "audit_only_object_pose": [
+        -0.17329850792884827,
+        0.19827741384506226,
+        0.8402496576309204,
+        0.994173526763916,
+        -0.001370430807583034,
+        0.003027849132195115,
+        0.10774082690477371
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": 0.0,
+      "fixed_repair_x_m": 0.02
+    }
+  },
+  {
+    "id": 6,
+    "error_x_m": 0.04,
+    "repair_x_m": 0.0,
+    "process_exit": 0,
+    "wall_s": 36.20117613859475,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 25.989560136571527,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 2.984536737203598,
+      "pilot_success": false,
+      "physics_steps": 1277,
+      "frames": 28,
+      "total_wall_s": 34.89975557103753,
+      "simulation_time_s": 5.108,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": false,
+      "height_gain_m_audit_label": -0.060860514640808105,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.20462027192115784,
+        0.2794480621814728,
+        0.7791396975517273
+      ],
+      "prefix_steps": 1005,
+      "total_physics_steps": 1277,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1005,
+      "prefix_digest": "d4213b4b094d178bb0ecb427e6eef051d706ab8e51fabae71a88352c79eb5fc5",
+      "audit_only_object_pose": [
+        -0.19930291175842285,
+        0.2929897606372833,
+        0.7828108072280884,
+        0.7480189800262451,
+        -0.6559058427810669,
+        -0.0667666643857956,
+        0.07614035159349442
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": 0.04,
+      "fixed_repair_x_m": 0.0
+    }
+  },
+  {
+    "id": 7,
+    "error_x_m": 0.04,
+    "repair_x_m": -0.02,
+    "process_exit": 0,
+    "wall_s": 35.09730385057628,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 23.662796480581164,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 4.291734317317605,
+      "pilot_success": false,
+      "physics_steps": 1968,
+      "frames": 42,
+      "total_wall_s": 33.90879381354898,
+      "simulation_time_s": 7.872,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": false,
+      "height_gain_m_audit_label": -0.06675589084625244,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.20511172711849213,
+        0.2842343747615814,
+        0.773244321346283
+      ],
+      "prefix_steps": 1005,
+      "total_physics_steps": 1968,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1005,
+      "prefix_digest": "d4213b4b094d178bb0ecb427e6eef051d706ab8e51fabae71a88352c79eb5fc5",
+      "audit_only_object_pose": [
+        -0.19930291175842285,
+        0.2929897606372833,
+        0.7828108072280884,
+        0.7480189800262451,
+        -0.6559058427810669,
+        -0.0667666643857956,
+        0.07614035159349442
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": 0.04,
+      "fixed_repair_x_m": -0.02
+    }
+  },
+  {
+    "id": 8,
+    "error_x_m": 0.04,
+    "repair_x_m": 0.02,
+    "process_exit": 0,
+    "wall_s": 34.89866303373128,
+    "result": {
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 23.576273530721664,
+      "plan_success": true,
+      "task_success": null,
+      "execution_wall_s": 4.302313972264528,
+      "pilot_success": false,
+      "physics_steps": 1977,
+      "frames": 42,
+      "total_wall_s": 33.73533659800887,
+      "simulation_time_s": 7.908,
+      "cleanup_status": "completed"
+    },
+    "pilot_result": {
+      "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+      "full_handover_evaluated": false,
+      "pilot_success": false,
+      "height_gain_m_audit_label": -0.06659036874771118,
+      "initial_object_xyz_audit_only": [
+        -0.17331258952617645,
+        0.19793134927749634,
+        0.8400002121925354
+      ],
+      "final_object_xyz_audit_only": [
+        -0.20507030189037323,
+        0.284320205450058,
+        0.7734098434448242
+      ],
+      "prefix_steps": 1007,
+      "total_physics_steps": 1977,
+      "selection": "Fixed development grid, not independent test episodes"
+    },
+    "pilot_branch": {
+      "phase": "before_recovery",
+      "physics_step": 1007,
+      "prefix_digest": "f0a1f0cb686c1639c207c791f22fd3924d2cc23d94af6b64d3d1c60318fe9c5e",
+      "audit_only_object_pose": [
+        -0.1990218609571457,
+        0.2926671802997589,
+        0.7849418520927429,
+        0.7554036378860474,
+        -0.647506833076477,
+        -0.06540799885988235,
+        0.07630349695682526
+      ],
+      "policy_observation": "Latest frames.json measured/RGB record; no object pose or injected error",
+      "error_x_m_audit_only": 0.04,
+      "fixed_repair_x_m": 0.02
+    }
+  }
+]

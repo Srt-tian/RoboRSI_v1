@@ -1,0 +1,19 @@
+{
+  "custom_subtask": "left grasp then lift 10 cm and hold 0.4 s",
+  "full_handover_evaluated": false,
+  "pilot_success": false,
+  "height_gain_m_audit_label": -0.06440532207489014,
+  "initial_object_xyz_audit_only": [
+    -0.17331258952617645,
+    0.19793134927749634,
+    0.8400002121925354
+  ],
+  "final_object_xyz_audit_only": [
+    -0.21202698349952698,
+    0.2815724015235901,
+    0.7755948901176453
+  ],
+  "prefix_steps": 1004,
+  "total_physics_steps": 1975,
+  "selection": "Fixed development grid, not independent test episodes"
+}

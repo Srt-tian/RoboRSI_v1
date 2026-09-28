@@ -1,0 +1,242 @@
+{
+  "schema": "roborsi.deployable-web.v1",
+  "date": "2026-09-28",
+  "scope": "Development evidence and offline hardware preparation; no new hardware execution or new learned model",
+  "native": [
+    {
+      "id": "lift",
+      "directory": "native/lift",
+      "exit_code": 0,
+      "status": "completed",
+      "task": "lift_pot",
+      "seed": 0,
+      "setup_wall_s": 78.28380872774869,
+      "plan_success": true,
+      "task_success": true,
+      "execution_wall_s": 3.702795699238777,
+      "physics_steps": 1537,
+      "frames": 31,
+      "total_wall_s": 90.39681925531477,
+      "simulation_time_s": 6.148,
+      "cleanup_status": "completed"
+    },
+    {
+      "id": "handover",
+      "directory": "native/handover",
+      "exit_code": 0,
+      "status": "completed",
+      "task": "handover_block",
+      "seed": 0,
+      "setup_wall_s": 53.49402507767081,
+      "plan_success": true,
+      "task_success": true,
+      "execution_wall_s": 9.028192437253892,
+      "physics_steps": 3778,
+      "frames": 76,
+      "total_wall_s": 69.72323862370104,
+      "simulation_time_s": 15.112,
+      "cleanup_status": "completed"
+    }
+  ],
+  "pilot": {
+    "rows": [
+      {
+        "id": 0,
+        "error_x_m": -0.04,
+        "repair_x_m": 0.0,
+        "process_exit": 0,
+        "directory": "pilot/branch_00",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1288,
+        "simulation_time_s": 5.152
+      },
+      {
+        "id": 1,
+        "error_x_m": -0.04,
+        "repair_x_m": -0.02,
+        "process_exit": 0,
+        "directory": "pilot/branch_01",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1975,
+        "simulation_time_s": 7.9
+      },
+      {
+        "id": 2,
+        "error_x_m": -0.04,
+        "repair_x_m": 0.02,
+        "process_exit": 0,
+        "directory": "pilot/branch_02",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1973,
+        "simulation_time_s": 7.892
+      },
+      {
+        "id": 3,
+        "error_x_m": 0.0,
+        "repair_x_m": 0.0,
+        "process_exit": 0,
+        "directory": "pilot/branch_03",
+        "video": true,
+        "pilot_success": true,
+        "physics_steps": 1281,
+        "simulation_time_s": 5.124
+      },
+      {
+        "id": 4,
+        "error_x_m": 0.0,
+        "repair_x_m": -0.02,
+        "process_exit": 0,
+        "directory": "pilot/branch_04",
+        "video": true,
+        "pilot_success": true,
+        "physics_steps": 1976,
+        "simulation_time_s": 7.904
+      },
+      {
+        "id": 5,
+        "error_x_m": 0.0,
+        "repair_x_m": 0.02,
+        "process_exit": 0,
+        "directory": "pilot/branch_05",
+        "video": true,
+        "pilot_success": true,
+        "physics_steps": 1972,
+        "simulation_time_s": 7.888
+      },
+      {
+        "id": 6,
+        "error_x_m": 0.04,
+        "repair_x_m": 0.0,
+        "process_exit": 0,
+        "directory": "pilot/branch_06",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1277,
+        "simulation_time_s": 5.108
+      },
+      {
+        "id": 7,
+        "error_x_m": 0.04,
+        "repair_x_m": -0.02,
+        "process_exit": 0,
+        "directory": "pilot/branch_07",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1968,
+        "simulation_time_s": 7.872
+      },
+      {
+        "id": 8,
+        "error_x_m": 0.04,
+        "repair_x_m": 0.02,
+        "process_exit": 0,
+        "directory": "pilot/branch_08",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1977,
+        "simulation_time_s": 7.908
+      }
+    ],
+    "pairing": [
+      {
+        "error_x_m": -0.04,
+        "branches": 3,
+        "prefix_steps": [
+          1003,
+          1004,
+          1001
+        ],
+        "unique_prefix_digests": 3,
+        "max_branch_object_pose_difference": 0.017394237220287323,
+        "all_match_reference": false,
+        "matched": false
+      },
+      {
+        "error_x_m": 0.0,
+        "branches": 3,
+        "prefix_steps": [
+          1007,
+          1007,
+          1007
+        ],
+        "unique_prefix_digests": 1,
+        "max_branch_object_pose_difference": 0.0,
+        "all_match_reference": false,
+        "matched": true
+      },
+      {
+        "error_x_m": 0.04,
+        "branches": 3,
+        "prefix_steps": [
+          1005,
+          1005,
+          1007
+        ],
+        "unique_prefix_digests": 2,
+        "max_branch_object_pose_difference": 0.008399009704589844,
+        "all_match_reference": false,
+        "matched": false
+      }
+    ],
+    "conclusion": "首轮无偏差的 3 分支成功，±40 mm 的 6 分支失败，未观察到固定候选之外的收益空间。独立重规划前缀不完全一致，不将首轮表格当作同状态因果比较；没有启动新选择器训练。"
+  },
+  "prefix_check": {
+    "rows": [
+      {
+        "id": 0,
+        "error_x_m": -0.04,
+        "repair_x_m": 0.0,
+        "process_exit": 0,
+        "directory": "prefix_check/branch_00",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1278,
+        "simulation_time_s": 5.112
+      },
+      {
+        "id": 1,
+        "error_x_m": -0.04,
+        "repair_x_m": -0.02,
+        "process_exit": 0,
+        "directory": "prefix_check/branch_01",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1959,
+        "simulation_time_s": 7.836
+      },
+      {
+        "id": 2,
+        "error_x_m": -0.04,
+        "repair_x_m": 0.02,
+        "process_exit": 0,
+        "directory": "prefix_check/branch_02",
+        "video": true,
+        "pilot_success": false,
+        "physics_steps": 1953,
+        "simulation_time_s": 7.812
+      }
+    ],
+    "pairing": [
+      {
+        "error_x_m": -0.04,
+        "branches": 3,
+        "prefix_steps": [
+          1003,
+          1003,
+          1003
+        ],
+        "unique_prefix_digests": 1,
+        "max_branch_object_pose_difference": 0.0,
+        "all_match_reference": true,
+        "matched": true
+      }
+    ]
+  },
+  "prefix_replay_qualified": true,
+  "conclusion": "原生双臂任务均正常退出，Piper 历史候选 105/120 通过离线检查。固定横移重夹预检没有救回偏差案例；保留负结果，先改善候选与观测时机。追加 3 分支已验证冻结前缀逐步一致。",
+  "report_source_sha256": "32f17652651377934b1e2c7ed737984467ccb5521f376b2ae1a2dea883b9953c",
+  "next_hypothesis": "Evaluate decisions before the object has been displaced by failed closure; compare reobservation against blind relative retries under equal budgets."
+}

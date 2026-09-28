@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "task": "lift_pot",
+  "seed": 0,
+  "setup_wall_s": 78.28380872774869,
+  "plan_success": true,
+  "task_success": true,
+  "execution_wall_s": 3.702795699238777,
+  "physics_steps": 1537,
+  "frames": 31,
+  "total_wall_s": 90.39681925531477,
+  "simulation_time_s": 6.148,
+  "cleanup_status": "completed"
+}
