@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import gc
 import gzip
 import hashlib
 import importlib
@@ -35,6 +36,43 @@ def write_json(path: Path, value):
     path.write_text(json.dumps(convert(value), indent=2, allow_nan=False) + "\n")
 
 
+def close_simulation(task):
+    """Release native resources while Python/CUDA modules are still alive.
+
+    RoboTwin's close_env delegates to gym.Env.close, which is a no-op in the
+    pinned source. In particular, do not defer Scene.__del__ to interpreter
+    shutdown, and do not retain the recording callback's scene/task cycle.
+    This helper is specific to simulation and must never be used for hardware.
+    """
+    if task is None:
+        return
+    import torch
+
+    scene = getattr(task, "scene", None)
+    renderer = getattr(task, "renderer", None)
+    engine = getattr(task, "engine", None)
+    viewer = getattr(task, "viewer", None)
+    if scene is not None and "step" in vars(scene):
+        del scene.step
+    if viewer is not None:
+        viewer.close()
+    if torch.cuda.is_available():
+        torch.cuda.synchronize()
+    # Keep the scene and rendering backend alive while robot/camera references,
+    # planners and CUDA graphs are released. No simulation steps occur here.
+    task.__dict__.clear()
+    gc.collect()
+    if scene is not None:
+        scene.clear()
+    scene = viewer = None
+    gc.collect()
+    renderer = engine = None
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.synchronize()
+        torch.cuda.empty_cache()
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--robotwin-root", type=Path, required=True)
@@ -65,11 +103,12 @@ def main():
         "joint_semantics": "qpos/qvel are measured full articulations; upstream joint_action.vector contains drive targets, not measured arm joints",
         "selection": "Fixed task/seed chosen before execution; failures are retained, no successful-seed resampling",
         "source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "cleanup": "Explicit callback removal, native-reference release and scene clear before interpreter shutdown; parent exit status must still be checked",
     }
     write_json(output / "protocol.json", protocol)
     (output / "source.py").write_bytes(Path(__file__).read_bytes())
     start = time.monotonic()
-    task = writer = trace = None
+    task = writer = trace = scene_step = None
     handles = ExitStack()
     frame_rows = []
     result = {"status": "started", "task": args.task, "seed": args.seed}
@@ -150,14 +189,24 @@ def main():
         traceback.print_exc()
     finally:
         handles.close()
-        if task is not None and hasattr(task, "scene"):
-            task.close_env()
         result.update(counter, total_wall_s=time.monotonic() - start,
                       simulation_time_s=counter["physics_steps"] / 250)
+        # Archive outcomes before native cleanup, including cleanup failures.
+        result["cleanup_status"] = "started"
         write_json(output / "frames.json", frame_rows)
         write_json(output / "result.json", result)
+        scene_step = None  # bound native method otherwise prolongs Scene lifetime
+        try:
+            close_simulation(task)
+            task = None
+            result["cleanup_status"] = "completed"
+        except Exception as exc:  # noqa: BLE001 -- preserve cleanup diagnostics
+            result.update(cleanup_status="failed", cleanup_error=str(exc))
+            (output / "cleanup_error.txt").write_text(traceback.format_exc())
+        result["total_wall_s"] = time.monotonic() - start
+        write_json(output / "result.json", result)
         print(json.dumps(result, allow_nan=False), flush=True)
-    if result["status"] != "completed":
+    if result["status"] != "completed" or result["cleanup_status"] != "completed":
         raise SystemExit(1)
 
 
