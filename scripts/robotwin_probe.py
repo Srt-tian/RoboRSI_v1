@@ -80,7 +80,14 @@ def main():
     p.add_argument("--task", choices=["handover_block", "lift_pot", "stack_blocks_three"], required=True)
     p.add_argument("--seed", type=int, required=True)
     p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--grasp-pilot", action="store_true")
+    p.add_argument("--error-x-m", type=float, choices=[-0.04, 0.0, 0.04], default=0.0)
+    p.add_argument("--repair-x-m", type=float, choices=[-0.02, 0.0, 0.02], default=0.0)
     args = p.parse_args()
+    if args.grasp_pilot and args.task != "handover_block":
+        raise ValueError("The custom grasp pilot is defined only in handover_block scenes")
+    if not args.grasp_pilot and (args.error_x_m != 0 or args.repair_x_m != 0):
+        raise ValueError("Perturbations require explicit grasp-pilot mode")
     upstream = args.robotwin_root.resolve()
     own = Path(__file__).resolve().parents[1]
     output = args.output.resolve()
@@ -107,6 +114,13 @@ def main():
         "source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "cleanup": "Explicit callback removal, native-reference release and scene clear before interpreter shutdown; parent exit status must still be checked",
     }
+    if args.grasp_pilot:
+        protocol.update(scope="Custom grasp recovery development pilot, not full RoboTwin task scoring or learned JEV/RSI evaluation",
+                        error_x_m_audit_only=args.error_x_m, fixed_repair_x_m=args.repair_x_m,
+                        physics_budget_steps=2500,
+                        pairing="Independent scene resets with fixed seed; compare prefix digests and branch object pose before treating branches as matched. Not an exact simulator snapshot.",
+                        candidate_policy="Continue or open, shift by a fixed relative 2 cm from measured EE pose, close; then lift 10 cm and hold 0.4 s",
+                        video_semantics="5 Hz physics sampling plus explicit branch/final observations; use frames.json timestamps, not nominal video duration for cost")
     write_json(output / "protocol.json", protocol)
     (output / "source.py").write_bytes(Path(__file__).read_bytes())
     start = time.monotonic()
@@ -115,6 +129,7 @@ def main():
     frame_rows = []
     result = {"status": "started", "task": args.task, "seed": args.seed}
     counter = {"physics_steps": 0, "frames": 0}
+    prefix_hash = hashlib.sha256()
     try:
         os.chdir(upstream)
         sys.path.insert(0, str(upstream))
@@ -175,6 +190,8 @@ def main():
         scene_step = task.scene.step
 
         def recorded_step():
+            if args.grasp_pilot and counter["physics_steps"] >= 2500:
+                raise RuntimeError("Custom pilot common physics budget exhausted")
             scene_step()
             counter["physics_steps"] += 1
             entities = {"left": task.robot.left_entity, "right": task.robot.right_entity}
@@ -188,15 +205,26 @@ def main():
                    "command_targets": convert(task.robot.get_left_arm_jointState() +
                                               task.robot.get_right_arm_jointState())}
             trace.write(json.dumps(row, allow_nan=False) + "\n")
+            prefix_hash.update(json.dumps({"articulations": row["articulations"],
+                                           "commands": row["commands"]}, sort_keys=True).encode())
             if counter["physics_steps"] % 50 == 0:
                 capture()
 
         task.scene.step = recorded_step
         execution_start = time.monotonic()
-        info = task.play_once()
+        if args.grasp_pilot:
+            from robotwin_grasp_pilot import play_grasp_pilot
+            info = play_grasp_pilot(task, error_x_m=args.error_x_m,
+                                   repair_x_m=args.repair_x_m, output=output, capture=capture,
+                                   physics_steps=lambda: counter["physics_steps"],
+                                   prefix_digest=lambda: prefix_hash.hexdigest())
+        else:
+            info = task.play_once()
         result.update(status="completed", plan_success=bool(task.plan_success),
-                      task_success=bool(task.check_success()),
+                      task_success=None if args.grasp_pilot else bool(task.check_success()),
                       execution_wall_s=time.monotonic() - execution_start)
+        if args.grasp_pilot:
+            result["pilot_success"] = info["pilot_success"]
         write_json(output / "plans.json", {"left": task.left_joint_path, "right": task.right_joint_path})
         write_json(output / "task_info.json", info)
         obs = task.get_obs()
